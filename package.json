@@ -1,0 +1,77 @@
+{
+  "name": "cbp-style-guide",
+  "description": "CBP Style Guide",
+  "version": "0.2.1",
+  "author": "CBP",
+  "contributors": [
+    {
+      "name": "Amit Daya",
+      "email": "amit.daya@cbp.dhs.gov"
+    },
+    {
+      "name": "David Y. Hodge",
+      "email": "david.y.hodge@cbp.dhs.gov"
+    }
+  ],
+  "repository": {
+    "type:": "git",
+    "url": "https://github.com/US-CBP/cbp-style-guide"
+  },
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "cbp-theme": "github:us-cbp/cbp-theme",
+    "ejs": "^2.4.2",
+    "font-awesome": "*",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-banner": "^0.6.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.4.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-filerev": "^2.1.2",
+    "grunt-lesslint": "^3.2.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-svgmin": "^3.2.0",
+    "grunt-templater": "0.0.6",
+    "grunt-usemin": "^3.1.0",
+    "grunt-zip": "^0.17.0",
+    "highlight.js": "^9.4.0",
+    "jquery-ui": "^1.10.5",
+    "jquery.inputmask": "~3.1.26",
+    "jshint-stylish": "^2.2.0",
+    "load-grunt-tasks": "^3.5.0",
+    "lodash": "^4.13.1",
+    "meta-remarkable": "^0.1.0",
+    "nouislider": "^8.5.1",
+    "select2": "^4.0.2",
+    "selectize": "^0.12.1",
+    "time-grunt": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=6.2.1"
+  },
+  "scripts": {
+    "build": "grunt build && jekyll build",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A .",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {},
+  "keywords": [
+    "CBP",
+    "UI",
+    "Style",
+    "Guide"
+  ]
+}

@@ -1,0 +1,18 @@
+{% assign base = '.' %}
+{% assign url = page.url%}
+<!-- foundation -->
+{% if       url contains 'foundation/layouts/' %}{% assign base = '../../..' %}
+
+{% elsif    url contains 'foundation' %}{% assign base = '../..' %}
+
+<!-- components -->
+{% elsif    url contains 'components' %}{% assign base = '../..' %}
+
+<!-- pattern -->
+{% elsif    url contains 'patterns' %}{% assign base = '../..' %}
+
+<!-- docs -->
+{% elsif    url contains 'docs' %}{% assign base = '..' %}
+
+{% endif %}
+

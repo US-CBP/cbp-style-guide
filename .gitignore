@@ -1,0 +1,15 @@
+.tmp
+.DS_Store
+node_modules
+bower_components
+_site
+.vagrant
+.idea
+idea
+*.iml
+/downloads
+/dist
+/src/generated/
+/src/generated/*
+/.idea
+/src/.jekyll-metadata

@@ -1,0 +1,480 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Search results - CBP Style Guide</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Search results">
+        <meta property="og:description" content="">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        
+
+<!-- foundation -->
+
+
+
+
+
+
+
+        <link rel="shortcut icon" href="../generated/favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="../generated/vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="../generated/styles/vendor.css" rel="stylesheet"/>
+
+        
+        
+        
+            <link href="../generated/styles/main.css" rel="stylesheet"/>
+        
+        <!-- Custom for showing off -->
+        <style>
+            .bs-example {
+                z-index: 5 !important;
+                background-color: rgba(0, 0, 0, 0.045);
+                position: relative;
+            }
+            .bs-example-popover .popover {
+                position: relative;
+                display: block;
+                float: left;
+                width: 280px;
+                margin: 20px;
+                z-index: 5 !important;
+            }
+        </style>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div>
+    
+<div role="navigation" class="navbar navbar-inverse navbar-fixed-top navbar-flush">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand hidden-xs hidden-sm with-footer" href="../">
+                U.S. Customs &amp; Border Protection
+                <div class="footer">U.S. Department of Homeland Security</div>
+            </a>
+            <a class="navbar-brand visible-sm" href="../">U.S. CBP</a>
+            <a class="navbar-brand visible-xs">U.S. CBP : Import Cargo</a>
+
+            <button data-target="#navbar-user-info" data-toggle="collapse" type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle Global Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="navbar-user-info" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" aria-expanded="false">
+                        Items Menu
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Item 1</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Another Application</a></li>
+                        <li><a href="#">Yet Another Application</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <span class="fa fa-comment"></span>
+                        <span class="hidden-sm">Feedback</span>
+                    </a>
+                </li>
+                <li data-toggle="hover" class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="fa fa-user"></span>
+                        <span class="hidden-sm" title="FIRST.LAST@CBP.DHS.GOV">FIRST LAST NAME</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul rel="right-menu-links" role="menu" class="dropdown-menu">
+                        <li><a title="Preferences" href="#">Preferences</a></li>
+                        <li class="divider"></li>
+                        <li><a title="Logout" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+(function () {
+
+        /* indexOf polyfill  */
+        function indexOf(collection, item) {
+            var idx = -1;
+            for (i = 0; i < collection.length; i++) {
+                if (collection[i] === item) {
+                    idx = i;
+                    break;
+                }
+            }
+            return idx;
+        }
+
+        /* Toggle the class on an element  */
+        function toggleClass(el, className) {
+            var classes = el.className.split(" "),
+                idx = indexOf(classes, className);
+            if (idx > -1) {
+                classes.splice(idx, 1);
+            } else {
+                classes.push(className);
+            }
+            el.className = classes.join(" ");
+        }
+
+        /* Request animation frame polyfill */
+        var raf = window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function(callback) {
+                window.setTimeout(callback, 16.666666667);
+            };
+
+        /* Sineout easing */
+        function lerp(v0, v1, t) {
+            t = Math.sin(t * Math.PI/2);
+            return v0 *(1 - t) + v1 * t;
+        }
+
+        /* Animate an element's property over a period of time */
+        var animationQueue = [];
+        function animate(el, prop, duration, start, end, cb) {
+            var elapsed = 0;
+            var startTime = Date.now();
+            if (indexOf(animationQueue, el) === -1) {
+                animationQueue.push(el);
+                var anim = function () {
+                    elapsed = Date.now() - startTime;
+                    var val = lerp(start, end, Math.min(elapsed / duration, 1));
+                    el.style[prop] = val + "px";
+                    if (val != end) {
+                        raf(anim);
+                    } else {
+                        animationQueue.splice(indexOf(animationQueue, el), 1);
+                        cb();
+                    }
+                };
+                raf(anim);
+            }
+        }
+
+        /* Toggle the visibility of an element */
+        function toggle(el) {
+            var height = el.offsetHeight,
+                show = height === 0,
+                target;
+            if (show) {
+                el.style.height = "auto";
+                el.style.display = "block";
+                target = el.offsetHeight;
+                el.style.height = "0";
+            } else {
+                target = 0;
+            }
+            animate(el, 'height', 150, height, target, function () {
+                el.style.height = "";
+                el.style.display = "";
+                toggleClass(el, 'uspto--toggled');
+            });
+        }
+
+        /* addEventListener polyfill */
+        function addEventListener(el, evt, cb) {
+            if (el.addEventListener) {
+                el.addEventListener(evt, cb, false);
+            } else {
+                el.attachEvent("on" + evt, cb);
+            }
+        }
+
+        /* Add toggle functionality for an element and a target */
+        function setToggleHandler(toggleEl, targetEl) {
+            addEventListener(toggleEl, 'click', function() {
+                toggle(targetEl);
+                toggleClass(toggleEl, 'uspto--toggled');
+                return false;
+            });
+        }
+
+        /* Find all toggles via [data-uspto-toggle] attr and wire them up */
+        var toggles = document.querySelectorAll("[data-uspto-toggle]");
+        for (var i = 0; i < toggles.length; i += 1) {
+            var toggleEl = toggles[i];
+            var targetSelector = toggleEl.getAttribute('data-uspto-toggle');
+            var targetEl = document.querySelector(targetSelector);
+            setToggleHandler(toggleEl, targetEl);
+        }
+
+    })();
+</script>
+
+    <div >
+        <div class="panel panel-default" style="display: inline-block; width: 100%; border-radius: 0; border-top: none; border-left: none; border-right: none;">
+            <div class="keyline-bottom" style="background: #f4f4f4;">
+                <div class="container-fluid">
+                    <div class="padding-left-1 padding-top-2 padding-bottom-2">
+                        <div style="width: 400px">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search all fields" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info btn-search"><i class="icon icon-inverse icon-search"></i></button>
+                                </span>
+                            </div>
+                            <div class="help-block" style="margin-bottom: 0;">
+                                <a href="">Show advanced search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid padding-0">
+                <div class="keyline-right pull-left" style="width: 250px;">
+                    <form class="filters margin-bottom-2 margin-top-2">
+                        <h4 class="filter-heading">
+                            Refine by <a href="" class="filters-clear">Clear</a>
+                        </h4>
+                        <h5 style="margin-left: 15px; color: #888;">ASSIGNMENT</h5>
+                        <div class="filter-list">
+                            <div data-toggle="collapse" data-target="#2filterGroup8" class="filter-group-title">
+                                Execution year <i class="icon icon-angle-right pull-right"></i>
+                            </div>
+                            <div id="2filterGroup8" class="collapse">
+                                <div class="filter-group-content">
+                                    <div class="form-group">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">2014</a></li>
+                                            <li><a href="">2013</a></li>
+                                            <li><a href="">2012</a></li>
+                                            <li><a href="">2011</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-toggle="collapse" data-target="#2filterGroup1" class="filter-group-title">
+                                <i class="icon icon-angle-right pull-right"></i> Execution date range
+                            </div>
+                            <div id="2filterGroup1" class="collapse">
+                                <div class="filter-group-content">
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <span class="input-icon icon icon-calendar-o"></span>
+                                            <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <span class="input-icon icon icon-calendar-o"></span>
+                                            <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-toggle="collapse" data-target="#2filterGroup2" class="filter-group-title">
+                                <i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Conveyance type
+                            </div>
+                            <div id="2filterGroup2" class="collapse">
+                                <div class="filter-group-content">
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label><input checked type="checkbox">Assignment <span class="text-muted">(13)</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Service <span class="text-muted">(43)</span></label>
+                                        </div>
+                                        <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-toggle="collapse" data-target="#2filterGroup5" class="filter-group-title">
+                                <i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Correspondent
+                            </div>
+                            <div id="2filterGroup5" class="collapse">
+                                <div class="filter-group-content">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <ul class="list-unstyled">
+                                                <li><a href="">JOHN SMITH ET AL</a></li>
+                                                <li><a href="">JANE LLC</a></li>
+                                                <li><a href="">JOHNSON CO</a></li>
+                                                <li><a href="">INITECH</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 style="margin-left: 15px; color: #888;">ASSIGNEE (OWNER)</h5>
+                        <div class="filter-list">
+                            <div data-toggle="collapse" data-target="#3filterGroup8" class="filter-group-title">
+                                Assignee <i class="icon icon-angle-right pull-right"></i>
+                            </div>
+                            <div id="3filterGroup8" class="collapse">
+                                <div class="filter-group-content">
+                                    <div class="form-group">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">JOHN SMITH ET AL</a></li>
+                                            <li><a href="">JANE LLC</a></li>
+                                            <li><a href="">JOHNSON CO</a></li>
+                                            <li><a href="">INITECH</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-toggle="collapse" data-target="#3filterGroup2" class="filter-group-title">
+                                <i class="icon icon-angle-right pull-right"></i> Assignee country
+                            </div>
+                            <div id="3filterGroup2" class="collapse">
+                                <div class="filter-group-content">
+                                    <div class="form-group">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">JOHN SMITH ET AL</a></li>
+                                            <li><a href="">JANE LLC</a></li>
+                                            <li><a href="">JOHNSON CO</a></li>
+                                            <li><a href="">INITECH</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div style="margin-left: 250px;">
+                    <div style="display: inline-block; width: 100%;">
+                        <div class="panel-body">
+                            <div style="line-height: 24px; margin-bottom: 6px; display: inline-block; width: 100%;">
+                                <div class="pull-right">
+                                    <a class="btn btn-link" style="display: inline-block; margin-right: 5px; position: relative; top: 1px;">Expand/collapse all</a>
+                                    <button class="btn btn-default"><i class="icon icon-print"></i></button>
+                                    <button class="btn btn-default">Actions &nbsp;<span class="caret"></span></button>
+                                </div>
+                                <h4 class="margin-top-1"><span style="font-weight: 400">900 results for </span>computer</h4>
+                                <div>
+                                    <ul class="list-unstyled margin-bottom-0">
+                                        <li class="filter-value">Conveyance type: Assignment <i class="pull-right icon icon-close icon-muted"></i></li>
+                                        <li class="filter-value">Correspondent: JANE LLC <i class="pull-right icon icon-close icon-muted"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <table data-pl-expandable-rows role="grid" style="table-layout: fixed;" class="table table-outline table-inverse">
+                                <thead>
+                                    <tr role="row">
+                                        <th scope="col" role="columnheader" aria-sort="ascending" class="sortable">Project name <i class="icon icon-caret-down icon-inverse"></i></th>
+                                        <th scope="col" role="columnheader" aria-sort="none" class="sortable">Description</th>
+                                        <th scope="col" role="columnheader" aria-sort="none">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Invoice</td>
+                                        <td><span >Add invoice confirmation</span></td>
+                                        <td><span >$4,500</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3" >
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton & Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd><button style="margin-top: 8px;" class="btn btn-success">View assignment</button></dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Payments</td>
+                                        <td><span >Process payments using third party api</span></td>
+                                        <td><span >$5,400</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3" >
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton & Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd><button style="margin-top: 8px;" class="btn btn-success">View assignment</button></dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+<!-- foundation -->
+
+
+
+
+
+
+        <footer role="banner" class="cbp-banner"></footer>
+
+        <script src="../generated/scripts/vendor.js"></script>
+        <script src="../generated/scripts/main.js"></script>
+
+
+    </body>
+</html>
+

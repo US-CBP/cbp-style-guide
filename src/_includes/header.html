@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{page.title}} - CBP Style Guide</title>
+
+        <meta name="description" content="{{page.description}}">
+        <meta name="keywords" content="{{page.keywords}}">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="{{page.title}}">
+        <meta property="og:description" content="{{page.description}}">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        {% include base.html %}
+
+
+        <link rel="shortcut icon" href="{{base}}/generated/favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="{{base}}/generated/vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="{{base}}/generated/styles/vendor.css" rel="stylesheet"/>
+
+        {% assign url = page.url%}
+        {% assign useMain = 'true' %}
+        {% if url contains '/foundation/layouts/' %}{% assign useMain = 'false' %}
+        {% elsif useMain == 'true' %}
+            <link href="{{base}}/generated/styles/main.css" rel="stylesheet"/>
+        {% endif %}
+        <!-- Custom for showing off -->
+        <style>
+            .bs-example {
+                z-index: 5 !important;
+                background-color: rgba(0, 0, 0, 0.045);
+                position: relative;
+            }
+            .bs-example-popover .popover {
+                position: relative;
+                display: block;
+                float: left;
+                width: 280px;
+                margin: 20px;
+                z-index: 5 !important;
+            }
+        </style>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->

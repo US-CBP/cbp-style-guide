@@ -1,0 +1,35 @@
+---
+title: "Content with sidebar"
+layout: null
+hidden: true
+---
+
+{% include header.html %}
+<div style="background: #fff;">
+    {% include universalHeader.html title="Content with sidebar" containerClass="container"%}
+    <div class="container" style="display: table;">
+        <div class="padding-top-4 padding-right-4" style="display: table-cell;">
+            {% include content.html %}
+        </div>
+        <div class="padding-left-4" style="display: table-cell; width: 250px;" >
+            <h3>Help center</h3>
+            <h6 class="text-uppercase text-muted">Resources</h6>
+            <ul class="list-unstyled">
+                <li><a href="">Search existing trademarks</a></li>
+                <li><a href="">Instructional videos</a></li>
+            </ul>
+            <h6 class="text-uppercase text-muted">Faq</h6>
+            <ul class="list-unstyled">
+                <li><a href="">What is a mark?</a></li>
+                <li><a href="">Can I change my mark later?</a></li>
+            </ul>
+            <h3>Related articles</h3>
+            <ul class="list-unstyled">
+                <li><a href="">Searching for trademarks</a></li>
+                <li><a href="">How to file a patent</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+{% include layout-styles.html %}

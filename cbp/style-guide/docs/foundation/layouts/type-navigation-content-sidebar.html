@@ -1,0 +1,500 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Navigation and content with sidebar - CBP Style Guide</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Navigation and content with sidebar">
+        <meta property="og:description" content="">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        
+
+<!-- foundation -->
+
+
+
+
+
+
+
+        <link rel="shortcut icon" href="../../../generated/favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="../../../generated/vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="../../../generated/styles/vendor.css" rel="stylesheet"/>
+
+        
+        
+        
+        
+        <!-- Custom for showing off -->
+        <style>
+            .bs-example {
+                z-index: 5 !important;
+                background-color: rgba(0, 0, 0, 0.045);
+                position: relative;
+            }
+            .bs-example-popover .popover {
+                position: relative;
+                display: block;
+                float: left;
+                width: 280px;
+                margin: 20px;
+                z-index: 5 !important;
+            }
+        </style>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div >
+    
+<div role="navigation" class="navbar navbar-inverse navbar-fixed-top navbar-flush">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand hidden-xs hidden-sm with-footer" href="../">
+                U.S. Customs &amp; Border Protection
+                <div class="footer">U.S. Department of Homeland Security</div>
+            </a>
+            <a class="navbar-brand visible-sm" href="../">U.S. CBP</a>
+            <a class="navbar-brand visible-xs">U.S. CBP : Import Cargo</a>
+
+            <button data-target="#navbar-user-info" data-toggle="collapse" type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle Global Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="navbar-user-info" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" aria-expanded="false">
+                        Items Menu
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Item 1</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Another Application</a></li>
+                        <li><a href="#">Yet Another Application</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <span class="fa fa-comment"></span>
+                        <span class="hidden-sm">Feedback</span>
+                    </a>
+                </li>
+                <li data-toggle="hover" class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="fa fa-user"></span>
+                        <span class="hidden-sm" title="FIRST.LAST@CBP.DHS.GOV">FIRST LAST NAME</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul rel="right-menu-links" role="menu" class="dropdown-menu">
+                        <li><a title="Preferences" href="#">Preferences</a></li>
+                        <li class="divider"></li>
+                        <li><a title="Logout" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+(function () {
+
+        /* indexOf polyfill  */
+        function indexOf(collection, item) {
+            var idx = -1;
+            for (i = 0; i < collection.length; i++) {
+                if (collection[i] === item) {
+                    idx = i;
+                    break;
+                }
+            }
+            return idx;
+        }
+
+        /* Toggle the class on an element  */
+        function toggleClass(el, className) {
+            var classes = el.className.split(" "),
+                idx = indexOf(classes, className);
+            if (idx > -1) {
+                classes.splice(idx, 1);
+            } else {
+                classes.push(className);
+            }
+            el.className = classes.join(" ");
+        }
+
+        /* Request animation frame polyfill */
+        var raf = window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function(callback) {
+                window.setTimeout(callback, 16.666666667);
+            };
+
+        /* Sineout easing */
+        function lerp(v0, v1, t) {
+            t = Math.sin(t * Math.PI/2);
+            return v0 *(1 - t) + v1 * t;
+        }
+
+        /* Animate an element's property over a period of time */
+        var animationQueue = [];
+        function animate(el, prop, duration, start, end, cb) {
+            var elapsed = 0;
+            var startTime = Date.now();
+            if (indexOf(animationQueue, el) === -1) {
+                animationQueue.push(el);
+                var anim = function () {
+                    elapsed = Date.now() - startTime;
+                    var val = lerp(start, end, Math.min(elapsed / duration, 1));
+                    el.style[prop] = val + "px";
+                    if (val != end) {
+                        raf(anim);
+                    } else {
+                        animationQueue.splice(indexOf(animationQueue, el), 1);
+                        cb();
+                    }
+                };
+                raf(anim);
+            }
+        }
+
+        /* Toggle the visibility of an element */
+        function toggle(el) {
+            var height = el.offsetHeight,
+                show = height === 0,
+                target;
+            if (show) {
+                el.style.height = "auto";
+                el.style.display = "block";
+                target = el.offsetHeight;
+                el.style.height = "0";
+            } else {
+                target = 0;
+            }
+            animate(el, 'height', 150, height, target, function () {
+                el.style.height = "";
+                el.style.display = "";
+                toggleClass(el, 'uspto--toggled');
+            });
+        }
+
+        /* addEventListener polyfill */
+        function addEventListener(el, evt, cb) {
+            if (el.addEventListener) {
+                el.addEventListener(evt, cb, false);
+            } else {
+                el.attachEvent("on" + evt, cb);
+            }
+        }
+
+        /* Add toggle functionality for an element and a target */
+        function setToggleHandler(toggleEl, targetEl) {
+            addEventListener(toggleEl, 'click', function() {
+                toggle(targetEl);
+                toggleClass(toggleEl, 'uspto--toggled');
+                return false;
+            });
+        }
+
+        /* Find all toggles via [data-uspto-toggle] attr and wire them up */
+        var toggles = document.querySelectorAll("[data-uspto-toggle]");
+        for (var i = 0; i < toggles.length; i += 1) {
+            var toggleEl = toggles[i];
+            var targetSelector = toggleEl.getAttribute('data-uspto-toggle');
+            var targetEl = document.querySelector(targetSelector);
+            setToggleHandler(toggleEl, targetEl);
+        }
+
+    })();
+</script>
+
+    <div class="container-fluid padding-0">
+        <div style="width: 250px;" class="pull-left">
+            <ul class="nav nav-stacked nav-tree" role="tab-list">
+                <li role="presentation" class="category">General</li>
+                <li class="active" role="presentation"><a role="tab" href="#">Profile</a></li>
+                <li role="presentation"><a role="tab" href="#">Deployments</a></li>
+                <li role="presentation"><a role="tab" href="#">Billing</a></li>
+                <li role="presentation" class="category">System</li>
+                <li role="presentation"><a role="tab" href="#">Notifications</a></li>
+                <li role="presentation"><a role="tab" href="#">Emails</a></li>
+                <li role="presentation"><a role="tab" href="#">SSH keys</a></li>
+            </ul>
+        </div>
+        <div class="keyline-left" style="background: #fff; margin-left: 250px;">
+            <div style="display: table;">
+                <div class="padding-4" style="display: table-cell;">
+                    <div class="prose">
+    <h1 class="margin-top-0">Search for patents</h1>
+    <h3 class="text-muted normal margin-top-2" style="">Two-day event to include discussions among USPTO leadership and experts from industry, academia, and the public</h3>
+    <h6 class="text-muted">Jul 14, 2015</h6>
+    <hr>
+    <p>Inventors are encouraged to search the USPTO's patent database to see if a patent has already been filed or granted that is similar to your patent. Patents may be searched in the USPTO Patent Full-Text and Image Database (PatFT). The USPTO houses full text for patents issued from 1976 to the present and PDF images for all patents from 1790 to the present.</p>
+    <p>All sequences (SEQ ID NOs.) and tables for listed patents or publications are available for viewing, without downloading, by accessing the proper document detail page and then submitting a SEQ ID NO or a mega table ID number.</p>
+    <h3>Global Patent Search Network (GPSN)</h3>
+    <p>Global Patent Search Network (GPSN) enables users to search the full text of multiple international patent collections. The initial collection available will be Chinese patent documentation from the State Intellectual Property Office (SIPO) of the People's Republic of China. Users can search published applications, granted patents and utility models from 1985 to 2012. The data available includes full text Chinese patents, English machine translations and full document images. This collection will be periodically updated to include additional years of coverage.</p>
+    <h4>Searching full text patents (since 1976)</h4>
+    <p>Customize a search on all or a selected group of elements (fields) of a patent.
+        <ul class="list-unstyled">
+            <li><a href="">Quick search</a></li>
+            <li><a href="">Advanced search</a></li>
+            <li><a href="">Patent number search</a></li>
+        </ul>
+    </p>
+    <h3>Patent Application Information Retrieval (PAIR)</h3>
+    <p>The Patent Application Information Retrieval (PAIR) system provides IP customers a safe, simple, and secure way to retrieve and download information regarding patent application status.
+    <ul class="list-unstyled">
+        <li><a href="">Visit PAIR</a></li>
+    </ul></p>
+    <p>To make it easier for any inventor to pursue patent protection in both the U.S. and Australia, USPTO Deputy Director Michelle K. Lee (right) and IP Australia Director General Patricia Kelly (left) signed Wednesday a Memorandum of Understanding strengthening their already solid partnership.</p>
+</div>
+
+                </div>
+                <div class="padding-left-4" style="display: table-cell; width: 250px;" >
+                    <h3>Help center</h3>
+                    <h6 class="text-uppercase text-muted">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="">Search existing trademarks</a></li>
+                        <li><a href="">Instructional videos</a></li>
+                    </ul>
+                    <h6 class="text-uppercase text-muted">Faq</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="">What is a mark?</a></li>
+                        <li><a href="">Can I change my mark later?</a></li>
+                    </ul>
+                    <h3>Related articles</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="">Searching for trademarks</a></li>
+                        <li><a href="">How to file a patent</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+<!-- foundation -->
+
+
+
+
+
+
+        <footer role="banner" class="cbp-banner"></footer>
+
+        <script src="../../../generated/scripts/vendor.js"></script>
+        <script src="../../../generated/scripts/main.js"></script>
+
+
+    </body>
+</html>
+
+<style>
+    // Keylines
+
+
+    // Padding utilities
+
+    .padding-top-0 {
+           padding-top: 0;
+    }
+
+    .padding-bottom-0 {
+        padding-bottom: 0;
+    }
+
+    .padding-left-0 {
+        padding-left: 0;
+    }
+
+    .padding-right-0 {
+        padding-right: 0;
+    }
+
+    .padding-top-1 {
+        padding-top: 9px;
+    }
+
+    .padding-top-2 {
+        padding-top: 18px;
+    }
+
+    .padding-top-4 {
+        padding-top: 36px;
+    }
+
+    .padding-left-1 {
+        padding-left: 9px;
+    }
+
+    .padding-left-2 {
+        padding-left: 18px;
+    }
+
+    .padding-left-4 {
+        padding-left: 36px;
+    }
+
+    .padding-right-1 {
+        padding-right: 9px;
+    }
+
+    .padding-right-2 {
+        padding-right: 18px;
+    }
+
+    .padding-right-4 {
+        padding-right: 36px;
+    }
+
+    .padding-bottom-1 {
+        padding-bottom: 9px;
+    }
+
+    .padding-bottom-2 {
+        padding-bottom: 18px;
+    }
+
+    .padding-bottom-4 {
+        padding-bottom: 36px;
+    }
+
+    .padding-0 {
+        padding: 0;
+    }
+
+    .padding-1 {
+        padding: 9px;
+    }
+
+    .padding-2 {
+        padding: 18px;
+    }
+
+    .padding-4 {
+        padding: 36px;
+    }
+
+
+
+    // Margin utilities
+
+       .margin-top-0 {
+           margin-top: 0;
+       }
+
+    .margin-bottom-0 {
+        margin-bottom: 0;
+    }
+
+    .margin-left-0 {
+        margin-left: 0;
+    }
+
+    .margin-right-0 {
+        margin-right: 0;
+    }
+
+    .margin-top-1 {
+        margin-top: 9px;
+    }
+
+    .margin-top-2 {
+        margin-top: 18px;
+    }
+
+    .margin-top-4 {
+        margin-top: 36px;
+    }
+
+    .margin-left-1 {
+        margin-left: 9px;
+    }
+
+    .margin-left-2 {
+        margin-left: 18px;
+    }
+
+    .margin-left-4 {
+        margin-left: 36px;
+    }
+
+    .margin-right-1 {
+        margin-right: 9px;
+    }
+
+    .margin-right-2 {
+        margin-right: 18px;
+    }
+
+    .margin-right-4 {
+        margin-right: 36px;
+    }
+
+    .margin-bottom-1 {
+        margin-bottom: 9px;
+    }
+
+    .margin-bottom-2 {
+        margin-bottom: 18px;
+    }
+
+    .margin-bottom-4 {
+        margin-bottom: 36px;
+    }
+
+    .margin-0 {
+        margin: 0;
+    }
+
+    .margin-1 {
+        margin: 9px;
+    }
+
+    .margin-2 {
+        margin: 18px;
+    }
+
+    .margin-4 {
+        margin: 36px;
+    }
+</style>
+
+<script>
+    $('.dropdown-toggle').dropdown();
+</script>
+

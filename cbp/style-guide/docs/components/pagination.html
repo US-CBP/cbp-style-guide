@@ -1,0 +1,976 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Pagination - CBP Style Guide</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Pagination">
+        <meta property="og:description" content="">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        
+
+<!-- foundation -->
+
+
+<!-- pattern -->
+
+
+
+
+
+        <link rel="shortcut icon" href="../../generated/favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="../../generated/vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="../../generated/styles/vendor.css" rel="stylesheet"/>
+
+        
+        
+        
+            <link href="../../generated/styles/main.css" rel="stylesheet"/>
+        
+        <!-- Custom for showing off -->
+        <style>
+            .bs-example {
+                z-index: 5 !important;
+                background-color: rgba(0, 0, 0, 0.045);
+                position: relative;
+            }
+            .bs-example-popover .popover {
+                position: relative;
+                display: block;
+                float: left;
+                width: 280px;
+                margin: 20px;
+                z-index: 5 !important;
+            }
+        </style>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div role="banner">
+  <div class="row">
+      <div class="disclaimer col-sm-6 col-lg-12">
+        <span>
+          This site is in <strong>alpha</strong>. Have a question?
+          <a href="https://github.com/US-CBP/cbp-style-guide/issues">Issues</a>
+        </span>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="pl-header navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header cbp-sg-header">
+                <a href="../index.html" class="navbar-brand"><strong>CBP</strong>&nbsp;<span class="light">Style Guide</span></a>
+                <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-inverse fa-bars"></i></button>
+                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="fa fa-inverse fa-angle-down"></i></button>
+            </div>
+            <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                <ul class="nav navbar-nav cbp-nav">
+                    <!--<li  >
+                        <a href="../../docs/index.html">Library</a>
+                    </li>
+                    <li  >
+                        <a href="/docs/resources.html">Resources</a>
+                    </li>-->
+                    <li  >
+                        <a href="../../docs/changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right cbp-nav">
+                    <li>
+                        <a href="https://github.com/US-CBP/cbp-style-guide" target="_blank" title="View on GitHub" ><i class="fa fa-inverse fa-github"></i>&nbsp; View on GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                
+                  <li class="category">Foundation</li>
+                
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/colors.html"> Colors </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/grid.html"> Grid </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/icons.html"> Icons </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/layouts.html"> Layouts </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/typography.html"> Typography </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+                  <li class="category">Components</li>
+                
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/accordions.html"> Accordions </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/breadcrumbs.html"> Breadcrumbs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/buttons.html"> Buttons </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/cards.html"> Cards </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/forms.html"> Forms </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/menus.html"> Menus </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  class="active"  >
+                                          <a  href="../../docs/components/pagination.html"> Pagination </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/popovers.html"> Popovers </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/progressBars.html">  </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/securityBanners.html"> Security Banner </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tables.html"> Tables </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tabs.html"> Tabs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tags.html"> Tags </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tooltips.html"> Tooltips </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                  <li class="category">Patterns</li>
+                
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/applicationHeaders.html"> Application Headers </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/filters.html"> Filters </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/help.html"> Help </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/search.html"> Search </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/tours.html"> Tours </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/wizards.html"> Wizards </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                
+            </ul>
+        </nav>
+        <section class="pl-content">
+            
+            <div class="pl-pattern">
+  <h3>Pagination</h3>
+
+  <h4 id="purpose">Purpose</h4>
+  <p>Users need to navigate through pages of items.</p>
+
+  <h4 id="description">Description</h4>
+  <p>Collections of data are often split into multiple pages for performance reasons. Either the size of the data is too much to download at once, or the size of the data would take too long to render all at once. Pagination controls allow for the user to retrieve or view pages of data in a performant matter.</p>
+
+  <h4 id="basic-functionality">Basic functionality</h4>
+  <p>This pagination pattern provides a few variations of the following features:</p>
+
+  <ul>
+    <li>Navigating to prev/next pages</li>
+    <li>Navigating to first/last pages</li>
+    <li>Jumping to a manually entered page/item</li>
+    <li>Adjusting the number of items per page</li>
+  </ul>
+
+  <p>The features should be chosen based on the user’s needs, the data, and the space available. Don’t include pagination features that aren’t necessary. If your users have no need to adjust the paging size or jump to a manually entered page for a particular type of data, don’t include those features.</p>
+
+  <p> </p>
+
+</div>
+
+<div class="pl-pattern">
+
+  <h3 id="examples">Examples</h3>
+  <p>The examples below show various configurations of pagination features. Depending on the data, you may treat your pages as item ranges <code>Showing 150-160</code> or as pages <code>Page 15 of 25</code>.</p>
+
+  <h4 id="full">Full</h4>
+  <p>These show possible configurations for layouts with large amounts of screen real estate.</p>
+
+<div class="pl-preview">
+<div class="form-inline">
+    <div class="form-group">
+      <div class="btn-group dropdown">
+        <button type="button" id="dropdownMenu9" class="btn-link btn dropdown-toggle" data-toggle="dropdown">
+        10 per page
+        <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
+          <li role="presentation" class="dropdown-header">Show up to</li>
+          <li role="presentation" class="active">
+            <a role="menuitem" tabindex="-1" href="#">10 items</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">25 items</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">50 items</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">100 items</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="btn-group">
+        <a class="btn btn-default" href="#">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="btn btn-default" href="#">1</a>
+        <a class="btn btn-default" href="#">...</a>
+        <a class="btn btn-default" href="#">13</a>
+        <a class="btn btn-default" href="#">14</a>
+        <a class="btn btn-default active" href="#">15</a>
+        <a class="btn btn-default" href="#">16</a>
+        <a class="btn btn-default" href="#">17</a>
+        <a class="btn btn-default" href="#">...</a>
+        <a class="btn btn-default" href="#">25</a>
+        <a class="btn btn-default" href="#">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="mdl-textfield mdl-js-textfield" style="width: 150px;">
+          <label class="mdl-textfield__label">15 out of 40</label>
+          <input type="text" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" />
+        </div>
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go</button>
+        </span>
+      </div>
+    </div>
+</div>
+</div>
+
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-inline&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-group dropdown&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">id=</span><span class="s">&quot;dropdownMenu9&quot;</span> <span class="na">class=</span><span class="s">&quot;btn-link btn dropdown-toggle&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>
+        10 per page
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;caret&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span> <span class="na">aria-labelledby=</span><span class="s">&quot;dropdownMenu9&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span> <span class="na">class=</span><span class="s">&quot;dropdown-header&quot;</span><span class="nt">&gt;</span>Show up to<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>10 items<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>25 items<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>50 items<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>100 items<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-group&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-angle-left&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>13<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>14<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default active&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>15<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>16<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>17<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>25<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-angle-right&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;input-group&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mdl-textfield mdl-js-textfield&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 150px;&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;mdl-textfield__label&quot;</span><span class="nt">&gt;</span>15 out of 40<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;mdl-textfield__input&quot;</span> <span class="na">pattern=</span><span class="s">&quot;-?[0-9]*(\.[0-9]+)?&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;input-group-btn&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
+
+  <h4 id="small">Small</h4>
+  <p>A possible configuration for very narrow/confined layouts.</p>
+
+<div class="pl-preview">
+    <div class="form-inline">
+      <div class="form-group dropdown">
+        <div class="btn-group">
+          <a href="#" class="btn btn-default">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="btn btn-default dropdown-toggle" id="dropdownMenu6" data-toggle="dropdown" href="">
+            15/25 <span class="caret"></span>
+          </a>
+          <a href="#" class="btn btn-default">
+            <i class="fa fa-angle-right"></i>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu6">
+            <li role="presentation" class="dropdown-header">Show up to</li>
+            <li role="presentation" class="active">
+              <a role="menuitem" tabindex="-1" href="#">10 items</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">25 items</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">50 items</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">100 items</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <div class="mdl-textfield mdl-js-textfield" style="width: 150px;">
+            <label class="mdl-textfield__label">15 out of 40</label>
+            <input type="text" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" />
+          </div>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go</button>
+          </span>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-inline&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group dropdown&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-angle-left&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default dropdown-toggle&quot;</span> <span class="na">id=</span><span class="s">&quot;dropdownMenu6&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+        15/25 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;caret&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-angle-right&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span> <span class="na">role=</span><span class="s">&quot;menu&quot;</span> <span class="na">aria-labelledby=</span><span class="s">&quot;dropdownMenu6&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;divider&quot;</span><span class="nt">&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span> <span class="na">class=</span><span class="s">&quot;dropdown-header&quot;</span><span class="nt">&gt;</span>Show up to<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>10 items<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>25 items<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>50 items<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">&quot;presentation&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">&quot;menuitem&quot;</span> <span class="na">tabindex=</span><span class="s">&quot;-1&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>100 items<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;input-group&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;mdl-textfield mdl-js-textfield&quot;</span> <span class="na">style=</span><span class="s">&quot;width: 150px;&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;mdl-textfield__label&quot;</span><span class="nt">&gt;</span>15 out of 40<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;mdl-textfield__input&quot;</span> <span class="na">pattern=</span><span class="s">&quot;-?[0-9]*(\.[0-9]+)?&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;input-group-btn&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
+
+</div>
+
+
+        </section>
+    </div>
+
+        
+
+<!-- foundation -->
+
+
+<!-- pattern -->
+
+
+
+
+        <footer role="banner" class="cbp-banner"></footer>
+
+        <script src="../../generated/scripts/vendor.js"></script>
+        <script src="../../generated/scripts/main.js"></script>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,40 @@
+---
+title: "Focused task"
+layout: null
+hidden: true
+---
+
+{% include header.html %}
+
+<div>
+    {% include universalHeader.html title="Focused task" containerClass="container"%}
+    <div style="max-width: 375px;" class="center-block panel panel-default padding-4 margin-top-4">
+        <h2 class="margin-top-0 text-center">Sign in</h2>
+        <p class="help-block text-center">You have to be signed in to access this page.</p>
+        <form role="form" class="margin-top-4">
+            <div class="form-group">
+                <label class="control-label" for="emailInput">Email</label>
+                <input type="email" class="form-control" id="emailInput">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="passwordInput">Password</label>
+                <input type="password" class="form-control" id="passwordInput" >
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">Sign in</button>
+            </div>
+            <div class="form-group clearfix">
+                <div class="margin-0 pull-left checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <div class="pull-right">
+                    <a href="">Forgot password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% include footer.html %}
+{% include layout-styles.html %}

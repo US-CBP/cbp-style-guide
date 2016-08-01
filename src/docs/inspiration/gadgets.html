@@ -1,0 +1,378 @@
+---
+title: "Gadgets"
+layout: null
+---
+{% include header.html %}
+
+<style>
+    /* Styles specific for this example */
+    .ex-sub-header {
+        background: #282930;
+        height: 38px;
+        top: 34px;
+        left: 0px;
+        right: 0;
+        position: absolute;
+        padding-left: 4px;
+        color: #fff;
+        padding-right: 4px;
+    }
+
+    .ex-sub-header .btn {
+        border-radius: 2px;
+        margin: 4px 0;
+        padding: 6px;
+    }
+
+    .ex-header--icon-badge {
+        color: #fff;
+        background: #fb8300;
+        padding: 2px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 700;
+        margin-left: -6px;
+        margin-top: -6px;
+        border: 2px solid #004c97;
+        display: inline-block;
+        line-height: 11px;
+        font-size: 11px;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        position: relative;
+    }
+
+    .ex-sub-header--gadgets .btn {
+        width: 34px;
+    }
+
+    .ex-sub-header--gadgets .ex-btn__inverse__active {
+        background: rgba(255,255,255,.05);
+    }
+
+    .ex-sub-header--gadgets .btn .icon {
+        opacity: .3;
+    }
+
+    .ex-sub-header--gadgets .ex-btn__inverse__active .icon {
+        opacity: 1;
+    }
+
+    .ex-container {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #d6d7da;
+        padding: 10px;
+    }
+
+    .ex-header {
+        height: 34px;
+        color: #fff;
+        background: #004c97;
+    }
+
+    .ex-header--menu {
+        display: inline-block;
+        background: rgba(0,0,0,.1);
+        padding: 8px;
+        width: 36px;
+        text-align: center;
+    }
+
+    .ex-header--buttons {
+        margin-left: 40px;
+    }
+
+    .ex-btn__inverse {
+        background: none;
+        border: none;
+        color: #fff;
+        box-shadow: none;
+        padding: 8px 8px;
+        vertical-align: middle;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .ex-form-control__inverse,
+    .ex-form-control__inverse:focus {
+        border: none;
+        background: rgba(0,0,0,.5);
+        display: inline-block;
+        width: 200px;
+        margin-top: 4px;
+        height: 30px;
+        padding: 5px 12px;
+        padding-right: 28px;
+        vertical-align: middle;
+        color: #fff;
+    }
+
+    .ex-btn__inverse.btn:hover {
+        background-color: rgba(255,255,255,.1);
+        color: #fff;
+    }
+
+    .ex-sub-header--text {
+        padding: 10px 12px;
+    }
+    .ex-sub-header--text__border-left {
+        border-left: 1px solid rgba(0,0,0,.4);
+        margin-left: 8px;
+    }
+
+    .ex-gadget-container {
+        position: relative;
+    }
+
+    .ex-gadget-container--tabs {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .ex-gadget-container--tabs > .nav-tabs {
+        border-color: #ccc;
+        font-weight: 600;
+    }
+    .ex-gadget-container--tabs > .nav-tabs > li > a {
+        border-color: #ccc;
+        background-color: rgba(255,255,255,.35);
+        color: #222;
+    }
+    .ex-gadget-container--tabs > .nav-tabs > li > a:hover {
+        background-color: rgba(255,255,255,.6);
+    }
+    .ex-gadget-container--tabs > .nav-tabs > li.active > a,
+    .ex-gadget-container--tabs > .nav-tabs > li.active > a:hover {
+        border-color: #ccc;
+        color: #222;
+        background: #f5f5f5;
+        border-bottom-color: #f5f5f5;
+    }
+
+    .ex-gadget-container--tabs--close {
+        position: relative;
+        top: 1px;
+        opacity: .5;
+        right: -3px;
+    }
+
+    .ex-gadget-container--tabs--close:after {
+        transform: scale(.8);
+    }
+
+    .ex-gadget-container--tabs > .nav-tabs > li.active > a:hover {
+        background: #f5f5f5;
+    }
+
+    .ex-gadget-container--panel {
+        position: absolute;
+        top: 32px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border: 1px solid #ccc;
+        border-bottom-color: #c3c3c3;
+        border-top: none;
+        background: #fff;
+        box-shadow: 0px 1px 1px rgba(0,0,0,.05);
+        overflow: hidden;
+    }
+
+    .ex-gadget-toolbar {
+        background: #f5f5f5;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .ex-gadget-container--panel > .table > tbody > tr > td:first-child,
+    .ex-gadget-container--panel > .table > thead > tr > th:first-child {
+        border-left: none;
+    }
+
+    .ex-gadget-container--panel > .table > tbody > tr > td:last-child,
+    .ex-gadget-container--panel > .table > thead > tr > th:last-child {
+        border-right: none;
+    }
+
+
+
+</style>
+
+<div class="ex-header clearfix">
+    <div class="ex-header--menu pull-left">
+        <i class="icon icon-bars icon-inverse"></i>
+    </div>
+    <div class="ex-header--buttons clearfix">
+        <div class="pull-left">
+            <button class="btn ex-btn__inverse">Prior art search <span class="caret"></span></button>
+        </div>
+        <div class="pull-right">
+            <button class="btn ex-btn__inverse" style="padding-right: 0px;"><i class="icon icon-warning icon-inverse"></i><div class="ex-header--icon-badge">2</div></button>
+            <button class="btn ex-btn__inverse"><i class="icon icon-gears icon-inverse"></i></button>
+            <button class="btn ex-btn__inverse"><i class="icon icon-user margin-right-1 icon-inverse"></i>Beth Woodward <span class="caret"></span></button>
+        </div>
+    </div>
+</div>
+<div class="ex-sub-header clearfix">
+    <div class="ex-sub-header--gadgets pull-left">
+        <button class="btn ex-btn__inverse  ex-btn__inverse__active">
+            <i class="icon icon-search icon-inverse"></i>
+        </button>
+        <button class="btn ex-btn__inverse ex-btn__inverse__active">
+            <i class="icon icon-history icon-inverse"></i>
+        </button>
+        <button class="btn ex-btn__inverse">
+            <i class="icon icon-tasks icon-inverse"></i>
+        </button>
+        <button class="btn ex-btn__inverse ex-btn__inverse__active">
+            <i class="icon icon-file icon-inverse"></i>
+        </button>
+        <button class="btn ex-btn__inverse">
+            <i class="icon icon-question icon-inverse"></i>
+        </button>
+        <button class="btn ex-btn__inverse">
+            <i class="icon icon-file-text icon-inverse"></i>
+        </button>
+        <button class="btn ex-btn__inverse">
+            <i class="icon icon-star icon-inverse"></i>
+        </button>
+    </div>
+    <div class="pull-left ex-sub-header--text ex-sub-header--text__border-left">
+        Case <strong>90/493,212</strong>
+    </div>
+    <div class="pull-right" style="position: relative;">
+        <input type="text" class="form-control ex-form-control__inverse" placeholder="Open by case #">
+        <i style="right: 10px; top: 3px;" class="icon input-icon icon-search icon-inverse"></i>
+    </div>
+</div>
+<div class="ex-container">
+    <div class="ex-gadget-container pull-left" style="width: 400px; height: 100%;">
+        <div class="ex-gadget-container--tabs">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="">Documents <i class="icon icon-times ex-gadget-container--tabs--close"></i></a></li>
+                <li><a href="">Search <i class="icon icon-times ex-gadget-container--tabs--close"></i></a></li>
+                <li><a href="">Search history <i class="icon icon-times ex-gadget-container--tabs--close"></i></a></li>
+            </ul>
+        </div>
+        <div class="ex-gadget-container--panel">
+            <div class="ex-gadget-toolbar clearfix">
+                <input type="text" placeholder="Quick filter" class="pull-left form-control" style="width: 309px;">
+                <button class="btn btn-default pull-right">View <span class="caret"></span></button>
+            </div>
+            <table class="table table-hover table-sortable table-condensed table-striped table-bordered" style="border: none;">
+                <thead>
+                    <tr>
+                        <th class="sortable">Title</th>
+                        <th class="sortable">Date</th>
+                        <th class="sortable">Doc Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Specification</td>
+                        <td>08/15/2009</td>
+                        <td>SPEC</td>
+                    </tr>
+                    <tr>
+                        <td>Claims</td>
+                        <td>08/15/2009</td>
+                        <td>CLM</td>
+                    </tr>
+                    <tr>
+                        <td>Drawings</td>
+                        <td>08/15/2009</td>
+                        <td>DRW</td>
+                    </tr>
+                    <tr>
+                        <td>Abstract</td>
+                        <td>08/15/2009</td>
+                        <td>ABST</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="ex-gadget-container" style="margin-left: 410px; height: 100%;" >
+        <div class="ex-gadget-container--tabs">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="">Claims</a></li>
+                <li><a href="">Specification</a></li>
+            </ul>
+        </div>
+        <div class="ex-gadget-container--panel">
+            <div class="ex-gadget-toolbar clearfix">
+                <div class="pull-left">
+                    <button class="btn btn-default btn-icon-only"><i class="icon icon-search"></i></button>
+                    <button class="btn btn-default btn-icon-only"><i class="icon icon-info"></i></button>
+                    <div class="btn-group">
+                        <button class="btn btn-default btn-icon-only"><i class="icon icon-photo"></i></button>
+                        <button class="btn btn-default btn-icon-only active"><i class="icon icon-file-text-o"></i></button>
+                    </div>
+                    <button class="btn btn-default"><i class="icon icon-paint-brush"></i> <span style="vertical-align: top; box-shadow: inset 0px 1px 1px rgba(0,0,0,.1); display: inline-block; height: 11px; margin-left: 4px; margin-top: 4px; border-radius: 11px; width: 11px; background-color: #1596D1; margin-right: -3px;"></span></button>
+                </div>
+                <div class="pull-right">
+                    <div class="btn-group">
+                        <div class="btn btn-default"><i class="icon icon-cog"></i> <span class="caret"></span></div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+                        <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: table; height: 100%; width: 100%; table-layout: fixed;">
+                <div class="padding-4" style="display: table-cell; vertical-align: top;">
+                    <h3 class="text-muted normal margin-top-0">Two-day event to include discussions among USPTO leadership and experts from industry, academia, and the public</h3>
+                    <h6 class="text-muted">Jul 14, 2015</h6>
+                    <hr>
+                    <p>Inventors are encouraged to search the USPTO's patent database to see if a patent has already been filed or granted that is similar to your patent. Patents may be searched in the USPTO Patent Full-Text and Image Database (PatFT). The USPTO houses full text for patents issued from 1976 to the present and PDF images for all patents from 1790 to the present.</p>
+                    <p>All sequences (SEQ ID NOs.) and tables for listed patents or publications are available for viewing, without downloading, by accessing the proper document detail page and then submitting a SEQ ID NO or a mega table ID number.</p>
+                    <h3>Global Patent Search Network (GPSN)</h3>
+                    <p>Global Patent Search Network (GPSN) enables users to search the full text of multiple international patent collections. The initial collection available will be Chinese patent documentation from the State Intellectual Property Office (SIPO) of the People's Republic of China. Users can search published applications, granted patents and utility models from 1985 to 2012. The data available includes full text Chinese patents, English machine translations and full document images. This collection will be periodically updated to include additional years of coverage.</p>
+                    <h4>Searching full text patents (since 1976)</h4>
+                    <p>Customize a search on all or a selected group of elements (fields) of a patent.
+                        <ul class="list-unstyled">
+                            <li><a href="">Quick search</a></li>
+                            <li><a href="">Advanced search</a></li>
+                            <li><a href="">Patent number search</a></li>
+                        </ul>
+                    </p>
+                    <h3>Patent Application Information Retrieval (PAIR)</h3>
+                    <p>The Patent Application Information Retrieval (PAIR) system provides IP customers a safe, simple, and secure way to retrieve and download information regarding patent application status.
+                    <ul class="list-unstyled">
+                        <li><a href="">Visit PAIR</a></li>
+                    </ul></p>
+                    <p>To make it easier for any inventor to pursue patent protection in both the U.S. and Australia, USPTO Deputy Director Michelle K. Lee (right) and IP Australia Director General Patricia Kelly (left) signed Wednesday a Memorandum of Understanding strengthening their already solid partnership.</p>
+                </div>
+                <div class="keyline-left" style="background: #f5f5f5; display: table-cell; width: 300px; vertical-align: top;">
+                    <div class="clearfix keyline-bottom">
+                        <button style="margin: 2px;" class="pull-right btn btn-default btn-sm btn-hover">
+                            <i class="icon icon-angle-double-right"></i>
+                        </button>
+                        <h6 class="pull-left text-uppercase text-muted margin-top-1 margin-left-1 margin-bottom-0">NOTES</h6>
+                    </div>
+                    <div class="ex-notes padding-2" style="margin-left: -1px; position: relative;">
+                        <div style="border-left: 4px solid #1596D1; margin-top: 150px;" class="ex-notes--note padding-2 panel panel-default">
+                            <div class="pull-right caption">Jan 11, 2015</div>
+                            <h5 class="margin-top-0">Beth Woodward</h5>
+                            <p class="margin-bottom-0"> Patents may be searched in the USPTO Patent Full-Text and Image Database (PatFT).</p>
+                            <div style="border-left: 4px solid #ddd;" class="padding-left-2 margin-top-2">
+                                <div class="pull-right caption">5 minutes ago</div>
+                                <h5 class="margin-top-0">John Smith</h5>
+                                <p class="margin-bottom-0">Looks great.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include footer.html %}

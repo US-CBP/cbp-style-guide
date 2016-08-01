@@ -1,0 +1,178 @@
+
+<div role="navigation" class="navbar navbar-inverse navbar-fixed-top navbar-flush">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand hidden-xs hidden-sm with-footer" href="../">
+                U.S. Customs &amp; Border Protection
+                <div class="footer">U.S. Department of Homeland Security</div>
+            </a>
+            <a class="navbar-brand visible-sm" href="../">U.S. CBP</a>
+            <a class="navbar-brand visible-xs">U.S. CBP : Import Cargo</a>
+
+            <button data-target="#navbar-user-info" data-toggle="collapse" type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle Global Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="navbar-user-info" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" aria-expanded="false">
+                        Items Menu
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Item 1</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Another Application</a></li>
+                        <li><a href="#">Yet Another Application</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <span class="fa fa-comment"></span>
+                        <span class="hidden-sm">Feedback</span>
+                    </a>
+                </li>
+                <li data-toggle="hover" class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="fa fa-user"></span>
+                        <span class="hidden-sm" title="FIRST.LAST@CBP.DHS.GOV">FIRST LAST NAME</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul rel="right-menu-links" role="menu" class="dropdown-menu">
+                        <li><a title="Preferences" href="#">Preferences</a></li>
+                        <li class="divider"></li>
+                        <li><a title="Logout" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+(function () {
+
+        /* indexOf polyfill  */
+        function indexOf(collection, item) {
+            var idx = -1;
+            for (i = 0; i < collection.length; i++) {
+                if (collection[i] === item) {
+                    idx = i;
+                    break;
+                }
+            }
+            return idx;
+        }
+
+        /* Toggle the class on an element  */
+        function toggleClass(el, className) {
+            var classes = el.className.split(" "),
+                idx = indexOf(classes, className);
+            if (idx > -1) {
+                classes.splice(idx, 1);
+            } else {
+                classes.push(className);
+            }
+            el.className = classes.join(" ");
+        }
+
+        /* Request animation frame polyfill */
+        var raf = window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function(callback) {
+                window.setTimeout(callback, 16.666666667);
+            };
+
+        /* Sineout easing */
+        function lerp(v0, v1, t) {
+            t = Math.sin(t * Math.PI/2);
+            return v0 *(1 - t) + v1 * t;
+        }
+
+        /* Animate an element's property over a period of time */
+        var animationQueue = [];
+        function animate(el, prop, duration, start, end, cb) {
+            var elapsed = 0;
+            var startTime = Date.now();
+            if (indexOf(animationQueue, el) === -1) {
+                animationQueue.push(el);
+                var anim = function () {
+                    elapsed = Date.now() - startTime;
+                    var val = lerp(start, end, Math.min(elapsed / duration, 1));
+                    el.style[prop] = val + "px";
+                    if (val != end) {
+                        raf(anim);
+                    } else {
+                        animationQueue.splice(indexOf(animationQueue, el), 1);
+                        cb();
+                    }
+                };
+                raf(anim);
+            }
+        }
+
+        /* Toggle the visibility of an element */
+        function toggle(el) {
+            var height = el.offsetHeight,
+                show = height === 0,
+                target;
+            if (show) {
+                el.style.height = "auto";
+                el.style.display = "block";
+                target = el.offsetHeight;
+                el.style.height = "0";
+            } else {
+                target = 0;
+            }
+            animate(el, 'height', 150, height, target, function () {
+                el.style.height = "";
+                el.style.display = "";
+                toggleClass(el, 'uspto--toggled');
+            });
+        }
+
+        /* addEventListener polyfill */
+        function addEventListener(el, evt, cb) {
+            if (el.addEventListener) {
+                el.addEventListener(evt, cb, false);
+            } else {
+                el.attachEvent("on" + evt, cb);
+            }
+        }
+
+        /* Add toggle functionality for an element and a target */
+        function setToggleHandler(toggleEl, targetEl) {
+            addEventListener(toggleEl, 'click', function() {
+                toggle(targetEl);
+                toggleClass(toggleEl, 'uspto--toggled');
+                return false;
+            });
+        }
+
+        /* Find all toggles via [data-uspto-toggle] attr and wire them up */
+        var toggles = document.querySelectorAll("[data-uspto-toggle]");
+        for (var i = 0; i < toggles.length; i += 1) {
+            var toggleEl = toggles[i];
+            var targetSelector = toggleEl.getAttribute('data-uspto-toggle');
+            var targetEl = document.querySelector(targetSelector);
+            setToggleHandler(toggleEl, targetEl);
+        }
+
+    })();
+</script>

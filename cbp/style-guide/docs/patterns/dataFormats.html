@@ -1,0 +1,855 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Data formats - CBP Style Guide</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Data formats">
+        <meta property="og:description" content="">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        
+
+<!-- foundation -->
+
+
+<!-- docs -->
+
+
+
+
+
+        <link rel="shortcut icon" href="../../generated/favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="../../generated/vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="../../generated/styles/vendor.css" rel="stylesheet"/>
+
+        
+        
+        
+            <link href="../../generated/styles/main.css" rel="stylesheet"/>
+        
+        <!-- Custom for showing off -->
+        <style>
+            .bs-example {
+                z-index: 5 !important;
+                background-color: rgba(0, 0, 0, 0.045);
+                position: relative;
+            }
+            .bs-example-popover .popover {
+                position: relative;
+                display: block;
+                float: left;
+                width: 280px;
+                margin: 20px;
+                z-index: 5 !important;
+            }
+        </style>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div role="banner">
+  <div class="row">
+      <div class="disclaimer col-sm-6 col-lg-12">
+        <span>
+          This site is in <strong>alpha</strong>. Have a question?
+          <a href="https://github.com/US-CBP/cbp-style-guide/issues">Issues</a>
+        </span>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="pl-header navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header cbp-sg-header">
+                <a href="../index.html" class="navbar-brand"><strong>CBP</strong>&nbsp;<span class="light">Style Guide</span></a>
+                <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-inverse fa-bars"></i></button>
+                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="fa fa-inverse fa-angle-down"></i></button>
+            </div>
+            <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                <ul class="nav navbar-nav cbp-nav">
+                    <!--<li  >
+                        <a href="../../docs/index.html">Library</a>
+                    </li>
+                    <li  >
+                        <a href="/docs/resources.html">Resources</a>
+                    </li>-->
+                    <li  >
+                        <a href="../../docs/changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right cbp-nav">
+                    <li>
+                        <a href="https://github.com/US-CBP/cbp-style-guide" target="_blank" title="View on GitHub" ><i class="fa fa-inverse fa-github"></i>&nbsp; View on GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                
+                  <li class="category">Foundation</li>
+                
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/colors.html"> Colors </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/grid.html"> Grid </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/icons.html"> Icons </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/layouts.html"> Layouts </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/typography.html"> Typography </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+                  <li class="category">Components</li>
+                
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/accordions.html"> Accordions </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/breadcrumbs.html"> Breadcrumbs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/buttons.html"> Buttons </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/cards.html"> Cards </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/forms.html"> Forms </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/menus.html"> Menus </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/pagination.html"> Pagination </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/popovers.html"> Popovers </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/progressBars.html">  </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/securityBanners.html"> Security Banner </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tables.html"> Tables </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tabs.html"> Tabs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tags.html"> Tags </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tooltips.html"> Tooltips </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                  <li class="category">Patterns</li>
+                
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/applicationHeaders.html"> Application Headers </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  class="active"  >
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/filters.html"> Filters </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/help.html"> Help </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/search.html"> Search </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/tours.html"> Tours </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/wizards.html"> Wizards </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                
+            </ul>
+        </nav>
+        <section class="pl-content">
+            
+            <div class="pl-pattern">
+  <h3 id="date-and-time">Date and time</h3>
+
+  <h4 id="formats">Formats</h4>
+<table class="table table-bordered" style="max-width: 700px;">
+    <colgroup>
+        <col style="width: 50%">
+        <col style="width: 50%;">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td><code>time</code></td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td><code>short date</code></td>
+            <td>Jan 11</td>
+        </tr>
+        <tr>
+            <td><code>long date</code></td>
+            <td>Apr 23, 2010</td>
+        </tr>
+        <tr>
+            <td><code>condensed long date</code></td>
+            <td>MM/DD/YYYY, DD/MM/YYYY, or YYYY/MM/DD</td>
+        </tr>
+        <tr>
+            <td><code>short date and time</code></td>
+            <td>Feb 5, 8:00 AM</td>
+        </tr>
+        <tr>
+            <td><code>long date and time</code></td>
+            <td>Feb 8, 2014, 1:00 PM</td>
+        </tr>
+        <tr>
+            <td><code>day of week and time</code></td>
+            <td>Mon, 7:30 AM</td>
+        </tr>
+        <tr>
+            <td><code>day of week, short date and time</code></td>
+            <td>Mon, Mar 15, 3:25 PM</td>
+        </tr>
+    </tbody>
+</table>
+
+  <h4 id="condensed-long-date-usage">Condensed long date usage</h4>
+
+  <p>The condensed version of the long date format has 3 variations:</p>
+
+  <ul>
+    <li><code>MM/DD/YYYY</code> (05/12/2015)</li>
+    <li><code>DD/MM/YYYY</code> (12/05/2015)</li>
+    <li><code>YYYY/MM/DD</code> (2015/12/05)</li>
+  </ul>
+
+  <p><code>MM/DD/YYYY</code> is the format most used in the US, whereas <code>DD/MM/YYYY</code> is used most outside the US. Depending on the date, the format, and the geographical location or customs of the user, a date has the potential for being misinterpreted if the format is not what the user is expecting. The only non-ambiguous format is <code>YYYY/MM/DD</code>.</p>
+
+  <p>Depending on your target audience, determine which format makes the most sense for your application.</p>
+
+  <h4 id="smart-format">Smart format</h4>
+
+  <p>For dates/times associated with user generated data (e.g., notes, documents), use the <code>smart format</code>, which changes relative to the current date.</p>
+
+<table class="table table-bordered" style="max-width: 700px;">
+    <colgroup>
+        <col style="width: 50%">
+        <col style="width: 50%;">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>If the date is in the past or future on the current day, format as <code>time</code> only</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>If the date is in the past or future within the current calendar year, format as <code>short date</code></td>
+            <td>Jan 11</td>
+        </tr>
+        <tr>
+            <td>If the date is in the past or future outside the current calendar year, format as <code>long date</code></td>
+            <td>Apr 23, 2010</td>
+        </tr>
+    </tbody>
+</table>
+
+  <h4 id="other">Other</h4>
+
+<table class="table table-bordered" style="max-width: 700px">
+    <colgroup>
+        <col style="width: 50%">
+        <col style="width: 50%;">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>For reminders or appointments, show both time and date</td>
+            <td>Jun 8, 8:00 AM <br>Today, 8:00 AM</td>
+        </tr>
+        <tr>
+            <td>Separate ranges with an en-dash without a space</td>
+            <td>Jun 15–Jun 16 <br> Dec 20, 2014–Jan 2, 2015</td>
+        </tr>
+        <tr>
+            <td>If a time range shares a common AM/PM, append only on the end of the range</td>
+            <td>10:00–11:00 AM <br>10:00 AM–12:30 PM</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+<div class="pl-pattern">
+  <h3 id="file-sizes">File sizes</h3>
+
+  <ul>
+    <li>340 KB (round to nearest KB)</li>
+    <li>4.13 MB (two decimal max)</li>
+    <li>3.22 GB (two decimal max)</li>
+    <li>1.13 TB (two decimal max)</li>
+  </ul>
+
+  <p> </p>
+
+</div>
+
+        </section>
+    </div>
+
+        
+
+<!-- foundation -->
+
+
+<!-- docs -->
+
+
+
+
+        <footer role="banner" class="cbp-banner"></footer>
+
+        <script src="../../generated/scripts/vendor.js"></script>
+        <script src="../../generated/scripts/main.js"></script>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,959 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Wizards - CBP Style Guide</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Wizards">
+        <meta property="og:description" content="">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        
+
+<!-- foundation -->
+
+
+<!-- docs -->
+
+
+
+
+
+        <link rel="shortcut icon" href="../../generated/favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="../../generated/vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link href="../../generated/styles/vendor.css" rel="stylesheet"/>
+
+        
+        
+        
+            <link href="../../generated/styles/main.css" rel="stylesheet"/>
+        
+        <!-- Custom for showing off -->
+        <style>
+            .bs-example {
+                z-index: 5 !important;
+                background-color: rgba(0, 0, 0, 0.045);
+                position: relative;
+            }
+            .bs-example-popover .popover {
+                position: relative;
+                display: block;
+                float: left;
+                width: 280px;
+                margin: 20px;
+                z-index: 5 !important;
+            }
+        </style>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div role="banner">
+  <div class="row">
+      <div class="disclaimer col-sm-6 col-lg-12">
+        <span>
+          This site is in <strong>alpha</strong>. Have a question?
+          <a href="https://github.com/US-CBP/cbp-style-guide/issues">Issues</a>
+        </span>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="pl-header navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header cbp-sg-header">
+                <a href="../index.html" class="navbar-brand"><strong>CBP</strong>&nbsp;<span class="light">Style Guide</span></a>
+                <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-inverse fa-bars"></i></button>
+                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="fa fa-inverse fa-angle-down"></i></button>
+            </div>
+            <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                <ul class="nav navbar-nav cbp-nav">
+                    <!--<li  >
+                        <a href="../../docs/index.html">Library</a>
+                    </li>
+                    <li  >
+                        <a href="/docs/resources.html">Resources</a>
+                    </li>-->
+                    <li  >
+                        <a href="../../docs/changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right cbp-nav">
+                    <li>
+                        <a href="https://github.com/US-CBP/cbp-style-guide" target="_blank" title="View on GitHub" ><i class="fa fa-inverse fa-github"></i>&nbsp; View on GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                
+                  <li class="category">Foundation</li>
+                
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/colors.html"> Colors </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/grid.html"> Grid </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/icons.html"> Icons </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/layouts.html"> Layouts </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/foundation/typography.html"> Typography </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+                  <li class="category">Components</li>
+                
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/accordions.html"> Accordions </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/breadcrumbs.html"> Breadcrumbs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/buttons.html"> Buttons </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/cards.html"> Cards </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/forms.html"> Forms </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/menus.html"> Menus </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/pagination.html"> Pagination </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/popovers.html"> Popovers </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/progressBars.html">  </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/securityBanners.html"> Security Banner </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tables.html"> Tables </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tabs.html"> Tabs </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tags.html"> Tags </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/tooltips.html"> Tooltips </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                  <li class="category">Patterns</li>
+                
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/applicationHeaders.html"> Application Headers </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/filters.html"> Filters </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/help.html"> Help </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/search.html"> Search </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/patterns/tours.html"> Tours </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  class="active"  >
+                                          <a  href="../../docs/patterns/wizards.html"> Wizards </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                    
+                
+            </ul>
+        </nav>
+        <section class="pl-content">
+            
+            <div class="pl-pattern">
+  <h3>Wizards</h3>
+
+  <h4 id="purpose">Purpose</h4>
+  <p>Users need guidance filling out a complex form.</p>
+
+  <h4 id="description">Description</h4>
+  <p>Splitting a complex form into multiple steps accomplishes a few things:</p>
+
+  <ul>
+    <li>Reduces cognitive overhead by organizing and presenting related input fields</li>
+    <li>Facilitates a potentially linear or evolving process</li>
+    <li>Can provide improved contextual or evolving help</li>
+  </ul>
+
+  <h4 id="basic-functionality">Basic functionality</h4>
+  <p>A wizard is usually composed of:</p>
+
+  <ul>
+    <li>A list of steps, either horizontally or vertically</li>
+    <li>A collection of form controls and help text organized into steps</li>
+    <li>Buttons for navigation</li>
+    <li>Validation</li>
+  </ul>
+
+  <p> </p>
+
+</div>
+
+<div class="pl-pattern">
+  <h3 id="steps">Steps</h3>
+
+  <p>In many cases it’s beneficial to show the list of steps a wizard will have. Depending on the number of steps and space available, steps can be listed vertically or horizontally.</p>
+
+  <h4 id="validation">Validation</h4>
+  <ul>
+    <li>Indicate a step’s validity
+      <ul>
+        <li>Show a check icon when valid (only if the user has left/submitted the form with valid input)</li>
+        <li>Show a warning icon when invalid (only if the user has left/submitted the form with errors)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4 id="navigation">Navigation</h4>
+  <ul>
+    <li>Allow for navigating to previous steps when possible</li>
+    <li>In some cases, skipping ahead is applicable</li>
+    <li>Navigation may evolve depending on previous steps</li>
+  </ul>
+
+  <h4 id="vertical-steps-removed">Vertical steps (Removed)</h4>
+  <p>Use vertical steps when there are 5 or more steps, when there are nested steps, or when steps are categorized.</p>
+
+  <h4 id="horizontal-steps">Horizontal steps</h4>
+  <p>Use horizontal steps when there are 4 or less steps.</p>
+
+<div class="pl-preview">
+<div class="">
+    <div class="" style="max-width: 700px; margin-auto;">
+        <div style="padding: 50px; overflow: auto; position: relative;">
+            <ol class="nav-steps">
+                <li  style="width:33.3%">
+                    <span>Shipment Information</span>
+                </li>
+                <li class="active" style="width:33.3%">
+                    <span>Exams</span>
+                </li>
+                <li class="" style="width:33.3%">
+                    <span>Holds</span>
+                </li>
+            </ol>
+            <h2 style="margin: 36px 0;" class="text-center">So far so good. Now, let's talk about your mark.</h2>
+            <h4>First, what type of mark is this?</h4>
+            <div style="margin: 18px 0;">
+                <form class="" role="form">
+                    <div class="form-group">
+                         <div class="radio">
+                              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+                                <input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                <span class="mdl-radio__label">Standard Characters
+                                    <div class="text-muted">Use this option to register a mark that is comprised of word(s), letter(s), number(s), or any combination thereof with no design element or stylization. <a href="#">Learn more.</a></div>                                
+                                </span>
+                              </label>
+                        </div>
+                         <div class="radio">
+                              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+                                <input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                <span class="mdl-radio__label">Special form
+                                    <div class="text-muted">Use this option if you wish to register a mark that is comprised of stylized word(s), letter(s), and/or number(s), and/or a design element. <a href="#">Learn more.</a></div>                                
+                                </span>
+                              </label>
+                        </div>
+                         <div class="radio">
+                              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+                                <input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                <span class="mdl-radio__label">Sound mark 
+                                    <div class="text-muted">A non-visual mark may be a sound, a scent, or otherwise non-visual mark. <a href="#">Learn more.</a></div>
+                                </span>
+                              </label>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-right" style="margin-top: 24px;">
+                    <button class="btn btn-default pull-left">Back</button>
+                    <button class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;&quot;</span> <span class="na">style=</span><span class="s">&quot;max-width: 700px; margin-auto;&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;padding: 50px; overflow: auto; position: relative;&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">&quot;nav-steps&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span>  <span class="na">style=</span><span class="s">&quot;width:33.3%&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>Shipment Information<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span> <span class="na">style=</span><span class="s">&quot;width:33.3%&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>Exams<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;&quot;</span> <span class="na">style=</span><span class="s">&quot;width:33.3%&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>Holds<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ol&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">style=</span><span class="s">&quot;margin: 36px 0;&quot;</span> <span class="na">class=</span><span class="s">&quot;text-center&quot;</span><span class="nt">&gt;</span>So far so good. Now, let&#39;s talk about your mark.<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;h4&gt;</span>First, what type of mark is this?<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;margin: 18px 0;&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;&quot;</span> <span class="na">role=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;mdl-radio mdl-js-radio mdl-js-ripple-effect&quot;</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;mdl-radio__button&quot;</span> <span class="na">name=</span><span class="s">&quot;optionsRadios&quot;</span> <span class="na">id=</span><span class="s">&quot;optionsRadios1&quot;</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;mdl-radio__label&quot;</span><span class="nt">&gt;</span>Standard Characters
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text-muted&quot;</span><span class="nt">&gt;</span>Use this option to register a mark that is comprised of word(s), letter(s), number(s), or any combination thereof with no design element or stylization. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Learn more.<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>                                
+                                <span class="nt">&lt;/span&gt;</span>
+                              <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;mdl-radio mdl-js-radio mdl-js-ripple-effect&quot;</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;mdl-radio__button&quot;</span> <span class="na">name=</span><span class="s">&quot;optionsRadios&quot;</span> <span class="na">id=</span><span class="s">&quot;optionsRadios1&quot;</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;mdl-radio__label&quot;</span><span class="nt">&gt;</span>Special form
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text-muted&quot;</span><span class="nt">&gt;</span>Use this option if you wish to register a mark that is comprised of stylized word(s), letter(s), and/or number(s), and/or a design element. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Learn more.<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>                                
+                                <span class="nt">&lt;/span&gt;</span>
+                              <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;mdl-radio mdl-js-radio mdl-js-ripple-effect&quot;</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">class=</span><span class="s">&quot;mdl-radio__button&quot;</span> <span class="na">name=</span><span class="s">&quot;optionsRadios&quot;</span> <span class="na">id=</span><span class="s">&quot;optionsRadios1&quot;</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;mdl-radio__label&quot;</span><span class="nt">&gt;</span>Sound mark 
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text-muted&quot;</span><span class="nt">&gt;</span>A non-visual mark may be a sound, a scent, or otherwise non-visual mark. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Learn more.<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+                                <span class="nt">&lt;/span&gt;</span>
+                              <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/form&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;text-right&quot;</span> <span class="na">style=</span><span class="s">&quot;margin-top: 24px;&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default pull-left&quot;</span><span class="nt">&gt;</span>Back<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
+
+</div>
+
+<div class="pl-pattern">
+  <h3 id="buttons">Buttons</h3>
+  <p>Buttons for a wizard can vary depending on the need. The primary actions should be on the right, the secondary actions should be on the left.</p>
+
+<div class="pl-preview">
+<div style="max-width: 450px; display: inline-block; width: 100%;">
+    <div class="btn-toolbar">
+        <button class="btn btn-primary pull-right">Continue</button>
+    </div>
+    <hr>
+    <div class="btn-toolbar">
+        <button class="btn btn-default">Back</button>
+        <button class="btn btn-primary pull-right">Continue</button>
+    </div>
+    <hr>
+    <div class="btn-toolbar">
+        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
+        <button class="btn btn-primary pull-right">Continue</button>
+    </div>
+    <hr>
+    <div class="btn-toolbar">
+        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
+        <button class="btn btn-primary pull-right">Continue</button>
+        <button class="btn btn-default pull-right">Save</button>
+    </div>
+    <p style="margin-top: 10px;" class="pull-right text-muted"> Last saved 09/19/14 10:45 AM</p>
+</div>
+</div>
+
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;max-width: 450px; display: inline-block; width: 100%;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-toolbar&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary pull-right&quot;</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;hr&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-toolbar&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Back<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary pull-right&quot;</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;hr&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-toolbar&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Back<span class="nt">&lt;/button&gt;&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary pull-right&quot;</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;hr&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-toolbar&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Back<span class="nt">&lt;/button&gt;&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary pull-right&quot;</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default pull-right&quot;</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;margin-top: 10px;&quot;</span> <span class="na">class=</span><span class="s">&quot;pull-right text-muted&quot;</span><span class="nt">&gt;</span> Last saved 09/19/14 10:45 AM<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
+
+</div>
+
+        </section>
+    </div>
+
+        
+
+<!-- foundation -->
+
+
+<!-- docs -->
+
+
+
+
+        <footer role="banner" class="cbp-banner"></footer>
+
+        <script src="../../generated/scripts/vendor.js"></script>
+        <script src="../../generated/scripts/main.js"></script>
+
+
+    </body>
+</html>
+
