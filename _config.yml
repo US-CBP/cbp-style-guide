@@ -33,7 +33,7 @@ defaults:
 email:
 
 kitchensink:
-    url: https://github.com/US-CBP/cbp-style-guide/issues
+    url: https://us-cbp.github.io/cbp-theme/app/kitchensink
 
 # Support
 support:

@@ -63,6 +63,7 @@
   },
   "scripts": {
     "build": "grunt build && jekyll build",
+    "dev": "grunt build && jekyll build --watch",
     "preversion": "npm test",
     "version": "npm run build && git add -A .",
     "postversion": "git push && git push --tags"

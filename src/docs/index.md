@@ -11,16 +11,14 @@ title: "Style Guide"
     <hr class="hr-strong"/>
 
     <h4><a href="{{site.repository.url}}">Contribute a Feature, Requests, Feedback</a><span class="text-muted"></h4>
-    
+
     <hr class="hr-strong"/>
 
     <p class="text-muted">For more information:</p>
     <ul class="list-no-style">
-      <li><a href="./changelog.html">Style Guide Change Log</a></li>
-      <li><a href="{{site.repository.url}}">Style Guide on BitBucket</a></li>
       <li><a href="{{site.github.url}}">CBP Theme on GitHub</a></li>
     </ul>
 
-    <p class="text-muted" style="font-size: 11px;">This is a product of the CBP.</p>
+    <p class="text-muted" style="font-size: 11px;">This is a product of the US Customs and Border Protection.</p>
 </div>
 {:/nomarkdown}
