@@ -5,16 +5,20 @@ title: "Typography"
 <div class="pl-pattern">
 ### Fonts
 
-Font load and fallback order: __Calibri, Roboto, Tahoma, Arial, sans-serif__
+Typography is an essential component of the Common Framework Theme. We've selected two san-serif fonts for primary use across all mobile and desktop patterns. Roboto and Calibri provide a wide range of characters and are designed to maintain optimal legibility across platforms, sizes and pixel densities. Both fonts offer a clean, light, and open aesthetic that compliments the content and hierarchy.
 
-#### Font availability
+
+
+Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
+
+
 
 {::nomarkdown}
 <dl>
-    <dt>Calibri</dt>
-    <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
     <dt style="font:Roboto;">Roboto</dt>
     <dd style="font:Roboto;">Ships with OSX.</dd>
+    <dt>Calibri</dt>
+    <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
     <dt style="font:Tahoma, Arial;">Tahoma, Arial</dt>
     <dd style="font:Tahoma, Arial;">Ships with most operating systems.</dd>
 </dl>
@@ -48,7 +52,7 @@ Font load and fallback order: __Calibri, Roboto, Tahoma, Arial, sans-serif__
 <div class="pl-pattern">
 ### Styles
 
-#### Calibri 
+#### Calibri
 {::nomarkdown}
 <div class="pl-preview">
 <table class="table table-borderless table-valign" style="width: 550px;">
