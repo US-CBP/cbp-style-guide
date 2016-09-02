@@ -11,7 +11,7 @@ fi
 rev=$(git rev-parse --short HEAD)
 
 # Directory of Generated Files
-cd cbp
+cd cbp/style-guide
 
 git init
 git config user.name "David Hodge"
