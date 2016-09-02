@@ -19,6 +19,6 @@ title: "Style Guide"
       <li><a href="{{site.github.url}}">CBP Theme on GitHub</a></li>
     </ul>
 
-    <p class="text-muted" style="font-size: 11px;">This is a product of the US Customs and Border Protection.</p>
+    <p class="text-muted" style="font-size: 11px;">This is a product of the U.S. Customs and Border Protection.</p>
 </div>
 {:/nomarkdown}
