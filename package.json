@@ -20,7 +20,7 @@
   "private": true,
   "devDependencies": {
     "bootstrap": "^3.3.6",
-    "cbp-theme": "github:us-cbp/cbp-theme",
+    "cbp-theme": "^0.3.2",
     "ejs": "^2.4.2",
     "font-awesome": "*",
     "grunt": "^1.0.1",
