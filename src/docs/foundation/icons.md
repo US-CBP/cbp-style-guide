@@ -2,9 +2,16 @@
 title: "Icons"
 ---
 <div class="pl-pattern">
-### Overview
+### Icons
 
-#### Colors
+The files noted here are scalable vector icons. These designs are intended to achieve a consistent look and feel across CBP products. Where applicable, use the "CBP Recommended Icons" first before seeking alternatives.
+
+#### Icon Colors and Sizes
+
+Icons should always be one solid color&mdash;black, white, or a Primary Color&mdash; and can stand alone or be placed in contrasting color circles.
+
+When scaling icons, ensure the sizes used appear sharp on standard and high DPI screens.
+
 
 {::nomarkdown}
 <div class="row" style="max-width: 800px;">
@@ -25,7 +32,6 @@ title: "Icons"
 </div>
 {:/nomarkdown}
 
-#### Sizes
 
 {::nomarkdown}
 <div class="row" style="max-width: 800px;">
@@ -51,7 +57,7 @@ title: "Icons"
 - Your application and audience may benefit from other methods of serving icons
 - The method used for dynamically scaling icons is dependent on the method used for serving icons
 - The method used for coloring icons is dependent on the method used for serving icons
-- For performance, create icon bundles containing only used icons
+- For increased performance, create icon bundles containing only used icons
 
 <span class="text-muted">The style guide uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.4.0.</span>
 <span class="text-muted">See [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/) full list of icons and examples.</span>
@@ -61,9 +67,11 @@ title: "Icons"
 </div>
 
 <div class="pl-pattern">
-### CBP Icon Recommendations
+### CBP Universal Icons
 
-- This is an initial list of icons and we are looking for feedback from OIT projects.  Please send us an email <Common-Framework-Support@cbp.dhs.gov>
+Where applicable, use these icons first before seeking alternatives.
+
+To recommend a Universal Icon write to us at [OIT-User-Interface-Support@cbp.dhs.gov](mailto:OIT-User-Interface-Support@cbp.dhs.gov) or [submit a ticket](https://jira.cbp.dhs.gov/secure/CreateIssue!default.jspa) with your suggestion.
 
 {::nomarkdown}
     <div class="container-fluid">
@@ -73,8 +81,9 @@ title: "Icons"
 {:/nomarkdown}
 
 #### User, Person, Profile
-- Class fa-user
-- Represents an individual person or user
+
+- Represents an individual person or user.
+- <span class="label label-default subtle">fa-user</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -89,8 +98,9 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Groups or Teams
-- Class fa-users
-- Represents a group of users
+
+- Represents a group of users.
+- <span class="label label-default subtle">fa-users</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -105,8 +115,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Settings
-- Class fa-gear
-- Represents a settings or preferences
+- Represents a settings or preferences.
+- <span class="label label-default subtle">fa-gear</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -121,8 +131,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Menu
-- Class fa-bars
-- Represents a menu
+- Represents a menu.
+- <span class="label label-default subtle">fa-bars</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -137,8 +147,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Inbox
-- Class fa-inbox
-- Represents an inbox
+- Represents an inbox.
+- <span class="label label-default subtle">fa-inbox</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -153,8 +163,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Calendar
-- Class fa-calendar
-- Represents a calendar
+- Represents a calendar.
+- <span class="label label-default subtle">fa-calendar</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -169,8 +179,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Logout
-- Class fa-sign-out
 - Represents a logout action.
+- <span class="label label-default subtle">fa-sign-out</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -185,8 +195,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Info
-- Class fa-info
 - Represents where additional information can be found.
+- <span class="label label-default subtle">fa-info</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -201,8 +211,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Questions
-- Class fa-question
 - Represents where Frequently Asked Questions can be found.
+- <span class="label label-default subtle">fa-question</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -217,8 +227,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Favorite
-- Class fa-star
 - Represents that an item is favorited.
+- <span class="label label-default subtle">fa-star</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -233,8 +243,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Favorite Not Selected
-- Class fa-star-o
 - Represents that an item can be favorited.
+- <span class="label label-default subtle">fa-star-o</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -249,8 +259,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Edit
-- Class fa-pencil
 - Represents that an item can be edited.
+- <span class="label label-default subtle">fa-pencil</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -265,8 +275,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Delete
-- Class fa-trash
 - Represents that an item can be deleted.
+- <span class="label label-default subtle">fa-trash</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -281,8 +291,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Not Allowed
-- Class fa-ban
 - Represents that an action is not permitted. This icon can be stacked with other icons.
+- <span class="label label-default subtle">fa-ban</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -297,8 +307,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Refresh
-- Class fa-refresh
 - Represents that data can be refreshed.
+- <span class="label label-default subtle">fa-refresh</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -313,8 +323,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Home
-- Class fa-home
 - Represents the starting place of an application.
+- <span class="label label-default subtle">fa-home</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -330,8 +340,8 @@ title: "Icons"
 
 
 #### Back
-- Class fa-arrow-left
 - Represents going back in navigation or data.
+- <span class="label label-default subtle">fa-arrow-left</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -346,8 +356,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Forward
-- Class fa-arrow-right
 - Represents going forward in navigation or data.
+- <span class="label label-default subtle">fa-arrow-right</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -362,8 +372,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Share
-- Class fa-share-alt
 - Represents sharing an item.
+- <span class="label label-default subtle">fa-share-alt</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -378,8 +388,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Office
-- Class fa-building
 - Represents an office.
+- <span class="label label-default subtle">fa-building</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -396,8 +406,8 @@ title: "Icons"
 
 
 #### Expand
-- Class fa-expand
 - Represents a link that can expand a section.
+- <span class="label label-default subtle">fa-expand</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -413,8 +423,8 @@ title: "Icons"
 {:/nomarkdown}
 
 #### Collapse
-- Class fa-compress
 - Represents a link that can collapse or compress a section.
+- <span class="label label-default subtle">fa-compress</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
@@ -431,8 +441,8 @@ title: "Icons"
 
 
 #### External Link
-- Class fa-external-link
 - Represents a link that is external to the current application. This could be another application or an external site.
+- <span class="label label-default subtle">fa-external-link</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
