@@ -662,12 +662,12 @@
   <p>Font load and fallback order: <strong>Roboto, Calibri, Tahoma, Arial, sans-serif</strong></p>
 
 <dl>
-    <dt style="font:Roboto;">Roboto</dt>
-    <dd style="font:Roboto;">Ships with OSX.</dd>
+    <dt>Roboto</dt>
+    <dd>Ships with OSX.</dd>
     <dt>Calibri</dt>
     <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
-    <dt style="font:Tahoma, Arial;">Tahoma, Arial</dt>
-    <dd style="font:Tahoma, Arial;">Ships with most operating systems.</dd>
+    <dt>Tahoma, Arial</dt>
+    <dd>Ships with most operating systems.</dd>
 </dl>
 
   <p> </p>
@@ -679,16 +679,18 @@
 
 <div class="pl-preview">
 <div style="font-size: 15px">
-    <p style="font-weight: 600">600 - Bold: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 400">400 - Regular: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 200">200 - Light: The quick brown fox jumps over the lazy dog</p>
+  <p class="black">700 - Black: The quick brown fox jumps over the lazy dog</p>
+  <p class="bold">500 - Bold: The quick brown fox jumps over the lazy dog</p>
+  <p class="normal">400 - Normal: The quick brown fox jumps over the lazy dog</p>
+  <p class="light">300 - Light: The quick brown fox jumps over the lazy dog</p>
 </div>
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html">    <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"font-weight: 600"</span><span class="nt">&gt;</span>600 - Bold: The quick brown fox jumps over the lazy dog<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"font-weight: 400"</span><span class="nt">&gt;</span>400 - Regular: The quick brown fox jumps over the lazy dog<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"font-weight: 200"</span><span class="nt">&gt;</span>200 - Light: The quick brown fox jumps over the lazy dog<span class="nt">&lt;/p&gt;</span></code></pre>
+    <pre><code class="language-html" data-lang="html">    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"black"</span><span class="nt">&gt;</span>700 - Black: The quick brown fox jumps over the lazy dog<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>500 - Bold: The quick brown fox jumps over the lazy dog<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"normal"</span><span class="nt">&gt;</span>400 - Normal: The quick brown fox jumps over the lazy dog<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span>300 - Light: The quick brown fox jumps over the lazy dog<span class="nt">&lt;/p&gt;</span></code></pre>
   </figure>
 
 </div>
@@ -696,37 +698,34 @@
 <div class="pl-pattern">
   <h3 id="styles">Styles</h3>
 
-  <h4 id="calibri">Calibri</h4>
+  <h4 id="roboto">Roboto</h4>
 <div class="pl-preview">
 <table class="table table-borderless table-valign" style="width: 550px;">
+
     <tbody>
         <tr>
-            <td>Display 3</td>
-            <td><h1 class="display3">Regular 56px</h1></td>
+            <td>h1</td>
+            <td><h1>Main Heading <small>Secondary text</small></h1></td>
         </tr>
         <tr>
-            <td>h1. Display 2</td>
-            <td><h1>Regular 40px</h1></td>
+            <td>h2</td>
+            <td><h2>Sub Heading <small>Secondary text</small></h2></td>
         </tr>
         <tr>
-            <td>h2. Display 1</td>
-            <td><h2>Bold 25px</h2></td>
+            <td>h3</td>
+            <td><h3>Sub Sub Heading <small>Secondary text</small></h3></td>
         </tr>
         <tr>
-            <td>h3. Headline</td>
-            <td><h3 class="headline">Bold 20px</h3></td>
+            <td>h4</td>
+            <td><h4>Sub Sub Sub Heading <small>Secondary text</small></h4></td>
         </tr>
         <tr>
-            <td>h4. Title</td>
-            <td><h4>Bold 18px</h4></td>
+            <td>h5</td>
+            <td><h5>Sub Sub Sub Sub Heading <small>Secondary text</small></h5></td>
         </tr>
         <tr>
-            <td>h5. Subhead</td>
-            <td><h5>Bold 16px</h5></td>
-        </tr>
-        <tr>
-            <td>h6.</td>
-            <td><h6>Bold 14px</h6></td>
+            <td>h6</td>
+            <td><h6>Sub Sub Sub Sub Sub Heading <small>Secondary text</small></h6></td>
         </tr>
         <tr>
             <td>Body</td>
@@ -741,13 +740,12 @@
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display3"</span><span class="nt">&gt;</span>Regular 56px<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h1&gt;</span>Regular 40px<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>Regular 25px<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>Bold 20px<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>Bold 18px<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>Bold 16px<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>Bold 14px<span class="nt">&lt;/h6&gt;</span>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Main Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Sub Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Sub Sub Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Sub Sub Sub Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Sub Sub Sub Sub Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Sub Sub Sub Sub Sub Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span>
 <span class="nt">&lt;p&gt;</span>Regular 13px/14px<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"caption"</span><span class="nt">&gt;</span>Regular 12px/13px<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
