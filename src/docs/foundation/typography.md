@@ -16,7 +16,7 @@ Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
 {::nomarkdown}
 <dl>
     <dt>Roboto</dt>
-    <dd>Ships with OSX.</dd>
+    <dd>Google's "modern, yet approachable" font. We include the font as part of the CBP Theme.</dd>
     <dt>Calibri</dt>
     <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
     <dt>Tahoma, Arial</dt>
