@@ -71,7 +71,7 @@ When scaling icons, ensure the sizes used appear sharp on standard and high DPI 
 
 Where applicable, use these icons first before seeking alternatives.
 
-To recommend a Universal Icon write to us at [OIT-User-Interface-Support@cbp.dhs.gov](mailto:OIT-User-Interface-Support@cbp.dhs.gov) or [submit a ticket](https://jira.cbp.dhs.gov/secure/CreateIssue!default.jspa) with your suggestion.
+To recommend a Universal Icon, [create an issue on Github]({{site.support.issues}}) with your suggestion.
 
 {::nomarkdown}
     <div class="container-fluid">
