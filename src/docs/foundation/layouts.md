@@ -37,14 +37,14 @@ The hybrid page layout combines the fluid design for the application header with
 
 ##### Content only
 
-[View example](layouts/hybrid.html){:target="_blank"}
+[View example](layouts/type-content-only.html){:target="_blank"}
 
 The content only layout maximizes the space available for content. It provides more horizontal space than the other layouts, and is therefore ideal for displaying wide tables and other large user interface elements. Conversely, it doesn't provide any structure for grouping and separating elements.
 {: .clearfix}
 
 ![Navigation and content](layouts/images/type-content-navigation.png)
 
-##### Navigation with Left Sidebar
+##### Navigation and content
 
 [View example](layouts/type-content-navigation.html){:target="_blank"}
 

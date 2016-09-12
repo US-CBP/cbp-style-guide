@@ -1,315 +1,361 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<title>Universal CBP Header</title>
-		<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
-		<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
-		<meta charset="UTF-8">
-		<meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="shortcut icon" href="../../../generated/favicon.ico">
+  <head>
+    <title>CBP Theme</title>
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+ 		<link href="../../../generated/styles/vendor.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div class="cbp-main page-container">
 
-
-		<link media="screen" href="./bootstrap.min.css" rel="stylesheet"/>
-
-	</head>
-	<body>
-		<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-
-		<div class="page-container">
-			<div role="navigation" class="navbar navbar-inverse navbar-fixed-top navbar-flush">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand hidden-xs hidden-sm with-footer" href="#">
-							U.S. Customs &amp; Border Protection
-							<div class="footer">U.S. Department of Homeland Security</div>
-						</a>
-						<a class="navbar-brand visible-sm" href="../">U.S. CBP</a>
-						<a class="navbar-brand visible-xs">U.S. CBP : Application</a>
-
-						<button data-target="#navbar-user-info" data-toggle="collapse" type="button" class="navbar-toggle">
-							<span class="sr-only">Toggle Global Navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-
-					<div id="navbar-user-info" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-left">
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
-									Application X
-									<span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="#">Profile</a></li>
-									<li class="divider"></li>
-									<li><a href="#">Another Application</a></li>
-									<li><a href="#">Yet Another Application</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#">
-									<span class="fa fa-comment"></span>
-									<span class="hidden-sm">Feedback</span>
-								</a>
-							</li>
-							<li data-toggle="hover" class="dropdown">
-								<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-									<span class="fa fa-user"></span>
-									<span class="hidden-sm" title="FIRST.LAST@CBP.DHS.GOV">FIRST LAST NAME</span>
-									<span class="caret"></span>
-								</a>
-								<ul rel="right-menu-links" role="menu" class="dropdown-menu">
-									<li><a title="Preferences" href="#">Preferences</a></li>
-									<li class="divider"></li>
-									<li><a title="Logout" href="<%=request.getContextPath()%>/j_spring_security_logout">Logout</a></li>
-								</ul>
-							</li>
-						</ul>
-
-					</div>
-				</div>
-			</div>
-
-			<div role="navigation" class="navbar navbar-default navbar-static-top navbar-flush">
-				<div class="container-fluid">
-
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle Application Navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Application Secondary Header</a>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">App Internal Link #1<span class="sr-only">(current)</span></a></li>
-							<li><a href="#">Link #2</a></li>
-						</ul>
-						<form class="navbar-form navbar-right" role="search">
-							<div class="form-group">
-								<input type="search" class="form-control" placeholder="Search">
-							</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</form>
-					</div><!-- /.navbar-collapse -->
-				</div>
-			</div>
-
-      <div tabindex="-1" class="container-fluid" id="content" role="application">
-      			<div class="row">
-      				<div class="col-lg-2 sidebar after-double-header" role="sidebar">
-								<h1 class="display3">Filters</h1>
-
-
-      					<h1>Hotlist</h1>
-
-								<h2>Sub Hotlist</h2>
-								<h3>Sub Sub Hotlist</h3>
-								<h4>Locations</h4>
-								<p>x New Mexico</p>
-								<h5>Locations</h5>
-								<h6>Locations</h6>
-
-      					<ul class="list-group" id="hotlist_menu" aria-live="polite"><a class="list-group-item active" href="#" rel="menu-link" data-target="hotlist_all"><span class="badge">24</span>All</a>
-
-                  <a class="list-group-item " href="#" rel="menu-link" data-target="hotlist_pending"><span class="badge">4</span>Pending</a>
-
-                  <a class="list-group-item " href="#" rel="menu-link" data-target="hotlist_in_review"><span class="badge">20</span>In Review</a>
-            </ul>
-
-      					<h4>Hold List</h4>
-      					<ul class="list-group" id="holds_menu" aria-live="polite"><a class="list-group-item " href="#menu?type=holds&amp;list=all" rel="menu-link" data-target="holds_all"><span class="badge">369</span>All</a>
-
-                  <a class="list-group-item " href="#" rel="menu-link" data-target="holds_bill_hold"><span class="badge">262</span>Bill Hold</a>
-
-                  <a class="list-group-item " href="#" rel="menu-link" data-target="holds_document_required"><span class="badge">54</span>Document Required</a>
-
-                  <a class="list-group-item " href="#" rel="menu-link" data-target="holds_intensive"><span class="badge">54</span>Intensive</a>
+      <div role="navigation" class="cbp-header">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="../">
+              <div class="cbp-brand"></div>
+              <div class="dhs-brand"></div>
+            </a>
+            <button data-target="#navbar-user-info" data-toggle="collapse" type="button" class="navbar-toggle">
+            <span class="sr-only">Toggle Global Navigation</span>
+            </button>
+          </div>
+          <div id="navbar-user-info" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                  Navigation and Content<span class="caret"></span> <!-- Your application name goes here!!!-->
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Recent Apps</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Another Application</a></li>
+                  <li><a href="#">Yet Another Application</a></li>
                 </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">
+                  <span class="fa fa-comment"></span>
+                  <span class="hidden-sm">Feedback</span>
+                </a>
+              </li>
+              <li data-toggle="hover" class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                  <span class="fa fa-user"></span>
+                  <span class="hidden-sm" title="FIRST.LAST@CBP.DHS.GOV">First Last Name</span>
+                  <span class="caret"></span>
+                </a>
+                <ul rel="right-menu-links" role="menu" class="dropdown-menu">
+                  <li>
+                    <a title="Preferences" href="#">Preferences</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a title="Logout" href="#">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div role="navigation" class="app-header">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle Application Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="nav navbar-nav">
+              <ul class="nav nav-tabs nav-tabs-light" role="tablist">
+
+                <li class="active" role="presentation">
+                  <a href="http://www.google.com" target="_blank" role="tab" >Active App View Link</a>
+                </li>
+
+                <li class="dropdown" role="presentation">
+                  <a class="pull-left" data-toggle="tab" href="#pane1">View Link w/ View Options Dropdown</a>
+                  <a class="pull-right" data-toggle="dropdown" aria-haspopup="true">
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu pull-right" role="menu" aria-hidden="true" aria-label="submenu">
+                    <li role="presentation">
+                      <a href="#" data-toggle="tab">View Option A</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li role="presentation">
+                      <a href="#" data-toggle="tab">View Option B</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#" data-toggle="tab">View Option C</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li role="presentation">
+                  <a href="#" role="tab" data-toggle="tab">Normal App View Link</a>
+                </li>
+
+                <li class="disabled" role="presentation">
+                  <a role="tab">Disabled App View Link</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="nav navbar-nav navbar-form navbar-right">
+              <form role="search">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="mdl-textfield mdl-js-textfield">
+                      <label for="main-search" class="mdl-textfield__label">Search</label>
+                      <input type="text" id="main-search" class="mdl-textfield__input" />
+                    </div>
+                    <span class="input-group-btn">
+                      <button aria-label="Search" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid content">
+
+				<div class="row">
+          <div class="cbp-sidebar sidebar after-double-header" >
+            <div class="row">
+              <div class="col-md-12 pull-left">
+                <form class="filters">
+                  <div class="filter-list" role="tablist">
+                    <h1 class="filter-heading">Filters <a href="" class="filters-clear">Clear Filters</a></h1>
+                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup8" class="filter-group-title">
+                    Year <i class="fa fa-angle-right pull-right"></i>
+                    </h2>
+                    <div id="filterGroup8" class="collapse in">
+                      <div class="filter-group-content">
+                        <div class="form-group">
+                          <ul class="list-unstyled">
+                            <li><a href="">2014</a></li>
+                            <li><a href="">2013</a></li>
+                            <li><a href="">2012</a></li>
+                            <li><a href="">2011</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup2" class="filter-group-title"> <i class="fa fa-angle-right pull-right"></i>
+                    Mode of Transportation
+                    </h2>
+                    <div id="filterGroup2" class="collapse in">
+                      <div class="filter-group-content">
+                        <div class="form-group">
+                          <div class="checkbox">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                              <input id="conveytype1" checked type="checkbox" class="mdl-checkbox__input">
+                              <span for="conveytype1" class="mdl-checkbox__label">Truck</span>
+                              <span class="text-muted">(13)</span>
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                              <input id="conveytype2" type="checkbox" class="mdl-checkbox__input">
+                              <span for="conveytype2" class="mdl-checkbox__label">Air</span>
+                              <span class="text-muted">(45)</span>
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                              <input id="conveytype3" type="checkbox" class="mdl-checkbox__input">
+                              <span for="conveytype3" class="mdl-checkbox__label">Sea</span>
+                              <span class="text-muted">(18)</span>
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                              <input id="conveytype4" type="checkbox" class="mdl-checkbox__input">
+                              <span for="conveytype4" class="mdl-checkbox__label">Rail</span>
+                              <span class="text-muted">(32)</span>
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                              <input id="conveytype5" type="checkbox" class="mdl-checkbox__input">
+                              <span for="conveytype5" class="mdl-checkbox__label">Fixed</span>
+                              <span class="text-muted">(43)</span>
+                            </label>
+                          </div>
+                        </div>
+                        <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
+                      </div>
+                    </div>
+                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup1" class="filter-group-title">
+                      <i class="fa fa-angle-right pull-right"></i> Date range
+                    </h2>
+                    <div id="filterGroup1" class="collapse in">
+                      <div class="filter-group-content">
+                        <div class="row">
+                          <div class="form-group col-sm-6">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                              <label for="startRange" class="mdl-textfield__label"><i class="fa fa-calendar-o fa-fw"></i>&nbsp;Start</label>
+                              <input type="text" id="startRange" class="datepicker mdl-textfield__input" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " />
+                            </div>
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                              <label for="endRange" class="mdl-textfield__label"><i class="fa fa-calendar-o fa-fw"></i>&nbsp;End</label>
+                              <input type="text" id="endRange" class="datepicker mdl-textfield__input" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup5" class="filter-group-title">
+                    <i class="fa fa-angle-right pull-right"></i> Distance
+                    </h2>
+                    <div id="filterGroup5" class="collapse in">
+                      <div class="filter-group-content">
+                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--full-width">
+                          <select class="mdl-selectfield__select" id="distance">
+                            <option value=""></option>
+                            <option value="5">Within 5 miles</option>
+                            <option value="255">Within 25 miles</option>
+                          </select>
+                          <label class="mdl-selectfield__label" for="distance">Distance</label>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup6" class="filter-group-title">
+                    <i class="fa fa-angle-right pull-right"></i> Name
+                    </h2>
+                    <div id="filterGroup6" class="collapse in">
+                      <div class="filter-group-content">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <label for="serange" class="mdl-textfield__label"><i class="fa fa-search fa-fw"></i>&nbsp;Search</label>
+                          <input type="text" id="serange" class="mdl-textfield__input" />
+                        </div>
+                      </div>
+                    </div>
+                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup3" class="filter-group-title">
+                      Chart Colors <i class="fa fa-angle-right pull-right"></i>
+                    </h2>
+                    <div id="filterGroup3" class="collapse in">
+                      <div class="filter-group-content">
+                        <div class="form-group">
+                          <div style="background-color: #E00000;" class="filter-color"></div>
+                          <div style="background-color: #009CDE;" class="filter-color"></div>
+                          <div style="background-color: #1BAB00;" class="filter-color active"></div>
+                          <div style="background-color: #BB16A3;" class="filter-color"></div>
+                          <div style="background-color: #F3CE37;" class="filter-color"></div>
+                          <div style="background-color: #A7A8AA;" class="filter-color"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup7" class="filter-group-title">
+                      Tags <i class="fa fa-angle-right pull-right"></i>
+                    </h2>
+                    <div id="filterGroup7" class="collapse in">
+                      <div class="filter-group-content">
+                        <div class="form-group">
+                          <ul id="tagsExample" class="list-unstyled">
+                            <li class="tag tag-default">
+                              Assignment <i class="fa fa-close fa-muted" data-dismiss="tag"></i>
+                            </li>
+                            <li class="tag tag-default">
+                              Change of name <i class="fa fa-close fa-muted" data-dismiss="tag"></i>
+                            </li>
+                          </ul>
+                          <div class="input-group">
+                            <div class="mdl-textfield mdl-js-textfield" style="width: 100%;">
+                              <label for="tag" class="mdl-textfield__label"><i class="fa fa-tag fa-fw"></i>&nbsp;Enter Tag</label>
+                              <input type="text" id="tag" class="mdl-textfield__input" />
+                            </div>
+                            <span class="input-group-btn">
+                              <button type="submit" class="btn btn-default tag-example-button" >Add</button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-      </div>
-      <div tabindex="-1" class="container-fluid">
-        <div class="row">
+          <div id="content" class="cbp-sidebar-offset">
+            <h1 class="page-header">Navigation and Content</h1>
+						<p>The navigation and content layout has a column for vertical navigation to the left of the content area, which is useful for when a long list of navigation links is necessary.</p>
+					  <div>
+							<table class="cbp-table mdl-js-data-table">
+						     <thead>
+						       <tr>
+						         <th class="non-numeric">Project name</th>
+						         <th class="non-numeric">Description</th>
+						         <th>Price</th>
+						       </tr>
+						     </thead>
+						     <tbody>
+						       <tr>
+						         <td class="non-numeric">Invoice</td>
+						         <td class="non-numeric">
+						           <span>Add invoice confirmation</span>
+						         </td>
+						         <td>
+						           <span>$4,500</span>
+						         </td>
+						       </tr>
+						       <tr>
+						         <td class="non-numeric">Templates</td>
+						         <td class="non-numeric">
+						           <span>Refactor templates to use the new templating library</span>
+						         </td>
+						         <td>
+						           <span>$9,000</span>
+						         </td>
+						       </tr>
+						       <tr>
+						         <td class="non-numeric">Payments</td>
+						         <td class="non-numeric">
+						           <span>Process payments using third party api</span>
+						         </td>
+						         <td>
+						           <span>$5,400</span>
+						         </td>
+						       </tr>
+						       <tr>
+						         <td class="non-numeric">Account Management</td>
+						         <td class="non-numeric">
+						           <span>Improve account management workflow</span>
+						         </td>
+						         <td>
+						           <span>$6,000</span>
+						         </td>
+						       </tr>
+						     </tbody>
+						   </table>
+						</div>
 
-        <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+        	</div>
+			</div>
 
-        <h1 class="page-header">Dashboard</h1>
+			<footer role="banner" class="cbp-banner"></footer>
 
-        <div class="row placeholders">
-          <div class="col-xs-6 col-sm-3 placeholder">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-            <h4>Label</h4>
-            <span class="text-muted">Something else</span>
-          </div>
-          <div class="col-xs-6 col-sm-3 placeholder">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-            <h4>Label</h4>
-            <span class="text-muted">Something else</span>
-          </div>
-          <div class="col-xs-6 col-sm-3 placeholder">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-            <h4>Label</h4>
-            <span class="text-muted">Something else</span>
-          </div>
-          <div class="col-xs-6 col-sm-3 placeholder">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-            <h4>Label</h4>
-            <span class="text-muted">Something else</span>
-          </div>
-        </div>
-
-        <h2 class="sub-header">Section title</h2>
-        <div class="table-responsive">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
-                <td>sit</td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>amet</td>
-                <td>consectetur</td>
-                <td>adipiscing</td>
-                <td>elit</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>Integer</td>
-                <td>nec</td>
-                <td>odio</td>
-                <td>Praesent</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>libero</td>
-                <td>Sed</td>
-                <td>cursus</td>
-                <td>ante</td>
-              </tr>
-              <tr>
-                <td>1,004</td>
-                <td>dapibus</td>
-                <td>diam</td>
-                <td>Sed</td>
-                <td>nisi</td>
-              </tr>
-              <tr>
-                <td>1,005</td>
-                <td>Nulla</td>
-                <td>quis</td>
-                <td>sem</td>
-                <td>at</td>
-              </tr>
-              <tr>
-                <td>1,006</td>
-                <td>nibh</td>
-                <td>elementum</td>
-                <td>imperdiet</td>
-                <td>Duis</td>
-              </tr>
-              <tr>
-                <td>1,007</td>
-                <td>sagittis</td>
-                <td>ipsum</td>
-                <td>Praesent</td>
-                <td>mauris</td>
-              </tr>
-              <tr>
-                <td>1,008</td>
-                <td>Fusce</td>
-                <td>nec</td>
-                <td>tellus</td>
-                <td>sed</td>
-              </tr>
-              <tr>
-                <td>1,009</td>
-                <td>augue</td>
-                <td>semper</td>
-                <td>porta</td>
-                <td>Mauris</td>
-              </tr>
-              <tr>
-                <td>1,010</td>
-                <td>massa</td>
-                <td>Vestibulum</td>
-                <td>lacinia</td>
-                <td>arcu</td>
-              </tr>
-              <tr>
-                <td>1,011</td>
-                <td>eget</td>
-                <td>nulla</td>
-                <td>Class</td>
-                <td>aptent</td>
-              </tr>
-              <tr>
-                <td>1,012</td>
-                <td>taciti</td>
-                <td>sociosqu</td>
-                <td>ad</td>
-                <td>litora</td>
-              </tr>
-              <tr>
-                <td>1,013</td>
-                <td>torquent</td>
-                <td>per</td>
-                <td>conubia</td>
-                <td>nostra</td>
-              </tr>
-              <tr>
-                <td>1,014</td>
-                <td>per</td>
-                <td>inceptos</td>
-                <td>himenaeos</td>
-                <td>Curabitur</td>
-              </tr>
-              <tr>
-                <td>1,015</td>
-                <td>sodales</td>
-                <td>ligula</td>
-                <td>in</td>
-                <td>libero</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      </div>
-    </div>
-
-
-    </div>
-
-<script src="../../../generated/scripts/vendor.js"></script>
-<script src="../../../generated/scripts/plugins.js"></script>
-
-<!-- <script src="../bower_components/lodash/lodash.min.js"></script>
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
--->
-<script type="text/javascript">
-$('.dropdown-toggle').dropdown();
-</script>
-</body>
+			<script src="../../../generated/scripts/vendor.js"></script>
+      <script src="../../../generated/scripts/main.js"></script></body>
 </html>
