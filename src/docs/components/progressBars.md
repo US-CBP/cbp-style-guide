@@ -1,6 +1,6 @@
 ---
 title: "Progress and Loading"
------------------------------
+---
 
 <div class="pl-pattern">
 ### Progress bars
