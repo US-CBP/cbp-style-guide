@@ -9,7 +9,7 @@ Consistent and anticipated layouts allow users to navigate and understand applic
 
 #### Layout types
 
-![Fixed width layout](layouts/images/layout-fixed.png)
+![Fixed width layout](layouts/images/layout-fluid.png)
 
 ##### Fluid
 
