@@ -20,9 +20,9 @@
   "private": true,
   "devDependencies": {
     "bootstrap": "^3.3.6",
-    "cbp-theme": "^0.3.2",
+    "cbp-theme": "^0.3.6",
     "ejs": "^2.4.2",
-    "font-awesome": "*",
+    "font-awesome": "^4.6.3",
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-banner": "^0.6.0",
