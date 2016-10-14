@@ -15154,7 +15154,7 @@ var t=this.__index__>=this.__values__.length;return{done:t,value:t?F:this.__valu
 }));
 
 /**
- * selectize.js (v0.12.3)
+ * selectize.js (v0.12.4)
  * Copyright (c) 2013–2015 Brian Reavis & contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -15219,7 +15219,7 @@ var t=this.__index__>=this.__values__.length;return{done:t,value:t?F:this.__valu
 	 * removeHighlight fn copied from highlight v5 and
 	 * edited to remove with() and pass js strict mode
 	 */
-	jQuery.fn.removeHighlight = function() {
+	$.fn.removeHighlight = function() {
 		return this.find("span.highlight").each(function() {
 			this.parentNode.firstChild.nodeName;
 			var parent = this.parentNode;
@@ -16285,7 +16285,7 @@ var t=this.__index__>=this.__values__.length;return{done:t,value:t?F:this.__valu
 				self.refreshState();
 	
 				// IE11 bug: element still marked as active
-				dest && dest.focus();
+				dest && dest.focus && dest.focus();
 	
 				self.ignoreFocus = false;
 				self.trigger('blur');
