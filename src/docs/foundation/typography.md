@@ -14,14 +14,16 @@ Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
 
 
 {::nomarkdown}
-<dl>
-    <dt>Roboto</dt>
-    <dd>Google's "modern, yet approachable" font. We include the font as part of the CBP Theme.</dd>
-    <dt>Calibri</dt>
-    <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
-    <dt>Tahoma, Arial</dt>
-    <dd>Ships with most operating systems.</dd>
-</dl>
+
+<h2 style="font-family: Roboto; !important">Roboto</h2>
+<p style="font-family: Roboto; !important">Google's "modern, yet approachable" font. We include the font as part of the CBP Theme.</p>
+
+<h2 style="font-family: Calibri; !important">Calibri</h2>
+<p style="font-family: Calibri; !important">Ships with Windows Vista and newer and Microsoft Office.</p>
+
+<h2 style="font-family: Tahoma; !important">Tahoma</h2>
+<p style="font-family: Tahoma; !important">Ships with most operating systems.</p>
+
 {:/nomarkdown}
 
 &nbsp;
