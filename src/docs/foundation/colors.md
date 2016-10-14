@@ -87,27 +87,27 @@ This Color Combination palette provides examples of 508-approved and illegal tex
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#00416a; color:#00416a;">#00416a</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#00416a</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#008000; color:#008000;">#008000</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#008000</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#1460AA; color:#1460AA;">#1460AA</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#1460AA</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#F09511; color:#F09511;">#F09511</div>
-        <div class="pl-palette-variable"><i class="fa fa-times"></i></div>
+        <div class="pl-palette-variable">illegal</div>
         <div class="pl-palette-value">#F09511</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#A00000; color:#A00000;">#A00000</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#A00000</div>
     </div>
 </div>
@@ -115,27 +115,27 @@ This Color Combination palette provides examples of 508-approved and illegal tex
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#00416a; color:#333333">#333333</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#00416a</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#008000;color:#333333">#333333</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#008000</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#1460AA;color:#333333">#333333</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#1460AA</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#F09511;color:#333333">#333333</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#F09511</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#A00000;color:#333333">#333333</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#A00000</div>
     </div>
 </div>
@@ -144,27 +144,27 @@ This Color Combination palette provides examples of 508-approved and illegal tex
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#00416a; border-style:solid; border-size:1px; border-color:#00416a; color:#FFFFFF;">#FFFFFF</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#00416a</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#008000; border-style:solid; border-size:1px; border-color:#008000; color:#FFFFFF;">#FFFFFF</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#008000</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#1460AA; border-style:solid; border-size:1px; border-color:#1460AA; color:#FFFFFF;">#FFFFFF</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#1460AA</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#F09511; border-style:solid; border-size:1px; border-color:#F09511; color:#FFFFFF;">#FFFFFF</div>
-        <div class="pl-palette-variable"><i class="fa fa-times"></i></div>
+        <div class="pl-palette-variable">illegal</div>
         <div class="pl-palette-value">#F09511</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#A00000; border-style:solid; border-size:1px; border-color:#A00000; color:#FFFFFF;">#FFFFFF</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#A00000</div>
     </div>
 </div>
@@ -173,27 +173,27 @@ This Color Combination palette provides examples of 508-approved and illegal tex
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#00416a; border-style:solid; border-size:1px; border-color:#00416a; color:#95D9FF;">#95D9FF</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#00416a</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#008000; border-style:solid; border-size:1px; border-color:#008000; color:#C1E8B0;">#C1E8B0</div>
-        <div class="pl-palette-variable"><i class="fa fa-times"></i></div>
+        <div class="pl-palette-variable">illegal</div>
         <div class="pl-palette-value">#008000</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#1460AA; border-style:solid; border-size:1px; border-color:#1460AA; color:#95D9FF;">#95D9FF</div>
-        <div class="pl-palette-variable"><i class="fa fa-times"></i></div>
+        <div class="pl-palette-variable">illegal</div>
         <div class="pl-palette-value">#1460AA</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#F09511; border-style:solid; border-size:1px; border-color:#F09511; color:#F3E69C;">#F3E69C</div>
-        <div class="pl-palette-variable"><i class="fa fa-times"></i></div>
+        <div class="pl-palette-variable">illegal</div>
         <div class="pl-palette-value">#F09511</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#A00000; border-style:solid; border-size:1px; border-color:#A00000; color:#FAB2AA;">#FAB2AA</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#A00000</div>
     </div>
 </div>
@@ -217,7 +217,7 @@ This Color Combination palette provides examples of 508-approved and illegal tex
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#F09511; border-style:solid; border-size:1px; border-color:#F09511; color:#333333;">#333333</div>
-        <div class="pl-palette-variable"><i class="fa fa-check"></i></div>
+        <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#F09511</div>
     </div>
     <div class="pl-palette-color">
