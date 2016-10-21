@@ -6,9 +6,9 @@ title: "Buttons"
 
 <h3>Buttons</h3>
 
-Buttons are used as triggers for actions. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.
+Buttons are used as action triggers. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.
 
-All button labels are sentence case. They should be as short as possible while clearly explaining what will happen when the button is clicked.
+All button labels are sentence case. Labels should be as short as possible while clearly explaining what will happen when the button is clicked.
 
 &nbsp;
 
@@ -16,7 +16,7 @@ All button labels are sentence case. They should be as short as possible while c
 
 <div class="pl-pattern">
 
-### Button styles
+### Button Styles
 
 There are 6 button styles:
 
@@ -27,11 +27,11 @@ There are 6 button styles:
 - __Warning__, indicates an action that may have some side effects, such as giving a user admin access.
 - __Link__, used for non-critical actions. Useful for keeping the interface simple.
 
-All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route. 
+All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route.
 
 {::nomarkdown}
 <div class="pl-preview">
-    <button type="button" class="btn btn-default">Default</button> 
+    <button type="button" class="btn btn-default">Default</button>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-success">Success</button>
@@ -81,14 +81,14 @@ All buttons are prefixed with the `btn` class. The `btn` class can be applied to
 
 <div class="pl-pattern">
 
-### Button sizes
+### Button Sizes
 
 There are 4 different button sizes:
 
-- __Large__, use the `btn-lg` class.
-- __Normal__, no extra classes necessary.
-- __Small__, use the `btn-sm` class.
-- __Extra small__, use the `btn-xs` class. 
+- __Large -__ use the `btn-lg` class
+- __Normal -__ no extra classes necessary
+- __Small -__ use the `btn-sm` class
+- __Extra small -__ use the `btn-xs` class
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -106,7 +106,7 @@ There are 4 different button sizes:
 <button type="button" class="btn btn-xs btn-default">Button</button>
 {% endhighlight %}
 
-#### Block level buttons
+#### Block Level Buttons
 Use the `btn-block` class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.
 
 {::nomarkdown}
@@ -126,7 +126,7 @@ Use the `btn-block` class for buttons that fill the width of their container. Th
 
 <div class="pl-pattern">
 
-### Button groups
+### Button Groups
 
 Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the `btn-group-lg`, `btn-group-sm`, and `btn-group-xs` classes.
 
@@ -152,15 +152,15 @@ Related buttons can be grouped together to show associations and improve clarity
 
 <div class="pl-pattern">
 
-### Toggle buttons
+### Toggle Buttons
 
 Similar to a checkbox, toggle buttons can be toggled between active or not active.
 
-Add the `active` class and the `aria-pressed="true"` attribute to a button.
+Add the `active` class and the `aria-pressed="true"` attribute to a button to visually hold a depressed state.
 
 {::nomarkdown}
 <div class="pl-preview">
-    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button> 
+    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
     <button type="button" class="btn btn-default">Normal</button>
     <div class="btn-group">
         <button type="button" class="btn btn-default">Left</button>
@@ -172,7 +172,7 @@ Add the `active` class and the `aria-pressed="true"` attribute to a button.
 
 {% highlight html %}
 <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
-<button type="button" class="btn btn-default">Normal</button> 
+<button type="button" class="btn btn-default">Normal</button>
 <div class="btn-group">
     <button type="button" class="btn btn-default">Left</button>
     <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
@@ -184,7 +184,7 @@ Add the `active` class and the `aria-pressed="true"` attribute to a button.
 
 <div class="pl-pattern">
 
-### Dropdown buttons
+### Dropdown Buttons
 Dropdown buttons can provide a menu or popover when clicked.
 
 {::nomarkdown}
@@ -221,7 +221,7 @@ Dropdown buttons can provide a menu or popover when clicked.
 
 <div class="pl-pattern">
 
-### Split buttons
+### Split Buttons
 
 Split buttons contain both a button and a dropdown. Clicking the button performs the action. Clicking the dropdown reveals other actions. Generally, the button is the primary or most common action, and items in the dropdown are secondary or less common actions.
 
@@ -278,13 +278,13 @@ Split buttons contain both a button and a dropdown. Clicking the button performs
 
 <div class="pl-pattern">
 
-### Icon buttons
+### Icon Buttons
 
 Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.
 
-Use `btn-icon-only` for buttons with only an icon in it. This optimizes the padding. 
+Use `btn-icon-only` for buttons with only an icon in it. This optimizes the padding.
 
-For an icon without chrome, use a `btn-hover`.
+For an icon without a border, use a `btn-hover`.
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -335,5 +335,3 @@ For an icon without chrome, use a `btn-hover`.
 {% endhighlight %}
 
 </div>
-
-
