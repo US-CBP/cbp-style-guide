@@ -11,7 +11,7 @@ Users need to see only relevant content.
 #### Description
 Accordions provide users with the ability to expand and collapse content as needed. Accordions can simplify the interface by hiding content until it is needed.
 
-#### Expand/collapse behaviors
+#### Expand/Collapse Behaviors
 
 Accordions can operate as either single-select or multi-select.
 
