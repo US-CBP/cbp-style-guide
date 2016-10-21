@@ -27,86 +27,86 @@ __Types:__
 {::nomarkdown}
 <div class="pl-preview">
     <div style="max-width: 450px;">
-        <div class="alert alert-info">
+        <div class="alert alert-info" role="alert">
           <button type="button" class="close">
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <i class="alert-icon-info alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
+          <i class="fa fa-info-circle" aria-hidden="true"></i> Press the <strong>'A'</strong> key to automatically assign a case.
         </div>
-        <div class="alert alert-success">
+        <div class="alert alert-success" role="alert">
           <button type="button" class="close">
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
           <button class="btn btn-sm btn-link alert-link pull-right">Undo</button>
-          <i class="alert-icon-success alert-icon"></i> Case assigned to <strong>Jerry</strong> .
+          <i class="fa fa-check" aria-hidden="true"></i> Case assigned to <strong>Jerry</strong> .
         </div>
-        <div class="alert alert-success">
+        <div class="alert alert-success" role="alert">
           <button type="button" class="close">
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <i class="alert-icon-success alert-icon"></i> Case assigned to
+          <i class="fa fa-check" aria-hidden="true"></i> Case assigned to
           <strong>Jerry</strong> .
         </div>
-        <div class="alert alert-warning">
+        <div class="alert alert-warning" role="alert">
           <button type="button" class="close">
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <i class="alert-icon-warning alert-icon"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
         </div>
-        <div class="alert alert-danger">
+        <div class="alert alert-danger" role="alert">
           <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
-          <i class="alert-icon-danger alert-icon"></i> There was a network error assigning case
+          <i class="fa fa-times-circle" aria-hidden="true"></i> There was a network error assigning case
           <strong>90/934,382</strong> .
         </div>
-        <div class="alert alert-danger">
-          <i class="alert-icon-danger alert-icon"></i> Please fix the 3 errors.
+        <div class="alert alert-danger" role="alert">
+          <i class="fa fa-times-circle" aria-hidden="true"></i> Please fix the 3 errors.
         </div>
     </div>
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
-<div class="alert alert-info">
+<div class="alert alert-info" role="alert">
   <button type="button" class="close">
   <span aria-hidden="true">&times;</span>
   <span class="sr-only">Close</span>
   </button>
-  <i class="alert-icon-info alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
+  <i class="fa fa-info-circle" aria-hidden="true"></i> Press the <strong>'A'</strong> key to automatically assign a case.
 </div>
-<div class="alert alert-success">
+<div class="alert alert-success" role="alert">
   <button type="button" class="close">
   <span aria-hidden="true">&times;</span>
   <span class="sr-only">Close</span>
   </button>
   <button class="btn btn-sm btn-link alert-link pull-right">Undo</button>
-  <i class="alert-icon-success alert-icon"></i> Case assigned to <strong>Jerry</strong> .
+  <i class="fa fa-check" aria-hidden="true"></i> Case assigned to <strong>Jerry</strong> .
 </div>
-<div class="alert alert-success">
+<div class="alert alert-success" role="alert">
   <button type="button" class="close">
   <span aria-hidden="true">&times;</span>
   <span class="sr-only">Close</span>
   </button>
-  <i class="alert-icon-success alert-icon"></i> Case assigned to
+  <i class="fa fa-check" aria-hidden="true"></i> Case assigned to
   <strong>Jerry</strong> .
 </div>
-<div class="alert alert-warning">
+<div class="alert alert-warning" role="alert">
   <button type="button" class="close">
   <span aria-hidden="true">&times;</span>
   <span class="sr-only">Close</span>
   </button>
-  <i class="alert-icon-warning alert-icon"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
 </div>
-<div class="alert alert-danger">
+<div class="alert alert-danger" role="alert">
   <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
-  <i class="alert-icon-danger alert-icon"></i> There was a network error assigning case
+  <i class="fa fa-times-circle" aria-hidden="true"></i> There was a network error assigning case
   <strong>90/934,382</strong> .
 </div>
-<div class="alert alert-danger">
-  <i class="alert-icon-danger alert-icon"></i> Please fix the 3 errors.
+<div class="alert alert-danger" role="alert">
+  <i class="fa fa-times-circle" aria-hidden="true"></i> Please fix the 3 errors.
 </div>
 
 {% endhighlight %}
