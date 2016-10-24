@@ -14,7 +14,7 @@ notifications:
   slack:
     secure: n0KSSChpOGhLOm40BV2dbUr7XoITStPVgDL/eOsvAGA13Nj17tSjbAGmTFjHwaT/yYjfOX4osiZeQ6g0PKuoEpiMq2myod9c8EV5Xobb7eCw+x1yJ5d2F6tqx/kjcsmnLXfUIIL7pTOVtBc1QzkZmWWZWZGBNHrSJ9IPECsfc8QJ3ChQ0+XU5hnfj7BmKkHYiKNarEJLGH/DCK9kr5VzRhynI+itEpCCzgk5FQcMH7RQyItHGVHnS1BuHc9fhyMKJ2BBAJQr6qC024Yvm/BLCn//ICz4yExsoA4HsdjlIvUtum51q//kmiPyTf1a7IjIMV2YTAxEoGqwJOrsT94zBKRdPSDiTrLuwsZM4VNHiOHtl+A7v6Dw3sAlguzRZQFJNXV0SWfqhsDgvGgBjfQ6MNTIFKbgih0m/x2AQNwsGGCU0YIk8OAfIO+/0X6sjouXRIvtXGGFoDoqXCnGnb6kujzpE9xRZttTUcWz7vYCYtEWg1G98xdGjcifEhKgbtjiYii5QtSK/8nlbX4PVV2O2S0ZxatwavCstZL0iBlajif3OAx3HW0gtoa9GJ0zgfrZS69RDbHbrsTxgge057WMx0l63tn1sgAGGCFf4vHQSdsn7IhVD8H89qAMFoNCXmZ9yCf7MeuWJsMNZ6hv1bw93ZTiDeQT3A3kn7Cwhl8dv5c=
     template:
-      - TEST: %{repository}#%{build_number} (%{branch} - %{commit} - %{} : %{author}): %{message}
+      - TEST "%{repository}#%{build_number} (%{branch} - %{commit} - %{} : %{author}): %{message}"
 env:
   global:
     secure: XHBPK50qxUCifE7QoFFN6gmlCdCdSDyNsf4tVsksZU3Ne7NOVBLymMfG1T9STDANDpk6dV+wO1gkSYQTyxL85m4WGK9QT/buK1R3sYji7NeJwhJKjZ9KIbOItlaqj3G1aX1IRcA6Aa0x0gHUtPqGSXQgCw59sX/zoT/mzHlOqK9ov9/4IQiWgkqGkrzTaTiOkDT3GvhzvGAF5IiMyH1M+e77F6QwCQu1GDpwQMmEk5KtH8mZDCChhjAbo8nhDRVC3jHBcpzLmQZk5cmYBLMq5xbjeI/MfDzsy55DdjJd64p8n5pJrewsmut4Zd96IVQNJEpUrxMfJJ48JNQTFlWUMMM2hok0iczi81YL7hiVc9zLw7uy5JtNmRvJFMW0T2jtSLX838URXAnVzHUXfnUhCpLII61rTTo0UQM7WWPMzZFYn9F7eorUbd4CIO3qz5WN8UkuMRo6pGeog6EyMxGBngU31IbgJIrjrAfE91w8bjM3u3Cz95GDlSMTJfIMkin4KcGKFrKoDu5vGJbglhjs9ZesdJNUF6YQwsbR8t9j4OeLZvTvJ7lbIYkhu95NivleXF1hxzibJAI3QANOTDOehVPcMHQkdMyJsd9KLxDSHL9e+aw0m0fd4dWfG9/N0arinkWpW/x7aEpdZWmi4SsxR+VJ41JqZNC9LOTZa3cQCJY=
