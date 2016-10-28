@@ -40,7 +40,7 @@ __Types:__
           <span class="sr-only">Close</span>
           </button>
           <button class="btn btn-sm btn-link alert-link pull-right">Undo</button>
-          <i class="fa fa-check" aria-hidden="true"></i> Case assigned to <strong>Jerry</strong> .
+          <i class="fa fa-check" aria-hidden="true"></i> Case assigned to <strong>Jerry</strong>
         </div>
         <div class="alert alert-success" role="alert">
           <button type="button" class="close">
@@ -48,22 +48,22 @@ __Types:__
           <span class="sr-only">Close</span>
           </button>
           <i class="fa fa-check" aria-hidden="true"></i> Case assigned to
-          <strong>Jerry</strong> .
+          <strong>Jerry</strong>
         </div>
         <div class="alert alert-warning" role="alert">
           <button type="button" class="close">
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>
         </div>
         <div class="alert alert-danger" role="alert">
           <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
           <i class="fa fa-times-circle" aria-hidden="true"></i> There was a network error assigning case
-          <strong>90/934,382</strong> .
+          <strong>90/934,382</strong>
         </div>
         <div class="alert alert-danger" role="alert">
-          <i class="fa fa-times-circle" aria-hidden="true"></i> Please fix the 3 errors.
+          <i class="fa fa-times-circle" aria-hidden="true"></i> Please fix the 3 errors
         </div>
     </div>
 </div>
@@ -83,7 +83,7 @@ __Types:__
   <span class="sr-only">Close</span>
   </button>
   <button class="btn btn-sm btn-link alert-link pull-right">Undo</button>
-  <i class="fa fa-check" aria-hidden="true"></i> Case assigned to <strong>Jerry</strong> .
+  <i class="fa fa-check" aria-hidden="true"></i> Case assigned to <strong>Jerry</strong>
 </div>
 <div class="alert alert-success" role="alert">
   <button type="button" class="close">
@@ -91,22 +91,22 @@ __Types:__
   <span class="sr-only">Close</span>
   </button>
   <i class="fa fa-check" aria-hidden="true"></i> Case assigned to
-  <strong>Jerry</strong> .
+  <strong>Jerry</strong>
 </div>
 <div class="alert alert-warning" role="alert">
   <button type="button" class="close">
   <span aria-hidden="true">&times;</span>
   <span class="sr-only">Close</span>
   </button>
-  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>
 </div>
 <div class="alert alert-danger" role="alert">
   <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
   <i class="fa fa-times-circle" aria-hidden="true"></i> There was a network error assigning case
-  <strong>90/934,382</strong> .
+  <strong>90/934,382</strong>
 </div>
 <div class="alert alert-danger" role="alert">
-  <i class="fa fa-times-circle" aria-hidden="true"></i> Please fix the 3 errors.
+  <i class="fa fa-times-circle" aria-hidden="true"></i> Please fix the 3 errors
 </div>
 
 {% endhighlight %}
@@ -142,7 +142,7 @@ __Types:__
           <button class="close" data-dismiss="modal" aria-label="Close">
           <span>&times;</span>
           </button>
-          <span>Message sent to Jerry.</span>
+          <span>Message sent to Jerry</span>
         </div>
       </div>
       <div class="toast toast-info">
@@ -150,7 +150,7 @@ __Types:__
           <button class="close" data-dismiss="modal" aria-label="Close">
           <span>&times;</span>
           </button>
-          <span>Jerry added a comment to one of your cases (90/098,881).</span>
+          <span>Jerry added a comment to one of your cases (90/098,881)</span>
         </div>
         <div class="toast-actions">
           <button type="button" class="btn btn-link">View comment</button>
@@ -161,7 +161,7 @@ __Types:__
           <button type="button" class="close"  data-dismiss="modal" aria-label="Close">
           <span>&times;</span>
           </button>
-          <span>Case 90/842,381 is due tomorrow.</span>
+          <span>Case 90/842,381 is due tomorrow</span>
         </div>
         <div class="toast-actions">
           <button type="button" class="btn btn-link">View case</button>
@@ -194,7 +194,7 @@ __Types:__
           <button class="close"  data-dismiss="modal" aria-label="Close">
           <span>&times;</span>
           </button>
-          <span>Message sent to Jerry.</span>
+          <span>Message sent to Jerry</span>
         </div>
       </div>
       <div class="toast toast-info">
@@ -202,7 +202,7 @@ __Types:__
           <button class="close">
           <span>&times;</span>
           </button>
-          <span>Jerry added a comment to one of your cases (90/098,881).</span>
+          <span>Jerry added a comment to one of your cases (90/098,881)</span>
         </div>
         <div class="toast-actions">
           <button type="button" class="btn btn-link">View comment</button>
@@ -213,7 +213,7 @@ __Types:__
           <button type="button" class="close"  data-dismiss="modal" aria-label="Close">
           <span>&times;</span>
           </button>
-          <span>Case 90/842,381 is due tomorrow.</span>
+          <span>Case 90/842,381 is due tomorrow</span>
         </div>
         <div class="toast-actions">
           <button type="button" class="btn btn-link">View case</button>
@@ -246,7 +246,7 @@ __Types:__
             <button type="button" class="close">
                 <span>&times;</span>
             </button>
-            <span>Case 90/842,381 is due tomorrow.</span>
+            <span>Case 90/842,381 is due tomorrow</span>
         </div>
         <div class="toast-actions">
             <button type="button" class="btn btn-link">View case</button>
