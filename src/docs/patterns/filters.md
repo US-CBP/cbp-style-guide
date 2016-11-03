@@ -14,7 +14,7 @@ Filters provide a set of controls to reduce items in a collection based on attri
 
 Filters can provide the following functionality:
 
-- A list of interesting attributes common to items in a collection, and 
+- A list of interesting attributes common to items in a collection, and
 possible values to filter by
 - An indication of the currently applied filters
 - A way to clear the currently applied filters
@@ -393,7 +393,7 @@ Filters can be collapsed to a single dropdown if:
 
 #### With side navigation
 
-For many or complex filters, you may want to organize them with a menu along the side. 
+For many or complex filters, you may want to organize them with a menu along the side.
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -713,3 +713,274 @@ Predefined filters are presented as pill tabs. Predefined filters are either pro
 {% endhighlight %}
 </div>
 
+<div class="pl-pattern">
+
+### Horizontal filters
+
+Filters can be listed horizontally if:
+
+- You have less than 5 filters
+- You have plenty of horizontal space above your collection
+
+When showing the currently applied filters, consider collapsing values to preserve space. E.g., instead of listing 4 different colors, collapse it into '4 colors'.
+
+If you allow multi-selection in filters, the currently applied filters can be listed below each dropdown:
+
+{::nomarkdown}
+<div class="pl-preview">
+<div class="container-fluid" style="margin-top: 8px;">
+    <form class="filters filters-horizontal">
+        <div style="display: inline-block; vertical-align: top;">
+            <button class="btn btn-link">
+                Date range <span class="caret"></span>
+            </button>
+            <ul class="list-unstyled">
+                <li class="filter-value tag tag-default subtle">
+                4/01/2014 - 5/01/2014
+                <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                </li>
+            </ul>
+        </div>
+        <div style="display: inline-block; vertical-align: top;">
+            <button class="btn btn-link">
+                Conveyance type <span class="caret"></span>
+            </button>
+            <ul class="list-unstyled">
+                <li class="filter-value tag tag-default subtle">
+                  Truck
+                  <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                </li>
+                <li class="filter-value tag tag-default subtle">
+                  Sea
+                  <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                </li>
+            </ul>
+        </div>
+        <div style="display: inline-block; vertical-align: top;">
+            <button class="btn btn-link">
+                Color <span class="caret"></span>
+            </button>
+            <ul class="list-unstyled">
+                <li class="filter-value tag tag-default subtle">
+                  4 colors
+                  <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-link">
+            Clear
+        </button>
+   </form>
+</div>
+</div>
+{:/nomarkdown}
+
+&nbsp;
+
+If you allow single-selection for each filter, the currently applied filter can replace the label for the dropdown:
+
+{::nomarkdown}
+<div class="pl-preview">
+<div class="container-fluid" style="margin-top: 8px;">
+    <form class="filters filters-horizontal">
+        <button class="btn btn-link">
+            4/01/2014 - 5/01/2014 <span class="caret"></span>
+        </button>
+        <button class="btn btn-link">
+            Conveyance type <span class="caret"></span>
+        </button>
+        <button class="btn btn-link">
+            Color <span class="caret"></span>
+        </button>
+        <button class="btn btn-link">
+            Clear
+        </button>
+   </form>
+</div>
+</div>
+{:/nomarkdown}
+
+</div>
+
+<div class="pl-pattern">
+
+### Collapsed filters
+
+Filters can be collapsed to a single dropdown if:
+
+- Screen real estate is limited due to constrained or dense layouts
+- Filtering is not a primary interaction, where collapsing and tucking away the filtering functionality is acceptable
+
+#### With side navigation
+
+For many or complex filters, you may want to organize them with a menu along the side.
+
+{::nomarkdown}
+<div class="pl-preview">
+    <div class="dropdown">
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">3</span>Filters <span class="caret"></span></button>
+        <div class="dropdown-menu" role="menu" style="padding: 0; width: 500px;">
+            <form class="clearfix" role="form">
+                <div class="keyline-right" style="width: 200px; min-height: 300px; float: left;">
+                    <ul class="nav nav-stacked" role="tab-list" style="margin-top: 10px">
+                        <li role="presentation" class="active"><a role="tab" data-toggle="tab" href="#">Applied filters <span class="badge pull-right">3</span></a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Year</a></li>
+                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Conveyance type <span class="badge pull-right">2</span></a></li>
+                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Date range</a></li>
+                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Distance</a></li>
+                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Name <span class="badge pull-right">1</span></a></li>
+                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Colors</a></li>
+                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Tags</a></li>
+                    </ul>
+                </div>
+                <div style="margin-left: 200px; max-height: 300px; overflow: auto;">
+                    <div style="opacity: 1; display: inline-block; width: 100%;">
+                        <div class="modal-body">
+                            <a href="" class="pull-right">Clear all</a>
+                            <div class="form-group">
+                                <label class="control-label">Conveyance type </label>
+                                <div class="">
+                                    <ul class="list-unstyled">
+                                      <li class="tag tag-default subtle">
+                                        Truck
+                                        <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                                      </li>
+                                      <li class="tag tag-default subtle">
+                                        Air
+                                        <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                                      </li>
+                                        <li class="tag tag-default subtle">
+                                          Sea
+                                          <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Name</label>
+                                <div class="">
+                                    <ul class="list-unstyled">
+                                    <li class="tag tag-default subtle">
+                                      John
+                                      <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{:/nomarkdown}
+
+#### Flat
+
+For simple filters, they can be presented as a standard form.
+
+{::nomarkdown}
+<div class="pl-preview">
+    <div class="dropdown">
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">2</span>Filters <span class="caret"></span></button>
+        <div class="dropdown-menu" role="menu">
+            <!-- <form class="clearfix" role="form">
+                <div style="max-height: 300px; overflow: auto;">
+                    <div style="opacity: 1; display: inline-block; width: 100%;">
+                        <div class="modal-body">
+                            <a href="" class="pull-right" style="margin-bottom: 8px;">Clear all</a>
+                            <div class="form-horizontal" style="clear: both;">
+                                <div class="form-group">
+                                    <label for="im1" class="col-sm-4 control-label">Name contains</label>
+                                    <div class="col-sm-8">
+                                      <input type="text" class="form-control" id="im1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="n12" class="col-sm-4 control-label">Year</label>
+                                    <div class="col-sm-8">
+                                        <select name="" id="n12" class="form-control select2">
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="n13" class="col-sm-4 control-label">Assignee</label>
+                                    <div class="col-sm-8">
+                                        <select name="" id="n13" class="form-control select2">
+                                            <option value="A">JOHN SMITH ET AL</option>
+                                            <option value="B">JANE LLC</option>
+                                            <option value="C">JOHNSON CO</option>
+                                            <option value="D">INITECH</option>
+                                        </select>
+                                    </div>
+                                    <form role="form" class="col-sm-4">
+                                      <div class=" col-sm-8 mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+                                          <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
+                                          <option value=""></option>
+                                          <option value="A">Option A</option>
+                                          <option value="B">Option B</option>
+                                          <option value="C">Option C</option>
+                                          </select>
+                                          <label for="se17" class="mdl-selectfield__label">With floating label</label>
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form> -->
+            <!-- start modal -->
+            <div style="max-height: 300px; overflow: auto;">
+                <div style="opacity: 1; display: inline-block; width: 100%;">
+
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-body">
+                        <a href="#" class="pull-right">Clear all</a>
+                        <div class="form-group">
+
+                            <form role="form" class="form">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
+                                <label for="tb12" class="mdl-textfield__label">Name Contains</label>
+                                <input type="text" class="mdl-textfield__input" id="tb12" value="John">
+
+                              </div>
+                              <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+                                  <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
+                                  <option value=""></option>
+                                  <option value="2016">2016</option>
+                                  <option value="2015">2015</option>
+                                  <option value="2014">2014</option>
+                                  </select>
+                                  <label for="se17" class="mdl-selectfield__label">Year</label>
+                              </div>
+                              <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+                                  <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
+                                  <option value=""></option>
+                                  <option value="A">Option A</option>
+                                  <option value="B">Option B</option>
+                                  <option value="C">Option C</option>
+                                  </select>
+                                  <label for="se17" class="mdl-selectfield__label">With floating label</label>
+                              </div>    
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+        </div>
+    </div>
+</div>
+{:/nomarkdown}
+
+</div>

@@ -6,6 +6,13 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>Alpha - 11/3/2016</h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Added Horizonal and Collapsed Filter Examples</li>
+        </ul>
+    </div>
+    <div class="pl-panel">
         <h4>Alpha - 08/1/2016</h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
