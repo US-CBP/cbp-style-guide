@@ -563,7 +563,7 @@ hr.hr-strong {
 .pl-sidebar {
   float: left;
   overflow: auto;
-  top: 70px;
+  top: 50px;
   background: #282930;
   bottom: 0;
   margin: 0;
@@ -579,6 +579,7 @@ hr.hr-strong {
 }
 .pl-sidebar .nav.nav-stacked > li > a {
   color: #fff;
+  padding-left: 30px;
 }
 .pl-sidebar .nav.nav-stacked > li > a:hover,
 .pl-sidebar .nav.nav-stacked > li > a:focus {
@@ -593,11 +594,11 @@ hr.hr-strong {
   background: #222329;
 }
 .pl-sidebar .nav.nav-stacked > li > ul > li > a {
-  padding-left: 30px;
+  padding-left: 40px;
 }
 .pl-sidebar .nav.nav-stacked > li > ul > li > a {
   background: #222329;
-  color: #ccc;
+  color: #eeeeee;
   border-left-color: transparent;
   font-size: 13px;
   overflow: hidden;
@@ -620,7 +621,7 @@ hr.hr-strong {
 }
 .pl-sidebar .nav.nav-stacked > .category {
   font-weight: 600;
-  color: #AAB0B2;
+  color: #eeeeee;
   margin: 18px 0 5px 10px;
 }
 .pl-sidebar .nav.nav-stacked > li > a > .fa {
