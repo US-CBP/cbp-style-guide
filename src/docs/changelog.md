@@ -6,6 +6,14 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>Alpha - 11/4/2016</h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Added Vertical Setps Wizard Example</li>
+        </ul>
+    </div>
+
+    <div class="pl-panel">
         <h4>Alpha - 11/3/2016</h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
