@@ -6,10 +6,22 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>Alpha - 11/29/2016</h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Updated to use CBP Theme v1.0.0</li>
+        </ul>
+        <ul>
+            <li>Updated example of Accordions for accessibility</li>
+        </ul>
+
+    </div>
+
+    <div class="pl-panel">
         <h4>Alpha - 11/4/2016</h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
-            <li>Added Vertical Setps Wizard Example</li>
+            <li>Added Vertical Steps Wizard Example</li>
         </ul>
     </div>
 

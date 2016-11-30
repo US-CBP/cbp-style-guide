@@ -19,8 +19,7 @@
   },
   "private": true,
   "devDependencies": {
-    "bootstrap": "^3.3.6",
-    "cbp-theme": "0.4.0",
+    "cbp-theme": "1.0.0",
     "ejs": "^2.4.2",
     "font-awesome": "^4.6.3",
     "grunt": "^1.0.1",
@@ -47,6 +46,7 @@
     "grunt-usemin": "^3.1.0",
     "grunt-zip": "^0.17.0",
     "highlight.js": "^9.4.0",
+    "jquery": "^3.1.1",
     "jquery-ui": "^1.10.5",
     "jquery.inputmask": "~3.1.26",
     "jshint-stylish": "^2.2.0",
@@ -68,7 +68,6 @@
     "version": "npm run build && git add -A .",
     "postversion": "git push && git push --tags"
   },
-  "dependencies": {},
   "keywords": [
     "CBP",
     "UI",

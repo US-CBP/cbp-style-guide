@@ -31,12 +31,12 @@ The standard style provides more distinction between the panel and internal/surr
 
 {::nomarkdown}
 <div class="pl-preview">
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group" id="accordion" role="tablist">
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="collapseOne">
+    <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
-        <i class="fa fa-angle-right fa-fw"></i>
-          Goods/Services
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-angle-right fa-fw"></i>
+        Goods/Services</a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -48,10 +48,10 @@ The standard style provides more distinction between the panel and internal/surr
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" data-toggle="collapse" aria-controls="collapseTwo">
+    <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Mark info
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-angle-right fa-fw"></i>
+      Mark info</a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -63,24 +63,24 @@ The standard style provides more distinction between the panel and internal/surr
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" data-toggle="collapse" aria-controls="collapseThree">
+    <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Owner/Assignment
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-angle-right fa-fw"></i>
+        Owner/Assignment</a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>Project name</th>
-            <th>Description</th>
-            <th>Price</th>
+            <th scope="col">Project name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Invoice</td>
+            <td scope="row">Invoice</td>
             <td>
               <span>Add invoice confirmation</span>
             </td>
@@ -89,7 +89,7 @@ The standard style provides more distinction between the panel and internal/surr
             </td>
           </tr>
           <tr>
-            <td>Templates</td>
+            <td scope="row">Templates</td>
             <td>
               <span>Refactor templates to use the new templating library</span>
             </td>
@@ -98,7 +98,7 @@ The standard style provides more distinction between the panel and internal/surr
             </td>
           </tr>
           <tr>
-            <td>Payments</td>
+            <td scope="row">Payments</td>
             <td>
               <span>Process payments using third party api</span>
             </td>
@@ -107,7 +107,7 @@ The standard style provides more distinction between the panel and internal/surr
             </td>
           </tr>
           <tr>
-            <td>Account Management</td>
+            <td scope="row">Account Management</td>
             <td>
               <span>Improve account management workflow</span>
             </td>
@@ -126,12 +126,12 @@ The standard style provides more distinction between the panel and internal/surr
 
 {% highlight html %}
 // Accordion
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group" id="accordion" role="tablist">
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="collapseOne">
+    <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Goods/Services
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-angle-right fa-fw"></i>
+        Goods/Services</a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -143,10 +143,10 @@ The standard style provides more distinction between the panel and internal/surr
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" data-toggle="collapse" aria-controls="collapseTwo">
+    <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Mark info
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-angle-right fa-fw"></i>
+      Mark info</a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -158,24 +158,24 @@ The standard style provides more distinction between the panel and internal/surr
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" data-toggle="collapse" aria-controls="collapseThree">
+    <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Owner/Assignment
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-angle-right fa-fw"></i>
+        Owner/Assignment</a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>Project name</th>
-            <th>Description</th>
-            <th>Price</th>
+            <th scope="col">Project name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Invoice</td>
+            <td scope="row">Invoice</td>
             <td>
               <span>Add invoice confirmation</span>
             </td>
@@ -184,7 +184,7 @@ The standard style provides more distinction between the panel and internal/surr
             </td>
           </tr>
           <tr>
-            <td>Templates</td>
+            <td scope="row">Templates</td>
             <td>
               <span>Refactor templates to use the new templating library</span>
             </td>
@@ -193,7 +193,7 @@ The standard style provides more distinction between the panel and internal/surr
             </td>
           </tr>
           <tr>
-            <td>Payments</td>
+            <td scope="row">Payments</td>
             <td>
               <span>Process payments using third party api</span>
             </td>
@@ -202,7 +202,7 @@ The standard style provides more distinction between the panel and internal/surr
             </td>
           </tr>
           <tr>
-            <td>Account Management</td>
+            <td scope="row">Account Management</td>
             <td>
               <span>Improve account management workflow</span>
             </td>
@@ -224,107 +224,106 @@ For simple content or layouts, the light style may work better.
 
 {::nomarkdown}
 <div class="pl-preview">
-<div class="panel-group" id="2accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel">
-    <div class="panel-heading" role="tab" id="2headingOne" data-parent="#2accordion" data-target="#2collapseOne" aria-expanded="false" data-toggle="collapse" aria-controls="2collapseOne">
-      <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Goods/Services
-      </h4>
-    </div>
-    <div id="2collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingOne">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel">
-    <div class="panel-heading" role="tab" id="2headingTwo" data-parent="#2accordion" data-target="#2collapseTwo" aria-expanded="true" data-toggle="collapse" aria-controls="2collapseTwo">
-      <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Mark info
-      </h4>
-    </div>
-    <div id="2collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2headingTwo">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel">
-    <div class="panel-heading" role="tab" id="2headingThree" data-parent="#2accordion" data-target="#2collapseThree" aria-expanded="false" data-toggle="collapse" aria-controls="2collapseThree">
-      <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Owner/Assignment
-      </h4>
-    </div>
-    <div id="2collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingThree">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Project name</th>
-            <th>Description</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Invoice</td>
-            <td>
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <td>Templates</td>
-            <td>
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <td>Payments</td>
-            <td>
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <td>Account Management</td>
-            <td>
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
+<div class="panel-group" id="2accordion" role="tablist">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="2headingOne">
+                        <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#2accordion" href="#2collapseOne" aria-expanded="true" aria-controls="2collapseOne"><i class="fa fa-angle-right fa-fw"></i>
+                        Goods/Services</a>
+                        </h4>
+                      </div>
+                      <div id="2collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingOne">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                          on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                          farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="2headingTwo">
+                        <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#2accordion" href="#2collapseTwo" aria-expanded="false" aria-controls="2collapseTwo"><i class="fa fa-angle-right fa-fw"></i>
+                        Mark info</a>
+                        </h4>
+                      </div>
+                      <div id="2collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2headingTwo">
+                        <div class="panel-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                          on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                          farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="2headingThree">
+                        <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#2accordion" href="#2collapseThree" aria-expanded="false" aria-controls="2collapseThree"><i class="fa fa-angle-right fa-fw"></i>
+                        Owner/Assignment</a>
+                        </h4>
+                      </div>
+                      <div id="2collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingThree">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Project name</th>
+                              <th scope="col">Description</th>
+                              <th scope="col">Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Invoice</td>
+                              <td>
+                                <span>Add invoice confirmation</span>
+                              </td>
+                              <td>
+                                <span>$4,500</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Templates</td>
+                              <td>
+                                <span>Refactor templates to use the new templating library</span>
+                              </td>
+                              <td>
+                                <span>$9,000</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Payments</td>
+                              <td>
+                                <span>Process payments using third party api</span>
+                              </td>
+                              <td>
+                                <span>$5,400</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row">Account Management</td>
+                              <td>
+                                <span>Improve account management workflow</span>
+                              </td>
+                              <td>
+                                <span>$6,000</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
 // Accordion Light
-<div class="panel-group" id="2accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group" id="2accordion" role="tablist">
   <div class="panel">
-    <div class="panel-heading" role="tab" id="2headingOne" data-parent="#2accordion" data-target="#2collapseOne" aria-expanded="false" data-toggle="collapse" aria-controls="2collapseOne">
+    <div class="panel-heading" role="tab" id="2headingOne">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Goods/Services
+      <a role="button" data-toggle="collapse" data-parent="#2accordion" href="#2collapseOne" aria-expanded="true" aria-controls="2collapseOne"><i class="fa fa-angle-right fa-fw"></i>
+      Goods/Services</a>
       </h4>
     </div>
     <div id="2collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingOne">
@@ -336,10 +335,10 @@ For simple content or layouts, the light style may work better.
     </div>
   </div>
   <div class="panel">
-    <div class="panel-heading" role="tab" id="2headingTwo" data-parent="#2accordion" data-target="#2collapseTwo" aria-expanded="true" data-toggle="collapse" aria-controls="2collapseTwo">
+    <div class="panel-heading" role="tab" id="2headingTwo">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Mark info
+      <a role="button" data-toggle="collapse" data-parent="#2accordion" href="#2collapseTwo" aria-expanded="false" aria-controls="2collapseTwo"><i class="fa fa-angle-right fa-fw"></i>
+      Mark info</a>
       </h4>
     </div>
     <div id="2collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2headingTwo">
@@ -351,24 +350,24 @@ For simple content or layouts, the light style may work better.
     </div>
   </div>
   <div class="panel">
-    <div class="panel-heading" role="tab" id="2headingThree" data-parent="#2accordion" data-target="#2collapseThree" aria-expanded="false" data-toggle="collapse" aria-controls="2collapseThree">
+    <div class="panel-heading" role="tab" id="2headingThree">
       <h4 class="panel-title">
-          <i class="fa fa-angle-right fa-fw"></i>
-          Owner/Assignment
+      <a role="button" data-toggle="collapse" data-parent="#2accordion" href="#2collapseThree" aria-expanded="false" aria-controls="2collapseThree"><i class="fa fa-angle-right fa-fw"></i>
+      Owner/Assignment</a>
       </h4>
     </div>
     <div id="2collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingThree">
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>Project name</th>
-            <th>Description</th>
-            <th>Price</th>
+            <th scope="col">Project name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Invoice</td>
+            <td scope="row">Invoice</td>
             <td>
               <span>Add invoice confirmation</span>
             </td>
@@ -377,7 +376,7 @@ For simple content or layouts, the light style may work better.
             </td>
           </tr>
           <tr>
-            <td>Templates</td>
+            <td scope="row">Templates</td>
             <td>
               <span>Refactor templates to use the new templating library</span>
             </td>
@@ -386,7 +385,7 @@ For simple content or layouts, the light style may work better.
             </td>
           </tr>
           <tr>
-            <td>Payments</td>
+            <td scope="row">Payments</td>
             <td>
               <span>Process payments using third party api</span>
             </td>
@@ -395,7 +394,7 @@ For simple content or layouts, the light style may work better.
             </td>
           </tr>
           <tr>
-            <td>Account Management</td>
+            <td scope="row">Account Management</td>
             <td>
               <span>Improve account management workflow</span>
             </td>
@@ -408,7 +407,6 @@ For simple content or layouts, the light style may work better.
     </div>
   </div>
 </div>
-
 {% endhighlight %}
 
 </div>

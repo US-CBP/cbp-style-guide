@@ -114,9 +114,8 @@ module.exports = function(grunt) {
             // misc vendor
             vendorjs: {
                 src: [
-                    'node_modules/cbp-theme/dist/js/jquery.js',
-                    'node_modules/cbp-theme/dist/js/jquery.inputmask.bundle.js',
-                    'node_modules/cbp-theme/dist/js/bootstrap.js',
+                    'node_modules/jquery/dist/jquery.js',
+                    'node_modules/cbp-theme/dist/inputmask.js',
                     'node_modules/select2/dist/js/select2.js',
                     'src/front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js',
                     'node_modules/lodash/lodash.min.js',
@@ -124,7 +123,7 @@ module.exports = function(grunt) {
                     'node_modules/jquery-ui/ui/minified/core.min.js',
                     'node_modules/jquery-ui/ui/minified/datepicker.min.js',
                     'node_modules/jquery-ui/ui/minified/progressbar.min.js',
-                    'node_modules/cbp-theme/dist/js/cbp-theme.js'
+                    'node_modules/cbp-theme/dist/cbp-theme.js'
                 ],
                 dest: '<%= paths.assets %>/scripts/vendor.js'
               },
@@ -140,7 +139,7 @@ module.exports = function(grunt) {
                     'node_modules/font-awesome/css/font-awesome.css',
                     'node_modules/select2/dist/css/select2.css',
                     'node_modules/selectize/dist/css/selectize.css',
-                    'node_modules/cbp-theme/dist/styles/cbp-theme.css'
+                    'node_modules/cbp-theme/dist/cbp-theme.css'
                 ],
                 dest: '<%= paths.assets %>/styles/vendor.css'
               },
@@ -176,13 +175,13 @@ module.exports = function(grunt) {
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist/styles',
+                    cwd: './node_modules/cbp-theme/dist',
                     src: '*.css',
                     dest: '<%= paths.assets %>/vendor/cbp-theme/styles'
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist/js',
+                    cwd: './node_modules/cbp-theme/dist',
                     src: '*.js*',
                     dest: '<%= paths.assets %>/vendor/cbp-theme/js'
                   }, {
@@ -194,13 +193,13 @@ module.exports = function(grunt) {
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist/fonts',
+                    cwd: './node_modules/cbp-theme/dist',
                     src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
                     dest: '<%= paths.assets %>/vendor/cbp-theme/fonts' // for local development!
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist/fonts',
+                    cwd: './node_modules/cbp-theme/dist',
                     src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
                     dest: '<%= paths.assets %>/fonts' // for local development!
                   }]
