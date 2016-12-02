@@ -7,6 +7,8 @@ title: "Colors"
 
 This palette is designed to create a consistent look and feel across products. The palette is influenced by the official Department of Homeland Security brand colors, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors &mdash; combined with clear hierarchy, good information design, and ample white space &mdash; should aid users in ease of use and quick navigation. This is a simple, minimalist color palette. Shades of blue dominate, providing a neutral backdrop on which brighter shades, clean type treatment, and bright white content areas "pop" on the page.
 
+<b>Attention - </b>Adherence to 508 TAccessibility policies is the responsibility of the application team. We are continually working to ensure the CBP Theme meets established 508 guidelines; however, each application must perform an official assessment with a DHS 508 Trusted Tester before launching your application into production.
+
 #### Primary Colors
 These are the primary colors used for Common Framework UI elements. The primary colors have semantic meanings associated with them.
 
@@ -79,7 +81,7 @@ These are the primary colors used for Common Framework UI elements. The primary 
 &nbsp;
 </div>
 <div class="pl-pattern">
-### 508 Color Combinations
+### Section 508 Color Combinations
 This Color Combination palette provides examples of 508-approved and illegal text-to-color patterns.
 
 
@@ -235,7 +237,7 @@ This Color Combination palette provides examples of 508-approved and illegal tex
 
 <div class="pl-pattern">
 
-### Full Brand Palette
+### Data Visualization Palette
 
 This is the full CBP Theme color palette. However, many of these are rarely used for UI elements.
 

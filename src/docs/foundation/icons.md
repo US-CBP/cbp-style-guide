@@ -6,6 +6,8 @@ title: "Icons"
 
 The files noted here are scalable vector icons. These designs are intended to achieve a consistent look and feel across CBP products. Where applicable, use the "CBP Recommended Icons" first before seeking alternatives.
 
+<b>Attention - </b>We are currently troubleshooting known technical issues relating to Internet Explorer's inability to show icons internally.
+
 #### Icon Colors and Sizes
 
 Icons should always be one solid color&mdash;black, white, or a Primary Color&mdash; and can stand alone or be placed in contrasting color circles.
