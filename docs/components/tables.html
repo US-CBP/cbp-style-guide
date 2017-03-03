@@ -663,7 +663,13 @@
 
   <p>A table’s complexity and needs can vary greatly. This pattern provides many different features a table <em>may</em> have. Features can be mixed and matched based on your needs. Don’t include features unless they’re actually needed.</p>
 
-  <p> </p>
+  <h4 id="accessibility">Accessibility</h4>
+  <ul>
+    <li>Simple tables can have two levels of headers. Each header cell should have scope=”col” or scope=”row”.</li>
+    <li>Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.</li>
+    <li>When adding a title to a table, include it in a &lt;caption&gt; tag inside of the &lt;table&gt; element.
+ </li>
+  </ul>
 
 </div>
 
@@ -1947,56 +1953,56 @@
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes0"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option0"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes0"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Select all<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes10"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option0"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes10"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Select all<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes1"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes1"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Thumbnail<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes11"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes11"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Thumbnail<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes2"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option2"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes2"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Word mark<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes12"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option2"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes12"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Word mark<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes3"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes3"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review source<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes13"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes13"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review source<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes4"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option4"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes4"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review type<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes14"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option4"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes14"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review type<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes5"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option5"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes5"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review revision<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes15"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review revision<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes6"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option6"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes6"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Mentor<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes16"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Mentor<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes7"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option7"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes7"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Advisor<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes17"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Advisor<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes8"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option8"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes8"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Owner<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes18"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Owner<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
@@ -2029,56 +2035,56 @@
                           <div class="form-group">
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes0" class="mdl-checkbox__input" value="option0" />
-                                <span for="optionsCheckboxes0" class="mdl-checkbox__label">Select all</span>
+                                <input type="checkbox" id="optionsCheckboxes20" class="mdl-checkbox__input" value="option0" />
+                                <span for="optionsCheckboxes20" class="mdl-checkbox__label">Select all</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes1" class="mdl-checkbox__input" value="option1" checked />
-                                <span for="optionsCheckboxes1" class="mdl-checkbox__label">Thumbnail</span>
+                                <input type="checkbox" id="optionsCheckboxes21" class="mdl-checkbox__input" value="option1" checked />
+                                <span for="optionsCheckboxes21" class="mdl-checkbox__label">Thumbnail</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes2" class="mdl-checkbox__input" value="option2" checked />
-                                <span for="optionsCheckboxes2" class="mdl-checkbox__label">Word mark</span>
+                                <input type="checkbox" id="optionsCheckboxes22" class="mdl-checkbox__input" value="option2" checked />
+                                <span for="optionsCheckboxes22" class="mdl-checkbox__label">Word mark</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes3" class="mdl-checkbox__input" value="option3" />
-                                <span for="optionsCheckboxes3" class="mdl-checkbox__label">Review source</span>
+                                <input type="checkbox" id="optionsCheckboxes23" class="mdl-checkbox__input" value="option3" />
+                                <span for="optionsCheckboxes23" class="mdl-checkbox__label">Review source</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes4" class="mdl-checkbox__input" value="option4" checked />
-                                <span for="optionsCheckboxes4" class="mdl-checkbox__label">Review type</span>
+                                <input type="checkbox" id="optionsCheckboxes24" class="mdl-checkbox__input" value="option4" checked />
+                                <span for="optionsCheckboxes24" class="mdl-checkbox__label">Review type</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                                <span for="optionsCheckboxes5" class="mdl-checkbox__label">Review revision</span>
+                                <input type="checkbox" id="optionsCheckboxes25" class="mdl-checkbox__input" value="option5"  />
+                                <span for="optionsCheckboxes25" class="mdl-checkbox__label">Review revision</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                                <span for="optionsCheckboxes6" class="mdl-checkbox__label">Mentor</span>
+                                <input type="checkbox" id="optionsCheckboxes26" class="mdl-checkbox__input" value="option6" checked />
+                                <span for="optionsCheckboxes26" class="mdl-checkbox__label">Mentor</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                                <span for="optionsCheckboxes7" class="mdl-checkbox__label">Advisor</span>
+                                <input type="checkbox" id="optionsCheckboxes27" class="mdl-checkbox__input" value="option7"  />
+                                <span for="optionsCheckboxes27" class="mdl-checkbox__label">Advisor</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                                <span for="optionsCheckboxes8" class="mdl-checkbox__label">Owner</span>
+                                <input type="checkbox" id="optionsCheckboxes28" class="mdl-checkbox__input" value="option8"  />
+                                <span for="optionsCheckboxes28" class="mdl-checkbox__label">Owner</span>
                               </label>
                             </div>
                           </div>
@@ -2108,56 +2114,56 @@
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes0"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option0"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes0"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Select all<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes30"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option0"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes30"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Select all<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes1"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes1"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Thumbnail<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes31"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes31"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Thumbnail<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes2"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option2"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes2"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Word mark<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes32"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option2"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes32"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Word mark<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes3"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes3"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review source<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes33"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes33"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review source<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes4"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option4"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes4"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review type<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes34"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option4"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes34"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review type<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes5"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option5"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes5"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review revision<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes35"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option5"</span>  <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes35"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Review revision<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes6"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option6"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes6"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Mentor<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes36"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option6"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes36"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Mentor<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes7"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option7"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes7"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Advisor<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes37"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option7"</span>  <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes37"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Advisor<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes8"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option8"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes8"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Owner<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes38"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option8"</span>  <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes38"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Owner<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
