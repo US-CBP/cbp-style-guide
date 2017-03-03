@@ -12,7 +12,7 @@ Users need to see structured data in a manner that makes the data readable, scan
 Tables provide customizable views of tabular data with features including sorting and managing columns. Tables are useful when a collection of data requires vertical alignment through columns for quick scanning and discovery of information, as well as for data that with many attributes that requires sorting, grouping, and a user customizable display.
 
 #### Basic functionality
-Tables list a collection of items in rows that have similar attributes, usually with headers to label each attribute. 
+Tables list a collection of items in rows that have similar attributes, usually with headers to label each attribute.
 
 The following functionality can be provided by tables:
 
@@ -27,6 +27,10 @@ The following functionality can be provided by tables:
 
 A table's complexity and needs can vary greatly. This pattern provides many different features a table _may_ have. Features can be mixed and matched based on your needs. Don't include features unless they're actually needed.
 
+#### Accessibility
+- Simple tables can have two levels of headers. Each header cell should have scope="col" or scope="row".
+- Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.
+- When adding a title to a table, include it in a <caption> tag inside of the <table> element.
 &nbsp;
 
 </div>
@@ -607,7 +611,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
 ### Sorting
 
 #### Single sorting
-Clicking a header cell sets that column as the currently sorted column. The first click should sort `descending`, the second click should sort `ascending`. 
+Clicking a header cell sets that column as the currently sorted column. The first click should sort `descending`, the second click should sort `ascending`.
 
 
 {::nomarkdown}
@@ -1322,56 +1326,56 @@ To provide column customization, add an icon to the top right corner of the tabl
           <div class="form-group">
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes0" class="mdl-checkbox__input" value="option0" />
-                <span for="optionsCheckboxes0" class="mdl-checkbox__label">Select all</span>
+                <input type="checkbox" id="optionsCheckboxes10" class="mdl-checkbox__input" value="option0" />
+                <span for="optionsCheckboxes10" class="mdl-checkbox__label">Select all</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes1" class="mdl-checkbox__input" value="option1" checked />
-                <span for="optionsCheckboxes1" class="mdl-checkbox__label">Thumbnail</span>
+                <input type="checkbox" id="optionsCheckboxes11" class="mdl-checkbox__input" value="option1" checked />
+                <span for="optionsCheckboxes11" class="mdl-checkbox__label">Thumbnail</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes2" class="mdl-checkbox__input" value="option2" checked />
-                <span for="optionsCheckboxes2" class="mdl-checkbox__label">Word mark</span>
+                <input type="checkbox" id="optionsCheckboxes12" class="mdl-checkbox__input" value="option2" checked />
+                <span for="optionsCheckboxes12" class="mdl-checkbox__label">Word mark</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes3" class="mdl-checkbox__input" value="option3" />
-                <span for="optionsCheckboxes3" class="mdl-checkbox__label">Review source</span>
+                <input type="checkbox" id="optionsCheckboxes13" class="mdl-checkbox__input" value="option3" />
+                <span for="optionsCheckboxes13" class="mdl-checkbox__label">Review source</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes4" class="mdl-checkbox__input" value="option4" checked />
-                <span for="optionsCheckboxes4" class="mdl-checkbox__label">Review type</span>
+                <input type="checkbox" id="optionsCheckboxes14" class="mdl-checkbox__input" value="option4" checked />
+                <span for="optionsCheckboxes14" class="mdl-checkbox__label">Review type</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                <span for="optionsCheckboxes5" class="mdl-checkbox__label">Review revision</span>
+                <span for="optionsCheckboxes15" class="mdl-checkbox__label">Review revision</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                <span for="optionsCheckboxes6" class="mdl-checkbox__label">Mentor</span>
+                <span for="optionsCheckboxes16" class="mdl-checkbox__label">Mentor</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                <span for="optionsCheckboxes7" class="mdl-checkbox__label">Advisor</span>
+                <span for="optionsCheckboxes17" class="mdl-checkbox__label">Advisor</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                <span for="optionsCheckboxes8" class="mdl-checkbox__label">Owner</span>
+                <span for="optionsCheckboxes18" class="mdl-checkbox__label">Owner</span>
               </label>
             </div>
           </div>
@@ -1406,56 +1410,56 @@ This dialog provides the ability to show/hide columns as desired.
                           <div class="form-group">
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes0" class="mdl-checkbox__input" value="option0" />
-                                <span for="optionsCheckboxes0" class="mdl-checkbox__label">Select all</span>
+                                <input type="checkbox" id="optionsCheckboxes20" class="mdl-checkbox__input" value="option0" />
+                                <span for="optionsCheckboxes20" class="mdl-checkbox__label">Select all</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes1" class="mdl-checkbox__input" value="option1" checked />
-                                <span for="optionsCheckboxes1" class="mdl-checkbox__label">Thumbnail</span>
+                                <input type="checkbox" id="optionsCheckboxes21" class="mdl-checkbox__input" value="option1" checked />
+                                <span for="optionsCheckboxes21" class="mdl-checkbox__label">Thumbnail</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes2" class="mdl-checkbox__input" value="option2" checked />
-                                <span for="optionsCheckboxes2" class="mdl-checkbox__label">Word mark</span>
+                                <input type="checkbox" id="optionsCheckboxes22" class="mdl-checkbox__input" value="option2" checked />
+                                <span for="optionsCheckboxes22" class="mdl-checkbox__label">Word mark</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes3" class="mdl-checkbox__input" value="option3" />
-                                <span for="optionsCheckboxes3" class="mdl-checkbox__label">Review source</span>
+                                <input type="checkbox" id="optionsCheckboxes23" class="mdl-checkbox__input" value="option3" />
+                                <span for="optionsCheckboxes23" class="mdl-checkbox__label">Review source</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes4" class="mdl-checkbox__input" value="option4" checked />
-                                <span for="optionsCheckboxes4" class="mdl-checkbox__label">Review type</span>
+                                <input type="checkbox" id="optionsCheckboxes24" class="mdl-checkbox__input" value="option4" checked />
+                                <span for="optionsCheckboxes24" class="mdl-checkbox__label">Review type</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                                <span for="optionsCheckboxes5" class="mdl-checkbox__label">Review revision</span>
+                                <input type="checkbox" id="optionsCheckboxes25" class="mdl-checkbox__input" value="option5"  />
+                                <span for="optionsCheckboxes25" class="mdl-checkbox__label">Review revision</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                                <span for="optionsCheckboxes6" class="mdl-checkbox__label">Mentor</span>
+                                <input type="checkbox" id="optionsCheckboxes26" class="mdl-checkbox__input" value="option6" checked />
+                                <span for="optionsCheckboxes26" class="mdl-checkbox__label">Mentor</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                                <span for="optionsCheckboxes7" class="mdl-checkbox__label">Advisor</span>
+                                <input type="checkbox" id="optionsCheckboxes27" class="mdl-checkbox__input" value="option7"  />
+                                <span for="optionsCheckboxes27" class="mdl-checkbox__label">Advisor</span>
                               </label>
                             </div>
                             <div class="checkbox">
                               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                                <span for="optionsCheckboxes8" class="mdl-checkbox__label">Owner</span>
+                                <input type="checkbox" id="optionsCheckboxes28" class="mdl-checkbox__input" value="option8"  />
+                                <span for="optionsCheckboxes28" class="mdl-checkbox__label">Owner</span>
                               </label>
                             </div>
                           </div>
@@ -1486,56 +1490,56 @@ This dialog provides the ability to show/hide columns as desired.
           <div class="form-group">
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes0" class="mdl-checkbox__input" value="option0" />
-                <span for="optionsCheckboxes0" class="mdl-checkbox__label">Select all</span>
+                <input type="checkbox" id="optionsCheckboxes30" class="mdl-checkbox__input" value="option0" />
+                <span for="optionsCheckboxes30" class="mdl-checkbox__label">Select all</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes1" class="mdl-checkbox__input" value="option1" checked />
-                <span for="optionsCheckboxes1" class="mdl-checkbox__label">Thumbnail</span>
+                <input type="checkbox" id="optionsCheckboxes31" class="mdl-checkbox__input" value="option1" checked />
+                <span for="optionsCheckboxes31" class="mdl-checkbox__label">Thumbnail</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes2" class="mdl-checkbox__input" value="option2" checked />
-                <span for="optionsCheckboxes2" class="mdl-checkbox__label">Word mark</span>
+                <input type="checkbox" id="optionsCheckboxes32" class="mdl-checkbox__input" value="option2" checked />
+                <span for="optionsCheckboxes32" class="mdl-checkbox__label">Word mark</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes3" class="mdl-checkbox__input" value="option3" />
-                <span for="optionsCheckboxes3" class="mdl-checkbox__label">Review source</span>
+                <input type="checkbox" id="optionsCheckboxes33" class="mdl-checkbox__input" value="option3" />
+                <span for="optionsCheckboxes33" class="mdl-checkbox__label">Review source</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes4" class="mdl-checkbox__input" value="option4" checked />
-                <span for="optionsCheckboxes4" class="mdl-checkbox__label">Review type</span>
+                <input type="checkbox" id="optionsCheckboxes34" class="mdl-checkbox__input" value="option4" checked />
+                <span for="optionsCheckboxes34" class="mdl-checkbox__label">Review type</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                <span for="optionsCheckboxes5" class="mdl-checkbox__label">Review revision</span>
+                <input type="checkbox" id="optionsCheckboxes35" class="mdl-checkbox__input" value="option5"  />
+                <span for="optionsCheckboxes35" class="mdl-checkbox__label">Review revision</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                <span for="optionsCheckboxes6" class="mdl-checkbox__label">Mentor</span>
+                <input type="checkbox" id="optionsCheckboxes36" class="mdl-checkbox__input" value="option6" checked />
+                <span for="optionsCheckboxes36" class="mdl-checkbox__label">Mentor</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                <span for="optionsCheckboxes7" class="mdl-checkbox__label">Advisor</span>
+                <input type="checkbox" id="optionsCheckboxes37" class="mdl-checkbox__input" value="option7"  />
+                <span for="optionsCheckboxes37" class="mdl-checkbox__label">Advisor</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                <span for="optionsCheckboxes8" class="mdl-checkbox__label">Owner</span>
+                <input type="checkbox" id="optionsCheckboxes38" class="mdl-checkbox__input" value="option8"  />
+                <span for="optionsCheckboxes38" class="mdl-checkbox__label">Owner</span>
               </label>
             </div>
           </div>
@@ -1554,7 +1558,7 @@ This dialog provides the ability to show/hide columns as desired.
 <div class="pl-pattern">
 ### Grouping
 
-Row grouping allows users to show and hide sets of rows that share a similar attribute. 
+Row grouping allows users to show and hide sets of rows that share a similar attribute.
 
 {::nomarkdown}
 <div class="pl-preview">
