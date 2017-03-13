@@ -201,7 +201,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: './node_modules/cbp-theme/dist',
                     src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
-                    dest: '<%= paths.assets %>/fonts' // for local development!
+                    dest: '<%= paths.assets %>/styles' // for local development!
                   }]
               }
           }

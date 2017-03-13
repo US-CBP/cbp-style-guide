@@ -3,7 +3,7 @@ title: "Tables"
 ---
 
 <div class="pl-pattern">
-<h3>Tables</h3>
+<h1>Tables</h1>
 
 #### Purpose
 Users need to see structured data in a manner that makes the data readable, scannable, and comparable.
@@ -22,8 +22,6 @@ The following functionality can be provided by tables:
 - Reordering columns
 - Row selection
 - Performing actions on a row
-- Grouping by attributes
-- Expanding rows
 
 A table's complexity and needs can vary greatly. This pattern provides many different features a table _may_ have. Features can be mixed and matched based on your needs. Don't include features unless they're actually needed.
 
@@ -47,11 +45,12 @@ A standard table has subtle row borders.
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
       <table class="cbp-table mdl-js-data-table">
+        <caption>Standard Table</caption>
         <thead>
           <tr>
-            <th class="non-numeric">Project name</th>
-            <th class="non-numeric">Description</th>
-            <th>Price</th>
+            <th scope="col" class="non-numeric">Project name</th>
+            <th scope="col" class="non-numeric">Description</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
@@ -98,53 +97,54 @@ A standard table has subtle row borders.
 {:/nomarkdown}
 
 {% highlight html %}
-  <table class="cbp-table mdl-js-data-table">
-    <thead>
-      <tr>
-        <th class="non-numeric">Project name</th>
-        <th class="non-numeric">Description</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="non-numeric">Invoice</td>
-        <td class="non-numeric">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td>
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Templates</td>
-        <td class="non-numeric">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td>
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Payments</td>
-        <td class="non-numeric">
-          <span>Process payments using third party api</span>
-        </td>
-        <td>
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Account Management</td>
-        <td class="non-numeric">
-          <span>Improve account management workflow</span>
-        </td>
-        <td>
-          <span>$6,000</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="cbp-table mdl-js-data-table">
+  <caption>Standard Table</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="non-numeric">Invoice</td>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Templates</td>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Payments</td>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Account Management</td>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 {% endhighlight %}
 
 #### Striped
@@ -154,11 +154,12 @@ A striped table adds an alternating row background color, increasing usability f
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
       <table class="cbp-table table-striped mdl-js-data-table">
+        <caption>Striped Table</caption>
         <thead>
           <tr>
-            <th class="non-numeric">Project name</th>
-            <th class="non-numeric">Description</th>
-            <th>Price</th>
+            <th scope="col" class="non-numeric">Project name</th>
+            <th scope="col" class="non-numeric">Description</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
@@ -205,53 +206,54 @@ A striped table adds an alternating row background color, increasing usability f
 {:/nomarkdown}
 
 {% highlight html %}
-  <table class="cbp-table table-striped mdl-js-data-table">
-    <thead>
-      <tr>
-        <th class="non-numeric">Project name</th>
-        <th class="non-numeric">Description</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="non-numeric">Invoice</td>
-        <td class="non-numeric">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td>
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Templates</td>
-        <td class="non-numeric">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td>
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Payments</td>
-        <td class="non-numeric">
-          <span>Process payments using third party api</span>
-        </td>
-        <td>
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Account Management</td>
-        <td class="non-numeric">
-          <span>Improve account management workflow</span>
-        </td>
-        <td>
-          <span>$6,000</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="cbp-table table-striped mdl-js-data-table">
+  <caption>Striped Table</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="non-numeric">Invoice</td>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Templates</td>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Payments</td>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Account Management</td>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 {% endhighlight %}
 
 </div>
@@ -267,11 +269,12 @@ A fixed header remains visible as the table body is scrolled. This is useful for
 <div class="pl-preview">
     <div style="padding: 40px; background: #fff;">
                   <table aria-hidden="true" class="cbp-table mdl-js-data-table floating-table-header">
+                    <caption>Fixed Header Table</caption>
                     <thead>
                       <tr>
-                        <th  class="non-numeric" style="width: 25%">Project name</th>
-                        <th  class="non-numeric" style="width: 50%">Description</th>
-                        <th >Price</th>
+                        <th scope="col" class="non-numeric" style="width: 25%">Project name</th>
+                        <th scope="col" class="non-numeric" style="width: 50%">Description</th>
+                        <th scope="col">Price</th>
                       </tr>
                     </thead>
                   </table>
@@ -279,9 +282,9 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                     <table class="cbp-table-selectable mdl-js-data-table" >
                       <thead>
                         <tr>
-                          <th  class="non-numeric" style="width: 25%;">Project name</th>
-                          <th  class="non-numeric" style="width: 50%;">Description</th>
-                          <th >Price</th>
+                          <th scope="col" class="non-numeric" style="width: 25%;">Project name</th>
+                          <th scope="col" class="non-numeric" style="width: 50%;">Description</th>
+                          <th scope="col">Price</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -438,170 +441,171 @@ A fixed header remains visible as the table body is scrolled. This is useful for
 
 {% highlight html %}
 <table aria-hidden="true" class="cbp-table mdl-js-data-table floating-table-header">
-<thead>
-  <tr>
-    <th  class="non-numeric" style="width: 25%">Project name</th>
-    <th  class="non-numeric" style="width: 50%">Description</th>
-    <th >Price</th>
-  </tr>
-</thead>
-</table>
-<div class="floating-table-body" style="max-height: 200px;">
-<table class="cbp-table-selectable mdl-js-data-table" >
+  <caption>Fixed Header Table</caption>
   <thead>
     <tr>
-      <th  class="non-numeric" style="width: 25%;">Project name</th>
-      <th  class="non-numeric" style="width: 50%;">Description</th>
-      <th >Price</th>
+      <th scope="col" class="non-numeric" style="width: 25%">Project name</th>
+      <th scope="col" class="non-numeric" style="width: 50%">Description</th>
+      <th scope="col">Price</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Invoice</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Add invoice confirmation</span>
-      </td>
-      <td >
-        <span>$4,500</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Templates</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Refactor templates to use the new templating library</span>
-      </td>
-      <td>
-        <span>$9,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Payments</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Process payments using third party api</span>
-      </td>
-      <td>
-        <span>$5,400</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Account Management</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Improve account management workflow</span>
-      </td>
-      <td>
-        <span>$6,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Invoice</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Add invoice confirmation</span>
-      </td>
-      <td>
-        <span>$4,500</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Templates</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Refactor templates to use the new templating library</span>
-      </td>
-      <td>
-        <span>$9,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Payments</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Process payments using third party api</span>
-      </td>
-      <td>
-        <span>$5,400</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Account Management</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Improve account management workflow</span>
-      </td>
-      <td>
-        <span>$6,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Invoice</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Add invoice confirmation</span>
-      </td>
-      <td>
-        <span>$4,500</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Templates</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Refactor templates to use the new templating library</span>
-      </td>
-      <td>
-        <span>$9,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Payments</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Process payments using third party api</span>
-      </td>
-      <td>
-        <span>$5,400</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Account Management</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Improve account management workflow</span>
-      </td>
-      <td>
-        <span>$6,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Invoice</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Add invoice confirmation</span>
-      </td>
-      <td>
-        <span>$4,500</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Templates</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Refactor templates to use the new templating library</span>
-      </td>
-      <td>
-        <span>$9,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Payments</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Process payments using third party api</span>
-      </td>
-      <td>
-        <span>$5,400</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric" style="width: 25%;">Account Management</td>
-      <td class="non-numeric" style="width: 50%;">
-        <span>Improve account management workflow</span>
-      </td>
-      <td>
-        <span>$6,000</span>
-      </td>
-    </tr>
-  </tbody>
 </table>
+<div class="floating-table-body" style="max-height: 200px;">
+  <table class="cbp-table-selectable mdl-js-data-table">
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric" style="width: 25%;">Project name</th>
+        <th scope="col" class="non-numeric" style="width: 50%;">Description</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Invoice</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td >
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"class="non-numeric" style="width: 25%;">Templates</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Payments</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Account Management</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Invoice</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Templates</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Payments</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Account Management</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Invoice</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Templates</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Payments</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Account Management</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Invoice</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Templates</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Payments</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="non-numeric" style="width: 25%;">Account Management</td>
+        <td class="non-numeric" style="width: 50%;">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 {% endhighlight %}
 
 
@@ -618,6 +622,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
                   <table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
+                    <caption>Single Sorting</caption>
                     <thead>
                       <tr role="row">
                         <th scope="col" role="columnheader" aria-sort="ascending" class="non-numeric sortable active">
@@ -671,67 +676,68 @@ Clicking a header cell sets that column as the currently sorted column. The firs
 </div>
 {:/nomarkdown}
 {% highlight html %}
-      <table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
-        <thead>
-          <tr role="row">
-            <th scope="col" role="columnheader" aria-sort="ascending" class="non-numeric sortable active">
-              Project name
-              <i class="fa fa-caret-down"></i>
-            </th>
-            <th scope="col" role="columnheader" aria-sort="none" class="non-numeric sortable">Description</th>
-            <th scope="col" role="columnheader" aria-sort="none" class="sortable">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="non-numeric">Invoice</td>
-            <td class="non-numeric">
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="non-numeric">Templates</td>
-            <td class="non-numeric">
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="non-numeric">Payments</td>
-            <td class="non-numeric">
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="non-numeric">Account Management</td>
-            <td class="non-numeric">
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
+  <caption>Single Sorting</caption>
+  <thead>
+    <tr role="row">
+      <th scope="col" role="columnheader" aria-sort="ascending" class="non-numeric sortable active">
+        Project name
+        <i class="fa fa-caret-down"></i>
+      </th>
+      <th scope="col" role="columnheader" aria-sort="none" class="non-numeric sortable">Description</th>
+      <th scope="col" role="columnheader" aria-sort="none" class="sortable">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="non-numeric">Invoice</td>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Templates</td>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Payments</td>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Account Management</td>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 {% endhighlight %}
 
 #### Multi sorting
 When a table is sorted by multiple columns, the sort order is indicated by the superscript numbers.
 
-Performing a `shift+click` on a header cell should add that column to the sorted list. A second `shift+click` on the same header cell should toggle the sort direction. A third `shift+click` on the same header cell should remove that column from the sort list. A left click should clear the sort list and then behave as a single sort.
 
 {::nomarkdown}
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
                   <table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
+                    <caption>Multi Sorting</caption>
                     <thead>
                       <tr role="row">
                         <th scope="col" role="columnheader" aria-sort="other" class="sortable active non-numeric">
@@ -742,7 +748,7 @@ Performing a `shift+click` on a header cell should add that column to the sorted
                           Date
                           <i class="fa fa-caret-up text-muted non-numeric"></i> <sup>2</sup>
                         </th>
-                        <th class="non-numeric">Module</th>
+                        <th scope="col" class="non-numeric">Module</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -788,59 +794,60 @@ Performing a `shift+click` on a header cell should add that column to the sorted
 </div>
 {:/nomarkdown}
 {% highlight html %}
-  <table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
-    <thead>
-      <tr role="row">
-        <th scope="col" role="columnheader" aria-sort="other" class="sortable active non-numeric">
-          Event
-          <i class="fa fa-caret-down text-muted"></i> <sup>1</sup>
-        </th>
-        <th scope="col" role="columnheader" aria-sort="none" class="sortable active">
-          Date
-          <i class="fa fa-caret-up text-muted non-numeric"></i> <sup>2</sup>
-        </th>
-        <th class="non-numeric">Module</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="non-numeric">user.create</td>
-        <td>
-          <span>10/21/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">user.create</td>
-        <td>
-          <span>10/19/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">user.register</td>
-        <td>
-          <span>10/21/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">user.register</td>
-        <td>
-          <span>10/18/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
+  <caption>Multi Sorting</caption>
+  <thead>
+    <tr role="row">
+      <th scope="col" role="columnheader" aria-sort="other" class="sortable active non-numeric">
+        Event
+        <i class="fa fa-caret-down text-muted"></i> <sup>1</sup>
+      </th>
+      <th scope="col" role="columnheader" aria-sort="none" class="sortable active">
+        Date
+        <i class="fa fa-caret-up text-muted non-numeric"></i> <sup>2</sup>
+      </th>
+      <th scope="col" class="non-numeric">Module</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="non-numeric">user.create</td>
+      <td>
+        <span>10/21/14</span>
+      </td>
+      <td class="non-numeric">
+        <span>Users</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">user.create</td>
+      <td>
+        <span>10/19/14</span>
+      </td>
+      <td class="non-numeric">
+        <span>Users</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">user.register</td>
+      <td>
+        <span>10/21/14</span>
+      </td>
+      <td class="non-numeric">
+        <span>Users</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">user.register</td>
+      <td>
+        <span>10/18/14</span>
+      </td>
+      <td class="non-numeric">
+        <span>Users</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 {% endhighlight %}
 
 </div>
@@ -852,23 +859,22 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
 
 - Checking a checkbox should highlight the corresponding row.
 - If there's a control for selecting all/none, it should represent the current state of the row selection, including an indeterminate state.
-- `shift+click` should select all items between the previoulsy clicked checkbox and the currently clicked checkbox.
-
 
 {::nomarkdown}
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
   <table class="cbp-table-selectable mdl-js-data-table">
+    <caption>Selection</caption>
     <thead>
       <tr>
-        <th>
+        <th scope="col">
           <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="table-header">
             <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
           </label>
         </th>
-        <th class="non-numeric">Material</th>
-        <th>Quantity</th>
-        <th>Unit price</th>
+        <th scope="col"class="non-numeric">Material</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit price</th>
       </tr>
     </thead>
     <tbody>
@@ -908,52 +914,53 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
 </div>
 {:/nomarkdown}
 {% highlight html %}
-  <table class="cbp-table-selectable mdl-js-data-table">
-    <thead>
-      <tr>
-        <th>
-          <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="table-header">
-            <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
-          </label>
-        </th>
-        <th class="non-numeric">Material</th>
-        <th>Quantity</th>
-        <th>Unit price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[1]">
-            <input type="checkbox" id="row[1]" class="mdl-checkbox__input" />
-          </label>
-        </td>
-        <td class="non-numeric">Acrylic (Transparent)</td>
-        <td>25</td>
-        <td>$2.90</td>
-      </tr>
-      <tr class="is-selected">
-        <td>
-          <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[2]">
-            <input type="checkbox" id="row[2]" class="mdl-checkbox__input" checked />
-          </label>
-        </td>
-        <td class="non-numeric">Plywood (Birch)</td>
-        <td>50</td>
-        <td>$1.25</td>
-      </tr>
-      <tr>
-        <td>
-          <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[3]">
-            <input type="checkbox" id="row[3]" class="mdl-checkbox__input" />
-          </label>
-        </td>
-        <td class="non-numeric">Laminate (Gold on Blue)</td>
-        <td>10</td>
-        <td>$2.35</td>
-      </tr>
-    </tbody>
-  </table>
+<table class="cbp-table-selectable mdl-js-data-table">
+  <caption>Selection</caption>
+  <thead>
+    <tr>
+      <th scope="col">
+        <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="table-header">
+          <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
+        </label>
+      </th>
+      <th scope="col"class="non-numeric">Material</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Unit price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td">
+        <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[1]">
+          <input type="checkbox" id="row[1]" class="mdl-checkbox__input" />
+        </label>
+      </td>
+      <td class="non-numeric">Acrylic (Transparent)</td>
+      <td>25</td>
+      <td>$2.90</td>
+    </tr>
+    <tr class="is-selected">
+      <td>
+        <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[2]">
+          <input type="checkbox" id="row[2]" class="mdl-checkbox__input" checked />
+        </label>
+      </td>
+      <td class="non-numeric">Plywood (Birch)</td>
+      <td>50</td>
+      <td>$1.25</td>
+    </tr>
+    <tr>
+      <td>
+        <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[3]">
+          <input type="checkbox" id="row[3]" class="mdl-checkbox__input" />
+        </label>
+      </td>
+      <td class="non-numeric">Laminate (Gold on Blue)</td>
+      <td>10</td>
+      <td>$2.35</td>
+    </tr>
+  </tbody>
+</table>
 {% endhighlight %}
 </div>
 
@@ -965,6 +972,7 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
                   <table class="cbp-table table-outline table-striped mdl-js-data-table">
+                    <caption>Row Action Buttons</caption>
                     <tbody>
                       <tr>
                         <td class="non-numeric">
@@ -1041,76 +1049,77 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
 {:/nomarkdown}
 {% highlight html %}
 <table class="cbp-table table-outline table-striped mdl-js-data-table">
-<tbody>
-  <tr>
-    <td class="non-numeric">
-      <strong>IMG_234.jpg</strong>
-      <br>
-      <span>2 days ago</span>
-    </td>
-    <td>
-      <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-      <i class="fa text-muted fa-close"></i>
-      <span class="sr-only">Delete</span>
-      </button>
-      <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-      <i class="fa text-muted fa-ellipsis-v"></i>
-      <span class="sr-only">More</span>
-      </button>
-    </td>
-  </tr>
-  <tr>
-    <td class="non-numeric">
-      <strong>IMG_235.jpg</strong>
-      <br>
-      <span>2 days ago</span>
-    </td>
-    <td>
-      <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-      <i class="fa text-muted fa-close"></i>
-      <span class="sr-only">Delete</span>
-      </button>
-      <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-      <i class="fa text-muted fa-ellipsis-v"></i>
-      <span class="sr-only">More</span>
-      </button>
-    </td>
-  </tr>
-  <tr>
-    <td class="non-numeric">
-      <strong>IMG_236.jpg</strong>
-      <br>
-      <span>2 days ago</span>
-    </td>
-    <td>
-      <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-      <i class="fa text-muted fa-close"></i>
-      <span class="sr-only">Delete</span>
-      </button>
-      <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-      <i class="fa text-muted fa-ellipsis-v"></i>
-      <span class="sr-only">More</span>
-      </button>
-    </td>
-  </tr>
-  <tr>
-    <td class="non-numeric">
-      <strong>IMG_237.jpg</strong>
-      <br>
-      <span>2 days ago</span>
-    </td>
-    <td>
-      <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-      <i class="fa text-muted fa-close"></i>
-      <span class="sr-only">Delete</span>
-      </button>
-      <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-      <i class="fa text-muted fa-ellipsis-v"></i>
-      <span class="sr-only">More</span>
-      </button>
-    </td>
-  </tr>
-</tbody>
+  <caption>Row Action Buttons</caption>
+  <tbody>
+    <tr>
+      <td class="non-numeric">
+        <strong>IMG_234.jpg</strong>
+        <br>
+        <span>2 days ago</span>
+      </td>
+      <td>
+        <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+        <i class="fa text-muted fa-close"></i>
+        <span class="sr-only">Delete</span>
+        </button>
+        <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+        <i class="fa text-muted fa-ellipsis-v"></i>
+        <span class="sr-only">More</span>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">
+        <strong>IMG_235.jpg</strong>
+        <br>
+        <span>2 days ago</span>
+      </td>
+      <td>
+        <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+        <i class="fa text-muted fa-close"></i>
+        <span class="sr-only">Delete</span>
+        </button>
+        <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+        <i class="fa text-muted fa-ellipsis-v"></i>
+        <span class="sr-only">More</span>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">
+        <strong>IMG_236.jpg</strong>
+        <br>
+        <span>2 days ago</span>
+      </td>
+      <td>
+        <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+        <i class="fa text-muted fa-close"></i>
+        <span class="sr-only">Delete</span>
+        </button>
+        <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+        <i class="fa text-muted fa-ellipsis-v"></i>
+        <span class="sr-only">More</span>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">
+        <strong>IMG_237.jpg</strong>
+        <br>
+        <span>2 days ago</span>
+      </td>
+      <td>
+        <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+        <i class="fa text-muted fa-close"></i>
+        <span class="sr-only">Delete</span>
+        </button>
+        <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+        <i class="fa text-muted fa-ellipsis-v"></i>
+        <span class="sr-only">More</span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
 </table>
 {% endhighlight %}
 
@@ -1124,12 +1133,13 @@ To provide column customization, add an icon to the top right corner of the tabl
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
                   <table class="cbp-table mdl-js-data-table">
+                    <caption>Column Customization</caption>
                     <thead>
                       <tr>
-                        <th class="non-numeric">Project name</th>
-                        <th class="non-numeric">Description</th>
-                        <th>Price</th>
-                        <th class="table-config-column" title="Show and hide columns" data-toggle="tooltip">
+                        <th scope="col" class="non-numeric">Project name</th>
+                        <th scope="col" class="non-numeric">Description</th>
+                        <th scope="col" >Price</th>
+                        <th scope="col" class="table-config-column" title="Show and hide columns" data-toggle="tooltip">
                           <button type="button" data-container="body" data-target="#example_table_modal" data-toggle="modal" >
                           <i class="fa fa-ellipsis-h" ></i>
                           </button>
@@ -1257,58 +1267,59 @@ To provide column customization, add an icon to the top right corner of the tabl
 {:/nomarkdown}
 {% highlight html %}
 <div>
-  <table class="cbp-table mdl-js-data-table">
-    <thead>
-      <tr>
-        <th class="non-numeric">Project name</th>
-        <th class="non-numeric">Description</th>
-        <th>Price</th>
-        <th class="table-config-column" title="Show and hide columns" data-toggle="tooltip">
-          <button type="button" data-container="body" data-target="#example_table_modal" data-toggle="modal" >
-          <i class="fa fa-ellipsis-h" ></i>
-          </button>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="non-numeric">Invoice</td>
-        <td class="non-numeric">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td colspan="2">
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Templates</td>
-        <td class="non-numeric">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td colspan="2">
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Payments</td>
-        <td class="non-numeric">
-          <span>Process payments using third party api</span>
-        </td>
-        <td colspan="2">
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric">Account Management</td>
-        <td class="non-numeric">
-          <span>Improve account management workflow</span>
-        </td>
-        <td colspan="2">
-          <span>$6,000</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="cbp-table mdl-js-data-table">
+  <caption>Column Customization</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col" >Price</th>
+      <th scope="col" class="table-config-column" title="Show and hide columns" data-toggle="tooltip">
+        <button type="button" data-container="body" data-target="#example_table_modal" data-toggle="modal" >
+        <i class="fa fa-ellipsis-h" ></i>
+        </button>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="non-numeric">Invoice</td>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td colspan="2">
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Templates</td>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td colspan="2">
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Payments</td>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td colspan="2">
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="non-numeric">Account Management</td>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td colspan="2">
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 </div>
 <!-- Show and hide columns popup for table above -->
 <div class="modal fade in" id="example_table_modal">
@@ -1555,6 +1566,7 @@ This dialog provides the ability to show/hide columns as desired.
 </div>
 
 
+<!--
 <div class="pl-pattern">
 ### Grouping
 
@@ -1872,3 +1884,5 @@ Expandable rows provide additional information about a row on demand.
 {% endhighlight %}
 
 </div>
+
+-->
