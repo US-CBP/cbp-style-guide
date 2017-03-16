@@ -5,9 +5,6 @@ This is a Style Guide for the [CBP Theme](https://github.com/US-CBP/cbp-theme)
 which gives guidance and examples of components, patterns, and colors 
 from the CBP theme.
 
-#### Want to contribute?
-See our [CONTRIBUTING.md](CONTRIBUTING.md) file for contribution guidelines.
-
 ---
 
 ### Building & running locally
@@ -24,10 +21,9 @@ Then install the project's dependencies with:
 - `npm install`
 
 #### Running the documentation
-Run `npm run build` to then generate your files.
+Run `npm run dev` to build and generate your files.
 
-If you have python installed, and you want to launch the site locally:
-Go into the dist directory `cd dist`  and run `python -m SimpleHTTPSServer` . Then go to [local site](http://localhost:8000/)
+Then go to [local site](http://localhost:4000)
 
 ##### Distribution Builds
 After running `npm run build`, you will have a `dist` folder that contains the entire static site and resources.

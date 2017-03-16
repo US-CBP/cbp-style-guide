@@ -4,8 +4,6 @@ node_js:
 before_install:
 - rvm install 2.2.2
 install: gem install jekyll html-proofer
-before_script:
-- npm install
 script:
 - npm run build
 after_success:
