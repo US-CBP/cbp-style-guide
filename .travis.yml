@@ -1,11 +1,13 @@
 language: node_js
 node_js:
 - '6'
+cache: yarn
 before_install:
 - rvm install 2.2.2
 install: gem install jekyll html-proofer
+before_script: yarn install grunt
 script:
-- npm run build
+- yarn build
 after_success:
   - bash publish.sh
 notifications:
