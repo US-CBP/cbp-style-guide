@@ -12,6 +12,7 @@ before_install: # if "install" is overridden
 cache: yarn
 install: gem install jekyll html-proofer
 script:
+- yarn install
 - yarn build
 after_success:
   - bash publish.sh
