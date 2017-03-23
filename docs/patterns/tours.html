@@ -104,7 +104,7 @@
     </div>
 
     <div class="pl-container">
-        <nav class="pl-sidebar">
+        <nav id="sidebar" class="pl-sidebar">
             <ul class="nav nav-stacked">
                 
                   <li class="category">Foundation</li>
@@ -636,8 +636,12 @@
         </nav>
         <section role="region" aria-label="pattern library content" class="pl-content">
             
+                <div class="pl-preview-header">This document is a preview.</div>
+            
             <div class="pl-pattern">
-  <h3>Tours</h3>
+  <h3 id="tour">Tours</h3>
+
+  <p><button id="callout-button" type="button" class="btn btn-default">Callout Example</button></p>
 
   <h4 id="purpose">Purpose</h4>
   <p>Users need to a guided overview of functionality that they may not be familiar with yet.</p>
@@ -649,6 +653,7 @@
     <li>Optional step indicators can be added to indicate where the user is within the tour</li>
     <li>An optional close (x) button can be added if the user is able to skip the tour</li>
     <li>The background can optionally be grayed out while highlighting a related element</li>
+    <li>The Style Guide uses <a href="https://linkedin.github.io/hopscotch">Hopscotch</a></li>
   </ul>
 
 </div>
@@ -670,8 +675,6 @@
 
         <script src="../../generated/scripts/vendor.js"></script>
         <script src="../../generated/scripts/main.js"></script>
-
-
     </body>
 </html>
 

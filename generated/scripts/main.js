@@ -344,6 +344,47 @@
     });
 
 
+    // Define the tour!
+    /* jshint ignore:start */
+    var tour = {
+      id: 'hopscotch-example',
+      steps: [
+        {
+          title: 'Hopscotch Tour Example',
+          content: 'This is the header of my page.',
+          target: 'tour',
+          placement: 'top'
+        },
+        {
+          title: 'Purpose',
+          content: 'Example of tour.',
+          target: 'purpose',
+          placement: 'bottom'
+        }, {
+          title: 'Navigation',
+          content: 'Foundation, Components, Patterns describe how best to use the CBP Theme.',
+          target: 'sidebar',
+          placement: 'right'
+        }
+
+      ],
+      showPrevButton: true
+    };
+
+    // Start the tour!
+    if(document.URL.indexOf('tours.html') > -1 ){
+        hopscotch.startTour(tour);
+    }
+
+    var calloutMgr = hopscotch.getCalloutManager();
+    calloutMgr.createCallout({
+      id: 'attach-icon',
+      target: 'callout-button',
+      placement: 'right',
+      title: 'Callout Example',
+      content: 'For simple explanations.'
+    });
+    /* jshint ignore:end */
     /* google analytics download tracking */
 
     function _checkFile(src, extensions) {
