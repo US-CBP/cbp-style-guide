@@ -10,10 +10,9 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y -qq yarn
   - rvm install 2.2.2
-  - gem install jekyll html-proofer
+  - gem install jekyll
 cache: yarn
 install:
-  - gem install jekyll html-proofer
   - yarn install
 script:
   - yarn build

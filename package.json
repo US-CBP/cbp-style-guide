@@ -63,7 +63,7 @@
     "node": ">=6.2.1"
   },
   "scripts": {
-    "build": "grunt build && jekyll build && html-proofer ./cbp",
+    "build": "grunt build && jekyll build",
     "dev": "grunt build && jekyll build && jekyll serve --watch",
     "preversion": "npm test",
     "version": "npm run build && git add -A .",
