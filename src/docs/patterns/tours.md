@@ -1,10 +1,12 @@
 ---
 title: "Tours"
-preview: false
+preview: true
 ---
 
 <div class="pl-pattern">
-<h3>Tours</h3>
+<h3 id="tour">Tours</h3>
+
+<button id="callout-button" type="button" class="btn btn-default">Callout Example</button>
 
 #### Purpose
 Users need to a guided overview of functionality that they may not be familiar with yet.
@@ -15,5 +17,6 @@ Users need to a guided overview of functionality that they may not be familiar w
 - Optional step indicators can be added to indicate where the user is within the tour
 - An optional close (x) button can be added if the user is able to skip the tour
 - The background can optionally be grayed out while highlighting a related element
+- The Style Guide uses [Hopscotch](https://linkedin.github.io/hopscotch)
 
 </div>

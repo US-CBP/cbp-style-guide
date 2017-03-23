@@ -123,13 +123,16 @@ module.exports = function(grunt) {
                     'node_modules/jquery-ui/ui/minified/core.min.js',
                     'node_modules/jquery-ui/ui/minified/datepicker.min.js',
                     'node_modules/jquery-ui/ui/minified/progressbar.min.js',
+                    'node_modules/hopscotch/dist/js/hopscotch.min.js',
                     'node_modules/cbp-theme/dist/cbp-theme.js'
                 ],
                 dest: '<%= paths.assets %>/scripts/vendor.js'
               },
             // main js
             mainjs: {
-                src: ['src/front/scripts/main.js'],
+                src: [
+                    'src/front/scripts/main.js'
+                ],
                 dest: '<%= paths.assets %>/scripts/main.js'
               },
             // vendor css
@@ -139,8 +142,9 @@ module.exports = function(grunt) {
                     'node_modules/font-awesome/css/font-awesome.css',
                     'node_modules/select2/dist/css/select2.css',
                     'node_modules/selectize/dist/css/selectize.css',
+                    'node_modules/hopscotch/dist/css/hopscotch.css',
                     'node_modules/cbp-theme/dist/cbp-theme.css'
-                ],
+                 ],
                 dest: '<%= paths.assets %>/styles/vendor.css'
               },
             // main css
@@ -202,7 +206,14 @@ module.exports = function(grunt) {
                     cwd: './node_modules/cbp-theme/dist',
                     src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
                     dest: '<%= paths.assets %>/styles' // for local development!
-                  }]
+                  }, {
+                    dot: true,
+                    expand: true,
+                    cwd: './node_modules/hopscotch/dist/img',
+                    src: '{,*/}*.{gif,jpeg,jpg,png}',
+                    dest: '<%= paths.assets %>/img'
+                  }
+                  ]
               }
           }
 
