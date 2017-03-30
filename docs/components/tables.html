@@ -692,7 +692,7 @@
         </thead>
         <tbody>
           <tr>
-            <td class="non-numeric">Invoice</td>
+            <th scope="row" class="non-numeric">Invoice</th>
             <td class="non-numeric">
               <span>Add invoice confirmation</span>
             </td>
@@ -701,7 +701,7 @@
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Templates</td>
+            <th scope="row" class="non-numeric">Templates</th>
             <td class="non-numeric">
               <span>Refactor templates to use the new templating library</span>
             </td>
@@ -710,7 +710,7 @@
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Payments</td>
+            <th scope="row" class="non-numeric">Payments</th>
             <td class="non-numeric">
               <span>Process payments using third party api</span>
             </td>
@@ -719,7 +719,7 @@
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Account Management</td>
+            <th scope="row" class="non-numeric">Account Management</th>
             <td class="non-numeric">
               <span>Improve account management workflow</span>
             </td>
@@ -733,54 +733,54 @@
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"cbp-table mdl-js-data-table"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;caption&gt;</span>Standard Table<span class="nt">&lt;/caption&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Project name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-  <span class="nt">&lt;tbody&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/tbody&gt;</span>
-<span class="nt">&lt;/table&gt;</span></code></pre>
+    <pre><code class="language-html" data-lang="html">      <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"cbp-table mdl-js-data-table"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;caption&gt;</span>Standard Table<span class="nt">&lt;/caption&gt;</span>
+        <span class="nt">&lt;thead&gt;</span>
+          <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Project name<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>
+          <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/thead&gt;</span>
+        <span class="nt">&lt;tbody&gt;</span>
+          <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+              <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+              <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+              <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>
+              <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/tbody&gt;</span>
+      <span class="nt">&lt;/table&gt;</span></code></pre>
   </figure>
 
   <h4 id="striped">Striped</h4>
@@ -799,7 +799,7 @@
         </thead>
         <tbody>
           <tr>
-            <td class="non-numeric">Invoice</td>
+            <th scope="row" class="non-numeric">Invoice</th>
             <td class="non-numeric">
               <span>Add invoice confirmation</span>
             </td>
@@ -808,7 +808,7 @@
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Templates</td>
+            <th scope="row" class="non-numeric">Templates</th>
             <td class="non-numeric">
               <span>Refactor templates to use the new templating library</span>
             </td>
@@ -817,7 +817,7 @@
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Payments</td>
+            <th scope="row" class="non-numeric">Payments</th>
             <td class="non-numeric">
               <span>Process payments using third party api</span>
             </td>
@@ -826,7 +826,7 @@
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Account Management</td>
+            <th scope="row" class="non-numeric">Account Management</th>
             <td class="non-numeric">
               <span>Improve account management workflow</span>
             </td>
@@ -849,44 +849,44 @@
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/thead&gt;</span>
-  <span class="nt">&lt;tbody&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>
+      <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>
+      <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>
+      <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;tr&gt;</span>
+    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;td&gt;</span>
+      <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
 <span class="nt">&lt;/table&gt;</span></code></pre>
   </figure>
 
@@ -922,7 +922,7 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -931,7 +931,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -940,7 +940,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -949,7 +949,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -958,7 +958,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -967,7 +967,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -976,7 +976,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -985,7 +985,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -994,7 +994,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -1003,7 +1003,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -1012,7 +1012,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -1021,7 +1021,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -1030,7 +1030,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -1039,7 +1039,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -1048,7 +1048,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -1057,7 +1057,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -1091,152 +1091,153 @@
         <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;/thead&gt;</span>
-    <span class="nt">&lt;tbody&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
+     <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 25%;"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"width: 50%;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;/tbody&gt;</span>
+
   <span class="nt">&lt;/table&gt;</span></code></pre>
   </figure>
 
@@ -1264,7 +1265,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">Invoice</td>
+                        <th scope="row" class="non-numeric">Invoice</th>
                         <td class="non-numeric">
                           <span>Add invoice confirmation</span>
                         </td>
@@ -1273,7 +1274,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Templates</td>
+                        <th scope="row" class="non-numeric">Templates</th>
                         <td class="non-numeric">
                           <span>Refactor templates to use the new templating library</span>
                         </td>
@@ -1282,7 +1283,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Payments</td>
+                        <th scope="row" class="non-numeric">Payments</th>
                         <td class="non-numeric">
                           <span>Process payments using third party api</span>
                         </td>
@@ -1291,7 +1292,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Account Management</td>
+                        <th scope="row" class="non-numeric">Account Management</th>
                         <td class="non-numeric">
                           <span>Improve account management workflow</span>
                         </td>
@@ -1319,7 +1320,7 @@
   <span class="nt">&lt;/thead&gt;</span>
   <span class="nt">&lt;tbody&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1328,7 +1329,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1337,7 +1338,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1346,7 +1347,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1380,7 +1381,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">user.create</td>
+                        <th scope="row" class="non-numeric">user.create</th>
                         <td>
                           <span>10/21/14</span>
                         </td>
@@ -1389,7 +1390,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">user.create</td>
+                        <th scope="row" class="non-numeric">user.create</th>
                         <td>
                           <span>10/19/14</span>
                         </td>
@@ -1398,7 +1399,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">user.register</td>
+                        <th scope="row" class="non-numeric">user.register</th>
                         <td>
                           <span>10/21/14</span>
                         </td>
@@ -1407,7 +1408,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">user.register</td>
+                        <th scope="row" class="non-numeric">user.register</th>
                         <td>
                           <span>10/18/14</span>
                         </td>
@@ -1438,7 +1439,7 @@
   <span class="nt">&lt;/thead&gt;</span>
   <span class="nt">&lt;tbody&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.create<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.create<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;span&gt;</span>10/21/14<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1447,7 +1448,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.create<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.create<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;span&gt;</span>10/19/14<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1456,7 +1457,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.register<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.register<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;span&gt;</span>10/21/14<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1465,7 +1466,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.register<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.register<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;span&gt;</span>10/18/14<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1500,7 +1501,7 @@
             <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
           </label>
         </th>
-        <th scope="col"class="non-numeric">Material</th>
+        <th scope="col" class="non-numeric">Material</th>
         <th scope="col">Quantity</th>
         <th scope="col">Unit price</th>
       </tr>
@@ -1512,7 +1513,7 @@
             <input type="checkbox" id="row[1]" class="mdl-checkbox__input" />
           </label>
         </td>
-        <td class="non-numeric">Acrylic (Transparent)</td>
+        <th scope="row" class="non-numeric">Acrylic (Transparent)</th>
         <td>25</td>
         <td>$2.90</td>
       </tr>
@@ -1522,7 +1523,7 @@
             <input type="checkbox" id="row[2]" class="mdl-checkbox__input" checked />
           </label>
         </td>
-        <td class="non-numeric">Plywood (Birch)</td>
+        <th scope="row" class="non-numeric">Acrylic (Transparent)</th>
         <td>50</td>
         <td>$1.25</td>
       </tr>
@@ -1551,7 +1552,7 @@
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"table-header"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Material<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Material<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Quantity<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Unit price<span class="nt">&lt;/th&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
@@ -1563,7 +1564,7 @@
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"row[1]"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Acrylic (Transparent)<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Acrylic (Transparent)<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>25<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>$2.90<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
@@ -1573,7 +1574,7 @@
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"row[2]"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Plywood (Birch)<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Acrylic (Transparent)<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>50<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>$1.25<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
@@ -1603,11 +1604,11 @@
                     <caption>Row Action Buttons</caption>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_234.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -1620,11 +1621,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_235.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -1637,11 +1638,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_236.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -1654,11 +1655,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_237.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -1680,11 +1681,11 @@
   <span class="nt">&lt;caption&gt;</span>Row Action Buttons<span class="nt">&lt;/caption&gt;</span>
   <span class="nt">&lt;tbody&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;strong&gt;</span>IMG_234.jpg<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;br&gt;</span>
         <span class="nt">&lt;span&gt;</span>2 days ago<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-hover btn-icon-only"</span> <span class="na">title=</span><span class="s">"Delete"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa text-muted fa-close"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -1697,11 +1698,11 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;strong&gt;</span>IMG_235.jpg<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;br&gt;</span>
         <span class="nt">&lt;span&gt;</span>2 days ago<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-hover btn-icon-only"</span> <span class="na">title=</span><span class="s">"Delete"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa text-muted fa-close"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -1714,11 +1715,11 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;strong&gt;</span>IMG_236.jpg<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;br&gt;</span>
         <span class="nt">&lt;span&gt;</span>2 days ago<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-hover btn-icon-only"</span> <span class="na">title=</span><span class="s">"Delete"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa text-muted fa-close"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -1731,11 +1732,11 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;strong&gt;</span>IMG_237.jpg<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;br&gt;</span>
         <span class="nt">&lt;span&gt;</span>2 days ago<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-hover btn-icon-only"</span> <span class="na">title=</span><span class="s">"Delete"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa text-muted fa-close"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -1775,7 +1776,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">Invoice</td>
+                        <th scope="row" class="non-numeric">Invoice</th>
                         <td class="non-numeric">
                           <span>Add invoice confirmation</span>
                         </td>
@@ -1784,7 +1785,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Templates</td>
+                        <th scope="row" class="non-numeric">Templates</th>
                         <td class="non-numeric">
                           <span>Refactor templates to use the new templating library</span>
                         </td>
@@ -1793,7 +1794,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Payments</td>
+                        <th scope="row" class="non-numeric">Payments</th>
                         <td class="non-numeric">
                           <span>Process payments using third party api</span>
                         </td>
@@ -1802,7 +1803,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Account Management</td>
+                        <th scope="row" class="non-numeric">Account Management</th>
                         <td class="non-numeric">
                           <span>Improve account management workflow</span>
                         </td>
@@ -1910,7 +1911,7 @@
   <span class="nt">&lt;/thead&gt;</span>
   <span class="nt">&lt;tbody&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1919,7 +1920,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1928,7 +1929,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
@@ -1937,7 +1938,7 @@
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
