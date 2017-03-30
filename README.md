@@ -1,5 +1,8 @@
 CBP Style Guide
 ===============
+[![Build Status](https://travis-ci.org/US-CBP/cbp-theme.svg?branch=master)](https://travis-ci.org/US-CBP/cbp-style-guide)
+[![dependencies Status](https://david-dm.org/us-cbp/cbp-theme/status.svg)](https://david-dm.org/us-cbp/cbp-style-guide)
+[![devDependencies Status](https://david-dm.org/us-cbp/cbp-theme/dev-status.svg)](https://david-dm.org/us-cbp/cbp-style-guide?type=dev)
 
 This is a Style Guide for the [CBP Theme](https://github.com/US-CBP/cbp-theme) 
 which gives guidance and examples of components, patterns, and colors 
