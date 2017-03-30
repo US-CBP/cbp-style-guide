@@ -905,7 +905,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
             <input type="checkbox" id="row[3]" class="mdl-checkbox__input" />
           </label>
         </td>
-        <td class="non-numeric">Laminate (Gold on Blue)</td>
+        <th scope="row" class="non-numeric">Laminate (Gold on Blue)</th>
         <td>10</td>
         <td>$2.35</td>
       </tr>
@@ -956,7 +956,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
           <input type="checkbox" id="row[3]" class="mdl-checkbox__input" />
         </label>
       </td>
-      <td class="non-numeric">Laminate (Gold on Blue)</td>
+      <th scope="row" class="non-numeric">Laminate (Gold on Blue)</th>
       <td>10</td>
       <td>$2.35</td>
     </tr>
