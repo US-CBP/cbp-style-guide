@@ -55,7 +55,7 @@ A standard table has subtle row borders.
         </thead>
         <tbody>
           <tr>
-            <td class="non-numeric">Invoice</td>
+            <th scope="row" class="non-numeric">Invoice</th>
             <td class="non-numeric">
               <span>Add invoice confirmation</span>
             </td>
@@ -64,7 +64,7 @@ A standard table has subtle row borders.
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Templates</td>
+            <th scope="row" class="non-numeric">Templates</th>
             <td class="non-numeric">
               <span>Refactor templates to use the new templating library</span>
             </td>
@@ -73,7 +73,7 @@ A standard table has subtle row borders.
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Payments</td>
+            <th scope="row" class="non-numeric">Payments</th>
             <td class="non-numeric">
               <span>Process payments using third party api</span>
             </td>
@@ -82,7 +82,7 @@ A standard table has subtle row borders.
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Account Management</td>
+            <th scope="row" class="non-numeric">Account Management</th>
             <td class="non-numeric">
               <span>Improve account management workflow</span>
             </td>
@@ -97,54 +97,54 @@ A standard table has subtle row borders.
 {:/nomarkdown}
 
 {% highlight html %}
-<table class="cbp-table mdl-js-data-table">
-  <caption>Standard Table</caption>
-  <thead>
-    <tr>
-      <th scope="col" class="non-numeric">Project name</th>
-      <th scope="col" class="non-numeric">Description</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="non-numeric">Invoice</td>
-      <td class="non-numeric">
-        <span>Add invoice confirmation</span>
-      </td>
-      <td>
-        <span>$4,500</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric">Templates</td>
-      <td class="non-numeric">
-        <span>Refactor templates to use the new templating library</span>
-      </td>
-      <td>
-        <span>$9,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric">Payments</td>
-      <td class="non-numeric">
-        <span>Process payments using third party api</span>
-      </td>
-      <td>
-        <span>$5,400</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric">Account Management</td>
-      <td class="non-numeric">
-        <span>Improve account management workflow</span>
-      </td>
-      <td>
-        <span>$6,000</span>
-      </td>
-    </tr>
-  </tbody>
-</table>
+      <table class="cbp-table mdl-js-data-table">
+        <caption>Standard Table</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="non-numeric">Project name</th>
+            <th scope="col" class="non-numeric">Description</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="non-numeric">Invoice</th>
+            <td class="non-numeric">
+              <span>Add invoice confirmation</span>
+            </td>
+            <td>
+              <span>$4,500</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric">Templates</th>
+            <td class="non-numeric">
+              <span>Refactor templates to use the new templating library</span>
+            </td>
+            <td>
+              <span>$9,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric">Payments</th>
+            <td class="non-numeric">
+              <span>Process payments using third party api</span>
+            </td>
+            <td>
+              <span>$5,400</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric">Account Management</th>
+            <td class="non-numeric">
+              <span>Improve account management workflow</span>
+            </td>
+            <td>
+              <span>$6,000</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 {% endhighlight %}
 
 #### Striped
@@ -164,7 +164,7 @@ A striped table adds an alternating row background color, increasing usability f
         </thead>
         <tbody>
           <tr>
-            <td class="non-numeric">Invoice</td>
+            <th scope="row" class="non-numeric">Invoice</th>
             <td class="non-numeric">
               <span>Add invoice confirmation</span>
             </td>
@@ -173,7 +173,7 @@ A striped table adds an alternating row background color, increasing usability f
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Templates</td>
+            <th scope="row" class="non-numeric">Templates</th>
             <td class="non-numeric">
               <span>Refactor templates to use the new templating library</span>
             </td>
@@ -182,7 +182,7 @@ A striped table adds an alternating row background color, increasing usability f
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Payments</td>
+            <th scope="row" class="non-numeric">Payments</th>
             <td class="non-numeric">
               <span>Process payments using third party api</span>
             </td>
@@ -191,7 +191,7 @@ A striped table adds an alternating row background color, increasing usability f
             </td>
           </tr>
           <tr>
-            <td class="non-numeric">Account Management</td>
+            <th scope="row" class="non-numeric">Account Management</th>
             <td class="non-numeric">
               <span>Improve account management workflow</span>
             </td>
@@ -215,44 +215,44 @@ A striped table adds an alternating row background color, increasing usability f
       <th scope="col">Price</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="non-numeric">Invoice</td>
-      <td class="non-numeric">
-        <span>Add invoice confirmation</span>
-      </td>
-      <td>
-        <span>$4,500</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric">Templates</td>
-      <td class="non-numeric">
-        <span>Refactor templates to use the new templating library</span>
-      </td>
-      <td>
-        <span>$9,000</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric">Payments</td>
-      <td class="non-numeric">
-        <span>Process payments using third party api</span>
-      </td>
-      <td>
-        <span>$5,400</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="non-numeric">Account Management</td>
-      <td class="non-numeric">
-        <span>Improve account management workflow</span>
-      </td>
-      <td>
-        <span>$6,000</span>
-      </td>
-    </tr>
-  </tbody>
+<tbody>
+  <tr>
+    <th scope="row" class="non-numeric">Invoice</th>
+    <td class="non-numeric">
+      <span>Add invoice confirmation</span>
+    </td>
+    <td>
+      <span>$4,500</span>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="non-numeric">Templates</th>
+    <td class="non-numeric">
+      <span>Refactor templates to use the new templating library</span>
+    </td>
+    <td>
+      <span>$9,000</span>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="non-numeric">Payments</th>
+    <td class="non-numeric">
+      <span>Process payments using third party api</span>
+    </td>
+    <td>
+      <span>$5,400</span>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="non-numeric">Account Management</th>
+    <td class="non-numeric">
+      <span>Improve account management workflow</span>
+    </td>
+    <td>
+      <span>$6,000</span>
+    </td>
+  </tr>
+</tbody>
 </table>
 {% endhighlight %}
 
@@ -289,7 +289,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -298,7 +298,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -307,7 +307,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -316,7 +316,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -325,7 +325,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -334,7 +334,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -343,7 +343,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -352,7 +352,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -361,7 +361,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -370,7 +370,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -379,7 +379,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -388,7 +388,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -397,7 +397,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Invoice</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Add invoice confirmation</span>
                           </td>
@@ -406,7 +406,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Templates</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Refactor templates to use the new templating library</span>
                           </td>
@@ -415,7 +415,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Payments</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Process payments using third party api</span>
                           </td>
@@ -424,7 +424,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
                           </td>
                         </tr>
                         <tr>
-                          <td class="non-numeric" style="width: 25%;">Account Management</td>
+                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
                           <td class="non-numeric" style="width: 50%;">
                             <span>Improve account management workflow</span>
                           </td>
@@ -459,152 +459,153 @@ A fixed header remains visible as the table body is scrolled. This is useful for
         <th scope="col">Price</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Invoice</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td >
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"class="non-numeric" style="width: 25%;">Templates</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td>
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Payments</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Process payments using third party api</span>
-        </td>
-        <td>
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Account Management</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Improve account management workflow</span>
-        </td>
-        <td>
-          <span>$6,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Invoice</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td>
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Templates</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td>
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Payments</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Process payments using third party api</span>
-        </td>
-        <td>
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Account Management</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Improve account management workflow</span>
-        </td>
-        <td>
-          <span>$6,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Invoice</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td>
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Templates</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td>
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Payments</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Process payments using third party api</span>
-        </td>
-        <td>
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Account Management</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Improve account management workflow</span>
-        </td>
-        <td>
-          <span>$6,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Invoice</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td>
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Templates</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td>
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Payments</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Process payments using third party api</span>
-        </td>
-        <td>
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="non-numeric" style="width: 25%;">Account Management</td>
-        <td class="non-numeric" style="width: 50%;">
-          <span>Improve account management workflow</span>
-        </td>
-        <td>
-          <span>$6,000</span>
-        </td>
-      </tr>
+     <tbody>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td >
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+      <td class="non-numeric" style="width: 50%;">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
     </tbody>
+
   </table>
 {% endhighlight %}
 
@@ -635,7 +636,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">Invoice</td>
+                        <th scope="row" class="non-numeric">Invoice</th>
                         <td class="non-numeric">
                           <span>Add invoice confirmation</span>
                         </td>
@@ -644,7 +645,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Templates</td>
+                        <th scope="row" class="non-numeric">Templates</th>
                         <td class="non-numeric">
                           <span>Refactor templates to use the new templating library</span>
                         </td>
@@ -653,7 +654,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Payments</td>
+                        <th scope="row" class="non-numeric">Payments</th>
                         <td class="non-numeric">
                           <span>Process payments using third party api</span>
                         </td>
@@ -662,7 +663,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Account Management</td>
+                        <th scope="row" class="non-numeric">Account Management</th>
                         <td class="non-numeric">
                           <span>Improve account management workflow</span>
                         </td>
@@ -690,7 +691,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
   </thead>
   <tbody>
     <tr>
-      <td class="non-numeric">Invoice</td>
+      <th scope="row" class="non-numeric">Invoice</th>
       <td class="non-numeric">
         <span>Add invoice confirmation</span>
       </td>
@@ -699,7 +700,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">Templates</td>
+      <th scope="row" class="non-numeric">Templates</th>
       <td class="non-numeric">
         <span>Refactor templates to use the new templating library</span>
       </td>
@@ -708,7 +709,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">Payments</td>
+      <th scope="row" class="non-numeric">Payments</th>
       <td class="non-numeric">
         <span>Process payments using third party api</span>
       </td>
@@ -717,7 +718,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">Account Management</td>
+      <th scope="row" class="non-numeric">Account Management</th>
       <td class="non-numeric">
         <span>Improve account management workflow</span>
       </td>
@@ -753,7 +754,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">user.create</td>
+                        <th scope="row" class="non-numeric">user.create</th>
                         <td>
                           <span>10/21/14</span>
                         </td>
@@ -762,7 +763,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">user.create</td>
+                        <th scope="row" class="non-numeric">user.create</th>
                         <td>
                           <span>10/19/14</span>
                         </td>
@@ -771,7 +772,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">user.register</td>
+                        <th scope="row" class="non-numeric">user.register</th>
                         <td>
                           <span>10/21/14</span>
                         </td>
@@ -780,7 +781,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">user.register</td>
+                        <th scope="row" class="non-numeric">user.register</th>
                         <td>
                           <span>10/18/14</span>
                         </td>
@@ -811,7 +812,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
   </thead>
   <tbody>
     <tr>
-      <td class="non-numeric">user.create</td>
+      <th scope="row" class="non-numeric">user.create</th>
       <td>
         <span>10/21/14</span>
       </td>
@@ -820,7 +821,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">user.create</td>
+      <th scope="row" class="non-numeric">user.create</th>
       <td>
         <span>10/19/14</span>
       </td>
@@ -829,7 +830,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">user.register</td>
+      <th scope="row" class="non-numeric">user.register</th>
       <td>
         <span>10/21/14</span>
       </td>
@@ -838,7 +839,7 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">user.register</td>
+      <th scope="row" class="non-numeric">user.register</th>
       <td>
         <span>10/18/14</span>
       </td>
@@ -872,7 +873,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
             <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
           </label>
         </th>
-        <th scope="col"class="non-numeric">Material</th>
+        <th scope="col" class="non-numeric">Material</th>
         <th scope="col">Quantity</th>
         <th scope="col">Unit price</th>
       </tr>
@@ -884,7 +885,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
             <input type="checkbox" id="row[1]" class="mdl-checkbox__input" />
           </label>
         </td>
-        <td class="non-numeric">Acrylic (Transparent)</td>
+        <th scope="row" class="non-numeric">Acrylic (Transparent)</th>
         <td>25</td>
         <td>$2.90</td>
       </tr>
@@ -894,7 +895,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
             <input type="checkbox" id="row[2]" class="mdl-checkbox__input" checked />
           </label>
         </td>
-        <td class="non-numeric">Plywood (Birch)</td>
+        <th scope="row" class="non-numeric">Acrylic (Transparent)</th>
         <td>50</td>
         <td>$1.25</td>
       </tr>
@@ -923,7 +924,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
           <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
         </label>
       </th>
-      <th scope="col"class="non-numeric">Material</th>
+      <th scope="col" class="non-numeric">Material</th>
       <th scope="col">Quantity</th>
       <th scope="col">Unit price</th>
     </tr>
@@ -935,7 +936,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
           <input type="checkbox" id="row[1]" class="mdl-checkbox__input" />
         </label>
       </td>
-      <td class="non-numeric">Acrylic (Transparent)</td>
+      <th scope="row" class="non-numeric">Acrylic (Transparent)</th>
       <td>25</td>
       <td>$2.90</td>
     </tr>
@@ -945,7 +946,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
           <input type="checkbox" id="row[2]" class="mdl-checkbox__input" checked />
         </label>
       </td>
-      <td class="non-numeric">Plywood (Birch)</td>
+      <th scope="row" class="non-numeric">Acrylic (Transparent)</th>
       <td>50</td>
       <td>$1.25</td>
     </tr>
@@ -975,11 +976,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                     <caption>Row Action Buttons</caption>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_234.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -992,11 +993,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_235.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -1009,11 +1010,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_236.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -1026,11 +1027,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">
+                        <th scope="row" class="non-numeric">
                           <strong>IMG_237.jpg</strong>
                           <br>
                           <span>2 days ago</span>
-                        </td>
+                        </th>
                         <td>
                           <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
                           <i class="fa text-muted fa-close"></i>
@@ -1052,11 +1053,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
   <caption>Row Action Buttons</caption>
   <tbody>
     <tr>
-      <td class="non-numeric">
+      <th scope="row" class="non-numeric">
         <strong>IMG_234.jpg</strong>
         <br>
         <span>2 days ago</span>
-      </td>
+      </th>
       <td>
         <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
         <i class="fa text-muted fa-close"></i>
@@ -1069,11 +1070,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">
+      <th scope="row" class="non-numeric">
         <strong>IMG_235.jpg</strong>
         <br>
         <span>2 days ago</span>
-      </td>
+      </th>
       <td>
         <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
         <i class="fa text-muted fa-close"></i>
@@ -1086,11 +1087,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">
+       <th scope="row" class="non-numeric">
         <strong>IMG_236.jpg</strong>
         <br>
         <span>2 days ago</span>
-      </td>
+      </th>
       <td>
         <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
         <i class="fa text-muted fa-close"></i>
@@ -1103,11 +1104,11 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">
+      <th scope="row" class="non-numeric">
         <strong>IMG_237.jpg</strong>
         <br>
         <span>2 days ago</span>
-      </td>
+      </th>
       <td>
         <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
         <i class="fa text-muted fa-close"></i>
@@ -1148,7 +1149,7 @@ To provide column customization, add an icon to the top right corner of the tabl
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="non-numeric">Invoice</td>
+                        <th scope="row" class="non-numeric">Invoice</th>
                         <td class="non-numeric">
                           <span>Add invoice confirmation</span>
                         </td>
@@ -1157,7 +1158,7 @@ To provide column customization, add an icon to the top right corner of the tabl
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Templates</td>
+                        <th scope="row" class="non-numeric">Templates</th>
                         <td class="non-numeric">
                           <span>Refactor templates to use the new templating library</span>
                         </td>
@@ -1166,7 +1167,7 @@ To provide column customization, add an icon to the top right corner of the tabl
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Payments</td>
+                        <th scope="row" class="non-numeric">Payments</th>
                         <td class="non-numeric">
                           <span>Process payments using third party api</span>
                         </td>
@@ -1175,7 +1176,7 @@ To provide column customization, add an icon to the top right corner of the tabl
                         </td>
                       </tr>
                       <tr>
-                        <td class="non-numeric">Account Management</td>
+                        <th scope="row" class="non-numeric">Account Management</th>
                         <td class="non-numeric">
                           <span>Improve account management workflow</span>
                         </td>
@@ -1283,7 +1284,7 @@ To provide column customization, add an icon to the top right corner of the tabl
   </thead>
   <tbody>
     <tr>
-      <td class="non-numeric">Invoice</td>
+      <th scope="row" class="non-numeric">Invoice</th>
       <td class="non-numeric">
         <span>Add invoice confirmation</span>
       </td>
@@ -1292,7 +1293,7 @@ To provide column customization, add an icon to the top right corner of the tabl
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">Templates</td>
+      <th scope="row" class="non-numeric">Templates</th>
       <td class="non-numeric">
         <span>Refactor templates to use the new templating library</span>
       </td>
@@ -1301,7 +1302,7 @@ To provide column customization, add an icon to the top right corner of the tabl
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">Payments</td>
+      <th scope="row" class="non-numeric">Payments</th>
       <td class="non-numeric">
         <span>Process payments using third party api</span>
       </td>
@@ -1310,7 +1311,7 @@ To provide column customization, add an icon to the top right corner of the tabl
       </td>
     </tr>
     <tr>
-      <td class="non-numeric">Account Management</td>
+      <th scope="row" class="non-numeric">Account Management</th>
       <td class="non-numeric">
         <span>Improve account management workflow</span>
       </td>
