@@ -1,14 +1,25 @@
 ---
-title: "Application Headers"
+title: "Headers"
 ---
 
 
 <div class="pl-pattern">
 <h3>Headers</h3>
 
-#### Purpose
+The Universal Header consists of the following:
 
-#### Description
+- Official CBP Brand Presence
+- Approved DHS Blue Background Color
+- Application Directory Menu
+- User Feedback (optional)
+- User Profile and Logout
+- User Preferences (optional)
+
+The Universal Header provides a consistent brand across applications.  It also provides
+users with common navigation and features.
+
+
+The Application Header allows for an application to place menus, search bars, and other components that are specific to the application.  
 
 &nbsp;
 
@@ -16,7 +27,7 @@ title: "Application Headers"
 
 <div class="pl-pattern">
 
-### CBP Header
+### Universal Header
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -109,7 +120,7 @@ title: "Application Headers"
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="nav navbar-nav">
           <ul class="nav nav-tabs nav-tabs-light" role="tablist">
-            
+
             <li class="active">
               <a href="#" role="tab" data-toggle="tab">Active App View Link</a>
             </li>
