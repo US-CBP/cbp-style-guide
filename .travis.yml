@@ -5,10 +5,12 @@ sudo: required
 before_install:
 # if "install" is overridden
   - npm i -g npm@latest
+  - rvm install 2.4.1
+  - gem install jekyll
 cache:
   directories:
     - node_modules
-install:
+    install:
   - npm install
 script:
   - npm run build
