@@ -10,7 +10,7 @@ before_install:
 cache:
   directories:
     - node_modules
-    install:
+install:
   - npm install
 script:
   - npm run build
