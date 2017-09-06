@@ -40,8 +40,9 @@ The Application Header allows for an application to place menus, search bars, an
 <div class="container-fluid">
   <div class="navbar-header">
     <a class="navbar-brand" href="../">
-      <div class="cbp-brand"></div>
-      <div class="dhs-brand"></div>
+      <span class="visible-md visible-lg"><span class="cbp-brand">U.S. Customs &amp; Border Protection</span></span>
+      <span class="visible-xs visible-sm"><span class="cbp-brand">U.S. CBP</span></span>
+      <span class="visible-md visible-lg"><span class="dhs-brand">U.S. Department of Homeland Security</span></span>
     </a>
     <button data-target="#navbar-user-info" data-toggle="collapse" type="button" class="navbar-toggle">
     <span class="sr-only">Toggle Global Navigation</span>
