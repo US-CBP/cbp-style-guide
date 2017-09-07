@@ -1,10 +1,10 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jQuery"));
+		module.exports = factory(require("jquery"));
 	else if(typeof define === 'function' && define.amd)
-		define(["jQuery"], factory);
+		define(["jquery"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("jQuery")) : factory(root["jQuery"]);
+		var a = typeof exports === 'object' ? factory(require("jquery")) : factory(root["jQuery"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(this, function(__WEBPACK_EXTERNAL_MODULE_32__) {
@@ -191,16 +191,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      if (lastPosition > currentPosition) {
 	        $('.cbp-header').removeClass('disappear');
-	        $('.app-header').removeClass('top');
-	        $('.sidebar').removeClass('after-header').addClass('after-double-header');
+
+	        //if not using app-header
+	        if ($('.app-header').length) {
+	          $('.app-header').removeClass('top');
+	          $('.sidebar').removeClass('after-header').addClass('after-double-header');
+	        }
 	      } else {
 	        $('.cbp-header').addClass('disappear');
-	        $('.app-header').addClass('top');
-	        $('.sidebar').removeClass('after-double-header').addClass('after-header');
-
-	        // hida all menu items from the header
+	        // hide all menu items from the header
 	        $('.cbp-header .dropdown.open').removeClass('open');
-	        $('.app-header .dropdown.open').removeClass('open');
+
+	        if ($('.app-header').length) {
+	          $('.app-header').addClass('top');
+	          $('.sidebar').removeClass('after-double-header').addClass('after-header');
+	          $('.app-header .dropdown.open').removeClass('open');
+	        }
 	      }
 
 	      lastPosition = currentPosition;
@@ -2917,8 +2923,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.select_.addEventListener('blur', this.boundBlurHandler);
 	        this.select_.addEventListener('reset', this.boundResetHandler);
 
+	        var invalid = this.element_.classList
+	          .contains(this.CssClasses_.IS_INVALID);
 	        this.updateClasses_();
 	        this.element_.classList.add(this.CssClasses_.IS_UPGRADED);
+	        if (invalid) {
+	          this.element_.classList.add(this.CssClasses_.IS_INVALID);
+	        }
 	      }
 	    }
 	  };
