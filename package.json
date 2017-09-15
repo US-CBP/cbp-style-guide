@@ -11,6 +11,10 @@
     {
       "name": "David Y. Hodge",
       "email": "david.y.hodge@cbp.dhs.gov"
+    },
+    {
+      "name": "Menka Kayan",
+      "email": "menka.kayan@cbp.dhs.gov"
     }
   ],
   "repository": {
@@ -19,7 +23,7 @@
   },
   "private": true,
   "devDependencies": {
-    "cbp-theme": "1.4.0",
+    "cbp-theme": "1.5.0",
     "ejs": "^2.4.2",
     "font-awesome": "^4.7.0",
     "grunt": "^1.0.1",
