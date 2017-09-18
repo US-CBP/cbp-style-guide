@@ -5,8 +5,19 @@ layout: pattern
 
 {::nomarkdown}
 <div class="pl-versions">
+    <div class="pl-panel">
+        <h4>Alpha - 09/15/2017</h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Updated to use CBP Theme v1.5.0</li>
+        </ul>
+        <ul>
+            <li>Updated examples of Typography</li>
+        </ul>
+
+    </div>
      <div class="pl-panel">
-        <h4>Alpha - 03/15/2017</h4>
+        <h4>Alpha - 09/10/2017</h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
             <li>Updated to use CBP Theme v1.4.0</li>
@@ -18,7 +29,7 @@ layout: pattern
     </div>
     <div class="pl-panel">
         <h4>Alpha - 03/15/2017</h4>
-        <span class="label subtle label-info">NEW</span>
+        
         <ul>
             <li>Updated to use CBP Theme v1.1.0</li>
         </ul>
@@ -30,7 +41,7 @@ layout: pattern
 
     <div class="pl-panel">
         <h4>Alpha - 11/29/2016</h4>
-        <span class="label subtle label-info">NEW</span>
+        
         <ul>
             <li>Added Vertical Steps Wizard Example</li>
         </ul>
@@ -38,7 +49,7 @@ layout: pattern
 
     <div class="pl-panel">
         <h4>Alpha - 11/4/2016</h4>
-        <span class="label subtle label-info">NEW</span>
+        
         <ul>
             <li>Added Vertical Steps Wizard Example</li>
         </ul>
@@ -46,21 +57,21 @@ layout: pattern
 
     <div class="pl-panel">
         <h4>Alpha - 11/3/2016</h4>
-        <span class="label subtle label-info">NEW</span>
+        
         <ul>
             <li>Added Horizonal and Collapsed Filter Examples</li>
         </ul>
     </div>
     <div class="pl-panel">
         <h4>Alpha - 08/1/2016</h4>
-        <span class="label subtle label-info">NEW</span>
+        
         <ul>
             <li>Release to Open Source on GitHub</li>
         </ul>
     </div>
     <div class="pl-panel">
         <h4>Alpha - 10/08/2015</h4>
-        <span class="label subtle label-info">NEW</span>
+        
         <ul>
             <li>Created CBP Design Guide (Based off USPTO Design guide)</li>
         </ul>
