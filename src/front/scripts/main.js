@@ -92,7 +92,7 @@
     $('[data-toggle="tooltip"]').tooltip({container: 'body', delay: { show: 200, hide: 0 } });
 
 
-     //adding ellipsis to the large text
+    //adding ellipsis to the large text
     var ellipsisText = function(e) {
         //complete text stored in a variable
         var completeText = e.innerHTML.split(' ');
