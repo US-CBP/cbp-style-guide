@@ -2788,8 +2788,6 @@
     margin: 0;
     padding: 0 5px;
     width: 100%; }
-    .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
-      list-style: none; }
   .select2-container--default .select2-selection--multiple .select2-selection__placeholder {
     color: #999;
     margin-top: 5px;
@@ -3080,7 +3078,7 @@
   border-color: #5897fb; }
 
 /**
- * selectize.css (v0.12.4)
+ * selectize.css (v0.12.1)
  * Copyright (c) 2013–2015 Brian Reavis & contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -3179,12 +3177,6 @@
 }
 .selectize-control.plugin-remove_button .disabled [data-value] .remove {
   border-left-color: #ffffff;
-}
-.selectize-control.plugin-remove_button .remove-single {
-  position: absolute;
-  right: 28px;
-  top: 6px;
-  font-size: 23px;
 }
 .selectize-control {
   position: relative;
@@ -3338,7 +3330,6 @@
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 200px;
-  -webkit-overflow-scrolling: touch;
 }
 .selectize-control.single .selectize-input,
 .selectize-control.single .selectize-input input {
@@ -3378,7 +3369,7 @@
   background-color: #fafafa;
 }
 
-/**! hopscotch - v0.2.8
+/**! hopscotch - v0.3.1
 *
 * Copyright 2017 LinkedIn Corp. All rights reserved.
 *
