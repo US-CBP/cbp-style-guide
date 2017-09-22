@@ -169,11 +169,7 @@ Text areas can either
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <label for="ta13" class="mdl-textfield__label">Disabled</label>
             <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-          </div>
-          <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-readonly">
-            <label for="ta14" class="mdl-textfield__label">Readonly</label>
-            <textarea class="mdl-textfield__input" id="ta14" rows="2" readonly></textarea>
-          </div> -->
+          </div>         
         </form>
     </div>
 </div>
