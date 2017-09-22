@@ -28,7 +28,7 @@
             <ul class="nav navbar-nav navbar-left">
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
-                  Navigation and Content<span class="caret"></span> <!-- Your application name goes here!!!-->
+                  Content Only<span class="caret"></span> <!-- Your application name goes here!!!-->
                 </a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#">Recent Apps</a></li>
@@ -52,6 +52,7 @@
                   <span class="caret"></span>
                 </a>
                 <ul rel="right-menu-links" role="menu" class="dropdown-menu">
+                
                   <li>
                     <a title="Preferences" href="#">Preferences</a>
                   </li>
@@ -137,286 +138,256 @@
         </div>
       </div>
 
-      <div class="container-fluid content">
-
-				<div class="row">
-          <div class="cbp-sidebar sidebar after-double-header" >
-            <div class="row">
-              <div class="col-md-12 pull-left">
-                <form class="filters">
-                  <div class="filter-list" role="tablist">
-                    <h1 class="filter-heading">Filters <a href="" class="filters-clear">Clear Filters</a></h1>
-                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup8" class="filter-group-title">
-                    Year <i class="fa fa-angle-right pull-right"></i>
-                    </h2>
-                    <div id="filterGroup8" class="collapse in">
-                      <div class="filter-group-content">
-                        <div class="form-group">
-                          <ul class="list-unstyled">
-                            <li><a href="">2014</a></li>
-                            <li><a href="">2013</a></li>
-                            <li><a href="">2012</a></li>
-                            <li><a href="">2011</a></li>
-                          </ul>
+     <div class="container-fluid content">
+      
+      <div class="cbp-sidebar sidebar after-double-header">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 pull-left">
+            <div>
+              <h2 role="button">Cargo</h2>
+              <div class="list-group">
+                <a class="list-group-item active" href="#" role="button"> Operations<span class="pull-right">29</span></a>
+                <a class="list-group-item" href="#" role="button">Support<span class="pull-right">4</span></a>
+                <a class="list-group-item" href="#" role="button">Targeting<span class="pull-right">17</span></a>
+              </div>
+            </div>
+            <div>
+              <h2 role="button">People</h2>
+              <div class="list-group">
+                <a class="list-group-item" href="#" role="button">Operations<span class="pull-right">13</span></a>
+                <a class="list-group-item" href="#" role="button">Support<span class="pull-right">2</span></a>
+                <a class="list-group-item" href="#" role="button">Targeting<span class="pull-right">10</span></a>
+              </div>
+            </div>
+            <div class="">
+              <h2 role="button">Services</h2>
+              <div class="list-group">
+                <a class="list-group-item" href="#" role="button">Operations<span class="pull-right">15</span></a>
+                <a class="list-group-item" href="#" role="button">Support<span class="pull-right">3</span></a>
+                <a class="list-group-item" href="#" role="button">Targeting<span class="pull-right">2</span></a>
+                
+              </div>
+            </div>
+            <div class="pull-right text-sm"><button class="fa fa-refresh btn btn-xs btn-default" title="Refresh Application Directory"></button>&nbsp; Updated:  08/17/2017 14:08:08 </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="cbp-sidebar-offset" id="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="app">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12"><h2>Recent Apps</h2>
+                  </div>
+                </div>
+                <div class="row mdl-card-deck">
+                  <div class="col-xs-12 col-sm-6 col-md-3 ">
+                    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                      <div class="mdl-card__title">
+                        <h3 class="mdl-card__title-text">Heading for the card</h3>
+                      </div>
+                      <div class="mdl-card__supporting-text with-footer">
+                        <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <button type="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                        <i class="fa fa-star"></i>
+                        <span class="sr-only">Favorite</span>
+                        </button>
+                        <a href="edit.html" role="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <span class="sr-only">Edit</span>
+                        </a>
+                        <button class="btn btn-primary btn-xs pull-right">
+                        Go to App
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 ">
+                    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                      <div class="mdl-card__title">
+                        <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
+                      </div>
+                      <div class="mdl-card__supporting-text with-footer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /></p>
+                        <ul class="list-inline"><li><span class="text-bold">Developer</span></li><li>Testing</li><li>SSO</li></ul>
+                        
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <button class="btn btn-primary btn-xs pull-right">
+                        Go to App
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 ">
+                    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                      <div class="mdl-card__title">
+                        <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                      </div>
+                      <div class="mdl-card__supporting-text with-footer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
+                        
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border"><button type="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                        <i class="fa fa-star"></i>
+                        <span class="sr-only">Favorite</span>
+                        </button>
+                        <a href="edit.html" role="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <span class="sr-only">Edit</span>
+                        </a>
+                        <button class="btn btn-primary btn-xs pull-right">
+                        Go to App
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 ">
+                    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                      <div class="mdl-card__title">
+                        <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                      </div>
+                      <div class="mdl-card__supporting-text with-footer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.<br /></p>
+                        
+                        <ul class="list-inline show-list-10items">
+                          <li><span class="text-bold">Developer</span></li>
+                          <li>Testing</li>
+                          <li>SSO</li>
+                          <li>AES</li><li>ACE</li><li>ATS-AT</li><li>Sample</li><li>sample</li><li>Sample</li><li>sample</li><li>Sample</li><li>sample</li></ul>
+                          
+                          
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border"><button type="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                          <i class="fa fa-star"></i>
+                          <span class="sr-only">Favorite</span>
+                          </button>
+                          <a href="edit.html" role="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                          <i class="fa fa-pencil-square-o"></i>
+                          <span class="sr-only">Edit</span>
+                          </a>
+                          <button class="btn btn-primary btn-xs pull-right">
+                          Go to App
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup2" class="filter-group-title"> <i class="fa fa-angle-right pull-right"></i>
-                    Mode of Transportation
-                    </h2>
-                    <div id="filterGroup2" class="collapse in">
-                      <div class="filter-group-content">
-                        <div class="form-group">
-                          <div class="checkbox">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                              <input id="conveytype1" checked type="checkbox" class="mdl-checkbox__input">
-                              <span for="conveytype1" class="mdl-checkbox__label">Truck</span>
-                              <span class="text-muted">(13)</span>
-                            </label>
-                          </div>
-                          <div class="checkbox">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                              <input id="conveytype2" type="checkbox" class="mdl-checkbox__input">
-                              <span for="conveytype2" class="mdl-checkbox__label">Air</span>
-                              <span class="text-muted">(45)</span>
-                            </label>
-                          </div>
-                          <div class="checkbox">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                              <input id="conveytype3" type="checkbox" class="mdl-checkbox__input">
-                              <span for="conveytype3" class="mdl-checkbox__label">Sea</span>
-                              <span class="text-muted">(18)</span>
-                            </label>
-                          </div>
-                          <div class="checkbox">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                              <input id="conveytype4" type="checkbox" class="mdl-checkbox__input">
-                              <span for="conveytype4" class="mdl-checkbox__label">Rail</span>
-                              <span class="text-muted">(32)</span>
-                            </label>
-                          </div>
-                          <div class="checkbox">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                              <input id="conveytype5" type="checkbox" class="mdl-checkbox__input">
-                              <span for="conveytype5" class="mdl-checkbox__label">Fixed</span>
-                              <span class="text-muted">(43)</span>
-                            </label>
-                          </div>
-                        </div>
-                        <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
-                      </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-sm-12"><h2>All Apps</h2>
                     </div>
-                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup1" class="filter-group-title">
-                      <i class="fa fa-angle-right pull-right"></i> Date range
-                    </h2>
-                    <div id="filterGroup1" class="collapse in">
-                      <div class="filter-group-content">
-                        <div class="row">
-                          <div class="form-group col-sm-6">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                              <label for="startRange" class="mdl-textfield__label"><i class="fa fa-calendar-o fa-fw"></i>&nbsp;Start</label>
-                              <input type="text" id="startRange" class="datepicker mdl-textfield__input" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " />
-                            </div>
-                          </div>
-                          <div class="form-group col-sm-6">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                              <label for="endRange" class="mdl-textfield__label"><i class="fa fa-calendar-o fa-fw"></i>&nbsp;End</label>
-                              <input type="text" id="endRange" class="datepicker mdl-textfield__input" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " />
-                            </div>
-                          </div>
+                  </div>
+                  <div class="row mdl-card-deck">
+                    <div class="col-xs-12 col-sm-6 col-md-3 ">
+                      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                        <div class="mdl-card__title">
+                          <h3 class="mdl-card__title-text">Heading for the card</h3>
+                        </div>
+                        <div class="mdl-card__supporting-text with-footer">
+                          <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border"><button type="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                          <i class="fa fa-star"></i>
+                          <span class="sr-only">Favorite</span>
+                          </button>
+                          <a href="edit.html" role="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                          <i class="fa fa-pencil-square-o"></i>
+                          <span class="sr-only">Edit</span>
+                          </a>
+                          <button class="btn btn-primary btn-xs pull-right">
+                          Go to App
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup5" class="filter-group-title">
-                    <i class="fa fa-angle-right pull-right"></i> Distance
-                    </h2>
-                    <div id="filterGroup5" class="collapse in">
-                      <div class="filter-group-content">
-                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--full-width">
-                          <select class="mdl-selectfield__select" id="distance">
-                            <option value=""></option>
-                            <option value="5">Within 5 miles</option>
-                            <option value="255">Within 25 miles</option>
-                          </select>
-                          <label class="mdl-selectfield__label" for="distance">Distance</label>
+                    <div class="col-xs-12 col-sm-6 col-md-3 ">
+                      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                        <div class="mdl-card__title">
+                          <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
+                        </div>
+                        <div class="mdl-card__supporting-text with-footer">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /></p>
+                          <ul class="list-inline"><li><span class="text-bold">Developer</span></li><li>Testing</li><li>SSO</li></ul>
+                          
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                          <button class="btn btn-primary btn-xs pull-right">
+                          Go to App
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup6" class="filter-group-title">
-                    <i class="fa fa-angle-right pull-right"></i> Name
-                    </h2>
-                    <div id="filterGroup6" class="collapse in">
-                      <div class="filter-group-content">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                          <label for="serange" class="mdl-textfield__label"><i class="fa fa-search fa-fw"></i>&nbsp;Search</label>
-                          <input type="text" id="serange" class="mdl-textfield__input" />
+                    <div class="col-xs-12 col-sm-6 col-md-3 ">
+                      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                        <div class="mdl-card__title">
+                          <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                        </div>
+                        <div class="mdl-card__supporting-text with-footer">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
+                          
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border"><button type="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                          <i class="fa fa-star"></i>
+                          <span class="sr-only">Favorite</span>
+                          </button>
+                          <a href="edit.html" role="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                          <i class="fa fa-pencil-square-o"></i>
+                          <span class="sr-only">Edit</span>
+                          </a>
+                          <button class="btn btn-primary btn-xs pull-right">
+                          Go to App
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup3" class="filter-group-title">
-                      Chart Colors <i class="fa fa-angle-right pull-right"></i>
-                    </h2>
-                    <div id="filterGroup3" class="collapse in">
-                      <div class="filter-group-content">
-                        <div class="form-group">
-                          <div style="background-color: #E00000;" class="filter-color"></div>
-                          <div style="background-color: #009CDE;" class="filter-color"></div>
-                          <div style="background-color: #1BAB00;" class="filter-color active"></div>
-                          <div style="background-color: #BB16A3;" class="filter-color"></div>
-                          <div style="background-color: #F3CE37;" class="filter-color"></div>
-                          <div style="background-color: #A7A8AA;" class="filter-color"></div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 ">
+                      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                        <div class="mdl-card__title">
+                          <h3 class="mdl-card__title-text">Heading text for the card</h3>
                         </div>
-                      </div>
-                    </div>
-                    <h2 aria-expanded="true" data-toggle="collapse" role="tab" data-target="#filterGroup7" class="filter-group-title">
-                      Tags <i class="fa fa-angle-right pull-right"></i>
-                    </h2>
-                    <div id="filterGroup7" class="collapse in">
-                      <div class="filter-group-content">
-                        <div class="form-group">
-                          <ul id="tagsExample" class="list-unstyled">
-                            <li class="tag tag-default">
-                              Assignment <i class="fa fa-close fa-muted" data-dismiss="tag"></i>
-                            </li>
-                            <li class="tag tag-default">
-                              Change of name <i class="fa fa-close fa-muted" data-dismiss="tag"></i>
-                            </li>
-                          </ul>
-                          <div class="input-group">
-                            <div class="mdl-textfield mdl-js-textfield" style="width: 100%;">
-                              <label for="tag" class="mdl-textfield__label"><i class="fa fa-tag fa-fw"></i>&nbsp;Enter Tag</label>
-                              <input type="text" id="tag" class="mdl-textfield__input" />
-                            </div>
-                            <span class="input-group-btn">
-                              <button type="submit" class="btn btn-default tag-example-button" >Add</button>
-                            </span>
+                        <div class="mdl-card__supporting-text with-footer">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.<br /></p>
+                          
+                          <ul class="list-inline show-list-10items">
+                            <li><span class="text-bold">Developer</span></li>
+                            <li>Testing</li>
+                            <li>SSO</li>
+                            <li>AES</li><li>ACE</li><li>ATS-AT</li><li>Sample</li><li>sample</li><li>Sample</li><li>sample</li><li>Sample</li><li>sample</li></ul>
+                            
+                            
+                          </div>
+                          <div class="mdl-card__actions mdl-card--border"><button type="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                            <i class="fa fa-star"></i>
+                            <span class="sr-only">Favorite</span>
+                            </button>
+                            <a href="edit.html" role="button" class="edit btn btn-icon-only btn-xs btn-hover">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <span class="sr-only">Edit</span>
+                            </a>
+                            <button class="btn btn-primary btn-xs pull-right">
+                            Go to App
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
-          <div id="content" class="cbp-sidebar-offset">
-            <h1 class="page-header">Navigation and Content</h1>
-						<p>The navigation and content layout has a column for vertical navigation to the left of the content area, which is useful for when a long list of navigation links is necessary.</p>
-					  <div>
-							<div class="panel-body">
-								<ul class="nav nav-pills" role="tablist">
-								  <li><a href="#" role="tab" data-toggle="tab">All <span class="badge">39</span></a></li>
-								  <li class="active"><a href="#" role="tab" data-toggle="tab">New entities <span class="badge">5</span></a></li>
-								  <li><a href="#" role="tab" data-toggle="tab">Unassigned entities <span class="badge">2</span></a></li>
-								  <li><a href="#" role="tab" data-toggle="tab">Assigned entities <span class="badge">32</span></a></li>
-								</ul>
-							</div>
-							<table class="cbp-table mdl-js-data-table">
-						     <thead>
-						       <tr>
-						         <th class="non-numeric">Project name</th>
-						         <th class="non-numeric">Description</th>
-						         <th>Price</th>
-						       </tr>
-						     </thead>
-						     <tbody>
-						       <tr>
-						         <td class="non-numeric">Invoice</td>
-						         <td class="non-numeric">
-						           <span>Add invoice confirmation</span>
-						         </td>
-						         <td>
-						           <span>$4,500</span>
-						         </td>
-						       </tr>
-						       <tr>
-						         <td class="non-numeric">Templates</td>
-						         <td class="non-numeric">
-						           <span>Refactor templates to use the new templating library</span>
-						         </td>
-						         <td>
-						           <span>$9,000</span>
-						         </td>
-						       </tr>
-						       <tr>
-						         <td class="non-numeric">Payments</td>
-						         <td class="non-numeric">
-						           <span>Process payments using third party api</span>
-						         </td>
-						         <td>
-						           <span>$5,400</span>
-						         </td>
-						       </tr>
-						       <tr>
-						         <td class="non-numeric">Account Management</td>
-						         <td class="non-numeric">
-						           <span>Improve account management workflow</span>
-						         </td>
-						         <td>
-						           <span>$6,000</span>
-						         </td>
-						       </tr>
-						     </tbody>
-						   </table>
-							 <div class="form-inline">
-							    <div class="form-group">
-							      <div class="btn-group dropdown">
-							        <button type="button" id="dropdownMenu9" class="btn-link btn dropdown-toggle" data-toggle="dropdown">
-							        10 per page
-							        <span class="caret"></span>
-							        </button>
-							        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
-							          <li role="presentation" class="dropdown-header">Show up to</li>
-							          <li role="presentation" class="active">
-							            <a role="menuitem" tabindex="-1" href="#">10 items</a>
-							          </li>
-							          <li role="presentation">
-							            <a role="menuitem" tabindex="-1" href="#">25 items</a>
-							          </li>
-							          <li role="presentation">
-							            <a role="menuitem" tabindex="-1" href="#">50 items</a>
-							          </li>
-							          <li role="presentation">
-							            <a role="menuitem" tabindex="-1" href="#">100 items</a>
-							          </li>
-							        </ul>
-							      </div>
-							    </div>
-							    <div class="form-group">
-							      <div class="btn-group">
-							        <a class="btn btn-default" href="#">
-							          <i class="fa fa-angle-left"></i>
-							        </a>
-							        <a class="btn btn-default" href="#">1</a>
-							        <a class="btn btn-default" href="#">...</a>
-							        <a class="btn btn-default" href="#">13</a>
-							        <a class="btn btn-default" href="#">14</a>
-							        <a class="btn btn-default active" href="#">15</a>
-							        <a class="btn btn-default" href="#">16</a>
-							        <a class="btn btn-default" href="#">17</a>
-							        <a class="btn btn-default" href="#">...</a>
-							        <a class="btn btn-default" href="#">25</a>
-							        <a class="btn btn-default" href="#">
-							          <i class="fa fa-angle-right"></i>
-							        </a>
-							      </div>
-							    </div>
-							    <div class="form-group">
-							      <div class="input-group">
-							        <div class="mdl-textfield mdl-js-textfield" style="width: 150px;">
-							          <label class="mdl-textfield__label">15 out of 40</label>
-							          <input type="text" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" />
-							        </div>
-							        <span class="input-group-btn">
-							          <button class="btn btn-default" type="button">Go</button>
-							        </span>
-							      </div>
-							    </div>
-								</div>
-						</div>
+        </div>
+      <footer class="cbp-banner" role="banner"></footer>
+    </div>
 
-        	</div>
-			</div>
 
 			<footer role="banner" class="cbp-banner"></footer>
 

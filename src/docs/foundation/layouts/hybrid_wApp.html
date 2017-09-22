@@ -28,7 +28,7 @@
             <ul class="nav navbar-nav navbar-left">
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
-                  Content Only<span class="caret"></span> <!-- Your application name goes here!!!-->
+                  Hybrid<span class="caret"></span> <!-- Your application name goes here!!!-->
                 </a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#">Recent Apps</a></li>
@@ -83,12 +83,8 @@
             <div class="nav navbar-nav">
               <ul class="nav nav-tabs nav-tabs-light" role="tablist">
 
-                <li class="active" role="presentation">
-                  <a href="http://www.google.com" target="_blank" role="tab" >Active App View Link</a>
-                </li>
-
                 <li class="dropdown" role="presentation">
-                  <a class="pull-left" data-toggle="tab" href="#pane1">View Link w/ View Options Dropdown</a>
+                  <a class="pull-left" data-toggle="tab" href="#pane1">Active App View Link w/ View Options Dropdown</a>
                   <a class="pull-right" data-toggle="dropdown" aria-haspopup="true">
                     <span class="caret"></span>
                   </a>
@@ -137,13 +133,15 @@
         </div>
       </div>
 
-      <div class="container-fluid content">
+      <div class="container content">
 
 				<div class="row">
-					  <div class="col-md-12">
-              <h1 class="page-header">Content Only</h1>
-              <p>The content only layout maximizes the space available for content. It provides more horizontal space than the other layouts, and is therefore ideal for displaying wide tables and other large user interface elements. Conversely, it doesn’t provide any structure for grouping and separating elements.</p>
-							<table class="cbp-table mdl-js-data-table">
+          <div id="content" class="after-double-header">
+            <div class="col-md-12">
+							<h1 class="page-header">Hybrid</h1>
+							<p>The hybrid page layout combines the fluid design for the application header with a fixed width design for the rest of the content area. It should only be used in cases where a fixed width page layout is desirable but where the Application header might contain a large number of items.</p>
+
+								<table class="cbp-table mdl-js-data-table">
 						     <thead>
 						       <tr>
 						         <th class="non-numeric">Project name</th>
@@ -191,6 +189,8 @@
 						     </tbody>
 						   </table>
 						</div>
+
+        	</div>
 			</div>
 
 			<footer role="banner" class="cbp-banner"></footer>

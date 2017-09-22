@@ -71,6 +71,32 @@ Equal padding should be observed left and right of the page content. At no point
 
 <div class="pl-preview">
 
+![Hybrid layout](layouts/images/layout-hybrid_wApp.png)
+
+##### Hybrid
+
+[View example](layouts/hybrid_wApp.html){:target="_blank"}
+
+The hybrid page layout combines the fluid design for the application header with a fixed width design for the rest of the content area. It should only be used in cases where a fixed width page layout is desirable but where the Application header might contain a large number of items.
+</div>
+
+{: .clearfix}
+
+{% highlight html %}
+<form role="form" class="form">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <label for="ta12" class="mdl-textfield__label">Normal</label>
+    <textarea class="mdl-textfield__input" id="ta12" rows="2"></textarea>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <label for="ta13" class="mdl-textfield__label">Disabled</label>
+    <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
+  </div>  
+</form>
+{% endhighlight %}
+
+<div class="pl-preview">
+
 ![Hybrid layout](layouts/images/layout-hybrid.png)
 
 ##### Hybrid
@@ -97,13 +123,14 @@ The hybrid page layout combines the fluid design for the application header with
 
 <div class="pl-preview">
 
-![Content only](layouts/images/type-content-only.png)
+![Navigation and content](layouts/images/type-content-navigation_wApp.png)
 
-##### Content only
+##### Navigation and content
 
-[View example](layouts/type-content-only.html){:target="_blank"}
+[View example](layouts/type-content-navigation_wApp.html){:target="_blank"}
 
-The content only layout maximizes the space available for content. It provides more horizontal space than the other layouts, and is therefore ideal for displaying wide tables and other large user interface elements. Conversely, it doesn't provide any structure for grouping and separating elements.
+The navigation and content layout has a column for vertical navigation to the left of the content area, which is useful for when a long list of navigation links is necessary.
+
 </div>
 
 {: .clearfix}
@@ -147,7 +174,6 @@ The navigation and content layout has a column for vertical navigation to the le
   </div>  
 </form>
 {% endhighlight %}
-
 
 *** See Vertical navigation and Horizontal navigation for more detail.
 {: .clearfix}
