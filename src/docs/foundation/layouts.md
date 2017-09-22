@@ -15,7 +15,7 @@ Consistent and anticipated layouts allow users to navigate and understand applic
 
 ##### Fluid
 
-[View example](layouts/fluid.html){:target="_blank"}
+[View example](layouts/fluid_wApp.html){:target="_blank"}
 
 The fluid page layout provides maximum space for content in all sizes. It leaves control over the size of the interface to the user by automatically adjusting to fit the size of their browser. Note that some types of content (like large bodies of text) can become hard to read due to excessively long line lengths, if nothing is done to mitigate this.
 
