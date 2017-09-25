@@ -26,6 +26,10 @@ Text boxes allow the user to input a simple text value. A text box only allows f
             <label for="tb13" class="mdl-textfield__label">Disabled</label>
             <input type="text" class="mdl-textfield__input" id="tb13" disabled>
           </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-readonly">
+            <label for="tb14" class="mdl-textfield__label">Readonly</label>
+            <input type="text" class="mdl-textfield__input" id="tb14" readonly>
+          </div>
         </form>
     </div>
 </div>
@@ -41,6 +45,10 @@ Text boxes allow the user to input a simple text value. A text box only allows f
   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <label for="tb13" class="mdl-textfield__label">Disabled</label>
     <input type="text" class="mdl-textfield__input" id="tb13" disabled>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-readonly">
+    <label for="tb14" class="mdl-textfield__label">Readonly</label>
+    <input type="text" class="mdl-textfield__input" id="tb14" Readonly>
   </div>
 </form>
 {% endhighlight %}
@@ -161,7 +169,7 @@ Text areas can either
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <label for="ta13" class="mdl-textfield__label">Disabled</label>
             <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-          </div>
+          </div>          
         </form>
     </div>
 </div>
@@ -178,7 +186,7 @@ Text areas can either
   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <label for="ta13" class="mdl-textfield__label">Disabled</label>
     <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-  </div>
+  </div>  
 </form>
 {% endhighlight %}
 
