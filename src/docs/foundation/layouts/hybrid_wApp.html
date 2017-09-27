@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>CBP Theme</title>
+    <title>CBP Style Guide Layout Type</title>
     <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
     <meta charset="UTF-8">
@@ -30,11 +30,18 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
                   Hybrid<span class="caret"></span> <!-- Your application name goes here!!!-->
                 </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Recent Apps</a></li>
+                 <ul class="dropdown-menu" id="nav-menu">
+                  <li class="dropdown-header" rel="recent">Recent Apps</li>
+                  <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 1</span></a></li>
+                  <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 2</span></a></li>
+                  <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 3</span></a></li>
+                  <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 4</span></a></li>
+                  <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 5</span></a></li>
+                  <li class="divider" rel="recent"></li>
+                  <li rel="search_input"><input class="form-control input-md" placeholder="Search..." style="border: none; text-indent: 7px; box-shadow: none; outline: none"></li>
                   <li class="divider"></li>
-                  <li><a href="#">Another Application</a></li>
-                  <li><a href="#">Yet Another Application</a></li>
+                  <li><a href="/">See All Available Apps...</a></li><li rel="refreshMenujs"><a href="#">Refresh</a></li>
+                  <li class="dropdown-header"><p class="pull-right">Updated 9/27/17 08:48:57</p></li>
                 </ul>
               </li>
             </ul>
