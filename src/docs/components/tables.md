@@ -5,6 +5,14 @@ title: "Tables"
 <div class="pl-pattern">
 <h1>Tables</h1>
 
+{::nomarkdown}
+<div style="max-width: 550px;">        
+    <div class="alert alert-warning" role="alert">      
+      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <strong>CBP theme version 1.6.0 update</strong> Class <strong>cbp-table</strong> is replaced by class <strong>table</strong>.
+    </div>       
+</div>
+{:/nomarkdown}
+
 #### Purpose
 Users need to see structured data in a manner that makes the data readable, scannable, and comparable.
 
@@ -39,112 +47,546 @@ A table's complexity and needs can vary greatly. This pattern provides many diff
 #### Standard
 A standard table has subtle row borders.
 
-<h4>Includes Borderless, Comfortable, Hover stylings with MDL additions <small>Just by using the classnames: "cbp-table mdl-js-data-table"</small></h4>
+<h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: "table mdl-js-data-table"</small></h4>
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-      <table class="cbp-table mdl-js-data-table">
-        <caption>Standard Table</caption>
-        <thead>
-          <tr>
-            <th scope="col" class="non-numeric">Project name</th>
-            <th scope="col" class="non-numeric">Description</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="non-numeric">Invoice</th>
-            <td class="non-numeric">
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Templates</th>
-            <td class="non-numeric">
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Payments</th>
-            <td class="non-numeric">
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Account Management</th>
-            <td class="non-numeric">
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</div>
+  <table class="table mdl-js-data-table">
+    <caption>Standard Table</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric">Project name</th>
+        <th scope="col" class="non-numeric">Description</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
-      <table class="cbp-table mdl-js-data-table">
-        <caption>Standard Table</caption>
-        <thead>
-          <tr>
-            <th scope="col" class="non-numeric">Project name</th>
-            <th scope="col" class="non-numeric">Description</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="non-numeric">Invoice</th>
-            <td class="non-numeric">
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Templates</th>
-            <td class="non-numeric">
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Payments</th>
-            <td class="non-numeric">
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Account Management</th>
-            <td class="non-numeric">
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<table class="table mdl-js-data-table">
+  <caption>Standard Table</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" class="non-numeric">Invoice</th>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Templates</th>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Payments</th>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Account Management</th>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endhighlight %}
+
+#### Comfortable Table 
+A standard table with extra padding and has subtle row borders.
+
+<h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: "table table-comfortable mdl-js-data-table"</small></h4>
+
+{::nomarkdown}
+<div class="pl-preview">
+  <table class="table table-comfortable mdl-js-data-table">
+    <caption>Comfortable Table - table with extra padding</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric">Project name</th>
+        <th scope="col" class="non-numeric">Description</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<table class="table table-comfortable mdl-js-data-table">
+  <caption>Comfortable Table - table with extra padding</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" class="non-numeric">Invoice</th>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Templates</th>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Payments</th>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Account Management</th>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endhighlight %}
+
+#### Condensed Table 
+A standard table with less padding and has subtle row borders.
+
+<h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: "table table-condensed mdl-js-data-table"</small></h4>
+
+{::nomarkdown}
+<div class="pl-preview">
+  <table class="table table-condensed mdl-js-data-table">
+    <caption>Condensed Table - table with less padding</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric">Project name</th>
+        <th scope="col" class="non-numeric">Description</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<table class="table table-condensed mdl-js-data-table">
+  <caption>Condensed Table - table with less padding</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" class="non-numeric">Invoice</th>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Templates</th>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Payments</th>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Account Management</th>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endhighlight %}
+
+#### Borderless Table 
+A standard table no border.
+
+<h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: "table table-borderless mdl-js-data-table"</small></h4>
+
+{::nomarkdown}
+<div class="pl-preview">
+  <table class="table table-borderless mdl-js-data-table">
+    <caption>Borderless Table - table with no border</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric">Project name</th>
+        <th scope="col" class="non-numeric">Description</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<table class="table table-borderless mdl-js-data-table">
+  <caption>Borderless Table - table with no border</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" class="non-numeric">Invoice</th>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Templates</th>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Payments</th>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Account Management</th>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endhighlight %}
+
+#### Outline Table 
+A standard table with outside border.
+
+<h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: "table table-outline mdl-js-data-table"</small></h4>
+
+{::nomarkdown}
+<div class="pl-preview">
+  <table class="table table-outline mdl-js-data-table">
+    <caption>Outline Table - table with outside border</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric">Project name</th>
+        <th scope="col" class="non-numeric">Description</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<table class="table table-outline mdl-js-data-table">
+  <caption>Outline Table - table with outside border</caption>
+  <thead>
+    <tr>
+      <th scope="col" class="non-numeric">Project name</th>
+      <th scope="col" class="non-numeric">Description</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" class="non-numeric">Invoice</th>
+      <td class="non-numeric">
+        <span>Add invoice confirmation</span>
+      </td>
+      <td>
+        <span>$4,500</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Templates</th>
+      <td class="non-numeric">
+        <span>Refactor templates to use the new templating library</span>
+      </td>
+      <td>
+        <span>$9,000</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Payments</th>
+      <td class="non-numeric">
+        <span>Process payments using third party api</span>
+      </td>
+      <td>
+        <span>$5,400</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" class="non-numeric">Account Management</th>
+      <td class="non-numeric">
+        <span>Improve account management workflow</span>
+      </td>
+      <td>
+        <span>$6,000</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 {% endhighlight %}
 
 #### Striped
@@ -152,61 +594,59 @@ A striped table adds an alternating row background color, increasing usability f
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-      <table class="cbp-table table-striped mdl-js-data-table">
-        <caption>Striped Table</caption>
-        <thead>
-          <tr>
-            <th scope="col" class="non-numeric">Project name</th>
-            <th scope="col" class="non-numeric">Description</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="non-numeric">Invoice</th>
-            <td class="non-numeric">
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Templates</th>
-            <td class="non-numeric">
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Payments</th>
-            <td class="non-numeric">
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="non-numeric">Account Management</th>
-            <td class="non-numeric">
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</div>
+  <table class="table table-striped mdl-js-data-table">
+    <caption>Striped Table</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric">Project name</th>
+        <th scope="col" class="non-numeric">Description</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>  
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
-<table class="cbp-table table-striped mdl-js-data-table">
+<table class="table table-striped mdl-js-data-table">
   <caption>Striped Table</caption>
   <thead>
     <tr>
@@ -267,180 +707,180 @@ A fixed header remains visible as the table body is scrolled. This is useful for
 
 {::nomarkdown}
 <div class="pl-preview">
-    <div style="padding: 40px; background: #fff;">
-                  <table aria-hidden="true" class="cbp-table mdl-js-data-table floating-table-header">
-                    <caption>Fixed Header Table</caption>
-                    <thead>
-                      <tr>
-                        <th scope="col" class="non-numeric" style="width: 25%">Project name</th>
-                        <th scope="col" class="non-numeric" style="width: 50%">Description</th>
-                        <th scope="col">Price</th>
-                      </tr>
-                    </thead>
-                  </table>
-                  <div class="floating-table-body" style="max-height: 200px;">
-                    <table class="cbp-table-selectable mdl-js-data-table" >
-                      <thead>
-                        <tr>
-                          <th scope="col" class="non-numeric" style="width: 25%;">Project name</th>
-                          <th scope="col" class="non-numeric" style="width: 50%;">Description</th>
-                          <th scope="col">Price</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Add invoice confirmation</span>
-                          </td>
-                          <td >
-                            <span>$4,500</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Refactor templates to use the new templating library</span>
-                          </td>
-                          <td>
-                            <span>$9,000</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Process payments using third party api</span>
-                          </td>
-                          <td>
-                            <span>$5,400</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Improve account management workflow</span>
-                          </td>
-                          <td>
-                            <span>$6,000</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Add invoice confirmation</span>
-                          </td>
-                          <td>
-                            <span>$4,500</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Refactor templates to use the new templating library</span>
-                          </td>
-                          <td>
-                            <span>$9,000</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Process payments using third party api</span>
-                          </td>
-                          <td>
-                            <span>$5,400</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Improve account management workflow</span>
-                          </td>
-                          <td>
-                            <span>$6,000</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Add invoice confirmation</span>
-                          </td>
-                          <td>
-                            <span>$4,500</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Refactor templates to use the new templating library</span>
-                          </td>
-                          <td>
-                            <span>$9,000</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Process payments using third party api</span>
-                          </td>
-                          <td>
-                            <span>$5,400</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Improve account management workflow</span>
-                          </td>
-                          <td>
-                            <span>$6,000</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Add invoice confirmation</span>
-                          </td>
-                          <td>
-                            <span>$4,500</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Refactor templates to use the new templating library</span>
-                          </td>
-                          <td>
-                            <span>$9,000</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Process payments using third party api</span>
-                          </td>
-                          <td>
-                            <span>$5,400</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
-                          <td class="non-numeric" style="width: 50%;">
-                            <span>Improve account management workflow</span>
-                          </td>
-                          <td>
-                            <span>$6,000</span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+   
+    <table aria-hidden="true" class="table mdl-js-data-table floating-table-header">
+      <caption>Fixed Header Table</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="non-numeric" style="width: 25%">Project name</th>
+          <th scope="col" class="non-numeric" style="width: 50%">Description</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+    </table>
+    <div class="floating-table-body" style="max-height: 200px;">
+      <table class="table-selectable mdl-js-data-table" >
+        <thead>
+          <tr>
+            <th scope="col" class="non-numeric" style="width: 25%;">Project name</th>
+            <th scope="col" class="non-numeric" style="width: 50%;">Description</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Add invoice confirmation</span>
+            </td>
+            <td >
+              <span>$4,500</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Refactor templates to use the new templating library</span>
+            </td>
+            <td>
+              <span>$9,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Process payments using third party api</span>
+            </td>
+            <td>
+              <span>$5,400</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Improve account management workflow</span>
+            </td>
+            <td>
+              <span>$6,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Add invoice confirmation</span>
+            </td>
+            <td>
+              <span>$4,500</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Refactor templates to use the new templating library</span>
+            </td>
+            <td>
+              <span>$9,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Process payments using third party api</span>
+            </td>
+            <td>
+              <span>$5,400</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Improve account management workflow</span>
+            </td>
+            <td>
+              <span>$6,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Add invoice confirmation</span>
+            </td>
+            <td>
+              <span>$4,500</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Refactor templates to use the new templating library</span>
+            </td>
+            <td>
+              <span>$9,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Process payments using third party api</span>
+            </td>
+            <td>
+              <span>$5,400</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Improve account management workflow</span>
+            </td>
+            <td>
+              <span>$6,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Invoice</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Add invoice confirmation</span>
+            </td>
+            <td>
+              <span>$4,500</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Templates</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Refactor templates to use the new templating library</span>
+            </td>
+            <td>
+              <span>$9,000</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Payments</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Process payments using third party api</span>
+            </td>
+            <td>
+              <span>$5,400</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="non-numeric" style="width: 25%;">Account Management</th>
+            <td class="non-numeric" style="width: 50%;">
+              <span>Improve account management workflow</span>
+            </td>
+            <td>
+              <span>$6,000</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+                
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
-<table aria-hidden="true" class="cbp-table mdl-js-data-table floating-table-header">
+<table aria-hidden="true" class="table mdl-js-data-table floating-table-header">
   <caption>Fixed Header Table</caption>
   <thead>
     <tr>
@@ -451,7 +891,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
   </thead>
 </table>
 <div class="floating-table-body" style="max-height: 200px;">
-  <table class="cbp-table-selectable mdl-js-data-table">
+  <table class="table-selectable mdl-js-data-table">
     <thead>
       <tr>
         <th scope="col" class="non-numeric" style="width: 25%;">Project name</th>
@@ -621,63 +1061,63 @@ Clicking a header cell sets that column as the currently sorted column. The firs
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-                  <table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
-                    <caption>Single Sorting</caption>
-                    <thead>
-                      <tr role="row">
-                        <th scope="col" role="columnheader" aria-sort="ascending" class="non-numeric sortable active">
-                          Project name
-                          <i class="fa fa-caret-down"></i>
-                        </th>
-                        <th scope="col" role="columnheader" aria-sort="none" class="non-numeric sortable">Description</th>
-                        <th scope="col" role="columnheader" aria-sort="none" class="sortable">Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="non-numeric">Invoice</th>
-                        <td class="non-numeric">
-                          <span>Add invoice confirmation</span>
-                        </td>
-                        <td>
-                          <span>$4,500</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">Templates</th>
-                        <td class="non-numeric">
-                          <span>Refactor templates to use the new templating library</span>
-                        </td>
-                        <td>
-                          <span>$9,000</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">Payments</th>
-                        <td class="non-numeric">
-                          <span>Process payments using third party api</span>
-                        </td>
-                        <td>
-                          <span>$5,400</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">Account Management</th>
-                        <td class="non-numeric">
-                          <span>Improve account management workflow</span>
-                        </td>
-                        <td>
-                          <span>$6,000</span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-</div>
+
+  <table role="grid" class="table table-sortable table-striped mdl-js-data-table">
+    <caption>Single Sorting</caption>
+    <thead>
+      <tr role="row">
+        <th scope="col" role="columnheader" aria-sort="ascending" class="non-numeric sortable active">
+          Project name
+          <i class="fa fa-caret-down"></i>
+        </th>
+        <th scope="col" role="columnheader" aria-sort="none" class="non-numeric sortable">Description</th>
+        <th scope="col" role="columnheader" aria-sort="none" class="sortable">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td>
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td>
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td>
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td>
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
 {:/nomarkdown}
 {% highlight html %}
-<table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
+<table role="grid" class="table table-sortable table-striped mdl-js-data-table">
   <caption>Single Sorting</caption>
   <thead>
     <tr role="row">
@@ -736,66 +1176,64 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-                  <table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
-                    <caption>Multi Sorting</caption>
-                    <thead>
-                      <tr role="row">
-                        <th scope="col" role="columnheader" aria-sort="other" class="sortable active non-numeric">
-                          Event
-                          <i class="fa fa-caret-down text-muted"></i> <sup>1</sup>
-                        </th>
-                        <th scope="col" role="columnheader" aria-sort="none" class="sortable active">
-                          Date
-                          <i class="fa fa-caret-up text-muted non-numeric"></i> <sup>2</sup>
-                        </th>
-                        <th scope="col" class="non-numeric">Module</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="non-numeric">user.create</th>
-                        <td>
-                          <span>10/21/14</span>
-                        </td>
-                        <td class="non-numeric">
-                          <span>Users</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">user.create</th>
-                        <td>
-                          <span>10/19/14</span>
-                        </td>
-                        <td class="non-numeric">
-                          <span>Users</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">user.register</th>
-                        <td>
-                          <span>10/21/14</span>
-                        </td>
-                        <td class="non-numeric">
-                          <span>Users</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">user.register</th>
-                        <td>
-                          <span>10/18/14</span>
-                        </td>
-                        <td class="non-numeric">
-                          <span>Users</span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-</div>
+  <table role="grid" class="table table-sortable table-striped mdl-js-data-table">
+    <caption>Multi Sorting</caption>
+    <thead>
+      <tr role="row">
+        <th scope="col" role="columnheader" aria-sort="other" class="sortable active non-numeric">
+          Event
+          <i class="fa fa-caret-down text-muted"></i> <sup>1</sup>
+        </th>
+        <th scope="col" role="columnheader" aria-sort="none" class="sortable active">
+          Date
+          <i class="fa fa-caret-up text-muted non-numeric"></i> <sup>2</sup>
+        </th>
+        <th scope="col" class="non-numeric">Module</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">user.create</th>
+        <td>
+          <span>10/21/14</span>
+        </td>
+        <td class="non-numeric">
+          <span>Users</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">user.create</th>
+        <td>
+          <span>10/19/14</span>
+        </td>
+        <td class="non-numeric">
+          <span>Users</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">user.register</th>
+        <td>
+          <span>10/21/14</span>
+        </td>
+        <td class="non-numeric">
+          <span>Users</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">user.register</th>
+        <td>
+          <span>10/18/14</span>
+        </td>
+        <td class="non-numeric">
+          <span>Users</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {:/nomarkdown}
 {% highlight html %}
-<table role="grid" class="cbp-table table-sortable table-striped mdl-js-data-table">
+<table role="grid" class="table table-sortable table-striped mdl-js-data-table">
   <caption>Multi Sorting</caption>
   <thead>
     <tr role="row">
@@ -863,8 +1301,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-  <table class="cbp-table-selectable mdl-js-data-table">
+  <table class="table-selectable mdl-js-data-table">
     <caption>Selection</caption>
     <thead>
       <tr>
@@ -912,10 +1349,9 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
     </tbody>
   </table>
 </div>
-</div>
 {:/nomarkdown}
 {% highlight html %}
-<table class="cbp-table-selectable mdl-js-data-table">
+<table class="table-selectable mdl-js-data-table">
   <caption>Selection</caption>
   <thead>
     <tr>
@@ -931,7 +1367,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
   </thead>
   <tbody>
     <tr>
-      <td">
+      <td>
         <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[1]">
           <input type="checkbox" id="row[1]" class="mdl-checkbox__input" />
         </label>
@@ -971,85 +1407,83 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-                  <table class="cbp-table table-outline table-striped mdl-js-data-table">
-                    <caption>Row Action Buttons</caption>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="non-numeric">
-                          <strong>IMG_234.jpg</strong>
-                          <br>
-                          <span>2 days ago</span>
-                        </th>
-                        <td>
-                          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-                          <i class="fa text-muted fa-close"></i>
-                          <span class="sr-only">Delete</span>
-                          </button>
-                          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-                          <i class="fa text-muted fa-ellipsis-v"></i>
-                          <span class="sr-only">More</span>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">
-                          <strong>IMG_235.jpg</strong>
-                          <br>
-                          <span>2 days ago</span>
-                        </th>
-                        <td>
-                          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-                          <i class="fa text-muted fa-close"></i>
-                          <span class="sr-only">Delete</span>
-                          </button>
-                          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-                          <i class="fa text-muted fa-ellipsis-v"></i>
-                          <span class="sr-only">More</span>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">
-                          <strong>IMG_236.jpg</strong>
-                          <br>
-                          <span>2 days ago</span>
-                        </th>
-                        <td>
-                          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-                          <i class="fa text-muted fa-close"></i>
-                          <span class="sr-only">Delete</span>
-                          </button>
-                          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-                          <i class="fa text-muted fa-ellipsis-v"></i>
-                          <span class="sr-only">More</span>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">
-                          <strong>IMG_237.jpg</strong>
-                          <br>
-                          <span>2 days ago</span>
-                        </th>
-                        <td>
-                          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
-                          <i class="fa text-muted fa-close"></i>
-                          <span class="sr-only">Delete</span>
-                          </button>
-                          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
-                          <i class="fa text-muted fa-ellipsis-v"></i>
-                          <span class="sr-only">More</span>
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-</div>
+  <table class="table table-outline table-striped mdl-js-data-table">
+    <caption>Row Action Buttons</caption>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">
+          <strong>IMG_234.jpg</strong>
+          <br>
+          <span>2 days ago</span>
+        </th>
+        <td>
+          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+          <i class="fa text-muted fa-close"></i>
+          <span class="sr-only">Delete</span>
+          </button>
+          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+          <i class="fa text-muted fa-ellipsis-v"></i>
+          <span class="sr-only">More</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">
+          <strong>IMG_235.jpg</strong>
+          <br>
+          <span>2 days ago</span>
+        </th>
+        <td>
+          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+          <i class="fa text-muted fa-close"></i>
+          <span class="sr-only">Delete</span>
+          </button>
+          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+          <i class="fa text-muted fa-ellipsis-v"></i>
+          <span class="sr-only">More</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">
+          <strong>IMG_236.jpg</strong>
+          <br>
+          <span>2 days ago</span>
+        </th>
+        <td>
+          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+          <i class="fa text-muted fa-close"></i>
+          <span class="sr-only">Delete</span>
+          </button>
+          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+          <i class="fa text-muted fa-ellipsis-v"></i>
+          <span class="sr-only">More</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">
+          <strong>IMG_237.jpg</strong>
+          <br>
+          <span>2 days ago</span>
+        </th>
+        <td>
+          <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+          <i class="fa text-muted fa-close"></i>
+          <span class="sr-only">Delete</span>
+          </button>
+          <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+          <i class="fa text-muted fa-ellipsis-v"></i>
+          <span class="sr-only">More</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {:/nomarkdown}
 {% highlight html %}
-<table class="cbp-table table-outline table-striped mdl-js-data-table">
+<table class="table table-outline table-striped mdl-js-data-table">
   <caption>Row Action Buttons</caption>
   <tbody>
     <tr>
@@ -1132,143 +1566,142 @@ To provide column customization, add an icon to the top right corner of the tabl
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-                  <table class="cbp-table mdl-js-data-table">
-                    <caption>Column Customization</caption>
-                    <thead>
-                      <tr>
-                        <th scope="col" class="non-numeric">Project name</th>
-                        <th scope="col" class="non-numeric">Description</th>
-                        <th scope="col" >Price</th>
-                        <th scope="col" class="table-config-column" title="Show and hide columns" data-toggle="tooltip">
-                          <button type="button" data-container="body" data-target="#example_table_modal" data-toggle="modal" >
-                          <i class="fa fa-ellipsis-h" ></i>
-                          </button>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="non-numeric">Invoice</th>
-                        <td class="non-numeric">
-                          <span>Add invoice confirmation</span>
-                        </td>
-                        <td colspan="2">
-                          <span>$4,500</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">Templates</th>
-                        <td class="non-numeric">
-                          <span>Refactor templates to use the new templating library</span>
-                        </td>
-                        <td colspan="2">
-                          <span>$9,000</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">Payments</th>
-                        <td class="non-numeric">
-                          <span>Process payments using third party api</span>
-                        </td>
-                        <td colspan="2">
-                          <span>$5,400</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="non-numeric">Account Management</th>
-                        <td class="non-numeric">
-                          <span>Improve account management workflow</span>
-                        </td>
-                        <td colspan="2">
-                          <span>$6,000</span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- Show and hide columns popup for table above -->
-                <div class="modal fade in" id="example_table_modal">
-                  <div class="modal-dialog modal-sm">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span>
-                        <span class="sr-only">Close</span>
-                        </button>
-                        <h4 class="modal-title">Show and hide columns</h4>
-                      </div>
-                      <div class="modal-body">
-                        <form role="form">
-                          <div class="form-group">
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes0" class="mdl-checkbox__input" value="option0" />
-                                <span for="optionsCheckboxes0" class="mdl-checkbox__label">Select all</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes1" class="mdl-checkbox__input" value="option1" checked />
-                                <span for="optionsCheckboxes1" class="mdl-checkbox__label">Thumbnail</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes2" class="mdl-checkbox__input" value="option2" checked />
-                                <span for="optionsCheckboxes2" class="mdl-checkbox__label">Word mark</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes3" class="mdl-checkbox__input" value="option3" />
-                                <span for="optionsCheckboxes3" class="mdl-checkbox__label">Review source</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes4" class="mdl-checkbox__input" value="option4" checked />
-                                <span for="optionsCheckboxes4" class="mdl-checkbox__label">Review type</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                                <span for="optionsCheckboxes5" class="mdl-checkbox__label">Review revision</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                                <span for="optionsCheckboxes6" class="mdl-checkbox__label">Mentor</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                                <span for="optionsCheckboxes7" class="mdl-checkbox__label">Advisor</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                                <span for="optionsCheckboxes8" class="mdl-checkbox__label">Owner</span>
-                              </label>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Done</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <table class="table mdl-js-data-table">
+    <caption>Column Customization</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="non-numeric">Project name</th>
+        <th scope="col" class="non-numeric">Description</th>
+        <th scope="col" >Price</th>
+        <th scope="col" class="table-config-column" title="Show and hide columns" data-toggle="tooltip">
+          <button type="button" data-container="body" data-target="#example_table_modal" data-toggle="modal" >
+          <i class="fa fa-ellipsis-h" ></i>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="non-numeric">Invoice</th>
+        <td class="non-numeric">
+          <span>Add invoice confirmation</span>
+        </td>
+        <td colspan="2">
+          <span>$4,500</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Templates</th>
+        <td class="non-numeric">
+          <span>Refactor templates to use the new templating library</span>
+        </td>
+        <td colspan="2">
+          <span>$9,000</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Payments</th>
+        <td class="non-numeric">
+          <span>Process payments using third party api</span>
+        </td>
+        <td colspan="2">
+          <span>$5,400</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="non-numeric">Account Management</th>
+        <td class="non-numeric">
+          <span>Improve account management workflow</span>
+        </td>
+        <td colspan="2">
+          <span>$6,000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Show and hide columns popup for table above -->
+  <div class="modal fade in" id="example_table_modal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title">Show and hide columns</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes0" class="mdl-checkbox__input" value="option0" />
+                  <span for="optionsCheckboxes0" class="mdl-checkbox__label">Select all</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes1" class="mdl-checkbox__input" value="option1" />
+                  <span for="optionsCheckboxes1" class="mdl-checkbox__label">Thumbnail</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes2" class="mdl-checkbox__input" value="option2" checked />
+                  <span for="optionsCheckboxes2" class="mdl-checkbox__label">Project name</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes3" class="mdl-checkbox__input" value="option3" />
+                  <span for="optionsCheckboxes3" class="mdl-checkbox__label">Project source</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes4" class="mdl-checkbox__input" value="option4" checked />
+                  <span for="optionsCheckboxes4" class="mdl-checkbox__label">Description</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
+                  <span for="optionsCheckboxes5" class="mdl-checkbox__label">Review revision</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
+                  <span for="optionsCheckboxes6" class="mdl-checkbox__label">Mentor</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
+                  <span for="optionsCheckboxes7" class="mdl-checkbox__label">Advisor</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
+                  <span for="optionsCheckboxes8" class="mdl-checkbox__label">Owner</span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {:/nomarkdown}
 {% highlight html %}
 <div>
-<table class="cbp-table mdl-js-data-table">
+<table class="table mdl-js-data-table">
   <caption>Column Customization</caption>
   <thead>
     <tr>
@@ -1344,26 +1777,26 @@ To provide column customization, add an icon to the top right corner of the tabl
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes11" class="mdl-checkbox__input" value="option1" checked />
+                <input type="checkbox" id="optionsCheckboxes11" class="mdl-checkbox__input" value="option1" />
                 <span for="optionsCheckboxes11" class="mdl-checkbox__label">Thumbnail</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes12" class="mdl-checkbox__input" value="option2" checked />
-                <span for="optionsCheckboxes12" class="mdl-checkbox__label">Word mark</span>
+                <span for="optionsCheckboxes12" class="mdl-checkbox__label">Project name</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes13" class="mdl-checkbox__input" value="option3" />
-                <span for="optionsCheckboxes13" class="mdl-checkbox__label">Review source</span>
+                <span for="optionsCheckboxes13" class="mdl-checkbox__label">Project source</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes14" class="mdl-checkbox__input" value="option4" checked />
-                <span for="optionsCheckboxes14" class="mdl-checkbox__label">Review type</span>
+                <span for="optionsCheckboxes14" class="mdl-checkbox__label">Description</span>
               </label>
             </div>
             <div class="checkbox">
@@ -1411,78 +1844,78 @@ This dialog provides the ability to show/hide columns as desired.
   <div class="modal-dialog modal-sm" style="width: 300px; max-width: 100%; padding: 20px;">
     <div class="modal-content">
       <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span>
-                        <span class="sr-only">Close</span>
-                        </button>
-                        <h4 class="modal-title">Show and hide columns</h4>
-                      </div>
-                      <div class="modal-body">
-                        <form role="form">
-                          <div class="form-group">
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes20" class="mdl-checkbox__input" value="option0" />
-                                <span for="optionsCheckboxes20" class="mdl-checkbox__label">Select all</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes21" class="mdl-checkbox__input" value="option1" checked />
-                                <span for="optionsCheckboxes21" class="mdl-checkbox__label">Thumbnail</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes22" class="mdl-checkbox__input" value="option2" checked />
-                                <span for="optionsCheckboxes22" class="mdl-checkbox__label">Word mark</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes23" class="mdl-checkbox__input" value="option3" />
-                                <span for="optionsCheckboxes23" class="mdl-checkbox__label">Review source</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes24" class="mdl-checkbox__input" value="option4" checked />
-                                <span for="optionsCheckboxes24" class="mdl-checkbox__label">Review type</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes25" class="mdl-checkbox__input" value="option5"  />
-                                <span for="optionsCheckboxes25" class="mdl-checkbox__label">Review revision</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes26" class="mdl-checkbox__input" value="option6" checked />
-                                <span for="optionsCheckboxes26" class="mdl-checkbox__label">Mentor</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes27" class="mdl-checkbox__input" value="option7"  />
-                                <span for="optionsCheckboxes27" class="mdl-checkbox__label">Advisor</span>
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                <input type="checkbox" id="optionsCheckboxes28" class="mdl-checkbox__input" value="option8"  />
-                                <span for="optionsCheckboxes28" class="mdl-checkbox__label">Owner</span>
-                              </label>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Done</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <button type="button" class="close" data-dismiss="modal">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">Show and hide columns</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes20" class="mdl-checkbox__input" value="option0" />
+                <span for="optionsCheckboxes20" class="mdl-checkbox__label">Select all</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes21" class="mdl-checkbox__input" value="option1" />
+                <span for="optionsCheckboxes21" class="mdl-checkbox__label">Thumbnail</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes22" class="mdl-checkbox__input" value="option2" checked />
+                <span for="optionsCheckboxes22" class="mdl-checkbox__label">Project name</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes23" class="mdl-checkbox__input" value="option3" />
+                <span for="optionsCheckboxes23" class="mdl-checkbox__label">Project source</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes24" class="mdl-checkbox__input" value="option4" checked />
+                <span for="optionsCheckboxes24" class="mdl-checkbox__label">Description</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes25" class="mdl-checkbox__input" value="option5"  />
+                <span for="optionsCheckboxes25" class="mdl-checkbox__label">Review revision</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes26" class="mdl-checkbox__input" value="option6" checked />
+                <span for="optionsCheckboxes26" class="mdl-checkbox__label">Mentor</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes27" class="mdl-checkbox__input" value="option7"  />
+                <span for="optionsCheckboxes27" class="mdl-checkbox__label">Advisor</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input type="checkbox" id="optionsCheckboxes28" class="mdl-checkbox__input" value="option8"  />
+                <span for="optionsCheckboxes28" class="mdl-checkbox__label">Owner</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 {:/nomarkdown}
 
@@ -1508,26 +1941,26 @@ This dialog provides the ability to show/hide columns as desired.
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes31" class="mdl-checkbox__input" value="option1" checked />
+                <input type="checkbox" id="optionsCheckboxes31" class="mdl-checkbox__input" value="option1" />
                 <span for="optionsCheckboxes31" class="mdl-checkbox__label">Thumbnail</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes32" class="mdl-checkbox__input" value="option2" checked />
-                <span for="optionsCheckboxes32" class="mdl-checkbox__label">Word mark</span>
+                <span for="optionsCheckboxes32" class="mdl-checkbox__label">Project name</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes33" class="mdl-checkbox__input" value="option3" />
-                <span for="optionsCheckboxes33" class="mdl-checkbox__label">Review source</span>
+                <span for="optionsCheckboxes33" class="mdl-checkbox__label">Project source</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes34" class="mdl-checkbox__input" value="option4" checked />
-                <span for="optionsCheckboxes34" class="mdl-checkbox__label">Review type</span>
+                <span for="optionsCheckboxes34" class="mdl-checkbox__label">Description</span>
               </label>
             </div>
             <div class="checkbox">
@@ -1576,7 +2009,7 @@ Row grouping allows users to show and hide sets of rows that share a similar att
 {::nomarkdown}
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
-      <table class="cbp-table mdl-js-data-table table-sortable">
+      <table class="table mdl-js-data-table table-sortable">
         <thead>
           <tr>
             <th style="width: 200px;" class="sortable active">
@@ -1643,7 +2076,7 @@ Row grouping allows users to show and hide sets of rows that share a similar att
 {:/nomarkdown}
 
 {% highlight html %}
-<table class="cbp-table mdl-js-data-table table-sortable">
+<table class="table mdl-js-data-table table-sortable">
 <thead>
   <tr>
     <th style="width: 200px;" class="sortable active">
@@ -1716,7 +2149,7 @@ Expandable rows provide additional information about a row on demand.
 {::nomarkdown}
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
-                  <table data-pl-expandable-rows role="grid" class="cbp-table-selectable mdl-js-data-table">
+                  <table data-pl-expandable-rows role="grid" class="table-selectable mdl-js-data-table">
                     <thead>
                       <tr role="row">
                         <th scope="col" role="columnheader" class="col-md-4">
@@ -1802,7 +2235,7 @@ Expandable rows provide additional information about a row on demand.
 
 
 {% highlight html %}
-  <table data-pl-expandable-rows role="grid" class="cbp-table-selectable mdl-js-data-table">
+  <table data-pl-expandable-rows role="grid" class="table-selectable mdl-js-data-table">
     <thead>
       <tr role="row">
         <th scope="col" role="columnheader" class="col-md-4">
