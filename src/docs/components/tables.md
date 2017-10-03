@@ -1667,25 +1667,25 @@ To provide column customization, add an icon to the top right corner of the tabl
               <div class="checkbox">
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                  <span for="optionsCheckboxes5" class="mdl-checkbox__label">Review revision</span>
+                  <span for="optionsCheckboxes5" class="mdl-checkbox__label">Project revision</span>
                 </label>
               </div>
               <div class="checkbox">
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                  <span for="optionsCheckboxes6" class="mdl-checkbox__label">Mentor</span>
+                  <span for="optionsCheckboxes6" class="mdl-checkbox__label">Price</span>
                 </label>
               </div>
               <div class="checkbox">
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                  <span for="optionsCheckboxes7" class="mdl-checkbox__label">Advisor</span>
+                  <span for="optionsCheckboxes7" class="mdl-checkbox__label">Project Advisor</span>
                 </label>
               </div>
               <div class="checkbox">
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                  <span for="optionsCheckboxes8" class="mdl-checkbox__label">Owner</span>
+                  <span for="optionsCheckboxes8" class="mdl-checkbox__label">Project Owner</span>
                 </label>
               </div>
             </div>
@@ -1802,25 +1802,25 @@ To provide column customization, add an icon to the top right corner of the tabl
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                <span for="optionsCheckboxes15" class="mdl-checkbox__label">Review revision</span>
+                <span for="optionsCheckboxes15" class="mdl-checkbox__label">Project revision</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                <span for="optionsCheckboxes16" class="mdl-checkbox__label">Mentor</span>
+                <span for="optionsCheckboxes16" class="mdl-checkbox__label">Price</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                <span for="optionsCheckboxes17" class="mdl-checkbox__label">Advisor</span>
+                <span for="optionsCheckboxes17" class="mdl-checkbox__label">Project Advisor</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                <span for="optionsCheckboxes18" class="mdl-checkbox__label">Owner</span>
+                <span for="optionsCheckboxes18" class="mdl-checkbox__label">Project Owner</span>
               </label>
             </div>
           </div>
@@ -1886,25 +1886,25 @@ This dialog provides the ability to show/hide columns as desired.
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes25" class="mdl-checkbox__input" value="option5"  />
-                <span for="optionsCheckboxes25" class="mdl-checkbox__label">Review revision</span>
+                <span for="optionsCheckboxes25" class="mdl-checkbox__label">Project revision</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes26" class="mdl-checkbox__input" value="option6" checked />
-                <span for="optionsCheckboxes26" class="mdl-checkbox__label">Mentor</span>
+                <span for="optionsCheckboxes26" class="mdl-checkbox__label">Price</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes27" class="mdl-checkbox__input" value="option7"  />
-                <span for="optionsCheckboxes27" class="mdl-checkbox__label">Advisor</span>
+                <span for="optionsCheckboxes27" class="mdl-checkbox__label">Project Advisor</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes28" class="mdl-checkbox__input" value="option8"  />
-                <span for="optionsCheckboxes28" class="mdl-checkbox__label">Owner</span>
+                <span for="optionsCheckboxes28" class="mdl-checkbox__label">Project Owner</span>
               </label>
             </div>
           </div>
@@ -1966,25 +1966,25 @@ This dialog provides the ability to show/hide columns as desired.
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes35" class="mdl-checkbox__input" value="option5"  />
-                <span for="optionsCheckboxes35" class="mdl-checkbox__label">Review revision</span>
+                <span for="optionsCheckboxes35" class="mdl-checkbox__label">Project revision</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes36" class="mdl-checkbox__input" value="option6" checked />
-                <span for="optionsCheckboxes36" class="mdl-checkbox__label">Mentor</span>
+                <span for="optionsCheckboxes36" class="mdl-checkbox__label">Price</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes37" class="mdl-checkbox__input" value="option7"  />
-                <span for="optionsCheckboxes37" class="mdl-checkbox__label">Advisor</span>
+                <span for="optionsCheckboxes37" class="mdl-checkbox__label">Project Advisor</span>
               </label>
             </div>
             <div class="checkbox">
               <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                 <input type="checkbox" id="optionsCheckboxes38" class="mdl-checkbox__input" value="option8"  />
-                <span for="optionsCheckboxes38" class="mdl-checkbox__label">Owner</span>
+                <span for="optionsCheckboxes38" class="mdl-checkbox__label">Project Owner</span>
               </label>
             </div>
           </div>
