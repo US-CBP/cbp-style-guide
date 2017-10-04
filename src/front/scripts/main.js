@@ -1,7 +1,7 @@
 'use strict';
 (function() {
     //layout example js
-    $(window).load(function() {
+    $(window).on('load', function() {
         //make the header sticky
         $(window).scrollTop(0);
         $(window).resize(function() {
