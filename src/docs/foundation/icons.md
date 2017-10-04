@@ -26,9 +26,18 @@ When scaling icons, ensure the sizes used appear sharp on standard and high DPI 
     </div>
     <div class="col-sm-6">
         <div style="margin-left: 20px;">
-            <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-thumbs-up fa-inverse"></i></div>
-            <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-bell fa-inverse"></i></div>
-            <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-comment fa-inverse"></i></div>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x text-success"></i>
+              <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-bell fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x text-muted"></i>
+              <i class="fa fa-comment fa-stack-1x fa-inverse"></i>
+            </span>            
         </div>
     </div>
 </div>
@@ -90,9 +99,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-user"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-user fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-user fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-user fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                </span>                
             </div>
         </div>
 
@@ -107,9 +125,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-users"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-users fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-users fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-users fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -123,9 +150,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-gear"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-gear fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-gear fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-gear fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -139,9 +175,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-bars"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-bars fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-bars fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-bars fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -155,9 +200,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-inbox"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-inbox fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-inbox fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-inbox fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -171,9 +225,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-calendar"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-calendar fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-calendar fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-calendar fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -187,9 +250,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-sign-out"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-sign-out fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-sign-out fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-sign-out fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-sign-out fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-sign-out fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-sign-out fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -203,9 +275,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-info"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-info fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-info fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-info fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -213,15 +294,24 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {:/nomarkdown}
 
 #### Questions
-- Represents where Frequently Asked Questions can be found.
+- Represents where FAQ can be found.
 - <span class="label label-default subtle">fa-question</span>
 
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-question"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-question fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-question fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-question fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -235,9 +325,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-star"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-star fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-star fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-star fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -251,9 +350,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-star-o"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-star-o fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-star-o fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-star-o fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-star-o fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-star-o fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-star-o fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -267,9 +375,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-pencil"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-pencil fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-pencil fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-pencil fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -283,9 +400,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-trash"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-trash fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-trash fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-trash fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-trash fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-trash fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-trash fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -299,9 +425,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-ban"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-ban fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-ban fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-ban fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-ban fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-ban fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-ban fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -315,9 +450,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-refresh"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-refresh fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-refresh fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-refresh fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-refresh fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-refresh fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-refresh fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -331,9 +475,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-home"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-home fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-home fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-home fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -348,9 +501,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-arrow-left"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-arrow-left fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-arrow-left fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-arrow-left fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-arrow-left fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-arrow-left fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-arrow-left fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -364,9 +526,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-arrow-right"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-arrow-right fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-arrow-right fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-arrow-right fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-arrow-right fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-arrow-right fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-arrow-right fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -380,9 +551,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-share-alt"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-share-alt fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-share-alt fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-share-alt fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -396,9 +576,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-building"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-building fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-building fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-building fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-building fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-building fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-building fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -414,9 +603,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-expand"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-expand fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-expand fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-expand fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-expand fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-expand fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-expand fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -431,9 +629,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-compress"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-compress fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-compress fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-compress fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-compress fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-compress fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-compress fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
@@ -449,9 +656,18 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
 {::nomarkdown}
             <div style="margin-left: 20px;">
                 <div style="display: inline-block; padding: 3px; margin: 4px;"><i class="fa fa-external-link"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008000; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-external-link fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #1460AA; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-external-link fa-inverse"></i></div>
-                <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #555555; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="fa fa-external-link fa-inverse"></i></div>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-success"></i>
+                  <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-muted"></i>
+                  <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+                </span>
             </div>
         </div>
 
