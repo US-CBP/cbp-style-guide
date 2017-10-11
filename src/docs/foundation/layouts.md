@@ -7,19 +7,24 @@ title: "Layouts"
 ## Layouts
 Consistent and anticipated layouts allow users to navigate and understand applications with more ease. These layout and content types cover most use-cases for standard web applications.
 
-#### Layout types
+#### Layout Types
 
 <div class="pl-preview">
 
 ![Fixed width layout](layouts/images/layout-fluid_wApp.png)
 
-##### Fluid
+##### Fluid 1
 
 [View example](layouts/fluid_wApp.html){:target="_blank"}
 
-The fluid page layout provides maximum space for content in all sizes. It leaves control over the size of the interface to the user by automatically adjusting to fit the size of their browser. Note that some types of content (like large bodies of text) can become hard to read due to excessively long line lengths, if nothing is done to mitigate this.
+This page illustrates:
+* Universal Header
+* Application Header
+* Fluid body content
+* No Sidebar
 
-Equal padding should be observed left and right of the page content. At no point should text fall behind a browser scroll bar.
+
+The Fluid 1 page layout provides maximum space for content. It leaves control over the size of the interface to the user by automatically adjusting to fit the size of their browser window. Note that some types of content (like large bodies of text) can become hard to read due to excessively long line lengths, if nothing is done to mitigate this. Consistent margin padding creates a natural frame for the content and scroll navigation.
 
 
 </div>
@@ -27,29 +32,23 @@ Equal padding should be observed left and right of the page content. At no point
 {: .clearfix}
 
 {% highlight html %}
-<form role="form" class="form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta12" class="mdl-textfield__label">Normal</label>
-    <textarea class="mdl-textfield__input" id="ta12" rows="2"></textarea>
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta13" class="mdl-textfield__label">Disabled</label>
-    <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-  </div>  
-</form>
+To do
 {% endhighlight %}
 
 <div class="pl-preview">
 
 ![Fixed width layout](layouts/images/layout-fluid.png)
 
-##### Fluid
+##### Fluid 2
 
 [View example](layouts/fluid.html){:target="_blank"}
 
-The fluid page layout provides maximum space for content in all sizes. It leaves control over the size of the interface to the user by automatically adjusting to fit the size of their browser. Note that some types of content (like large bodies of text) can become hard to read due to excessively long line lengths, if nothing is done to mitigate this.
+This page illustrates:
+* Universal Header
+* Fluid body content
+* No Sidebar
 
-Equal padding should be observed left and right of the page content. At no point should text fall behind a browser scroll bar.
+The Fluid 2 page layout is similar to Fluid 1, but has no Application Header used.
 
 
 </div>
@@ -57,98 +56,105 @@ Equal padding should be observed left and right of the page content. At no point
 {: .clearfix}
 
 {% highlight html %}
-<form role="form" class="form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta12" class="mdl-textfield__label">Normal</label>
-    <textarea class="mdl-textfield__input" id="ta12" rows="2"></textarea>
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta13" class="mdl-textfield__label">Disabled</label>
-    <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-  </div>  
-</form>
+To do
 {% endhighlight %}
 
 <div class="pl-preview">
 
 ![Hybrid layout](layouts/images/layout-hybrid_wApp.png)
 
-##### Hybrid
+##### Hybrid 1
 
 [View example](layouts/hybrid_wApp.html){:target="_blank"}
 
-The hybrid page layout combines the fluid design for the application header with a fixed width design for the rest of the content area. It should only be used in cases where a fixed width page layout is desirable but where the Application header might contain a large number of items.
+This page illustrates:
+* Universal Header
+* Application Header
+* Responsive body content
+* No Sidebar
+
+The Hybrid 1 page layout combines the fluid design of the CBP Universal and Application headers with a fixed width design for the rest of the content area below. The Hybrid page layout should be used in cases where a fixed width page layout is desirable but where the Application header might contain a large number of items. This layout preserves the CBP brand placement, respecting the left page margin padding, to be consistent with other page layouts.
+
 </div>
 
 {: .clearfix}
 
 {% highlight html %}
-<form role="form" class="form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta12" class="mdl-textfield__label">Normal</label>
-    <textarea class="mdl-textfield__input" id="ta12" rows="2"></textarea>
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta13" class="mdl-textfield__label">Disabled</label>
-    <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-  </div>  
-</form>
+To do
 {% endhighlight %}
 
 <div class="pl-preview">
 
 ![Hybrid layout](layouts/images/layout-hybrid.png)
 
-##### Hybrid
+##### Hybrid 2
 
 [View example](layouts/hybrid.html){:target="_blank"}
 
-The hybrid page layout combines the fluid design for the application header with a fixed width design for the rest of the content area. It should only be used in cases where a fixed width page layout is desirable but where the Application header might contain a large number of items.
+This page illustrates:
+* Universal Header
+* Responsive body content
+* No Sidebar
+
+The Hybrid 2 page layout illustrates the fluid design of the blue CBP Universal Header (mandatory) with a fixed width design for the rest of the content area below. This layout preserves the CBP brand placement, respecting the left page margin padding, to be consistent with other page layouts. This example layout has no Application Header, which is optional.
 </div>
 
 {: .clearfix}
 
 {% highlight html %}
-<form role="form" class="form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta12" class="mdl-textfield__label">Normal</label>
-    <textarea class="mdl-textfield__input" id="ta12" rows="2"></textarea>
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta13" class="mdl-textfield__label">Disabled</label>
-    <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-  </div>  
-</form>
+To do
+{% endhighlight %}
+
+
+<div class="pl-preview">
+
+![Navigation and content](layouts/images/type-content-navigation_wApp.png)
+
+##### Navigation 1
+
+[View example](layouts/type-content-navigation_wFixedSide.html){:target="_blank"}
+
+This page illustrates:
+* Universal Header
+* Application Header
+* Fluid body content
+* Sidebar with scroll bar
+
+The Navigation 1 page layout has a column for vertical navigation to the left of the content area (in this case “Filters”), which is useful for when a long list of navigation links is necessary. The sidebar list scrolls independently of the main page content for instances where filter selections should not distract focus from top tier page content.
+
+</div>
+
+{: .clearfix}
+
+{% highlight html %}
+To do
 {% endhighlight %}
 
 <div class="pl-preview">
 
 ![Navigation and content](layouts/images/type-content-navigation_wApp.png)
 
-##### Navigation and content
+##### Navigation 2
 
 [View example](layouts/type-content-navigation_wApp.html){:target="_blank"}
 
-The navigation and content layout has a column for vertical navigation to the left of the content area, which is useful for when a long list of navigation links is necessary.
+This page illustrates:
+* Universal Header
+* Application Header
+* Fluid body content
+* Sidebar without scroll 
+
+The Navigation 2 page layout is exactly the same as Navigation 1, except that the sidebar does not scroll independently from main page content. In Navigation 2, the whole page scrolls. The Application level header will become sticky (stay at the top of the page) to accommodate continued navigation throughout the user experience.
 
 </div>
 
 {: .clearfix}
 
 {% highlight html %}
-<form role="form" class="form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta12" class="mdl-textfield__label">Normal</label>
-    <textarea class="mdl-textfield__input" id="ta12" rows="2"></textarea>
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta13" class="mdl-textfield__label">Disabled</label>
-    <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-  </div>  
-</form>
+To do
 {% endhighlight %}
 
-<div class="pl-preview">
+<!-- <div class="pl-preview">
 
 ![Navigation and content](layouts/images/type-content-navigation.png)
 
@@ -163,17 +169,8 @@ The navigation and content layout has a column for vertical navigation to the le
 {: .clearfix}
 
 {% highlight html %}
-<form role="form" class="form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta12" class="mdl-textfield__label">Normal</label>
-    <textarea class="mdl-textfield__input" id="ta12" rows="2"></textarea>
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="ta13" class="mdl-textfield__label">Disabled</label>
-    <textarea class="mdl-textfield__input" id="ta13" rows="2" disabled></textarea>
-  </div>  
-</form>
-{% endhighlight %}
+To do
+{% endhighlight %} -->
 
 *** See Vertical navigation and Horizontal navigation for more detail.
 {: .clearfix}
