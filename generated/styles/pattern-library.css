@@ -717,6 +717,9 @@ hr.hr-strong {
 .pl-about .pl-padded-col p {
   text-align: left;
 }
+.pl-pattern-layouts .pl-preview {
+  min-height: 275px;
+}
 .pl-pattern-layouts img {
   float: left;
   padding: 4px;
@@ -724,4 +727,7 @@ hr.hr-strong {
   border-radius: 2px;
   margin: 0 18px 18px 0;
   vertical-align: middle;
+}
+.pl-pattern-layouts ul {
+  list-style-position: inside;
 }
