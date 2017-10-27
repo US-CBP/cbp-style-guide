@@ -6,8 +6,18 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
-        <h4>Alpha - 10/11/2017</h4>
+        <h4>Alpha - 10/26/2017</h4>
         <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Updated to use CBP Theme v1.7.1</li>
+        </ul>
+        <ul>
+            <li>Table bordered fix</li>
+            <li>Warning text color fix</li>
+        </ul>               
+    </div>
+    <div class="pl-panel">
+        <h4>Alpha - 10/11/2017</h4>
         <ul>
             <li>Updated to use CBP Theme v1.7.0</li>
         </ul>
