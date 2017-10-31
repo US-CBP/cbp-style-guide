@@ -254,24 +254,23 @@ TODO
             <li>Sample</li>
             <li>sample</li>
           </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border"><button type="button" class="btn btn-icon-only btn-xs btn-hover">
-            <i class="fa fa-star"></i>
-            <span class="sr-only">Favorite</span>
-            </button>
-            <button type="button" class="btn btn-icon-only btn-xs btn-hover">
-            <i class="fa fa-pencil-square-o"></i>
-            <span class="sr-only">Edit</span>
-            </button>
-            <button class="btn btn-primary btn-xs pull-right">
-            Go to App
-            </button>
-          </div>
+        </div>
+        <div class="mdl-card__actions mdl-card--border"><button type="button" class="btn btn-icon-only btn-xs btn-hover">
+          <i class="fa fa-star"></i>
+          <span class="sr-only">Favorite</span>
+          </button>
+          <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+          <i class="fa fa-pencil-square-o"></i>
+          <span class="sr-only">Edit</span>
+          </button>
+          <button class="btn btn-primary btn-xs pull-right">
+          Go to App
+          </button>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
 
 {:/nomarkdown}
 
@@ -379,7 +378,7 @@ TODO
         </div>
       </div>
     </div>
-  </div>
+</div>
 
 {% endhighlight %}
 
@@ -475,79 +474,6 @@ TODO
             <li>Sample</li>
             <li>sample</li>
           </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border"><button type="button" class="btn btn-icon-only btn-xs btn-hover">
-            <i class="fa fa-star"></i>
-            <span class="sr-only">Favorite</span>
-            </button>
-            <button type="button" class="btn btn-icon-only btn-xs btn-hover">
-            <i class="fa fa-pencil-square-o"></i>
-            <span class="sr-only">Edit</span>
-            </button>
-            <button class="btn btn-primary btn-xs pull-right">
-            Go to App
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-{:/nomarkdown}
-
-{% highlight html %}
-<div class="row mdl-card-deck">
-    <div class="col-xs-12 col-sm-6 col-md-3 ">
-      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
-        <div class="mdl-card__title">
-          <h3 class="mdl-card__title-text">Heading for the card</h3>
-        </div>
-        <div class="mdl-card__supporting-text with-footer">
-          <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <button type="button" class="btn btn-icon-only btn-xs btn-hover">
-          <i class="fa fa-star"></i>
-          <span class="sr-only">Favorite</span>
-          </button>
-          <button type="button" class="btn btn-icon-only btn-xs btn-hover">
-          <i class="fa fa-pencil-square-o"></i>
-          <span class="sr-only">Edit</span>
-          </button>
-          <button class="btn btn-primary btn-xs pull-right">
-          Go to App
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 ">
-      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
-        <div class="mdl-card__title">
-          <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
-        </div>
-        <div class="mdl-card__supporting-text with-footer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /></p>
-          <ul class="list-inline">
-            <li><span class="text-bold">Sample</span></li>
-            <li>Sample</li>
-            <li>Sample</li>
-          </ul>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <button class="btn btn-primary btn-xs pull-right">
-          Go to App
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 ">
-      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
-        <div class="mdl-card__title">
-          <h3 class="mdl-card__title-text">Heading text for the card</h3>
-        </div>
-        <div class="mdl-card__supporting-text with-footer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
         </div>
         <div class="mdl-card__actions mdl-card--border"><button type="button" class="btn btn-icon-only btn-xs btn-hover">
           <i class="fa fa-star"></i>
@@ -563,45 +489,116 @@ TODO
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 ">
-      <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
-        <div class="mdl-card__title">
-          <h3 class="mdl-card__title-text">Heading text for the card</h3>
-        </div>
-        <div class="mdl-card__supporting-text with-footer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.<br /></p>
-          <ul class="list-inline show-list-10items">
-            <li><span class="text-bold">Sample</span></li>
-            <li>Sample</li>
-            <li>Sample</li>
-            <li>Sample</li>
-            <li>Sample</li>
-            <li>Sample</li>
-            <li>Sample</li>
-            <li>sample</li>
-            <li>Sample</li>
-            <li>sample</li>
-            <li>Sample</li>
-            <li>sample</li>
-          </ul>
-          </div>
-          <div class="mdl-card__actions mdl-card--border"><button type="button" class="btn btn-icon-only btn-xs btn-hover">
-            <i class="fa fa-star"></i>
-            <span class="sr-only">Favorite</span>
-            </button>
-            <button type="button" class="btn btn-icon-only btn-xs btn-hover">
-            <i class="fa fa-pencil-square-o"></i>
-            <span class="sr-only">Edit</span>
-            </button>
-            <button class="btn btn-primary btn-xs pull-right">
-            Go to App
-            </button>
-          </div>
-        </div>
+  </div>
+</div>
+
+{:/nomarkdown}
+
+{% highlight html %}
+<div class="row mdl-card-deck">
+  <div class="col-xs-12 col-sm-6 col-md-3 ">
+    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text">Heading for the card</h3>
+      </div>
+      <div class="mdl-card__supporting-text with-footer">
+        <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+        <i class="fa fa-star"></i>
+        <span class="sr-only">Favorite</span>
+        </button>
+        <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+        <i class="fa fa-pencil-square-o"></i>
+        <span class="sr-only">Edit</span>
+        </button>
+        <button class="btn btn-primary btn-xs pull-right">
+        Go to App
+        </button>
       </div>
     </div>
   </div>
-  
+  <div class="col-xs-12 col-sm-6 col-md-3 ">
+    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
+      </div>
+      <div class="mdl-card__supporting-text with-footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /></p>
+        <ul class="list-inline">
+          <li><span class="text-bold">Sample</span></li>
+          <li>Sample</li>
+          <li>Sample</li>
+        </ul>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <button class="btn btn-primary btn-xs pull-right">
+        Go to App
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 ">
+    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text">Heading text for the card</h3>
+      </div>
+      <div class="mdl-card__supporting-text with-footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border"><button type="button" class="btn btn-icon-only btn-xs btn-hover">
+        <i class="fa fa-star"></i>
+        <span class="sr-only">Favorite</span>
+        </button>
+        <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+        <i class="fa fa-pencil-square-o"></i>
+        <span class="sr-only">Edit</span>
+        </button>
+        <button class="btn btn-primary btn-xs pull-right">
+        Go to App
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 ">
+    <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text">Heading text for the card</h3>
+      </div>
+      <div class="mdl-card__supporting-text with-footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.<br /></p>
+        <ul class="list-inline show-list-10items">
+          <li><span class="text-bold">Sample</span></li>
+          <li>Sample</li>
+          <li>Sample</li>
+          <li>Sample</li>
+          <li>Sample</li>
+          <li>Sample</li>
+          <li>Sample</li>
+          <li>sample</li>
+          <li>Sample</li>
+          <li>sample</li>
+          <li>Sample</li>
+          <li>sample</li>
+        </ul>
+      </div>
+      <div class="mdl-card__actions mdl-card--border"><button type="button" class="btn btn-icon-only btn-xs btn-hover">
+        <i class="fa fa-star"></i>
+        <span class="sr-only">Favorite</span>
+        </button>
+        <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+        <i class="fa fa-pencil-square-o"></i>
+        <span class="sr-only">Edit</span>
+        </button>
+        <button class="btn btn-primary btn-xs pull-right">
+        Go to App
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
   //adding ellipsis to the large text
     var ellipsisText = function(e) {
         //complete text stored in a variable
@@ -659,5 +656,159 @@ TODO
             }
         });
     }
+{% endhighlight %}
+
+{::nomarkdown}
+<div class="pl-preview">
+  <div class="brand-card-container">
+    <div class="mdl-card mdl-card-border" tabindex="0">
+      <div class="image-container"><img src="../../generated/images/toolbox_icon.svg"></div>
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text text-center">Card with svg image</h3>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <ul class="list-inline text-italic">
+          <li>Sample</li>
+          <li>Sample</li>
+          <li>Sample</li>
+          <li>Sample</li>
+        </ul>
+        <p><a href="#">Watch Tool Tour Video</a></p>
+        <p><a href="#">Access info</a> | <i class="fa fa-warning text-warning"></i> <span class="text-warning">Sample warning text</span></p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <button class="btn btn-circle">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn-default pull-right">
+        <i class="fa fa-share-square-o"></i> Launch Tool
+        </button>
+      </div>
+    </div>   
+    <div class="mdl-card mdl-card-border" tabindex="0">
+      <div class="image-container bg-info">
+        <span class="icon-span"> <i class="fa fa-star fa-5x fa-inverse"></i>
+        </span>
+      </div>
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text text-center">Heading text</h3>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <button class="btn btn-circle">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn-default pull-right">
+        <i class="fa fa-share-square-o"></i> Launch Tool
+        </button>
+      </div>
+    </div>
+    <div class="mdl-card mdl-card-border" tabindex="0">
+      <div class="image-container bg-warning">
+        <span class="icon-span"> <i class="fa fa-cog fa-5x fa-inverse"></i>
+        </span>
+      </div>
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text text-center">Very very long heading text</h3>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <button class="btn btn-circle">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+        </button>
+        <button class="btn btn-default pull-right">
+        <i class="fa fa-share-square-o"></i> Launch Tool
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<div class="brand-card-container">
+  <div class="mdl-card mdl-card-border" tabindex="0">
+    <div class="image-container"><img src="../../generated/images/toolbox_icon.svg"></div>
+    <div class="mdl-card__title">
+      <h3 class="mdl-card__title-text text-center">Card with svg image</h3>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <ul class="list-inline text-italic">
+        <li>Sample</li>
+        <li>Sample</li>
+        <li>Sample</li>
+        <li>Sample</li>
+      </ul>
+      <p><a href="#">Watch Tool Tour Video</a></p>
+      <p><a href="#">Access info</a> | <i class="fa fa-warning text-warning"></i> <span class="text-warning">Sample warning text</span></p>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="btn btn-circle">
+      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-default pull-right">
+      <i class="fa fa-share-square-o"></i> Launch Tool
+      </button>
+    </div>
+  </div> 
+  <div class="mdl-card mdl-card-border" tabindex="0">
+    <div class="image-container bg-info">
+      <span class="icon-span"> <i class="fa fa-star fa-5x fa-inverse"></i>
+      </span>
+    </div>
+    <div class="mdl-card__title">
+      <h3 class="mdl-card__title-text text-center">Heading text</h3>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="btn btn-circle">
+      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-default pull-right">
+      <i class="fa fa-share-square-o"></i> Launch Tool
+      </button>
+    </div>
+  </div>
+  <div class="mdl-card mdl-card-border" tabindex="0">
+    <div class="image-container bg-warning">
+      <span class="icon-span"> <i class="fa fa-cog fa-5x fa-inverse"></i>
+      </span>
+    </div>
+    <div class="mdl-card__title">
+      <h3 class="mdl-card__title-text text-center">Very very long heading text</h3>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="btn btn-circle">
+      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-default pull-right">
+      <i class="fa fa-share-square-o"></i> Launch Tool
+      </button>
+    </div>
+  </div>
+</div>
+
+//brand card interaction
+$('.btn-circle').on('click', function(){
+ 
+  if ($(this).parents('.mdl-card').hasClass('brand-card-expand')) {
+    $(this).parents('.mdl-card').removeClass('brand-card-expand');
+  } else {
+    $('.mdl-card').removeClass('brand-card-expand');
+    $(this).parents('.mdl-card').addClass('brand-card-expand');
+  }
+
+})
 {% endhighlight %}
 </div>
