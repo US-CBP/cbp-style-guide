@@ -154,13 +154,13 @@ The Navigation 2 page layout is exactly the same as Navigation 1, except that th
 To do
 {% endhighlight %}
 
-<!-- <div class="pl-preview">
+<div class="pl-preview">
 
-![Navigation and content](layouts/images/type-content-navigation.png)
+![Navigation and content](layouts/images/type-content-navigation_wApp.png)
 
-##### Navigation and content
+##### Card Layout
 
-[View example](layouts/type-content-navigation.html){:target="_blank"}
+[View example](layouts/brand-card-layout.html){:target="_blank"}
 
 The navigation and content layout has a column for vertical navigation to the left of the content area, which is useful for when a long list of navigation links is necessary.
 
@@ -170,7 +170,7 @@ The navigation and content layout has a column for vertical navigation to the le
 
 {% highlight html %}
 To do
-{% endhighlight %} -->
+{% endhighlight %} 
 
 *** See Vertical navigation and Horizontal navigation for more detail.
 {: .clearfix}
