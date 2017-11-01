@@ -156,6 +156,7 @@ To do
 
 <div class="pl-preview">
 
+
 ![Navigation and content](layouts/images/layout-dashboard.brand-card.png)
 
 ##### Branded Card Dashboard
