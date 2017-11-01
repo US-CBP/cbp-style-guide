@@ -4,57 +4,35 @@
     $(window).on('load', function() {
         //make the header sticky
         $(window).scrollTop(0);
-        $(window).resize(function() {
+  
+    // height of only top header
+      var sidebarOffsetTopHeader = 50; //this is the height of the cbp-header
 
-            //height of only top header
-            var sidebarOffsetTopHeader = $('.cbp-header').height();
+       
+    // scroll function
+      $(window).scroll(function () {
+      // check when the scroll is more than the height of universal header
+        var scroll = $(window).scrollTop();
 
-            //height of only app header
-            var sidebarOffsetSingleHeader = $('.app-header').height();
-
-            //height of both header
-            var sidebarOffsetDoubleHeader = sidebarOffsetTopHeader + sidebarOffsetSingleHeader;
-
-            //dynamically add the offset to sidebar on page load
-            if ($('.app-header').length === 0) {
-                $('.sidebar').css('top', sidebarOffsetTopHeader);
-            } else {
-                $('.sidebar').css('top', sidebarOffsetDoubleHeader);
-            }
-
-
-            //scroll function 
-            $(window).scroll(function() {
-
-                //check when the scroll is more than the height of universal header
-                var scroll = $(window).scrollTop();
-
-                //check if the app header is there or not
-                if ($('.app-header').length === 0) {
-                    //check when the scroll is more than the height of universal header
-                    if (scroll >= sidebarOffsetTopHeader) {
-                        $('.sidebar').css('top', 0);
-                    } else {
-                        $('.sidebar').css('top', sidebarOffsetTopHeader);
-                    }
-                } else {
-                    //check when the scroll is more than the height of universal header
-                    if (scroll >= sidebarOffsetTopHeader) {
-                        $('.app-header').addClass('top');
-                        $('.sidebar').css('top', sidebarOffsetSingleHeader);
-                    } else {
-                        $('.app-header').removeClass('top');
-                        $('.sidebar').css('top', sidebarOffsetDoubleHeader);
-                    }
-                }
-
-
-            });
-
-            $('.content').css('padding-top', sidebarOffsetSingleHeader);
-
-
-        }).resize();
+      // check if the app header is there or not
+        if ($('.app-header').length === 0) {
+        // check when the scroll is more than the height of universal header
+          if (scroll >= sidebarOffsetTopHeader) {
+            $('.sidebar').removeClass('after-header');
+          } else {
+            $('.sidebar').addClass('after-header');
+          }
+        } else {
+        // check when the scroll is more than the height of universal header
+          if (scroll >= sidebarOffsetTopHeader) {
+            $('.app-header').addClass('top');
+           $('.sidebar').removeClass('after-double-header').addClass('after-header');
+          } else {
+            $('.app-header').removeClass('top');
+            $('.sidebar').removeClass('after-header').addClass('after-double-header');
+          }
+        }
+      });
 
     });
     /*
@@ -205,6 +183,18 @@
             }
         });
     }
+
+    //brand card interaction
+    $('.btn-circle').on('click', function(){
+     
+      if ($(this).parents('.mdl-card').hasClass('brand-card-expand')) {
+        $(this).parents('.mdl-card').removeClass('brand-card-expand');
+      } else {
+        $('.mdl-card').removeClass('brand-card-expand');
+        $(this).parents('.mdl-card').addClass('brand-card-expand');
+      }
+
+    });
 
     // enable datepickers (NOTE the 'not' method to avoid double init of range examples!)
     $('.datepicker').not('#startRange').not('#endRange').datepicker({
