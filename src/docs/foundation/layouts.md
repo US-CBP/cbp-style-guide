@@ -156,13 +156,22 @@ To do
 
 <div class="pl-preview">
 
-![Navigation and content](layouts/images/type-content-navigation_wApp.png)
 
-##### Card Layout
+![Navigation and content](layouts/images/layout-dashboard.brand-card.png)
+
+##### Branded Card Dashboard
 
 [View example](layouts/brand-card-layout.html){:target="_blank"}
 
-The navigation and content layout has a column for vertical navigation to the left of the content area, which is useful for when a long list of navigation links is necessary.
+This page illustrates:
+* Universal Header
+* Application Header
+* Fluid body content
+* Sidebar without scroll 
+* Branded Card UI
+
+The Branded Card Dashboard page layout is designed to aid users in easily navigating multiple unique options. Clicking on the card expands its footprint within the page grid to display more information and points of action.
+
 
 </div>
 
