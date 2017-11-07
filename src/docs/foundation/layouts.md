@@ -184,7 +184,7 @@ To do
 <div class="pl-preview">
 
 
-![Navigation and content](layouts/images/layout-dashboard.brand-card.png)
+![Navigation and content](layouts/images/layout-dashboard.card.png)
 
 ##### Card Dashboard
 
@@ -197,7 +197,7 @@ This page illustrates:
 * Sidebar with scroll 
 * Card UI
 
-The Card Dashboard page layout is designed to aid users in easily navigating multiple unique options. Clicking on the card expands its footprint within the page grid to display more information and points of action.
+The Card Dashboard page layout is designed to cleanly display access to multiple unbranded endpoints. Clicking on the card expands its footprint within the page grid to display more information and points of action. Individual cards rise on rollover and potentially expand upon selection to show more information and/or administrative options.
 
 
 </div>
