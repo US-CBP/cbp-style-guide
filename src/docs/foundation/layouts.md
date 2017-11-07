@@ -181,6 +181,33 @@ The Branded Card Dashboard page layout is designed to aid users in easily naviga
 To do
 {% endhighlight %} 
 
+<div class="pl-preview">
+
+
+![Navigation and content](layouts/images/layout-dashboard.brand-card.png)
+
+##### Card Dashboard
+
+[View example](layouts/card-layout.html){:target="_blank"}
+
+This page illustrates:
+* Universal Header
+* Application Header
+* Fluid body content
+* Sidebar with scroll 
+* Card UI
+
+The Card Dashboard page layout is designed to aid users in easily navigating multiple unique options. Clicking on the card expands its footprint within the page grid to display more information and points of action.
+
+
+</div>
+
+{: .clearfix}
+
+{% highlight html %}
+To do
+{% endhighlight %} 
+
 *** See Vertical navigation and Horizontal navigation for more detail.
 {: .clearfix}
 
