@@ -186,6 +186,7 @@ To do
 
 ![Navigation and content](layouts/images/layout-dashboard.card.png)
 
+
 ##### Card Dashboard
 
 [View example](layouts/card-layout.html){:target="_blank"}
@@ -196,6 +197,7 @@ This page illustrates:
 * Fluid body content
 * Sidebar with scroll 
 * Card UI
+
 
 The Card Dashboard page layout is designed to cleanly display access to multiple unbranded endpoints. Clicking on the card expands its footprint within the page grid to display more information and points of action. Individual cards rise on rollover and potentially expand upon selection to show more information and/or administrative options.
 
