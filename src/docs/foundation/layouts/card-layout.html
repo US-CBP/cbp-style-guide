@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>CBP Style Guide Layout Type</title>
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../../../generated/styles/vendor.css" rel="stylesheet" />
+    <style>
+    .app-header .heading-text {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .app-header .mdl-textfield.is-dirty .mdl-textfield__label {
+        height: 27px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div class="cbp-main page-container">
+        <div role="navigation" class="cbp-header">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../">
+              <span class="visible-md visible-lg"><span class="cbp-brand">U.S. Customs &amp; Border Protection</span></span>
+              <span class="visible-xs visible-sm"><span class="cbp-brand">U.S. CBP</span></span>
+              <span class="visible-md visible-lg"><span class="dhs-brand">U.S. Department of Homeland Security</span></span>
+            </a>
+                    <button data-target="#navbar-user-info" data-toggle="collapse" type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle Global Navigation</span>
+                    </button>
+                </div>
+                <div id="navbar-user-info" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                  Navigation and Content<span class="caret"></span> <!-- Your application name goes here!!!-->
+                </a>
+                            <ul class="dropdown-menu" id="nav-menu">
+                                <li class="dropdown-header" rel="recent">Recent Apps</li>
+                                <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 1</span></a></li>
+                                <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 2</span></a></li>
+                                <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 3</span></a></li>
+                                <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 4</span></a></li>
+                                <li rel="recent"><a href="#"><span title="Remove from Recent Apps" tabindex="0" class="fa fa-times fa-fw">&nbsp;&nbsp;&nbsp;</span><span>Recent App 5</span></a></li>
+                                <li class="divider" rel="recent"></li>
+                                <li rel="search_input">
+                                    <input class="form-control input-md" placeholder="Search..." style="border: none; text-indent: 7px; box-shadow: none; outline: none">
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="/">See All Available Apps...</a></li>
+                                <li rel="refreshMenujs"><a href="#">Refresh</a></li>
+                                <li class="dropdown-header">
+                                    <p class="pull-right">Updated 9/27/17 08:48:57</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                  <span class="fa fa-comment"></span>
+                  <span class="hidden-sm">Feedback</span>
+                </a>
+                        </li>
+                        <li data-toggle="hover" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                  <span class="fa fa-user"></span>
+                  <span class="hidden-sm" title="FIRST.LAST@CBP.DHS.GOV">First Last Name</span>
+                  <span class="caret"></span>
+                </a>
+                            <ul rel="right-menu-links" role="menu" class="dropdown-menu">
+                                <li>
+                                    <a title="Preferences" href="#">Preferences</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a title="Logout" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div role="navigation" class="app-header">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle Application Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav navbar-nav">
+                        <h1 class="heading-text">App Heading</h1>
+                    </div>
+                    <div class="nav navbar-nav navbar-form navbar-right">
+                        <form role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <label for="main-search" class="mdl-textfield__label">Search</label>
+                                        <input type="text" id="main-search" class="mdl-textfield__input" />
+                                    </div>
+                                    <span class="input-group-btn">
+                      <button aria-label="Search" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="content fixed">
+                <div class="cbp-sidebar sidebar after-double-header">
+                    <h2 role="button">Section Heading</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                            <a href="#" role="button" class="">
+                            Category 1<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 2<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 3<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 4<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 5<span class="pull-right">6</span></a>
+                        </li>
+                    </ul>
+                    <h2 role="button">Section Heading</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 1<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 2<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 3<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 4<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 5<span class="pull-right">6</span></a>
+                        </li>
+                    </ul>
+                    <h2 role="button">Section Heading</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 1<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 2<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 3<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 4<span class="pull-right">6</span></a>
+                        </li>
+                    </ul>
+                    <h2 role="button">Section Heading</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 1<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 2<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 3<span class="pull-right">6</span></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" role="button" class="">
+                            Category 4<span class="pull-right">6</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="main-content" class="cbp-sidebar-offset">
+                    <h2>Page Heading</h2>
+                    <div class="row mdl-card-deck">
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline show-list-10items">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline show-list-10items">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline show-list-10items">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p class="text-ellipsis-4line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Longer heading text for the card.... Longer heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 ">
+                            <div class="mdl-card mdl-card-border mdl-card-expand " tabindex="0">
+                                <div class="mdl-card__title">
+                                    <h3 class="mdl-card__title-text">Heading text for the card</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text with-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.
+                                        <br />
+                                    </p>
+                                    <ul class="list-inline show-list-10items">
+                                        <li><span class="text-bold">Sample</span></li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                        <li>Sample</li>
+                                        <li>sample</li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-star"></i>
+                                        <span class="sr-only">Favorite</span>
+                                    </button>
+                                    <button type="button" class="btn btn-icon-only btn-xs btn-hover">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <span class="sr-only">Edit</span>
+                                    </button>
+                                    <button class="btn btn-primary btn-xs pull-right">
+                                        Go to App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer role="banner" class="cbp-banner"></footer>
+    <script src="../../../generated/scripts/vendor.js"></script>
+    <script src="../../../generated/scripts/main.js"></script>
+</body>
+
+</html>
