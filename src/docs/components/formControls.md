@@ -811,7 +811,7 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 </div>
 
 <div class="pl-pattern">
-### Toggle switches
+### Toggle on/off switches
 
 #### Purpose
 Users need to toggle an option between on/off or yes/no. 
@@ -903,6 +903,83 @@ Use a toggle switch for a binary option where the change occurs _immediately_. U
     <label for="t7" data-on="ON" data-off="OFF">Disabled off</label>
   </div>
 </div>
+{% endhighlight %}
+
+</div>
+
+<div class="pl-pattern">
+### Toggle options switches
+
+#### Purpose
+Users need to toggle an option between multiple choice. 
+
+#### Description
+Use the toggle switches, instead of radio buttons, for two or more specific options.
+
+
+{::nomarkdown}
+<div class="pl-preview">
+  <div class="row">
+    <div class="col-sm-6">
+      <fieldset class="margin-bottom-2">
+        <legend class="sr-only">Select one out of three options</legend>
+        <div class="switch-toggle">
+          <input id="option1" name="selectOption" type="radio" checked>
+          <label for="option1" onclick="">Option 1</label>
+          <input id="option2" name="selectOption" type="radio">
+          <label for="option2" onclick="">Option 2</label>
+          <input id="option3" name="selectOption" type="radio">
+          <label for="option3" onclick="">Option 3</label>
+          <a class=""></a>
+        </div>
+      </fieldset>
+      <fieldset >
+        <legend class="sr-only">Select one out of four options</legend>
+        <div class="switch-toggle">
+          <input id="option1-1" name="selectOption1" type="radio" checked>
+          <label for="option1-1" onclick="">Option 1</label>
+          <input id="option1-2" name="selectOption1" type="radio">
+          <label for="option1-2" onclick="">Option 2</label>
+          <input id="option1-3" name="selectOption1" type="radio">
+          <label for="option1-3" onclick="">Option 3</label>
+          <input id="option1-4" name="selectOption1" type="radio">
+          <label for="option1-4" onclick="">Option 4</label>
+          <a class=""></a>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+{:/nomarkdown}
+
+
+{% highlight html %}
+<fieldset >
+  <legend class="sr-only">Select one out of three options</legend>
+  <div class="switch-toggle">
+    <input id="option1" name="selectOption" type="radio" checked>
+    <label for="option1" onclick="">Option 1</label>
+    <input id="option2" name="selectOption" type="radio">
+    <label for="option2" onclick="">Option 2</label>
+    <input id="option3" name="selectOption" type="radio">
+    <label for="option3" onclick="">Option 3</label>
+    <a class=""></a>
+  </div>
+</fieldset>
+<fieldset >
+  <legend class="sr-only">Select one out of four options</legend>
+  <div class="switch-toggle">
+    <input id="option1-1" name="selectOption1" type="radio" checked>
+    <label for="option1-1" onclick="">Option 1</label>
+    <input id="option1-2" name="selectOption1" type="radio">
+    <label for="option1-2" onclick="">Option 2</label>
+    <input id="option1-3" name="selectOption1" type="radio">
+    <label for="option1-3" onclick="">Option 3</label>
+    <input id="option1-4" name="selectOption1" type="radio">
+    <label for="option1-4" onclick="">Option 4</label>
+    <a class=""></a>
+  </div>
+</fieldset>
 {% endhighlight %}
 
 </div>
