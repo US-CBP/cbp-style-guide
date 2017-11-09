@@ -664,7 +664,66 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="c">&lt;!--Skip Navigation --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="c">&lt;!--Initalize menu here --&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;li&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content fluid-layout"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"col-md-12"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>Page Heading<span class="nt">&lt;/h1&gt;</span>
+					<span class="nt">&lt;div&gt;</span>Add Page content here<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <div class="pl-preview">
@@ -687,7 +746,109 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="c">&lt;!--Skip Navigation --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="c">&lt;!--Initalize menu here --&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;li&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"app-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Application Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-tabs-light"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.google.com"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Active App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Normal App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Disabled App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-form navbar-right"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+									<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="nt">/&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+								<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/form&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content fluid-layout"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"col-md-12"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>Page Heading<span class="nt">&lt;/h1&gt;</span>
+					<span class="nt">&lt;div&gt;</span>Add Page content here<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <div class="pl-preview">
@@ -711,7 +872,64 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="c">&lt;!--Skip Navigation --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/button&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+						<span class="nt">&lt;/a&gt;</span>
+						<span class="c">&lt;!--Initalize menu here --&gt;</span>
+					<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;li&gt;</span>
+								<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+							<span class="nt">&lt;/li&gt;</span>
+							<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+							<span class="nt">&lt;li&gt;</span>
+								<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+							<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;/ul&gt;</span>
+					<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"col-md-12"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>Page Heading<span class="nt">&lt;/h1&gt;</span>
+					<span class="nt">&lt;div&gt;</span>Add Page content here<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <div class="pl-preview">
@@ -733,7 +951,106 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="c">&lt;!--Initalize menu here --&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;li&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"app-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Application Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-tabs-light"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.google.com"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Active App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Normal App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Disabled App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-form navbar-right"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+									<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="nt">/&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+								<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/form&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"col-md-12"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>Page Heading<span class="nt">&lt;/h1&gt;</span>
+				<span class="nt">&lt;div&gt;</span>Add Page content here<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <div class="pl-preview">
@@ -757,7 +1074,109 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="c">&lt;!--Initalize menu here --&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;li&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"app-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Application Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-tabs-light"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.google.com"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Active App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Normal App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Disabled App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-form navbar-right"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+									<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="nt">/&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+								<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/form&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content fixed"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-sidebar sidebar after-double-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;</span> Add side bar content here<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"cbp-sidebar-offset"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>Page heading<span class="nt">&lt;/h1&gt;</span>
+				<span class="nt">&lt;div&gt;</span>Add Page content here<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <div class="pl-preview">
@@ -781,7 +1200,109 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="c">&lt;!--Initalize menu here --&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;li&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"app-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Application Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-tabs-light"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.google.com"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Active App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Normal App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Disabled App View Link<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-form navbar-right"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+									<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="nt">/&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+								<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/form&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-sidebar sidebar after-double-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"height: 1000px;"</span><span class="nt">&gt;</span> Add side bar content here<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"cbp-sidebar-offset"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>Page heading<span class="nt">&lt;/h1&gt;</span>
+				<span class="nt">&lt;div&gt;</span>Add Page content here<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <div class="pl-preview">
@@ -806,7 +1327,127 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="c">&lt;!--Initalize menu here --&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;li&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"app-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Application Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"heading-text"</span><span class="nt">&gt;</span>App Heading<span class="nt">&lt;/h1&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-form navbar-right"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+									<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="nt">/&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+								<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/form&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-sidebar sidebar after-double-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;h2</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Section Heading<span class="nt">&lt;/h2&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"height: 1000px;"</span><span class="nt">&gt;</span> Add side bar content here<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"cbp-sidebar-offset"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;h2&gt;</span>Page Heading<span class="nt">&lt;/h2&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brand-card-container margin-top-3"</span><span class="nt">&gt;</span>
+					<span class="c">&lt;!-- repeat the card pattern--&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card mdl-card-border"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-container"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"../../../generated/images/toolbox_icon.svg"</span><span class="nt">&gt;&lt;/div&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card__title"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mdl-card__title-text text-center"</span><span class="nt">&gt;</span>Card with svg image<span class="nt">&lt;/h3&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card__supporting-text"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;p&gt;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-inline text-italic"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;li&gt;</span>Sample<span class="nt">&lt;/li&gt;</span>
+								<span class="nt">&lt;li&gt;</span>Sample<span class="nt">&lt;/li&gt;</span>
+								<span class="nt">&lt;li&gt;</span>Sample<span class="nt">&lt;/li&gt;</span>
+								<span class="nt">&lt;li&gt;</span>Sample<span class="nt">&lt;/li&gt;</span>
+							<span class="nt">&lt;/ul&gt;</span>
+							<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Watch Tool Tour Video<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+							<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Access info<span class="nt">&lt;/a&gt;</span> | <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-warning text-warning"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-warning"</span><span class="nt">&gt;</span>Sample warning text<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card__actions mdl-card--border"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-circle"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-ellipsis-h"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+							<span class="nt">&lt;/button&gt;</span>
+							<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default pull-right"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-share-square-o"</span><span class="nt">&gt;&lt;/i&gt;</span> Launch Tool
+							<span class="nt">&lt;/button&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <div class="pl-preview">
@@ -831,7 +1472,125 @@
   </div>
 
   <figure class="highlight clearfix">
-    <pre><code class="language-html" data-lang="html">To do</code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-main page-container"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"cbp-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"../"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. Customs <span class="ni">&amp;amp;</span> Border Protection<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-xs visible-sm"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cbp-brand"</span><span class="nt">&gt;</span>U.S. CBP<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visible-md visible-lg"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"dhs-brand"</span><span class="nt">&gt;</span>U.S. Department of Homeland Security<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">data-target=</span><span class="s">"#navbar-user-info"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Global Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbar-user-info"</span> <span class="na">class=</span><span class="s">"navbar-collapse collapse"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-left"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Application Name  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="c">&lt;!-- Your application name goes here!!!--&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="c">&lt;!--Initalize menu here --&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+			<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;li&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-comment"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Feedback<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">data-toggle=</span><span class="s">"hover"</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span> <span class="na">title=</span><span class="s">"FIRST.LAST@CBP.DHS.GOV"</span><span class="nt">&gt;</span>First Last Name<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/a&gt;</span>
+					<span class="nt">&lt;ul</span> <span class="na">rel=</span><span class="s">"right-menu-links"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Preferences"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Preferences<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+						<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+						<span class="nt">&lt;li&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Logout"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
+						<span class="nt">&lt;/li&gt;</span>
+					<span class="nt">&lt;/ul&gt;</span>
+				<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"app-header"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Application Navigation<span class="nt">&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+				<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"heading-text"</span><span class="nt">&gt;</span>App Heading<span class="nt">&lt;/h1&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-form navbar-right"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+									<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"main-search"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="nt">/&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+								<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/form&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cbp-sidebar sidebar after-double-header"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;h2</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Section Heading<span class="nt">&lt;/h2&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;</span> Add side bar content here<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main-content"</span> <span class="na">class=</span><span class="s">"cbp-sidebar-offset"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;h2&gt;</span>Page Heading<span class="nt">&lt;/h2&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mdl-card-deck"</span><span class="nt">&gt;</span>
+					<span class="c">&lt;!-- repeat the card pattern--&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3 "</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card mdl-card-border mdl-card-expand "</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card__title"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mdl-card__title-text"</span><span class="nt">&gt;</span>Heading for the card<span class="nt">&lt;/h3&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card__supporting-text with-footer"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-ellipsis-4line"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-card__actions mdl-card--border"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-xs btn-hover"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star"</span><span class="nt">&gt;&lt;/i&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Favorite<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/button&gt;</span>
+								<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-xs btn-hover"</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-pencil-square-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/button&gt;</span>
+								<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-xs pull-right"</span><span class="nt">&gt;</span>
+								Go to App
+								<span class="nt">&lt;/button&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
   <p class="clearfix">*** See Vertical navigation and Horizontal navigation for more detail.</p>
