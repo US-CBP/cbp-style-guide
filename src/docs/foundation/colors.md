@@ -43,6 +43,40 @@ These are the primary colors used for Common Framework UI elements. The primary 
 </div>
 {:/nomarkdown}
 
+#### Subtle Colors
+These are the subtle colors used for Common Framework UI elements. The subtle colors have semantic meanings associated with them.
+
+
+{::nomarkdown}
+<div class="pl-palette">
+    <div class="pl-palette-color">
+        <div class="pl-palette-preview" style="background-color:#ecf1f4; border: 1px solid #dce8eb;"></div>
+        <div class="pl-palette-variable">@state-primary-bg</div>
+        <div class="pl-palette-value">#ECF1F4</div>
+    </div>
+    <div class="pl-palette-color">
+        <div class="pl-palette-preview" style="background-color:#ecf5ec; border: 1px solid #deecdb;"></div>
+        <div class="pl-palette-variable">@state-success-bg</div>
+        <div class="pl-palette-value">#ECF5EC</div>
+    </div>
+    <div class="pl-palette-color">
+        <div class="pl-palette-preview" style="background-color:#edf3f9; border: 1px solid #d2e6f0;"></div>
+        <div class="pl-palette-variable">@state-info-bg</div>
+        <div class="pl-palette-value">#EDF3F9</div>
+    </div>
+    <div class="pl-palette-color">
+        <div class="pl-palette-preview" style="background-color:#fef7ed; border: 1px solid #fde6d5;"></div>
+        <div class="pl-palette-variable">@state-warning-bg</div>
+        <div class="pl-palette-value">#FEF7ED</div>
+    </div>
+    <div class="pl-palette-color">
+        <div class="pl-palette-preview" style="background-color:#f8ecec; border: 1px solid #f1d9dd;"></div>
+        <div class="pl-palette-variable">@state-danger-bg</div>
+        <div class="pl-palette-value">#F8ECEC</div>
+    </div>
+</div>
+{:/nomarkdown}
+
 #### Grays
 
 {::nomarkdown}

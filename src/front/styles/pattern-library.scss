@@ -96,7 +96,7 @@ hr.hr-strong {
   top: 0px;
   z-index: 2000;
   width:110%;
-
+  line-height: 1.65;
   background-color: #F09511;
   a {
     color: #FFFFFF;
@@ -572,6 +572,9 @@ hr.hr-strong {
 }
 
 .pl-pattern-layouts {
+    .pl-preview {
+        min-height: 275px;
+    }
     img {
         float: left;
         padding: 4px;
@@ -579,5 +582,8 @@ hr.hr-strong {
         border-radius: 2px;
         margin: 0 18px 18px 0;
         vertical-align: middle;
+    }
+    ul {
+        list-style-position:inside;
     }
 }

@@ -35,9 +35,10 @@ Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
 
 {::nomarkdown}
 <div class="pl-preview">
-<div style="font-size: 15px">
-  <p class="black">700 - Black: The quick brown fox jumps over the lazy dog</p>
-  <p class="bold">500 - Bold: The quick brown fox jumps over the lazy dog</p>
+<div>
+  <p class="black">900 - Black: The quick brown fox jumps over the lazy dog</p>
+  <p class="bold">700 - Bold: The quick brown fox jumps over the lazy dog</p>
+  <p class="semibold">500 - Semi-Bold: The quick brown fox jumps over the lazy dog</p>
   <p class="normal">400 - Normal: The quick brown fox jumps over the lazy dog</p>
   <p class="light">300 - Light: The quick brown fox jumps over the lazy dog</p>
 </div>
@@ -45,8 +46,9 @@ Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
 {:/nomarkdown}
 
 {% highlight html %}
-    <p class="black">700 - Black: The quick brown fox jumps over the lazy dog</p>
-    <p class="bold">500 - Bold: The quick brown fox jumps over the lazy dog</p>
+    <p class="black">900 - Black: The quick brown fox jumps over the lazy dog</p>
+    <p class="bold">700 - Bold: The quick brown fox jumps over the lazy dog</p>
+    <p class="semibold">500 - Semi-Bold: The quick brown fox jumps over the lazy dog</p>
     <p class="normal">400 - Normal: The quick brown fox jumps over the lazy dog</p>
     <p class="light">300 - Light: The quick brown fox jumps over the lazy dog</p>
 {% endhighlight %}
@@ -59,40 +61,40 @@ Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
 #### Roboto
 {::nomarkdown}
 <div class="pl-preview">
-<table class="table table-borderless table-valign" style="width: 550px;">
+<table class="table table-borderless table-valign">
 
     <tbody>
         <tr>
             <td>h1</td>
-            <td><h1>Main Heading <small>Secondary text</small></h1></td>
+            <td><h1>Main Heading Regular 30px <small>Secondary text</small></h1></td>
         </tr>
         <tr>
             <td>h2</td>
-            <td><h2>Sub Heading <small>Secondary text</small></h2></td>
+            <td><h2>Sub Heading Semibold 24px <small>Secondary text</small></h2></td>
         </tr>
         <tr>
             <td>h3</td>
-            <td><h3>Sub Sub Heading <small>Secondary text</small></h3></td>
+            <td><h3>Sub Sub Heading Semibold 22px <small>Secondary text</small></h3></td>
         </tr>
         <tr>
             <td>h4</td>
-            <td><h4>Sub Sub Sub Heading <small>Secondary text</small></h4></td>
+            <td><h4>Sub Sub Sub Heading Semibold 20px <small>Secondary text</small></h4></td>
         </tr>
         <tr>
             <td>h5</td>
-            <td><h5>Sub Sub Sub Sub Heading <small>Secondary text</small></h5></td>
+            <td><h5>Sub Sub Sub Sub Heading Semibold 18px <small>Secondary text</small></h5></td>
         </tr>
         <tr>
             <td>h6</td>
-            <td><h6>Sub Sub Sub Sub Sub Heading <small>Secondary text</small></h6></td>
+            <td><h6>Sub Sub Sub Sub Sub Heading Semibold 16px <small>Secondary text</small></h6></td>
         </tr>
         <tr>
             <td>Body</td>
-            <td><div class="body">Regular 13px/14px</div></td>
+            <td><div class="body">Regular 13px</div></td>
         </tr>
         <tr>
             <td>Caption</td>
-            <td><div class="caption">Regular 12px/13px</div></td>
+            <td><div class="caption">Regular 12px</div></td>
         </tr>
     </tbody>
 </table>
@@ -100,14 +102,14 @@ Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
 {:/nomarkdown}
 
 {% highlight html %}
-<h1>Main Heading <small>Secondary text</small></h1>
-<h2>Sub Heading <small>Secondary text</small></h2>
-<h3>Sub Sub Heading <small>Secondary text</small></h3>
-<h4>Sub Sub Sub Heading <small>Secondary text</small></h4>
-<h5>Sub Sub Sub Sub Heading <small>Secondary text</small></h5>
-<h6>Sub Sub Sub Sub Sub Heading <small>Secondary text</small></h6>
-<p>Regular 13px/14px</p>
-<div class="caption">Regular 12px/13px</div>
+<h1>Main Heading Regular 30px <small>Secondary text</small></h1>
+<h2>Sub Heading Semibold 24px <small>Secondary text</small></h2>
+<h3>Sub Sub Heading Semibold 22px <small>Secondary text</small></h3>
+<h4>Sub Sub Sub Heading Semibold 20px <small>Secondary text</small></h4>
+<h5>Sub Sub Sub Sub Heading Semibold 18px <small>Secondary text</small></h5>
+<h6>Sub Sub Sub Sub Sub Heading Semibold 16px <small>Secondary text</small></h6>
+<p>Regular 13px</p>
+<div class="caption">Regular 12px</div>
 {% endhighlight %}
 
 &nbsp;
