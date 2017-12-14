@@ -23,13 +23,8 @@
   },
   "private": true,
   "devDependencies": {
-<<<<<<< HEAD
-    "cbp-theme": "1.5.0",
-    "ejs": "2.5.5",
-=======
     "cbp-theme": "1.8.1",
-    "ejs": "2.4.2",
->>>>>>> fa3f780d12d58602ee313c7ee4b25b4a5106d35a
+    "ejs": "2.5.5",
     "font-awesome": "4.7.0",
     "grunt": "1.0.1",
     "grunt-autoprefixer": "3.0.4",
@@ -51,20 +46,12 @@
     "grunt-lesslint": "4.0.0",
     "grunt-newer": "1.2.0",
     "grunt-svgmin": "4.0.0",
-<<<<<<< HEAD
     "grunt-templater": "0.0.7",
-=======
-    "grunt-templater": "0.0.6",
->>>>>>> fa3f780d12d58602ee313c7ee4b25b4a5106d35a
     "grunt-usemin": "3.1.0",
     "grunt-zip": "0.17.0",
     "highlight.js": "9.4.0",
     "hopscotch": "0.3.1",
-<<<<<<< HEAD
-    "jquery": "3.1.1",
-=======
     "jquery": "2.2.4",
->>>>>>> fa3f780d12d58602ee313c7ee4b25b4a5106d35a
     "jquery-ui": "1.12.1",
     "jquery.inputmask": "3.3.4",
     "jshint-stylish": "2.2.0",
