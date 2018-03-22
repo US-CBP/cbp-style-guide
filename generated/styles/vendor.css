@@ -2722,12 +2722,14 @@
 .select2-hidden-accessible {
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
   height: 1px !important;
-  margin: -1px !important;
   overflow: hidden !important;
   padding: 0 !important;
   position: absolute !important;
-  width: 1px !important; }
+  width: 1px !important;
+  white-space: nowrap !important; }
 
 .select2-container--default .select2-selection--single {
   background-color: #fff;
@@ -2788,6 +2790,8 @@
     margin: 0;
     padding: 0 5px;
     width: 100%; }
+    .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+      list-style: none; }
   .select2-container--default .select2-selection--multiple .select2-selection__placeholder {
     color: #999;
     margin-top: 5px;
@@ -3014,9 +3018,7 @@
       color: #555; }
 
 .select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
-  float: right; }
-
-.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  float: right;
   margin-left: 5px;
   margin-right: auto; }
 
@@ -3078,7 +3080,7 @@
   border-color: #5897fb; }
 
 /**
- * selectize.css (v0.12.1)
+ * selectize.css (v0.12.4)
  * Copyright (c) 2013–2015 Brian Reavis & contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -3177,6 +3179,12 @@
 }
 .selectize-control.plugin-remove_button .disabled [data-value] .remove {
   border-left-color: #ffffff;
+}
+.selectize-control.plugin-remove_button .remove-single {
+  position: absolute;
+  right: 28px;
+  top: 6px;
+  font-size: 23px;
 }
 .selectize-control {
   position: relative;
@@ -3330,6 +3338,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 200px;
+  -webkit-overflow-scrolling: touch;
 }
 .selectize-control.single .selectize-input,
 .selectize-control.single .selectize-input input {
