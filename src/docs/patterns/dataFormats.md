@@ -18,6 +18,10 @@ title: "Data formats"
             <td>10:00 AM</td>
         </tr>
         <tr>
+            <td><code>military time</code></td>
+            <td>22:00:15</td>
+        </tr>
+        <tr>
             <td><code>short date</code></td>
             <td>Jan 11</td>
         </tr>
