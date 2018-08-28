@@ -5,26 +5,23 @@ title: "Typography"
 <div class="pl-pattern">
 ### Fonts
 
-Typography is an essential component of the Common Framework Theme. We've selected two san-serif fonts for primary use across all mobile and desktop patterns. Roboto and Calibri provide a wide range of characters and are designed to maintain optimal legibility across platforms, sizes and pixel densities. Both fonts offer a clean, light, and open aesthetic that compliments the content and hierarchy.
-
-
-
-Font load and fallback order: __Roboto, Calibri, Tahoma, Arial, sans-serif__
-
-
-
+#### Roboto
 {::nomarkdown}
-
-<h2 style="font-family: Roboto; !important">Roboto</h2>
-<p style="font-family: Roboto; !important">Google's "modern, yet approachable" font. We include the font as part of the CBP Theme.</p>
-
-<h2 style="font-family: Calibri; !important">Calibri</h2>
-<p style="font-family: Calibri; !important">Ships with Windows Vista and newer and Microsoft Office.</p>
-
-<h2 style="font-family: Tahoma; !important">Tahoma</h2>
-<p style="font-family: Tahoma; !important">Ships with most operating systems.</p>
-
+<div>
+    <span>
+        <img align="right" src="../../generated/images/FALLBACK_FONT.png" width="500" height="400" alt="" >
+    </span>
+    <span>
+        <p>Typography is an essential component of the Common Framework Theme. We’ve selected san-serif fonts for primary use across all mobile and desktop patterns. The Roboto font family provides a wide range of characters and weights that are designed to maintain optimal legibility across platforms, sizes and pixel densities. It offers a clean, light, and open aesthetic that compliments content and hierarchy. Roboto should be the only font-family in use throughout CBP applications built on the CBP theme.</p>
+    </span>
+</div>
 {:/nomarkdown}
+
+#### Implementation
+All of the @font-face css properties and font files are loaded into the theme and ready for use. The .woff file is included to assist in IE 11+ compatibility. The majority of other modern browsers will accept the .woff2 file type natively. Note: Adding additional font files to your application can cause pages to load slowly or display inconsistently.
+
+#### Fallback Order
+In the theme you will notice that the font-family property is listed as ( font-family: roboto, calibri, tahoma, sans-serif; ). This is to maintain some semblance of compatibility should the Roboto font files fail unexpectedly. Since all of our font files are served from our servers and not remotely, this should be an incredibly rare occurrence. Basically, if the Roboto files are unavailable, the browser will look for the Calibri system font. If that fails (Note: Calibri is a proprietary font created by Microsoft – thus it can encounter issues when loaded in non-Microsoft environments). then it will move down the list to Tahoma, and then finally to the default sans-serif font on the system. This does not mean that applications may use Calibri or any other of the fallback fonts as the primary font. These fallback fonts are only to be used in the event of a system failure.
 
 &nbsp;
 
