@@ -5,12 +5,14 @@ title: "Typography"
 <div class="pl-pattern">
 ### Fonts
 
-#### Roboto
+&nbsp;
+
 {::nomarkdown}
 <div>
     <span>
-        <img align="right" src="../../generated/images/FALLBACK_FONT.png" width="500" height="400" alt="" >
+        <img align="right" src="../../generated/images/FALLBACK_FONT.png" style="padding-left: 20px;" width="500" height="400" alt="" >
     </span>
+    <h4>Roboto</h4>
     <span>
         <p>Typography is an essential component of the Common Framework Theme. We’ve selected san-serif fonts for primary use across all mobile and desktop patterns. The Roboto font family provides a wide range of characters and weights that are designed to maintain optimal legibility across platforms, sizes and pixel densities. It offers a clean, light, and open aesthetic that compliments content and hierarchy. Roboto should be the only font-family in use throughout CBP applications built on the CBP theme.</p>
     </span>
