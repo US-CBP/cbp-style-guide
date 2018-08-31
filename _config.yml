@@ -38,6 +38,7 @@ kitchensink:
 # Support
 support:
     issues: https://github.com/US-CBP/cbp-style-guide/issues
+    info: https://github.com/US-CBP/cbp-style-guide
 
 # Repository information, which is used for links like "View on Github"
 repository:
@@ -48,7 +49,7 @@ github:
   url: https://github.com/US-CBP/cbp-theme
 
 # The latest stable version
-version: 1.0.0-alpha
+version: 1.0.0
 
 # The list of all versions, which are referenced on the home page
 versions:
