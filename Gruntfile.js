@@ -29,7 +29,7 @@ module.exports = function(grunt) {
               },
             less: {
                 files: ['src/front/styles/**/*.less'],
-                tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
+                tasks: ['sass', 'usebanner', 'concat:maincss', 'autoprefixer']
               }
           },
 
@@ -76,20 +76,38 @@ module.exports = function(grunt) {
           },
 
         // LESS -> CSS
-        less: {
-            options: {
-                paths: ['node_modules'],
-                compress: false
-              },
+        // less: {
+        //     options: {
+        //         paths: ['node_modules'],
+        //         compress: false
+        //       },
+        //     dist: {
+        //         files: [{
+        //             expand: true,
+        //             cwd: 'src/front/styles',
+        //             src: ['pattern-library.less'],
+        //             dest: '<%= paths.assets %>/styles',
+        //             ext: '.css'
+        //           }]
+        //       }
+        //   },
+
+
+        sass: {
             dist: {
+                options: {
+                    loadPath: ['node_modules'],
+                    style: 'expanded',
+                    sourcemap: 'none'
+                },
                 files: [{
                     expand: true,
                     cwd: 'src/front/styles',
-                    src: ['pattern-library.less'],
+                    src: ['pattern-library.scss'],
                     dest: '<%= paths.assets %>/styles',
                     ext: '.css'
-                  }]
-              }
+                }]
+            }
           },
 
         // Add vendor prefixed styles to CSS
@@ -225,7 +243,7 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'jshint',
-        'less',
+        'sass',
         'concat',
         'autoprefixer',
         'copy:dist'

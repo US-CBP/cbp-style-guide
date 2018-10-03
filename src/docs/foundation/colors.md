@@ -82,29 +82,39 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
 {::nomarkdown}
 <div class="pl-palette">
     <div class="pl-palette-color">
-        <div class="pl-palette-preview" style="background-color:#222222;"></div>
+        <div id="bg-color-gray-darker" class="pl-palette-preview"></div>
         <div class="pl-palette-variable">@gray-darker</div>
         <div class="pl-palette-value">#222222</div>
     </div>
     <div class="pl-palette-color">
-        <div class="pl-palette-preview" style="background-color:#333333;"></div>
+        <div id="bg-color-gray-dark" class="pl-palette-preview"></div>
         <div class="pl-palette-variable">@gray-dark</div>
         <div class="pl-palette-value">#333333</div>
     </div>
     <div class="pl-palette-color">
-        <div class="pl-palette-preview" style="background-color:#555555;"></div>
+        <div id="bg-color-gray" class="pl-palette-preview"></div>
         <div class="pl-palette-variable">@gray</div>
         <div class="pl-palette-value">#555555</div>
     </div>
     <div class="pl-palette-color">
-        <div class="pl-palette-preview" style="background-color:#808080;"></div>
-        <div class="pl-palette-variable">@gray-light</div>
+        <div id="bg-color-gray-medium" class="pl-palette-preview"></div>
+        <div class="pl-palette-variable">@gray-medium</div>
         <div class="pl-palette-value">#808080</div>
     </div>
     <div class="pl-palette-color">
-        <div class="pl-palette-preview" style="background-color:#eeeeee;"></div>
+        <div id="bg-color-gray-light" class="pl-palette-preview"></div>
+        <div class="pl-palette-variable">@gray-light</div>
+        <div class="pl-palette-value">#aaa</div>
+    </div>
+    <div class="pl-palette-color">
+        <div id="bg-color-gray-lighter" class="pl-palette-preview"></div>
         <div class="pl-palette-variable">@gray-lighter</div>
-        <div class="pl-palette-value">#EEEEEE</div>
+        <div class="pl-palette-value">#eee</div>
+    </div>
+    <div class="pl-palette-color">
+        <div id="bg-color-gray-lightest" class="pl-palette-preview"></div>
+        <div class="pl-palette-variable">@gray-lightest</div>
+        <div class="pl-palette-value">#f6f6f6</div>
     </div>
 </div>
 &nbsp;
