@@ -23,7 +23,7 @@
   },
   "private": true,
   "devDependencies": {
-    "cbp-theme": "1.8.1",
+    "cbp-theme": "1.10.0",
     "ejs": "2.5.7",
     "font-awesome": "4.7.0",
     "grunt": "1.0.2",
