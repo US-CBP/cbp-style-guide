@@ -41,6 +41,9 @@ module.exports = function(grunt) {
                     src: [
                         '<%= paths.dist %>'
                     ]
+                  }, {
+                    dot: true,
+                    src: '<%= paths.assets %>'
                   }]
               }
           },
