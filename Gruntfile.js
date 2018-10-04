@@ -27,8 +27,8 @@ module.exports = function(grunt) {
                 files: ['src/front/scripts/{,*/}*.js'],
                 tasks: ['jshint', 'concat:mainjs']
               },
-            less: {
-                files: ['src/front/styles/**/*.less'],
+            sass: {
+                files: ['src/front/styles/**/*.sass'],
                 tasks: ['sass', 'usebanner', 'concat:maincss', 'autoprefixer']
               }
           },
@@ -75,24 +75,7 @@ module.exports = function(grunt) {
             ]
           },
 
-        // LESS -> CSS
-        // less: {
-        //     options: {
-        //         paths: ['node_modules'],
-        //         compress: false
-        //       },
-        //     dist: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: 'src/front/styles',
-        //             src: ['pattern-library.less'],
-        //             dest: '<%= paths.assets %>/styles',
-        //             ext: '.css'
-        //           }]
-        //       }
-        //   },
-
-
+        // SASS -> CSS
         sass: {
             dist: {
                 options: {
@@ -103,7 +86,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/front/styles',
-                    src: ['pattern-library.scss'],
+                    src: ['main.scss'],
                     dest: '<%= paths.assets %>/styles',
                     ext: '.css'
                 }]
@@ -168,11 +151,6 @@ module.exports = function(grunt) {
                  ],
                 dest: '<%= paths.assets %>/styles/vendor.css'
               },
-            // main css
-            maincss: {
-                src: ['<%= paths.assets %>/styles/pattern-library.css'],
-                dest: '<%= paths.assets %>/styles/main.css'
-              }
           },
 
         // Copies remaining files to places other tasks can use
@@ -202,7 +180,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: './node_modules/cbp-theme/dist',
                     src: '*.css',
-                    dest: '<%= paths.assets %>/vendor/cbp-theme/styles'
+                    dest: '<%= paths.assets %>/styles'
                   }, {
                     dot: true,
                     expand: true,
