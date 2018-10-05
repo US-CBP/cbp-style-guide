@@ -38,9 +38,7 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     dot: true,
-                    src: [
-                        '<%= paths.dist %>'
-                    ]
+                    src: ['<%= paths.dist %>', '<%= paths.assets %>']
                   }]
               }
           },
