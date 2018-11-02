@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/front/styles',
-                    src: ['pattern-library.scss'],
+                    src: ['main.scss'],
                     dest: '<%= paths.assets %>/styles',
                     ext: '.css'
                   }]
@@ -127,11 +127,6 @@ module.exports = function(grunt) {
                  ],
                 dest: '<%= paths.assets %>/styles/vendor.css'
               },
-            // main css
-            maincss: {
-                src: ['<%= paths.assets %>/styles/pattern-library.css'],
-                dest: '<%= paths.assets %>/styles/main.css'
-              }
           },
 
         // Copies remaining files to places other tasks can use
