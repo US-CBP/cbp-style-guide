@@ -177,15 +177,15 @@ module.exports = function(grunt) {
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist',
+                    cwd: './node_modules/font-awesome/fonts',
                     src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
-                    dest: '<%= paths.assets %>/vendor/cbp-theme/fonts' // for local development!
+                    dest: '<%= paths.assets %>/styles/font-awesome/fonts' // for local development!
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist',
-                    src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
-                    dest: '<%= paths.assets %>/styles' // for local development!
+                    cwd: './node_modules/roboto-fontface/fonts/roboto',
+                    src: '{,*/}*.{woff,woff2}',
+                    dest: '<%= paths.assets %>/styles/roboto-fontface/fonts/roboto' // for local development!
                   }, {
                     dot: true,
                     expand: true,
