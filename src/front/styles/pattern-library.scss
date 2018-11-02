@@ -1,4 +1,5 @@
 @import "pattern-library-hjs-github";
+@import "../../../node_modules/cbp-theme/dist/scss/custom/_variables.scss";
 
 // FROM CF-THEME variables.scss
 $white:                             #FFF;
@@ -235,7 +236,7 @@ hr.hr-strong {
     position: relative;
     padding-top: $navbar-height + $pl-sub-header-height;
 
-    $media(max-width: $screen-xs-max) {
+    @media(max-width: $screen-xs-max) {
         & {
             margin-left: 0;
             padding-top: $navbar-height + $pl-sub-header-height;
@@ -249,10 +250,12 @@ hr.hr-strong {
     }
 
     .pl-pattern {
-        &:extend(.pl-panel);
+        & {
+            @extend .pl-panel;
+        }
         padding: 40px 40px 0 40px;
 
-        $media(max-width: $screen-xs-max) {
+        @media(max-width: $screen-xs-max) {
             & {
                 margin: 6px;
             }
@@ -491,7 +494,7 @@ hr.hr-strong {
         box-shadow: none;
         background: $brand-primary;
 
-        $media(max-width: $screen-xs-max) {
+        @media(max-width: $screen-xs-max) {
             display: block;
             margin: 10px auto;
             max-width: 300px;

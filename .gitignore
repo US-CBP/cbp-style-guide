@@ -15,4 +15,5 @@ idea
 /src/.jekyll-metadata
 /cbp
 *.log
+.sass-cache
 
