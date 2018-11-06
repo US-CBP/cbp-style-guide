@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   $('.dropdown-toggle').dropdown();
 
-      // enable tooltips
+  // enable tooltips
   $('[data-toggle="tooltip"]').tooltip({
     container: 'body',
     delay: {show: 200, hide: 0}
