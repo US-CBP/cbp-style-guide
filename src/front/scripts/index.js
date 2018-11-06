@@ -43,7 +43,7 @@ $(document).ready(function () {
       // Init datepicker
       //
 
-      // enable datepickers (NOTE the 'not' method to aviod double init of range examples!)
+      // enable datepickers (NOTE the 'not' method to avoid double init of range examples!)
   $('.datepicker').not('#startRange').not('#endRange').datepicker({
     autoSize: true,
     showButtonPanel: true,
