@@ -6,6 +6,13 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>Alpha - 11/02/2018</h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Updated to use CBP Theme v1.10.1</li>
+        </ul>                     
+    </div>
+    <div class="pl-panel">
         <h4>Alpha - 11/09/2017</h4>
         <span class="label subtle label-info">NEW</span>
         <ul>

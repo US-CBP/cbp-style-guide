@@ -1,72 +1,15 @@
-@import "pattern-library-hjs-github";
-
-// FROM CF-THEME variables.scss
-$white:                             #FFF;
-$gray-base:                         #000;
-$gray-darker:                       lighten($gray-base, 13.5%); // #222
-$gray-dark:                         lighten($gray-base, 20%);   // #333
-$gray:                              lighten($gray-base, 33.5%); // #555
-$gray-light:                        lighten($gray-base, 66.7%); // #aaa
-$gray-lighter:                      lighten($gray-base, 93.5%); // #eee
-$gray-lightest:                     lighten($gray-base, 96.5%); // #f6f6f6
-
-$brand-primary:                     #205081 !default;
-$brand-success:                     #008000 !default;
-$brand-info:                        #1460aa !default;
+@import "../../../node_modules/cbp-theme/dist/scss/custom/_variables.scss";
 
 
-//== Media queries breakpoints
-//
-//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
-
-// Extra small screen / phone
-//** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs:                  480px !default;
-//** Deprecated `$screen-xs-min` as of v3.2.0
-$screen-xs-min:              $screen-xs !default;
-//** Deprecated `$screen-phone` as of v3.0.1
-$screen-phone:               $screen-xs-min !default;
-
-// Small screen / tablet
-//** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  768px !default;
-$screen-sm-min:              $screen-sm !default;
-//** Deprecated `$screen-tablet` as of v3.0.1
-$screen-tablet:              $screen-sm-min !default;
-
-// Medium screen / desktop
-//** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  992px !default;
-$screen-md-min:              $screen-md !default;
-//** Deprecated `$screen-desktop` as of v3.0.1
-$screen-desktop:             $screen-md-min !default;
-
-// Large screen / wide desktop
-//** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  1200px !default;
-$screen-lg-min:              $screen-lg !default;
-//** Deprecated `$screen-lg-desktop` as of v3.0.1
-$screen-lg-desktop:          $screen-lg-min !default;
-
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm-min - 1) !default;
-$screen-sm-max:              ($screen-md-min - 1) !default;
-$screen-md-max:              ($screen-lg-min - 1) !default;
-
-
-
-
-
-
-// pl variables
-$pl-background-color: #f6f6f6;
-$navbar-height: 46px;
-$pl-header-bg: darken($brand-primary, 8%) !default;
-$pl-sidebar-width: 240px;
+/* pl variables */
+$pl-background-color: $gray-lighter;
+$navbar-height: 50px;
+$pl-header-bg: darken($brand-primary, 8%);
+$pl-sidebar-width: 260px;
 $pl-sidebar-bg: #282930;
 $pl-sidebar-link-fg: $white;
-$pl-sidebar-sublink-fg: $gray-light;
-$pl-sidebar-category-fg: #AAB0B2;
+$pl-sidebar-sublink-fg: $gray-lighter;
+$pl-sidebar-category-fg: $gray-lighter;
 $pl-sidebar-link-active-bg: mix($pl-sidebar-bg, #000, 85%);
 $pl-sub-header-height: 0;
 $pl-sub-header-bg: #f5f5f5;
@@ -91,7 +34,7 @@ hr.hr-strong {
 
 .disclaimer {
   text-align: center;
-  color: #FFFFFF;
+  color: $white;
   position: fixed;
   top: 0px;
   z-index: 2000;
@@ -99,7 +42,7 @@ hr.hr-strong {
   line-height: 1.65;
   background-color: #F09511;
   a {
-    color: #FFFFFF;
+    color: $white;
     text-decoration: underline;
   }
 }
@@ -109,7 +52,7 @@ hr.hr-strong {
     padding: 4px;
     margin-bottom: 8px;
     margin-right: 8px;
-    border: 1px solid #eee;
+    border: 1px solid $gray-lighter;
     text-align: center;
 
     .pl-palette-preview {
@@ -126,11 +69,14 @@ hr.hr-strong {
 
 .pl-header {
     padding: 0;
+    margin-top: 20px;
+    height: 50px;
+    z-index: 2000;
 
     .navbar-brand {
-        width: 182px;
-        height: 46px;
-        padding-left: 13px;
+        width: 220px;
+        height: 50px;
+        padding: 14px 5px 0 13px;
         background: darken($pl-header-bg, 5%);
     }
 
@@ -144,6 +90,19 @@ hr.hr-strong {
         border: none;
         float: left;
         height: $navbar-height;
+    }
+}
+
+.pl-header-hero {
+    @extend .pl-header;
+
+    .navbar-inverse {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .navbar {
+        margin-bottom: 0;
     }
 }
 
@@ -194,7 +153,7 @@ hr.hr-strong {
     left: $pl-sidebar-width;
     top: $navbar-height;
     min-height: $pl-sub-header-height - 1;
-    background: #fff;
+    background: $white;
     border-bottom: 1px solid rgba(0,0,0,.1);
 
     h3 {
@@ -225,7 +184,7 @@ hr.hr-strong {
     margin: 40px;
     padding: 40px;
     line-height: 1.8;
-    background: #fff;
+    background: $white;
     border: 1px solid #ddd;
     box-shadow: 0px 1px 2px rgba(0,0,0,.025);
 }
@@ -235,7 +194,7 @@ hr.hr-strong {
     position: relative;
     padding-top: $navbar-height + $pl-sub-header-height;
 
-    $media(max-width: $screen-xs-max) {
+    @media (max-width: $screen-xs-max) {
         & {
             margin-left: 0;
             padding-top: $navbar-height + $pl-sub-header-height;
@@ -249,118 +208,120 @@ hr.hr-strong {
     }
 
     .pl-pattern {
-        &:extend(.pl-panel);
-        padding: 40px 40px 0 40px;
+        &  {
+            @extend .pl-panel;
+            padding: 40px 40px 0 40px;
 
-        $media(max-width: $screen-xs-max) {
-            & {
-                margin: 6px;
-            }
-        }
-
-        > h3 {
-            font-size: 28px;
-            margin-top: 0;
-            font-weight: 400;
-            .pl-heading-link {
-                text-decoration: none;
-                .pl-heading-link-hash {
-                    color: #ccc;
-                    position: absolute;
-                    display: none;
-                }
-                &:hover .pl-heading-link-hash {
-                    margin-left: -20px;
-                    display: inline-block;
-                }
-            }
-        }
-
-        > h4 {
-            margin-top: 40px;
-        }
-
-        .pl-toggle-code {
-            position: absolute;
-            top: 0;
-            display: block;
-            right: 0;
-            padding: 0 10px 0 8px;
-            font-weight: 600;
-            border-left: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            border-bottom-left-radius: 2px;
-            background: #fafafa;
-            cursor: pointer;
-
-            .icon {
-                margin-right: 3px;
-            }
-
-            &:hover, &.active {
-                background: #f0f0f0;
-            }
-
-        }
-
-        .pl-preview {
-            background: #fefefe;
-            position: relative;
-            margin: 20px -40px 0 -40px;
-            padding: 30px 40px;
-            border: 1px solid #eee;
-            border-left: 0;
-            border-right: 0;
-            line-height: $line-height-base;
-
-            @media(max-width: $screen-xs-max) {
+            @media (max-width: $screen-xs-max) {
                 & {
-                    margin: 0 -15px;
-                    padding: 30px 15px;
+                    margin: 6px;
                 }
             }
 
-            &::before {
-                content: "Example";
+            > h3 {
+                font-size: 28px;
+                margin-top: 0;
+                font-weight: 400;
+                .pl-heading-link {
+                    text-decoration: none;
+                    .pl-heading-link-hash {
+                        color: #ccc;
+                        position: absolute;
+                        display: none;
+                    }
+                    &:hover .pl-heading-link-hash {
+                        margin-left: -20px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            > h4 {
+                margin-top: 40px;
+            }
+
+            .pl-toggle-code {
                 position: absolute;
                 top: 0;
-                right: 111px;
-                padding: 0 8px;
-                color: #555555;
+                display: block;
+                right: 0;
+                padding: 0 10px 0 8px;
                 font-weight: 600;
-                border-left: 1px solid #eee;
-                border-bottom: 1px solid #eee;
+                border-left: 1px solid $gray-lighter;
+                border-bottom: 1px solid $gray-lighter;
                 border-bottom-left-radius: 2px;
                 background: #fafafa;
+                cursor: pointer;
+
+                .icon {
+                    margin-right: 3px;
+                }
+
+                &:hover, &.active {
+                    background: #f0f0f0;
+                }
+
             }
-        }
 
-        .pl-preview+.highlight {
-            display: none;
-            padding: 30px 40px;
-            margin: 0 -40px;
-            position: relative;
-            z-index: 2;
-            background: #fefefe;
-            border-bottom: 1px solid #eee;
-        }
+            .pl-preview {
+                background: #fefefe;
+                position: relative;
+                margin: 20px -40px 0 -40px;
+                padding: 30px 40px;
+                border: 1px solid $gray-lighter;
+                border-left: 0;
+                border-right: 0;
+                line-height: $line-height-base;
 
-        pre {
-            border-radius: 0;
-            border: 0;
-            padding: 0;
-            word-wrap: normal;
-            background: transparent;
+                @media(max-width: $screen-xs-max) {
+                    & {
+                        margin: 0 -15px;
+                        padding: 30px 15px;
+                    }
+                }
 
-            code {
-                white-space: pre;
+                &::before {
+                    content: "Example";
+                    position: absolute;
+                    top: 0;
+                    right: 111px;
+                    padding: 0 8px;
+                    color: $gray;
+                    font-weight: 600;
+                    border-left: 1px solid $gray-lighter;
+                    border-bottom: 1px solid $gray-lighter;
+                    border-bottom-left-radius: 2px;
+                    background: #fafafa;
+                }
             }
-        }
 
-        .highlight {
-            padding: 0;
-        }
+            .pl-preview+.highlight {
+                display: none;
+                padding: 30px 40px;
+                margin: 0 -40px;
+                position: relative;
+                z-index: 2;
+                background: #fefefe;
+                border-bottom: 1px solid $gray-lighter;
+            }
 
+            pre {
+                border-radius: 0;
+                border: 0;
+                padding: 0;
+                word-wrap: normal;
+                background: transparent;
+
+                code {
+                    white-space: pre;
+                }
+            }
+
+            .highlight {
+                padding: 0;
+            }
+
+        }
     }
 }
 
@@ -373,14 +334,14 @@ hr.hr-strong {
         width: 20px;
         margin-right: 6px;
         text-align: left;
-        color: #333;
+        color: $gray-dark;
     }
 }
 
 .pl-grid-example .row > div > div {
     background: #f0f0f0;
-    color: #333333;
-    border: 1px solid #eee;
+    color: $gray-dark;
+    border: 1px solid $gray-lighter;
     padding: 6px;
     text-align: center;
     margin-bottom: 16px;
@@ -410,13 +371,13 @@ hr.hr-strong {
     position: fixed;
     width: $pl-sidebar-width;
     z-index: $zindex-navbar-fixed - 1;
-    padding: 0 0 6px 0;
+    padding: 25px 0 6px 0;
 }
 
 .pl-sidebar .nav.nav-stacked {
 
     list-style: none;
-    font-weight: 600;
+    font-weight: 200;
     line-height: 16px;
 
     > li > a {
@@ -426,11 +387,20 @@ hr.hr-strong {
             background: $pl-sidebar-link-active-bg;
             color: $pl-sidebar-link-fg;
         }
+        padding-left: 30px;
     }
 
     > li.active > a {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-link-fg;
+    }
+
+    > li.active > ul {
+        background: $pl-sidebar-link-active-bg;
+    }
+
+    > li > ul > li > a {
+        padding-left: 40px;
     }
 
     > li > ul > li > a {
@@ -447,6 +417,11 @@ hr.hr-strong {
         padding-bottom: 8px;
     }
 
+    > li > ul > li.active {
+        background: $pl-sidebar-link-active-bg;
+        color: $pl-sidebar-link-fg;
+    }
+
     > li > ul > li.active > a {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-link-fg;
@@ -461,11 +436,13 @@ hr.hr-strong {
     }
 
     > .category {
+        font-weight: 600;
         color: $pl-sidebar-category-fg;
+        margin: 18px 0 5px 10px;
     }
 
     > li > a > .fa {
-        color: #fff;
+        color: $white;
         opacity: .15;
         position: relative;
         top: 1px;
@@ -487,11 +464,11 @@ hr.hr-strong {
         margin: 0 10px;
         min-width: 120px;
         // border-radius: 100px;
-        border: 2px solid #fff;
+        border: 2px solid $white;
         box-shadow: none;
         background: $brand-primary;
 
-        $media(max-width: $screen-xs-max) {
+        @media (max-width: $screen-xs-max) {
             display: block;
             margin: 10px auto;
             max-width: 300px;
@@ -501,7 +478,7 @@ hr.hr-strong {
 
     .btn-default {
         color: $brand-primary;
-        background: #fff;
+        background: $white;
     }
 
     .container {
@@ -509,12 +486,12 @@ hr.hr-strong {
     }
 
     h1 {
-        color: #fff;
+        color: $white;
         font-size: 50px;
         font-weight: 200;
     }
     h3 {
-        color: #fff;
+        color: $white;
         font-size: 20px;
         font-weight: 400;
     }
@@ -522,18 +499,18 @@ hr.hr-strong {
 
 .pl-help {
     background-color: $pl-sidebar-bg;
-    color: #fff;
+    color: $white;
     display: inline-block;
     width: 100%;
     font-size: 14px;
     text-align: center;
     h4 {
-        color: #fff;
+        color: $white;
     }
     padding: 25px;
-    color: mix($pl-sidebar-bg, #fff, 50%);
+    color: mix($pl-sidebar-bg, $white, 50%);
     a {
-        color: mix($pl-sidebar-bg, #fff, 50%);
+        color: mix($pl-sidebar-bg, $white, 50%);
         text-decoration: underline;
     }
 }
@@ -544,7 +521,7 @@ hr.hr-strong {
         display: block;
         content: "";
         height: 1px;
-        background: mix($brand-success, #fff, 75%);
+        background: mix($brand-success, $white, 75%);
         width: 60px;
         margin-top: 8px;
         margin-left: 0;
@@ -553,7 +530,7 @@ hr.hr-strong {
 }
 
 .pl-about {
-    background: #fff;
+    background: $white;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 16px;

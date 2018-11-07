@@ -98,13 +98,23 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#808080;"></div>
-        <div class="pl-palette-variable">@gray-light</div>
+        <div class="pl-palette-variable">@gray-medium</div>
         <div class="pl-palette-value">#808080</div>
+    </div>
+    <div class="pl-palette-color">
+        <div class="pl-palette-preview" style="background-color:#aaaaaa;"></div>
+        <div class="pl-palette-variable">@gray-light</div>
+        <div class="pl-palette-value">#AAAAAA</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#eeeeee;"></div>
         <div class="pl-palette-variable">@gray-lighter</div>
         <div class="pl-palette-value">#EEEEEE</div>
+    </div>
+    <div class="pl-palette-color">
+        <div class="pl-palette-preview" style="background-color:#f6f6f6;"></div>
+        <div class="pl-palette-variable">@gray-lightest</div>
+        <div class="pl-palette-value">#F6F6F6</div>
     </div>
 </div>
 &nbsp;

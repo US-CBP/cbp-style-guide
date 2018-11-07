@@ -27,10 +27,6 @@ module.exports = function(grunt) {
                 files: ['src/front/scripts/{,*/}*.js'],
                 tasks: ['jshint', 'concat:mainjs']
               },
-            less: {
-                files: ['src/front/styles/**/*.less'],
-                tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
-              }
           },
 
         // Clean out gen'd folders
@@ -39,24 +35,8 @@ module.exports = function(grunt) {
                 files: [{
                     dot: true,
                     src: [
-                        '<%= paths.dist %>'
-                    ]
+                        '<%= paths.dist %>', '<%= paths.assets %>']
                   }]
-              }
-          },
-
-        // Lint LESS
-        lesslint: {
-            src: ['src/front/styles/**/*.less'],
-            options: {
-                csslint: {
-                    'box-model': false,
-                    'adjoining-classes': false,
-                    'qualified-headings': false,
-                    'empty-rules': false,
-                    'outline-none': false,
-                    'unique-headings': false
-                  }
               }
           },
 
@@ -72,17 +52,17 @@ module.exports = function(grunt) {
             ]
           },
 
-        // LESS -> CSS
-        less: {
+        // SASS -> CSS
+        sass: {
             options: {
-                paths: ['node_modules'],
-                compress: false
+                loadPath: ['node_modules'],
+                style: 'expanded',
               },
             dist: {
                 files: [{
                     expand: true,
                     cwd: 'src/front/styles',
-                    src: ['pattern-library.less'],
+                    src: ['main.scss'],
                     dest: '<%= paths.assets %>/styles',
                     ext: '.css'
                   }]
@@ -115,7 +95,7 @@ module.exports = function(grunt) {
             vendorjs: {
                 src: [
                     'node_modules/jquery/dist/jquery.js',
-                    'node_modules/cbp-theme/dist/inputmask.js',
+                    'node_modules/cbp-theme/dist/cbp-theme-inputmask.umd.js',
                     'node_modules/select2/dist/js/select2.js',
                     'src/front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js',
                     'node_modules/lodash/lodash.min.js',
@@ -124,14 +104,14 @@ module.exports = function(grunt) {
                     'node_modules/jquery-ui/ui/minified/datepicker.min.js',
                     'node_modules/jquery-ui/ui/minified/progressbar.min.js',
                     'node_modules/hopscotch/dist/js/hopscotch.min.js',
-                    'node_modules/cbp-theme/dist/cbp-theme.js'
+                    'node_modules/cbp-theme/dist/cbp-theme.browser.bundle.umd.js'
                 ],
                 dest: '<%= paths.assets %>/scripts/vendor.js'
               },
             // main js
             mainjs: {
                 src: [
-                    'src/front/scripts/main.js'
+                    'src/front/scripts/index.js'
                 ],
                 dest: '<%= paths.assets %>/scripts/main.js'
               },
@@ -147,11 +127,6 @@ module.exports = function(grunt) {
                  ],
                 dest: '<%= paths.assets %>/styles/vendor.css'
               },
-            // main css
-            maincss: {
-                src: ['<%= paths.assets %>/styles/pattern-library.css'],
-                dest: '<%= paths.assets %>/styles/main.css'
-              }
           },
 
         // Copies remaining files to places other tasks can use
@@ -197,15 +172,15 @@ module.exports = function(grunt) {
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist',
+                    cwd: './node_modules/font-awesome/fonts',
                     src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
-                    dest: '<%= paths.assets %>/vendor/cbp-theme/fonts' // for local development!
+                    dest: '<%= paths.assets %>/styles/font-awesome/fonts' // for local development!
                   }, {
                     dot: true,
                     expand: true,
-                    cwd: './node_modules/cbp-theme/dist',
-                    src: '{,*/}*.{otf,eot,svg,ttf,woff,woff2}',
-                    dest: '<%= paths.assets %>/styles' // for local development!
+                    cwd: './node_modules/roboto-fontface/fonts/roboto',
+                    src: '{,*/}*.{woff,woff2}',
+                    dest: '<%= paths.assets %>/styles/roboto-fontface/fonts/roboto' // for local development!
                   }, {
                     dot: true,
                     expand: true,
@@ -222,7 +197,7 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'jshint',
-        'less',
+        'sass',
         'concat',
         'autoprefixer',
         'copy:dist'
