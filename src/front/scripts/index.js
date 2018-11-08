@@ -39,6 +39,7 @@ $(document).ready(function () {
     }, 1000);
   });
 
+
   // Init datepicker
   // enable datepickers (NOTE the 'not' method to avoid double init of range examples!)
   $('.datepicker').not('#startRange').not('#endRange').datepicker({
