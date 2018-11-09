@@ -128,7 +128,7 @@ In some situations during the process of loading, it may be desired to overlay a
 {::nomarkdown}
 <div class="pl-preview">
 <div style="position: relative; padding: 40px; background: #fff;">
-    <table class="cbp-table mdl-js-data-table" style="opacity: .5;">
+    <table class="table table-inverse mdl-js-data-table" style="opacity: .5;">
         <thead>
           <tr>
             <th class="non-numeric">Project name</th>
@@ -183,7 +183,7 @@ In some situations during the process of loading, it may be desired to overlay a
 {:/nomarkdown}
 
 {% highlight html %}
-<table class="cbp-table mdl-js-data-table" style="opacity: .5;">
+<table class="table table-inverse mdl-js-data-table" style="opacity: .5;">
     <thead>
       <tr>
         <th class="non-numeric">Project name</th>
