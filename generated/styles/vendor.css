@@ -349,60 +349,41 @@
   margin-left: .3em;
 }
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
-}
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
 }
 @keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
@@ -411,8 +392,7 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 .fa-stack {
   position: relative;
@@ -3418,113 +3398,59 @@
  * THE SOFTWARE.
  */
 .animated {
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-}
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
 }
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .fade-in-up {
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-}
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
 }
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .fade-in-down {
-  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-}
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
 }
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 .fade-in-right {
-  -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-}
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
 }
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 .fade-in-left {
-  -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 div.hopscotch-bubble .hopscotch-nav-button {
@@ -9913,15 +9839,6 @@ a.thumbnail.active {
   color: #6d0000;
 }
 
-@-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -9961,7 +9878,6 @@ a.thumbnail.active {
 
 .progress.active .progress-bar,
 .progress-bar.active {
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 
@@ -10837,15 +10753,12 @@ button.close {
 }
 
 .modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
@@ -11278,25 +11191,19 @@ button.close {
 
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
-    transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1000px;
     perspective: 1000px;
   }
   .carousel-inner > .item.next, .carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     left: 0;
   }
   .carousel-inner > .item.prev, .carousel-inner > .item.active.left {
-    -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     left: 0;
   }
   .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     left: 0;
   }
@@ -11994,15 +11901,13 @@ button.close {
   pointer-events: none;
   position: absolute;
   top: 0;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   width: 50px;
   overflow: hidden;
 }
 
 .mdl-ripple.is-animating {
-  transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
   transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -12596,17 +12501,14 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
   cursor: pointer;
   transition-duration: 0.28s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: -webkit-transform;
   transition-property: transform;
-  -webkit-transform: scale3d(0, 0, 0);
-          transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
   border-radius: 50%;
   background: #1460aa;
 }
 
 .mdl-radio.is-checked .mdl-radio__inner-circle {
-  -webkit-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
 
 fieldset[disabled] .mdl-radio .mdl-radio__inner-circle,
@@ -13390,13 +13292,10 @@ label {
 
 /* CARDS */
 .mdl-card {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   font-size: 13px;
   font-weight: 400;
   min-height: 200px;
@@ -13425,24 +13324,19 @@ label {
 }
 
 .mdl-card__title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   color: rgb(#222);
   display: block;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
+  -ms-flex-pack: stretch;
+      justify-content: stretch;
   line-height: normal;
   padding: 16px 16px;
-  -webkit-perspective-origin: 165px 56px;
-          perspective-origin: 165px 56px;
-  -webkit-transform-origin: 165px 56px;
-      -ms-transform-origin: 165px 56px;
-          transform-origin: 165px 56px;
+  perspective-origin: 165px 56px;
+  -ms-transform-origin: 165px 56px;
+      transform-origin: 165px 56px;
   box-sizing: border-box;
 }
 
@@ -13455,15 +13349,13 @@ label {
       align-self: flex-end;
   color: inherit;
   display: block;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
-  -webkit-transform-origin: 149px 48px;
-      -ms-transform-origin: 149px 48px;
-          transform-origin: 149px 48px;
+  -ms-transform-origin: 149px 48px;
+      transform-origin: 149px 48px;
   margin: 0;
 }
 
@@ -13494,9 +13386,8 @@ label {
 }
 
 .mdl-card--expand {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
 }
 
 .mdl-card__menu {
@@ -13511,7 +13402,6 @@ label {
 }
 
 .mdl-card-deck {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -13519,7 +13409,6 @@ label {
 }
 
 .mdl-card-deck > div[class*='col-'] {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
@@ -13549,16 +13438,14 @@ label {
 
 .mdl-card-expand.mdl-card:focus, .mdl-card-expand.mdl-card:hover, .mdl-card-expand.mdl-card:active {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translate(0, -3px);
-      -ms-transform: translate(0, -3px);
-          transform: translate(0, -3px);
+  -ms-transform: translate(0, -3px);
+      transform: translate(0, -3px);
 }
 
 .brand-card-container {
   padding: 0;
   margin: 0;
   -ms-box-orient: horizontal;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: -moz-flex;
   display: flex;
@@ -13589,18 +13476,15 @@ label {
 
 .brand-card-container .mdl-card .image-container .icon-span {
   vertical-align: middle;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
   width: 100%;
   white-space: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .brand-card-container .mdl-card .image-container img {
@@ -13610,9 +13494,8 @@ label {
 .brand-card-container .mdl-card .mdl-card__title {
   padding: 16px 25px;
   height: 104px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .brand-card-container .mdl-card .mdl-card__title .mdl-card__title-text {
@@ -13647,9 +13530,8 @@ label {
 
 .brand-card-container .mdl-card:focus, .brand-card-container .mdl-card:hover, .brand-card-container .mdl-card:active {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translate(0, -3px);
-      -ms-transform: translate(0, -3px);
-          transform: translate(0, -3px);
+  -ms-transform: translate(0, -3px);
+      transform: translate(0, -3px);
 }
 
 .brand-card-container .mdl-card:focus .mdl-card__actions, .brand-card-container .mdl-card:hover .mdl-card__actions, .brand-card-container .mdl-card:active .mdl-card__actions {
@@ -14386,68 +14268,48 @@ fieldset[disabled] .mdl-selectfield .mdl-selectfield__label,
 }
 
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
 }
 
 @keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
@@ -14457,8 +14319,7 @@ fieldset[disabled] .mdl-selectfield .mdl-selectfield__label,
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -17734,15 +17595,6 @@ fieldset[disabled] .mdl-selectfield .mdl-selectfield__label,
   }
 }
 
-@-webkit-keyframes webkitSiblingBugfix {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-}
-
 /* Popovers variants */
 /* Modal variants */
 /* Badge variants */
@@ -19016,13 +18868,10 @@ fieldset[disabled] .switch-toggle a,
 }
 
 .content {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
   padding-top: 50px;
 }
 
@@ -19047,10 +18896,8 @@ fieldset[disabled] .switch-toggle a,
 
 @media (max-width: 767px) {
   .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .content .cbp-sidebar {
     width: 100%;
@@ -19228,19 +19075,15 @@ fieldset[disabled] .switch-toggle a,
 }
 
 .filters .filter-group-title[aria-expanded="false"] .icon-angle-right::after {
-  transition: -webkit-transform .2s;
   transition: transform .2s;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
 }
 
 .filters .filter-group-title[aria-expanded="true"] .icon-angle-right::after {
-  transition: -webkit-transform .2s;
   transition: transform .2s;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
 }
 
 .filters .filter-group-content {
@@ -20172,10 +20015,6 @@ fieldset[disabled] .cbp-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
   left: 0;
 }
 
-.yogesh-test::-webkit-input-placeholder {
-  color: gray;
-}
-
 .yogesh-test:-ms-input-placeholder {
   color: gray;
 }
@@ -20790,19 +20629,15 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .table[data-pl-expandable-rows] > tbody > tr[aria-expanded="false"] > td > .icon-angle-right::after, .table-selectable[data-pl-expandable-rows] > tbody > tr[aria-expanded="false"] > td > .icon-angle-right::after {
-  transition: -webkit-transform .05s;
   transition: transform .05s;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
 }
 
 .table[data-pl-expandable-rows] > tbody > tr[aria-expanded="true"] > td > .icon-angle-right::after, .table-selectable[data-pl-expandable-rows] > tbody > tr[aria-expanded="true"] > td > .icon-angle-right::after {
-  transition: -webkit-transform .05s;
   transition: transform .05s;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
 }
 
 .table-primary {
