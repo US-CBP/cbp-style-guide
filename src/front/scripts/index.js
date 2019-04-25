@@ -390,20 +390,21 @@ $(document).ready(function () {
       ],
       showPrevButton: true
   };
-
-  // Start the tour!
-  if (document.URL.indexOf('tours.html') > -1) {
-      hopscotch.startTour(tour);
-  }
-
   var calloutMgr = hopscotch.getCalloutManager();
-  calloutMgr.createCallout({
-      id: 'attach-icon',
-      target: 'callout-button',
-      placement: 'right',
-      title: 'Callout Example',
-      content: 'For simple explanations.'
-  });
+  
+  if (document.URL.indexOf('tours.html') > -1) {
+      // Start the tour!
+      hopscotch.startTour(tour);
+
+      calloutMgr.createCallout({
+        id: 'attach-icon',
+        target: 'callout-button',
+        placement: 'right',
+        title: 'Callout Example',
+        content: 'For simple explanations.'
+    });
+  }  
+
   /* jshint ignore:end */
   /* google analytics download tracking */
 
