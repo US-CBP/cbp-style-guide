@@ -365,47 +365,45 @@ $(document).ready(function () {
       $(this).next('tr[data-pl-detail-row]').toggle();
   });
 
-   // Controlling Block/structure for activating the hopscotch framework's API calls below used to start a tour
-  // Reference framework at http://linkedin.github.io/hopscotch/
-      if (document.URL.indexOf('tours.html') > -1) {
-    // Define the tour!
-    /* jshint ignore:start */
-        var tour = {
-         id: 'hopscotch-example',
-         steps: [{
-            title: 'Hopscotch Tour Example',
-            content: 'This is the header of my page.',
-            target: 'tour',
-            placement: 'top'
-            },
-            {
-            title: 'Purpose',
-            content: 'Example of tour.',
-            target: 'purpose',
-            placement: 'bottom'
-            }, {
-            title: 'Navigation',
-            content: 'Foundation, Components, Patterns describe how best to use the CBP Theme.',
-            target: 'sidebar',
-            placement: 'right'
-            }
-        ],
-            showPrevButton: true
-        };
+  // Define the tour!
+  /* jshint ignore:start */
+  var tour = {
+      id: 'hopscotch-example',
+      steps: [{
+              title: 'Hopscotch Tour Example',
+              content: 'This is the header of my page.',
+              target: 'tour',
+              placement: 'top'
+          },
+          {
+              title: 'Purpose',
+              content: 'Example of tour.',
+              target: 'purpose',
+              placement: 'bottom'
+          }, {
+              title: 'Navigation',
+              content: 'Foundation, Components, Patterns describe how best to use the CBP Theme.',
+              target: 'sidebar',
+              placement: 'right'
+          }
 
-        var calloutMgr = hopscotch.getCalloutManager();
-          calloutMgr.createCallout({
-            id: 'attach-icon',
-            target: 'callout-button',
-            placement: 'right',
-            title: 'Callout Example',
-            content: 'For simple explanations.'
-        });
+      ],
+      showPrevButton: true
+  };
+  var calloutMgr = hopscotch.getCalloutManager();
+  
+  if (document.URL.indexOf('tours.html') > -1) {
+      // Start the tour!
+      hopscotch.startTour(tour);
 
- // Start the tour!
-        hopscotch.startTour(tour);
-}
-// End of the controlling Block/structure for activating the hopscotch framework's API calls
+      calloutMgr.createCallout({
+        id: 'attach-icon',
+        target: 'callout-button',
+        placement: 'right',
+        title: 'Callout Example',
+        content: 'For simple explanations.'
+    });
+  }  
 
   /* jshint ignore:end */
   /* google analytics download tracking */
