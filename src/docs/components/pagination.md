@@ -5,8 +5,7 @@ title: "Pagination"
 <div class="pl-pattern">
 <h3>Pagination</h3>
 
-#### Purpose
-Users need to navigate through pages of items.
+Pagination allows large collections of content to be displayed within the same area on a page by allowing a user to from set of results to another. 
 
 #### Description
 Collections of data are often split into multiple pages for performance reasons. Either the size of the data is too much to download at once, or the size of the data would take too long to render all at once. Pagination controls allow for the user to retrieve or view pages of data in a performant matter.
@@ -22,10 +21,6 @@ This pagination pattern provides a few variations of the following features:
 The features should be chosen based on the user's needs, the data, and the space available. Don't include pagination features that aren't necessary. If your users have no need to adjust the paging size or jump to a manually entered page for a particular type of data, don't include those features.
 
 &nbsp;
-
-</div>
-
-<div class="pl-pattern">
 
 ### Examples
 The examples below show various configurations of pagination features. Depending on the data, you may treat your pages as item ranges `Showing 150-160` or as pages `Page 15 of 25`.

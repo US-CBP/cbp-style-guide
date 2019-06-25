@@ -5,11 +5,7 @@ title: "Accordions"
 <div class="pl-pattern">
 <h3>Accordions</h3>
 
-#### Purpose
-Users need to see only relevant content.
-
-#### Description
-Accordions provide users with the ability to expand and collapse content as needed. Accordions can simplify the interface by hiding content until it is needed.
+This component delivers large amounts of content that would otherwise consume a lot of vertical space on a page through progressive disclosure. This component helps the user quickly survey the “big picture” with the data on the page and gives them a quick way to delve deeper into the content they want to see at that moment. This helps users focus by reducing clutter, confusion, and cognitive load.
 
 #### Expand/Collapse Behaviors
 
@@ -23,7 +19,7 @@ Accordions can operate as either single-select or multi-select.
 </div>
 
 <div class="pl-pattern">
-### Styles
+### Examples
 
 #### Standard
 
@@ -70,53 +66,9 @@ The standard style provides more distinction between the panel and internal/surr
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Project name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="row">Invoice</td>
-            <td>
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Templates</td>
-            <td>
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Payments</td>
-            <td>
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Account Management</td>
-            <td>
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="panel-body">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
     </div>
   </div>
 </div>
@@ -165,53 +117,9 @@ The standard style provides more distinction between the panel and internal/surr
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Project name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="row">Invoice</td>
-            <td>
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Templates</td>
-            <td>
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Payments</td>
-            <td>
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Account Management</td>
-            <td>
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
     </div>
   </div>
 </div>
@@ -263,53 +171,9 @@ For simple content or layouts, the light style may work better.
                         </h4>
                       </div>
                       <div id="2collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingThree">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th scope="col">Project name</th>
-                              <th scope="col">Description</th>
-                              <th scope="col">Price</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">Invoice</td>
-                              <td>
-                                <span>Add invoice confirmation</span>
-                              </td>
-                              <td>
-                                <span>$4,500</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td scope="row">Templates</td>
-                              <td>
-                                <span>Refactor templates to use the new templating library</span>
-                              </td>
-                              <td>
-                                <span>$9,000</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td scope="row">Payments</td>
-                              <td>
-                                <span>Process payments using third party api</span>
-                              </td>
-                              <td>
-                                <span>$5,400</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td scope="row">Account Management</td>
-                              <td>
-                                <span>Improve account management workflow</span>
-                              </td>
-                              <td>
-                                <span>$6,000</span>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -357,53 +221,9 @@ For simple content or layouts, the light style may work better.
       </h4>
     </div>
     <div id="2collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2headingThree">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Project name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="row">Invoice</td>
-            <td>
-              <span>Add invoice confirmation</span>
-            </td>
-            <td>
-              <span>$4,500</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Templates</td>
-            <td>
-              <span>Refactor templates to use the new templating library</span>
-            </td>
-            <td>
-              <span>$9,000</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Payments</td>
-            <td>
-              <span>Process payments using third party api</span>
-            </td>
-            <td>
-              <span>$5,400</span>
-            </td>
-          </tr>
-          <tr>
-            <td scope="row">Account Management</td>
-            <td>
-              <span>Improve account management workflow</span>
-            </td>
-            <td>
-              <span>$6,000</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="panel-body">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
     </div>
   </div>
 </div>

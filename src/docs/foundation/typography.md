@@ -3,6 +3,11 @@ title: "Typography"
 ---
 
 <div class="pl-pattern">
+CBP Theme uses the Roboto font family.
+
+</div>
+
+<div class="pl-pattern">
 ### Fonts
 
 &nbsp;
@@ -55,7 +60,7 @@ In the theme you will notice that the font-family property is listed as ( font-f
 </div>
 
 <div class="pl-pattern">
-### Styles
+### Examples
 
 #### Roboto
 {::nomarkdown}
@@ -112,68 +117,6 @@ In the theme you will notice that the font-family property is listed as ( font-f
 {% endhighlight %}
 
 &nbsp;
-</div>
-
-<div class="pl-pattern">
-### Lists
-
-#### Unordered
-{::nomarkdown}
-<div class="pl-preview">
-<ul>
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <li>List item 3
-        <ul>
-            <li>Nested list item 1 </li>
-            <li>Nested list item 2 </li>
-        </ul>
-    </li>
-</ul>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<ul>
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <li>List item 3
-        <ul>
-            <li>Nested list item 1 </li>
-            <li>Nested list item 2 </li>
-        </ul>
-    </li>
-</ul>
-{% endhighlight %}
-
-#### Ordered
-{::nomarkdown}
-<div class="pl-preview">
-<ol>
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <li>List item 3
-        <ol>
-            <li>Nested list item 1 </li>
-            <li>Nested list item 2 </li>
-        </ol>
-    </li>
-</ol>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<ol>
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <li>List item 3
-        <ol>
-            <li>Nested list item 1 </li>
-            <li>Nested list item 2 </li>
-        </ol>
-    </li>
-</ol>
-{% endhighlight %}
 </div>
 
 <div class="pl-pattern">

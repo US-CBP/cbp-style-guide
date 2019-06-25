@@ -23,7 +23,7 @@
   },
   "private": true,
   "devDependencies": {
-    "cbp-theme": "1.10.1",
+    "cbp-theme": "^1.10.5",
     "ejs": "2.5.7",
     "grunt": "1.0.2",
     "grunt-autoprefixer": "3.0.4",

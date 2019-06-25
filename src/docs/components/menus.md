@@ -5,13 +5,12 @@ title: "Menus"
 <div class="pl-pattern">
 <h3>Menus</h3>
 
-#### Purpose
-User needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.
+When the user needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.
 
 #### Description
 Menus provide a list of available actions and options. They're used in dropdowns, selects, and context menus. 
 
-#### Basic functionality
+#### Basic Functionality
 Menus appear relative to the control or interaction that triggered the menu. Clicking an item from the menu performs the action or selects the option. For most actions, the menu should close when a menu item is clicked. If the clicked menu item is part of a set of multi-selectable options, then the menu should stay open. 
 
 - Menus may have submenus, icons, dividers, category labels, and checkboxes
@@ -189,91 +188,6 @@ If you have an icon in a menu, ensure that all menu items are aligned appropriat
   <li role="presentation">
     <a href="">
       <i class="fa fa-fw fa-trash-o dropdown-menu-icon"></i> &nbsp; Remove
-    </a>
-  </li>
-</ul>
-{% endhighlight %}
-</div>
-
-<div class="pl-pattern">
-
-### Form controls
-
-Sometimes menus can contain form elements like checkboxes. Use checkboxes for both single and multi-select options. When dealing with a multi-selectable collection of checkboxes, it's likely beneficial to keep the menu open after items are checked. Otherwise, menus should close after items are clicked.
-
-{::nomarkdown}
-<div class="pl-preview">
-<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu">
-  <li class="dropdown-header">Single-select</li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; 1.0
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; 1.5
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; 2.0
-    </a>
-  </li>
-  <li class="divider" role="presentation"></li>
-  <li class="dropdown-header">Multi-select</li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; Grid lines
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; Rulers
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; Margins
-    </a>
-  </li>
-</ul>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<ul class="dropdown-menu has-icon" role="menu">
-  <li class="dropdown-header">Single-select</li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; 1.0
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; 1.5
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; 2.0
-    </a>
-  </li>
-  <li class="divider" role="presentation"></li>
-  <li class="dropdown-header">Multi-select</li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; Grid lines
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; Rulers
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; Margins
     </a>
   </li>
 </ul>

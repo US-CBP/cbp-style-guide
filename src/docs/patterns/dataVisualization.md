@@ -1,21 +1,21 @@
 ---
 title: "Data Visualization"
-preview: false
 ---
 
 <div class="pl-pattern">
 <h3>Data Visualization</h3>
 
-#### Overview
 It is sometimes important to communicate detailed information to users visually. This increases content digestion while simultaneously making page content more engaging. The primary goal of this effort is to make information more intellectually distinct, not more decorative.
 
 When bold shapes and contrasted colors are used with responsive actions, users have increased comprehension.
+
+<br/>
 
 #### Usage
 
 You can bring increased clarity to your information by considering your page layout early on. We advise against having more than 3 graphical elements on one page.
 
-
+<br/>
 </div>
 
 <div class="pl-pattern">
@@ -30,9 +30,7 @@ Some of the most popular chart types can be seen in an example below. It is impo
 - Avoid using a pie chart if your information will be sliced in to 10 or more pieces.
 - Metric Counts
 - Consider using this approach when using often updated numeric counts. Remember to add supporting formula metrics (example: 50% (50/100)) to tell the whole story.
+
+<br/>
 </div>
 
-<div class="pl-pattern">
-### Maps
-
-</div>

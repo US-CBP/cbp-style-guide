@@ -5,8 +5,7 @@ title: "Popovers"
 <div class="pl-pattern">
 <h3>Popovers</h3>
 
-#### Purpose
-Users need to be able to access additional related information or functionality without a change in context.
+Popovers help users access additional related information or functionality without a change in context.
 
 #### Description
 - Popovers are a cross between a dialog and a tooltip
@@ -120,7 +119,7 @@ Use a popover instead of a tooltip or dialog when:
 {% endhighlight %}
 
 
-#### Live
+#### Live Examples
 
 {::nomarkdown}
 <div class="pl-preview">

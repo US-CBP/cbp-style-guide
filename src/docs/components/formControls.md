@@ -1,16 +1,18 @@
 ---
-title: "Form controls"
+title: "Form Controls"
 ---
 
+<div class="pl-pattern">
+<h3>Form Controls</h3>
+
+Allow users to enter information into a page.
+
+</div>
 
 <div class="pl-pattern">
 ### Text box
 
-#### Purpose
-Users need to input a simple text value.
-
-#### Description
-Text boxes allow the user to input a simple text value. A text box only allows for a single line of input. 
+This interactive element allows a user to enter data. It may be a single line entry, or a text area box for larger text selections. 
 
 
 {::nomarkdown}
@@ -193,21 +195,21 @@ Text areas can either
 </div>
 
 <div class="pl-pattern">
-### Select
+### Dropdown Selection
 
-#### Purpose
-Example of Selectize, Select2, and plain Select.
+This component gives users the ability to choose a single item from a predetermined list of options.
 
-#### Description
+</div>
 
+<div class="pl-pattern">
 
 {::nomarkdown}
 <div class="pl-preview">
-<h3>Select</h3>
+<h3>Examples</h3>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
   <div class="row">
     <form role="form" class="col-sm-12">
-      <h4>Plain Ol' Select <small>Without third party select JS libraries</small></h4>
+      <h4>Select <small>Without third party select JS libraries</small></h4>
       <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
         <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
           <option value=""></option>
@@ -244,7 +246,7 @@ Example of Selectize, Select2, and plain Select.
         </select>
         <label for="se20" class="mdl-selectfield__label">Disabled with placeholder label</label>
       </div>
-      <h4>Plain Ol' Multiple Select</h4>
+      <h4>Multiple Select</h4>
       <div class="container-fluid" style="max-width: 400px; margin: 0;">
         <div class="row">
           <form role="form" class="col-sm-12 form">
@@ -268,115 +270,7 @@ Example of Selectize, Select2, and plain Select.
             </div>
           </form>
         </div>
-      </div>
-      
-      <h4>Selectize</h4>
-      <h5>Selectize Standard Select</h5>
-      <div class="selectize-field selectize-field--floating-label">
-        <select id="selectize" class="selectize" aria-expanded="false">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="selectize">Floating Label</label>
-      </div>
-      <div class="selectize-field">
-        <select id="selectize" class="selectize">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="selectize">Placeholder Label</label>
-      </div>
-      <h5>Selectize Multiple Select</h5>
-      <div class="selectize-field selectize-field--floating-label">
-        <select id="selectize2" class="selectize-multiple" aria-expanded="false" multiple>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-          <option value="F">Option F</option>
-          <option value="G">Option G</option>
-          <option value="H">Option H</option>
-          <option value="I">Option I</option>
-        </select>
-        <label for="selectize2">Floating Label</label>
-      </div>
-      <div class="selectize-field">
-        <select id="selectize2" class="selectize-multiple" aria-expanded="false" multiple>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-          <option value="F">Option F</option>
-          <option value="G">Option G</option>
-          <option value="H">Option H</option>
-          <option value="I">Option I</option>
-        </select>
-        <label for="selectize2">Placeholder Label</label>
-      </div>
-      
-      <h4>Select2</h4>
-      <h5>Select2 Standard Select</h5>
-      <div class="select2-field select2-field--floating-label">
-        <select id="select2" class="select2" aria-expanded="false">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="select2">Floating Label</label>
-      </div>
-      <div class="select2-field">
-        <select id="select2" class="select2" aria-expanded="false">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="select2">Placeholder Label</label>
-      </div>
-      <h5>Select2 Multiple Select</h5>
-      <div class="select2-field select2-field--floating-label">
-        <select id="select22" class="select2-multiple" aria-expanded="false" multiple>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-          <option value="F">Option F</option>
-          <option value="G">Option G</option>
-          <option value="H">Option H</option>
-          <option value="I">Option I</option>
-        </select>
-        <label for="select22">Floating Label</label>
-      </div>
-      <div class="select2-field">
-        <select id="select22" class="select2-multiple" aria-expanded="false" multiple>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-          <option value="F">Option F</option>
-          <option value="G">Option G</option>
-          <option value="H">Option H</option>
-          <option value="I">Option I</option>
-        </select>
-        <label for="select22">Placeholder Label</label>
-      </div>
+      </div>      
     </form>
   </div>
 </div>
@@ -448,118 +342,6 @@ Example of Selectize, Select2, and plain Select.
     </div>
 </form>
 
-//Selectize - Select
-<form role="form" class="col-sm-12">
-    <div class="selectize-field selectize-field--floating-label">
-        <select id="selectize" class="selectize" aria-expanded="false">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="selectize">Floating Label</label>
-    </div>
-    
-    <div class="selectize-field">
-        <select id="selectize" class="selectize">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="selectize">Placeholder Label</label>
-    </div>
-    
-//Selectize Multpile Select
-    <div class="selectize-field selectize-field--floating-label">
-        <select id="selectize2" class="selectize-multiple" aria-expanded="false" multiple>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-          <option value="F">Option F</option>
-          <option value="G">Option G</option>
-          <option value="H">Option H</option>
-          <option value="I">Option I</option>
-        </select>
-        <label for="selectize2">Floating Label</label>
-    </div>
-    <div class="selectize-field">
-    <select id="selectize2" class="selectize-multiple" aria-expanded="false" multiple>
-      <option value="A">Option A</option>
-      <option value="B">Option B</option>
-      <option value="C">Option C</option>
-      <option value="D">Option D</option>
-      <option value="E">Option E</option>
-      <option value="F">Option F</option>
-      <option value="G">Option G</option>
-      <option value="H">Option H</option>
-      <option value="I">Option I</option>
-    </select>
-    <label for="selectize2">Placeholder Label</label>
-    </div>
-</form>      
-
-//Select2 - Select
-<form role="form" class="col-sm-12">
-    <div class="select2-field select2-field--floating-label">
-        <select id="select2" class="select2" aria-expanded="false">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="select2">Floating Label</label>
-    </div>
-    <div class="select2-field">
-        <select id="select2" class="select2" aria-expanded="false">
-          <option value=""></option> 
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-        </select>
-        <label for="select2">Placeholder Label</label>
-    </div>
-
-//Select2 - Multiple Select 
-    <div class="select2-field select2-field--floating-label">
-        <select id="select22" class="select2-multiple" aria-expanded="false" multiple>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-          <option value="F">Option F</option>
-          <option value="G">Option G</option>
-          <option value="H">Option H</option>
-          <option value="I">Option I</option>
-        </select>
-        <label for="select22">Floating Label</label>
-    </div>
-    <div class="select2-field">
-        <select id="select22" class="select2-multiple" aria-expanded="false" multiple>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-          <option value="D">Option D</option>
-          <option value="E">Option E</option>
-          <option value="F">Option F</option>
-          <option value="G">Option G</option>
-          <option value="H">Option H</option>
-          <option value="I">Option I</option>
-        </select>
-        <label for="select22">Placeholder Label</label>
-    </div>
-</form>
 {% endhighlight %}
 
 </div>
@@ -567,8 +349,7 @@ Example of Selectize, Select2, and plain Select.
 <div class="pl-pattern">
 ### Radio buttons
 
-#### Purpose
-Users must choose between two or more mutually exclusive options.
+This component offers a way to handle situations where the user is presented with multiple, mutually-exclusive, options where only one option can be selected at a time. This should not be used in the place of a toggle which indicates a change in state.
 
 #### Description
 - Radio buttons come in a group of two or more mutually exclusive options
@@ -689,8 +470,7 @@ Users must choose between two or more mutually exclusive options.
 <div class="pl-pattern">
 ### Checkboxes
 
-#### Purpose
-Users need to specify which option(s) from a set are applicable/valid/true based on a label. 
+This interactive element allows a user to make a selection from a number of options by “checking” one or more of the labelled options presented. If a “select all” function exists, it must be visually different than the other single selection options.
 
 #### Description
 - A set of checkboxes are used when a user is able to select none, one, or multiple options
@@ -811,12 +591,13 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 </div>
 
 <div class="pl-pattern">
-### Toggle on/off switches
+### Toggles
 
-#### Purpose
-Users need to toggle an option between on/off or yes/no. 
+Toggles are an interactive element that is used to quickly switch between possible states. This choice may be binary as with an on/off switch or may switch a setting from multiple states. In either case only one state can be selected at a time. 
 
-#### Description
+#### Examples
+
+##### On/Off Switches
 Use a toggle switch for a binary option where the change occurs _immediately_. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).
 
 
@@ -905,17 +686,9 @@ Use a toggle switch for a binary option where the change occurs _immediately_. U
 </div>
 {% endhighlight %}
 
-</div>
+#### Multistates
 
-<div class="pl-pattern">
-### Toggle options switches
-
-#### Purpose
-Users need to toggle an option between multiple choice. 
-
-#### Description
-Use the toggle switches, instead of radio buttons, for two or more specific options.
-
+Users need to toggle an option between multiple states.
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -988,7 +761,7 @@ Use the toggle switches, instead of radio buttons, for two or more specific opti
 <div class="pl-pattern">
 ### Date picker
 
-Depending on the JS library used for the date picker, functionality may vary.
+This component allows the user to choose a single date, a range of dates.
 
 Date pickers can provide:
 

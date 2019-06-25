@@ -3,7 +3,14 @@ title: "Progress and Loading"
 ---
 
 <div class="pl-pattern">
-### Progress bars
+<h3>Progress and Loading</h3>
+
+<p>These are indicators for providing visual feedback about an ongoing process.</p>
+
+</div>
+
+<div class="pl-pattern">
+### Progress Bars
 
 Progress bars should be used when there is a determinate amount of time/progress related to a process (e.g., uploading a file). An indeterminate progress can be used in conjunction with a determinate progress bar.
 
@@ -64,7 +71,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 </div>
 
 <div class="pl-pattern">
-### Load spinners
+### Load Spinners
 
 Load spinners should be used when there is an indeterminate amount of time/progress related to a process (e.g., downloading data).
 
@@ -122,7 +129,7 @@ If a simple action is initiated from an icon-only button, the icon can be replac
 </button>
 {% endhighlight %}
 
-#### Loading overlay
+#### Loading Overlay
 In some situations during the process of loading, it may be desired to overlay and block functionality until loading is complete.
 
 {::nomarkdown}

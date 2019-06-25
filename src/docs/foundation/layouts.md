@@ -969,7 +969,6 @@ The Card Dashboard page layout is designed to cleanly display access to multiple
 </div>
 {% endhighlight %} 
 
-*** See Vertical navigation and Horizontal navigation for more detail.
 {: .clearfix}
 
 </div>

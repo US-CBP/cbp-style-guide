@@ -1,22 +1,20 @@
 ---
-title: "Dialogs"
+title: "Modals"
 ---
 
 <div class="pl-pattern">
-<h3>Dialogs</h3>
+<h3>Modals</h3>
 
-#### Purpose
-Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.
+This communication method places special emphasis on the content presented within. This self-contained element occupies the upper-most elevation setting when present and dims the rest of the view port for added isolation. It is designed specifically to interrupt the current workflow because the action chosen has particular importance and requires either additional confirmation or more information in general to complete the task.
 
 #### Description
-- Dialogs are useful for interactions that are relatively quick (less than a couple minutes)
-- Dialogs float above the application until the user has taken a desired action or dismissed the dialog
-- Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page
-- Dialogs are usually opened from a click action
-- Dialogs may or may not block interactions "behind" or "under" the dialog (see <a href="#modes">modes</a>)
-- If there is a non-destructive dismiss/cancel, dialogs can be closed by clicking outside of the dialog
+- Modals are useful for interactions that are relatively quick (less than a couple minutes)
+- Modals float above the application until the user has taken a desired action or dismissed the dialog
+- Modals can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page
+- Modals are usually opened from a click action
+- If there is a non-destructive dismiss/cancel, modals can be closed by clicking outside of the dialog
 
-#### Components
+#### Anatomy
 __Header / title bar__
 
 - Short and concise title
@@ -34,9 +32,16 @@ __Footer__
 - Primary action buttons are right aligned
 - Cancel/previous buttons are left aligned
 - Use button styles that match the actions/priority, but if there more than two buttons with similar actions/priority, use the default button style for them all
-- Buttons should use action verbs that describe by themselves what will happen on click (e.g., 'Delete user' instead of 'Ok')
+- Buttons should use action verbs that describe by themselves what will happen on click (e.g., 'Delete User' instead of 'Ok')
 
+<br/>
+</div>
+
+<div class="pl-pattern">
+
+### Examples
 {::nomarkdown}
+
 <div class="pl-preview">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -51,7 +56,7 @@ __Footer__
           <form role="form" class="form">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
               <label for="tb12" class="mdl-textfield__label">Enter a new file name</label>
-              <input type="text" class="mdl-textfield__input" id="tb12" value="dialogs.md">
+              <input type="text" class="mdl-textfield__input" id="tb12" value="modals.md">
             </div>
           </form>
         </div>
@@ -79,7 +84,7 @@ __Footer__
       <form role="form" class="form">
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
           <label for="tb12" class="mdl-textfield__label">Enter a new file name</label>
-          <input type="text" class="mdl-textfield__input" id="tb12" value="dialogs.md">
+          <input type="text" class="mdl-textfield__input" id="tb12" value="modals.md">
         </div>
       </form>
     </div>
@@ -319,62 +324,8 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
 </div>
 
 <div class="pl-pattern">
-### Actionless
 
-An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.
-
-{::nomarkdown}
-<div class="pl-preview">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content modal-center">
-        <div class="modal-body">
-          <div style="margin-bottom: 6px;" class="clearfix">
-            <div class="pull-left">Uploading document...</div>
-            <span class="pull-right text-muted">60%</span>
-          </div>
-          <div class="progress" style="margin-bottom: 0;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<div class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="myModalTitle">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content modal-center">
-        <div class="modal-body">
-          <div style="margin-bottom: 6px;" class="clearfix">
-            <div class="pull-left">Uploading document...</div>
-            <span class="pull-right text-muted">60%</span>
-          </div>
-          <div class="progress" style="margin-bottom: 0;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-{% endhighlight %}
-</div>
-
-<div class="pl-pattern">
-### Modes
-Dialogs can prevent the user from performing actions behind/around the dialog if desired. There are 3 general modes:
-
-- __Modal__: A modal dialog __prevents__ the user from interacting with all other areas of the application until the dialog is dismissed.
-- __Modeless__: A modeless dialog __allows__ the user interact with all other areas of the application without dismissing the dialog. 
-- __Mixed-modal__: A mixed-modal dialog may block __some__ areas of the application, but not others. E.g., a dialog pertaining to one document, but not another visible document.
-
-&nbsp;
-
-</div>
-
-<div class="pl-pattern">
-
-### Live
+### Live Example
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -397,7 +348,7 @@ Dialogs can prevent the user from performing actions behind/around the dialog if
           <form role="form" class="form">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
               <label for="tb122" class="mdl-textfield__label">Enter a new file name</label>
-              <input type="text" class="mdl-textfield__input" id="tb122" value="dialogs.md">
+              <input type="text" class="mdl-textfield__input" id="tb122" value="modals.md">
             </div>
           </form>
         </div>

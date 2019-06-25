@@ -1,15 +1,12 @@
 ---
 title: "Search"
-preview: true
 ---
 
 <div class="pl-pattern">
 
-### Search
+<h3>Search</h3>
 
-#### Purpose
-
-Users need to search for data.
+Users can specify a single word, or a phrase, to find particular relevant pieces of content without the use of primary or secondary navigation. Search can be used to discover content, or as a way to filter content results. Search can be used an overarching element that searches an entire application or affixed to another component such as a data table.
 
 &nbsp;
 
@@ -42,7 +39,7 @@ Users need to search for data.
   </div>
 {% endhighlight %}
 
-##### With advanced
+##### Advanced Search
 
 {::nomarkdown}
 <div class="pl-preview">

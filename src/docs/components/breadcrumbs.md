@@ -5,11 +5,9 @@ title: "Breadcrumbs"
 <div class="pl-pattern">
 <h3>Breadcrumbs</h3>
 
-#### Purpose
-Users need to understand their current location and navigate within a hierarchical navigation scheme.
+Breadcrumbs are a navigation element where a user is shown their current location in relation to the application’s overall hierarchy.
 
 #### Description
-Breadcrumbs display the current path to a particular page relative to the starting point. Breadcrumbs provide a means for users to understand their current context in a hierarchical structure and the ability to navigate up the structure easily.
 
 - Breadcrumbs display the current path as links separated by carets to indicate each level
 - The navigation root is the first element on the left, the current location is the last element to the right
