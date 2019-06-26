@@ -18,7 +18,7 @@ Users need to see structured data in a manner that makes the data readable, scan
 #### Description
 Tables provide customizable views of tabular data with features including sorting and managing columns. Tables are useful when a collection of data requires vertical alignment through columns for quick scanning and discovery of information, as well as for data that with many attributes that requires sorting, grouping, and a user customizable display.
 
-#### Basic functionality
+#### Basic Functionality
 Tables list a collection of items in rows that have similar attributes, usually with headers to label each attribute.
 
 The following functionality can be provided by tables:
@@ -1439,8 +1439,6 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
   </tbody>
 </table>
 {% endhighlight %}
-
-</div>
 
 </div>
 

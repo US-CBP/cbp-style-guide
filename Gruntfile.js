@@ -96,10 +96,8 @@ module.exports = function(grunt) {
                 src: [
                     'node_modules/jquery/dist/jquery.js',
                     'node_modules/cbp-theme/dist/cbp-theme-inputmask.umd.js',
-                    'node_modules/select2/dist/js/select2.js',
                     'src/front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js',
                     'node_modules/lodash/lodash.min.js',
-                    'node_modules/selectize/dist/js/standalone/selectize.js',
                     'node_modules/jquery-ui/ui/minified/core.min.js',
                     'node_modules/jquery-ui/ui/minified/datepicker.min.js',
                     'node_modules/jquery-ui/ui/minified/progressbar.min.js',
@@ -120,8 +118,6 @@ module.exports = function(grunt) {
                 src: [
                     'src/front/vendor/jquery-ui-1.11.1.custom/jquery-ui.structure.css',
                     'node_modules/font-awesome/css/font-awesome.css',
-                    'node_modules/select2/dist/css/select2.css',
-                    'node_modules/selectize/dist/css/selectize.css',
                     'node_modules/hopscotch/dist/css/hopscotch.css',
                     'node_modules/cbp-theme/dist/cbp-theme.css'
                  ],

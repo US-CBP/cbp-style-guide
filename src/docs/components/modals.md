@@ -15,7 +15,7 @@ This communication method places special emphasis on the content presented withi
 - If there is a non-destructive dismiss/cancel, modals can be closed by clicking outside of the dialog
 
 #### Anatomy
-__Header / title bar__
+__Header / Title Bar__
 
 - Short and concise title
 - Sentence case title

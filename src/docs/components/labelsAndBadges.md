@@ -8,6 +8,8 @@ title: "Labels and Badges"
 
 <p>Labels show concise metadata in a compact format.</p>
 
+&nbsp;
+
 </div>
 
 <div class="pl-pattern">

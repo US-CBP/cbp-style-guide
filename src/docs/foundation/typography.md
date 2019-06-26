@@ -3,7 +3,12 @@ title: "Typography"
 ---
 
 <div class="pl-pattern">
-CBP Theme uses the Roboto font family.
+
+<h3>Typography</h3>
+
+<p>CBP Theme uses the Roboto font family.</p>
+
+<br/>
 
 </div>
 

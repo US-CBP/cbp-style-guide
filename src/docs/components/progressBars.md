@@ -14,7 +14,7 @@ title: "Progress and Loading"
 
 Progress bars should be used when there is a determinate amount of time/progress related to a process (e.g., uploading a file). An indeterminate progress can be used in conjunction with a determinate progress bar.
 
-#### Determinate progress bar
+#### Determinate Progress Bar
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -40,7 +40,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 </div>
 {% endhighlight %}
 
-#### Indeterminate progress bar
+#### Indeterminate Progress Bar
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -75,7 +75,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 
 Load spinners should be used when there is an indeterminate amount of time/progress related to a process (e.g., downloading data).
 
-#### Loading button with text
+#### Loading Button With Text
 For buttons with text, the load spinner can appear where the icon would appear. The text may change to reflect the current state.
 
 {::nomarkdown}
@@ -94,7 +94,7 @@ For buttons with text, the load spinner can appear where the icon would appear. 
 </button>
 {% endhighlight %}
 
-#### Loading button with icon only
+#### Loading Button With Icon Only
 If a simple action is initiated from an icon-only button, the icon can be replaced with the load spinner until the action is complete.
 
 {::nomarkdown}

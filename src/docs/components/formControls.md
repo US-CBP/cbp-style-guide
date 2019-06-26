@@ -5,12 +5,14 @@ title: "Form Controls"
 <div class="pl-pattern">
 <h3>Form Controls</h3>
 
-Allow users to enter information into a page.
+<p>Allow users to enter information into a page.
+</p>
 
+&nbsp;
 </div>
 
 <div class="pl-pattern">
-### Text box
+### Text Box
 
 This interactive element allows a user to enter data. It may be a single line entry, or a text area box for larger text selections. 
 
@@ -55,7 +57,7 @@ This interactive element allows a user to enter data. It may be a single line en
 </form>
 {% endhighlight %}
 
-#### Input masks
+#### Input Masks
 
 Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.
 
@@ -142,7 +144,7 @@ Input masks ensure that the user understands the input format required, in addit
 </div>
 
 <div class="pl-pattern">
-### Text area
+### Text Area
 
 #### Purpose
 Users need to input an extended, potentially multi-line text value.
@@ -150,7 +152,7 @@ Users need to input an extended, potentially multi-line text value.
 #### Description
 Text areas allow the user to input extended, multi-line text values.
 
-#### Sizing and resizing
+#### Sizing and Resizing
 
 Text areas can either
 
@@ -197,11 +199,8 @@ Text areas can either
 <div class="pl-pattern">
 ### Dropdown Selection
 
-This component gives users the ability to choose a single item from a predetermined list of options.
-
-</div>
-
-<div class="pl-pattern">
+<p>This component gives users the ability to choose a single item from a predetermined list of options.</p>
+&nbsp;
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -347,7 +346,7 @@ This component gives users the ability to choose a single item from a predetermi
 </div>
 
 <div class="pl-pattern">
-### Radio buttons
+### Radio Buttons
 
 This component offers a way to handle situations where the user is presented with multiple, mutually-exclusive, options where only one option can be selected at a time. This should not be used in the place of a toggle which indicates a change in state.
 
@@ -759,7 +758,7 @@ Users need to toggle an option between multiple states.
 
 
 <div class="pl-pattern">
-### Date picker
+### Date Picker
 
 This component allows the user to choose a single date, a range of dates.
 

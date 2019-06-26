@@ -10,7 +10,7 @@ Pagination allows large collections of content to be displayed within the same a
 #### Description
 Collections of data are often split into multiple pages for performance reasons. Either the size of the data is too much to download at once, or the size of the data would take too long to render all at once. Pagination controls allow for the user to retrieve or view pages of data in a performant matter.
 
-#### Basic functionality
+#### Basic Functionality
 This pagination pattern provides a few variations of the following features:
 
 - Navigating to prev/next pages
