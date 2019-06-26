@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Dialogs - CBP Style Guide</title>
+        <title>Modals - CBP Style Guide</title>
 
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="theme-color" content="#004c97">
 
-        <meta property="og:title" content="Dialogs">
+        <meta property="og:title" content="Modals">
         <meta property="og:description" content="">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  class="active"  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -364,8 +342,18 @@
                         
                             
                                 
+                                    <li  class="active"  >
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -638,22 +624,20 @@
         <section role="region" aria-label="pattern library content" class="pl-content">
             
             <div class="pl-pattern">
-  <h3>Dialogs</h3>
+  <h3>Modals</h3>
 
-  <h4 id="purpose">Purpose</h4>
-  <p>Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.</p>
+  <p>This communication method places special emphasis on the content presented within. This self-contained element occupies the upper-most elevation setting when present and dims the rest of the view port for added isolation. It is designed specifically to interrupt the current workflow because the action chosen has particular importance and requires either additional confirmation or more information in general to complete the task.</p>
 
   <h4 id="description">Description</h4>
   <ul>
-    <li>Dialogs are useful for interactions that are relatively quick (less than a couple minutes)</li>
-    <li>Dialogs float above the application until the user has taken a desired action or dismissed the dialog</li>
-    <li>Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page</li>
-    <li>Dialogs are usually opened from a click action</li>
-    <li>Dialogs may or may not block interactions “behind” or “under” the dialog (see <a href="#modes">modes</a>)</li>
-    <li>If there is a non-destructive dismiss/cancel, dialogs can be closed by clicking outside of the dialog</li>
+    <li>Modals are useful for interactions that are relatively quick (less than a couple minutes)</li>
+    <li>Modals float above the application until the user has taken a desired action or dismissed the dialog</li>
+    <li>Modals can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page</li>
+    <li>Modals are usually opened from a click action</li>
+    <li>If there is a non-destructive dismiss/cancel, modals can be closed by clicking outside of the dialog</li>
   </ul>
 
-  <h4 id="components">Components</h4>
+  <h4 id="anatomy">Anatomy</h4>
   <p><strong>Header / title bar</strong></p>
 
   <ul>
@@ -676,8 +660,15 @@
     <li>Primary action buttons are right aligned</li>
     <li>Cancel/previous buttons are left aligned</li>
     <li>Use button styles that match the actions/priority, but if there more than two buttons with similar actions/priority, use the default button style for them all</li>
-    <li>Buttons should use action verbs that describe by themselves what will happen on click (e.g., ‘Delete user’ instead of ‘Ok’)</li>
+    <li>Buttons should use action verbs that describe by themselves what will happen on click (e.g., ‘Delete User’ instead of ‘Ok’)</li>
   </ul>
+
+  <p><br /></p>
+</div>
+
+<div class="pl-pattern">
+
+  <h3 id="examples">Examples</h3>
 
 <div class="pl-preview">
     <div class="modal-dialog" role="document">
@@ -693,7 +684,7 @@
           <form role="form" class="form">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
               <label for="tb12" class="mdl-textfield__label">Enter a new file name</label>
-              <input type="text" class="mdl-textfield__input" id="tb12" value="dialogs.md">
+              <input type="text" class="mdl-textfield__input" id="tb12" value="modals.md">
             </div>
           </form>
         </div>
@@ -720,7 +711,7 @@
       <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"tb12"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Enter a new file name<span class="nt">&lt;/label&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"tb12"</span> <span class="na">value=</span><span class="s">"dialogs.md"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"tb12"</span> <span class="na">value=</span><span class="s">"modals.md"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/form&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -953,63 +944,8 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="actionless">Actionless</h3>
 
-  <p>An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.</p>
-
-<div class="pl-preview">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content modal-center">
-        <div class="modal-body">
-          <div style="margin-bottom: 6px;" class="clearfix">
-            <div class="pull-left">Uploading document...</div>
-            <span class="pull-right text-muted">60%</span>
-          </div>
-          <div class="progress" style="margin-bottom: 0;">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">id=</span><span class="s">"myModal"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"myModalTitle"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content modal-center"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-bottom: 6px;"</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>Uploading document...<span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pull-right text-muted"</span><span class="nt">&gt;</span>60%<span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span> <span class="na">style=</span><span class="s">"margin-bottom: 0;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"60"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 60%;"</span><span class="nt">&gt;&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre>
-  </figure>
-
-</div>
-
-<div class="pl-pattern">
-  <h3 id="modes">Modes</h3>
-  <p>Dialogs can prevent the user from performing actions behind/around the dialog if desired. There are 3 general modes:</p>
-
-  <ul>
-    <li><strong>Modal</strong>: A modal dialog <strong>prevents</strong> the user from interacting with all other areas of the application until the dialog is dismissed.</li>
-    <li><strong>Modeless</strong>: A modeless dialog <strong>allows</strong> the user interact with all other areas of the application without dismissing the dialog.</li>
-    <li><strong>Mixed-modal</strong>: A mixed-modal dialog may block <strong>some</strong> areas of the application, but not others. E.g., a dialog pertaining to one document, but not another visible document.</li>
-  </ul>
-
-  <p> </p>
-
-</div>
-
-<div class="pl-pattern">
-
-  <h3 id="live">Live</h3>
+  <h3 id="live-example">Live Example</h3>
 
 <div class="pl-preview">
 
@@ -1031,7 +967,7 @@
           <form role="form" class="form">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
               <label for="tb122" class="mdl-textfield__label">Enter a new file name</label>
-              <input type="text" class="mdl-textfield__input" id="tb122" value="dialogs.md">
+              <input type="text" class="mdl-textfield__input" id="tb122" value="modals.md">
             </div>
           </form>
         </div>

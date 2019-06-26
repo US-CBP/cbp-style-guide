@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -641,10 +627,6 @@
 
   <h3>Filters</h3>
 
-  <h4 id="purpose">Purpose</h4>
-  <p>Users need filter a collection of items or search results to find items of interest.</p>
-
-  <h4 id="description">Description</h4>
   <p>Filters provide a set of controls to reduce items in a collection based on attributes the user is interested in (e.g., filtering items by creation date).</p>
 
   <p>Filters can provide the following functionality:</p>
@@ -657,7 +639,7 @@ possible values to filter by</li>
     <li>Predefined filters</li>
   </ul>
 
-  <h4 id="common-filter-types">Common filter types</h4>
+  <h4 id="common-filter-types">Common Filter Types</h4>
 
   <ul>
     <li>Single-select and categorical refinement (links)</li>
@@ -673,7 +655,7 @@ possible values to filter by</li>
 
 <div class="pl-pattern">
 
-  <h3 id="vertical-filters">Vertical filters</h3>
+  <h3 id="vertical-filters">Vertical Filters</h3>
 
   <p>Filters can be stacked vertically on the left side if:</p>
 
@@ -688,7 +670,7 @@ possible values to filter by</li>
   <ul>
     <li>Collapsible (some or all filters can be collapsed or expanded by default)</li>
     <li>Grouped under subheadings</li>
-    <li>Clearable (or resettable if default filters are applicable)</li>
+    <li>Clearable or resettable</li>
   </ul>
 
 <div class="pl-preview">
@@ -1021,316 +1003,11 @@ possible values to filter by</li>
 
 </div>
 
-<!--
 <div class="pl-pattern">
 
-### Collapsed filters
+  <h3 id="predefined-filters">Predefined Filters</h3>
 
-Filters can be collapsed to a single dropdown if:
-
-- Screen real estate is limited due to constrained or dense layouts
-- Filtering is not a primary interaction, where collapsing and tucking away the filtering functionality is acceptable
-
-#### With side navigation
-
-For many or complex filters, you may want to organize them with a menu along the side.
-
-{::nomarkdown}
-<div class="pl-preview">
-    <div class="dropdown">
-        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">3</span>Filters <span class="caret"></span></button>
-        <div class="dropdown-menu" role="menu" style="padding: 0; width: 500px;">
-            <form class="clearfix" role="form">
-                <div class="keyline-right" style="width: 200px; min-height: 300px; float: left;">
-                    <ul class="nav nav-stacked" role="tab-list" style="margin-top: 10px">
-                        <li role="presentation" class="active"><a role="tab" data-toggle="tab" href="#">Applied filters <span class="badge pull-right">3</span></a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Year</a></li>
-                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Conveyance type <span class="badge pull-right">2</span></a></li>
-                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Date range</a></li>
-                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Distance</a></li>
-                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Name <span class="badge pull-right">1</span></a></li>
-                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Colors</a></li>
-                        <li role="presentation"><a role="tab" data-toggle="tab" href="#">Tags</a></li>
-                    </ul>
-                </div>
-                <div style="margin-left: 200px; max-height: 300px; overflow: auto;">
-                    <div style="opacity: 1; display: inline-block; width: 100%;">
-                        <div class="modal-body">
-                            <a href="" class="pull-right">Clear all</a>
-                            <div class="form-group">
-                                <label class="control-label">Conveyance type </label>
-                                <div class="">
-                                    <ul class="list-unstyled">
-                                        <li><button class="filter-value">Assignment <i class="pull-right fa fa-close fa-muted"></i></button></li>
-                                        <li><button class="filter-value">Change of name <a href=""><i class="pull-right fa fa-close fa-muted"></i></a></button></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Name</label>
-                                <div class="">
-                                    <ul class="list-unstyled">
-                                        <li><button class="filter-value">Jane Doe <i class="pull-right fa fa-close fa-muted"></i></button></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-{:/nomarkdown}
-
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span> <span class="na">style=</span><span class="s">"margin-right: 5px;"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>Filters <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">style=</span><span class="s">"padding: 0; width: 500px;"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"clearfix"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"keyline-right"</span> <span class="na">style=</span><span class="s">"width: 200px; min-height: 300px; float: left;"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-stacked"</span> <span class="na">role=</span><span class="s">"tab-list"</span> <span class="na">style=</span><span class="s">"margin-top: 10px"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Applied filters <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Year<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Conveyance type <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Date range<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Distance<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Name <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Colors<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tags<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-left: 200px; max-height: 300px; overflow: auto;"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"opacity: 1; display: inline-block; width: 100%;"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>Clear all<span class="nt">&lt;/a&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Conveyance type <span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;li&gt;&lt;button</span> <span class="na">class=</span><span class="s">"filter-value"</span><span class="nt">&gt;</span>Assignment <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"pull-right fa fa-close fa-muted"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;&lt;/li&gt;</span>
-                                    <span class="nt">&lt;li&gt;&lt;button</span> <span class="na">class=</span><span class="s">"filter-value"</span><span class="nt">&gt;</span>Change of name <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"pull-right fa fa-close fa-muted"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/button&gt;&lt;/li&gt;</span>
-                                <span class="nt">&lt;/ul&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-                        <span class="nt">&lt;/div&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;li&gt;&lt;button</span> <span class="na">class=</span><span class="s">"filter-value"</span><span class="nt">&gt;</span>Jane Doe <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"pull-right fa fa-close fa-muted"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;&lt;/li&gt;</span>
-                                <span class="nt">&lt;/ul&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-                        <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/form&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-
-#### Flat
-
-For simple filters, they can be presented as a standard form.
-
-{::nomarkdown}
-<div class="pl-preview">
-    <div class="dropdown">
-        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">2</span>Filters <span class="caret"></span></button>
-        <div class="dropdown-menu" role="menu" style="padding: 0; width: 500px;">
-        <form role="form" class="form" style="padding: 0 15px;">
-         <div style="max-height: 300px; overflow: auto;">
-            <div style="opacity: 1; display: inline-block; width: 100%;">
-                <div class="modal-body">
-                    <a href="" class="pull-right" style="margin-bottom: 8px;">Clear all</a>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
-                        <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z]*" id="sample3">
-                        <label class="mdl-textfield__label" for="sample3">Id</label>
-                        <span class="mdl-textfield__error">Only alphabet and no spaces</span>
-                    </div>
-                      <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-                            <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-                            <option value=""></option>
-                            <option value="2014">2014</option>
-                            <option value="2015">2015</option>
-                            <option value="2016">2016</option>
-                            </select>
-                            <label for="se17" class="mdl-selectfield__label">Year</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </form>
-        </div>
-    </div>
-</div>
-{:/nomarkdown}
-
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span> <span class="na">style=</span><span class="s">"margin-right: 5px;"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>Filters <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">style=</span><span class="s">"padding: 0; width: 500px;"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">style=</span><span class="s">"padding: 0 15px;"</span><span class="nt">&gt;</span>
-     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"max-height: 300px; overflow: auto;"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"opacity: 1; display: inline-block; width: 100%;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pull-right"</span> <span class="na">style=</span><span class="s">"margin-bottom: 8px;"</span><span class="nt">&gt;</span>Clear all<span class="nt">&lt;/a&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">pattern=</span><span class="s">"[A-Z,a-z]*"</span> <span class="na">id=</span><span class="s">"sample3"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span> <span class="na">for=</span><span class="s">"sample3"</span><span class="nt">&gt;</span>Id<span class="nt">&lt;/label&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mdl-textfield__error"</span><span class="nt">&gt;</span>Only alphabet and no spaces<span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se17"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
-                        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2014"</span><span class="nt">&gt;</span>2014<span class="nt">&lt;/option&gt;</span>
-                        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2015"</span><span class="nt">&gt;</span>2015<span class="nt">&lt;/option&gt;</span>
-                        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2016"</span><span class="nt">&gt;</span>2016<span class="nt">&lt;/option&gt;</span>
-                        <span class="nt">&lt;/select&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se17"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>Year<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/form&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-</div>
-
-
-<div class="pl-pattern">
-
-### Horizontal filters
-
-Filters can be listed horizontally if:
-
-- You have less than 5 filters
-- You have plenty of horizontal space above your collection
-
-When showing the currently applied filters, consider collapsing values to preserve space. E.g., instead of listing 4 different colors, collapse it into '4 colors'.
-
-If you allow multi-selection in filters, the currently applied filters can be listed below each dropdown:
-
-{::nomarkdown}
-<div class="pl-preview">
-<div class="container-fluid" style="margin-top: 8px;">
-    <form class="filters filters-horizontal">
-        <div style="display: inline-block; vertical-align: top;">
-            <button class="btn btn-link">
-                Date range <span class="caret"></span>
-            </button>
-            <ul class="list-unstyled">
-                <li class="filter-value">4/01/2014 - 5/01/2014 <i class="pull-right fa fa-close fa-muted"></i></li>
-            </ul>
-        </div>
-        <div style="display: inline-block; vertical-align: top;">
-            <button class="btn btn-link">
-                Conveyance type <span class="caret"></span>
-            </button>
-            <ul class="list-unstyled">
-                <li class="filter-value">Assignment <i class="pull-right fa fa-close fa-muted"></i></li>
-                <li class="filter-value">Change of name <i class="pull-right fa fa-close fa-muted"></i></li>
-            </ul>
-        </div>
-        <div style="display: inline-block; vertical-align: top;">
-            <button class="btn btn-link">
-                Color <span class="caret"></span>
-            </button>
-            <ul class="list-unstyled">
-                <li class="filter-value">4 colors <i class="pull-right fa fa-close fa-muted"></i></li>
-            </ul>
-        </div>
-        <button class="btn btn-link">
-            Clear
-        </button>
-   </form>
-</div>
-</div>
-{:/nomarkdown}
-
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"filters filters-horizontal"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-block; vertical-align: top;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-                Date range <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"filter-value"</span><span class="nt">&gt;</span>4/01/2014 - 5/01/2014 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"pull-right fa fa-close fa-muted"</span><span class="nt">&gt;&lt;/i&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-block; vertical-align: top;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-                Conveyance type <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"filter-value"</span><span class="nt">&gt;</span>Assignment <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"pull-right fa fa-close fa-muted"</span><span class="nt">&gt;&lt;/i&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"filter-value"</span><span class="nt">&gt;</span>Change of name <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"pull-right fa fa-close fa-muted"</span><span class="nt">&gt;&lt;/i&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-block; vertical-align: top;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-                Color <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"filter-value"</span><span class="nt">&gt;</span>4 colors <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"pull-right fa fa-close fa-muted"</span><span class="nt">&gt;&lt;/i&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-            Clear
-        <span class="nt">&lt;/button&gt;</span>
-   <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
-
-If you allow single-selection for each filter, the currently applied filter can replace the label for the dropdown:
-
-{::nomarkdown}
-<div class="pl-preview">
-<div class="container-fluid" style="margin-top: 8px;">
-    <form class="filters filters-horizontal">
-        <button class="btn btn-link">
-            4/01/2014 - 5/01/2014 <span class="caret"></span>
-        </button>
-        <button class="btn btn-link">
-            Conveyance type <span class="caret"></span>
-        </button>
-        <button class="btn btn-link">
-            Color <span class="caret"></span>
-        </button>
-        <button class="btn btn-link">
-            Clear
-        </button>
-   </form>
-</div>
-</div>
-{:/nomarkdown}
-
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"filters filters-horizontal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-        4/01/2014 - 5/01/2014 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-        Conveyance type <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-        Color <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>
-        Clear
-    <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
-
-</div>
--->
-<div class="pl-pattern">
-
-  <h3 id="predefined-filters">Predefined filters</h3>
-
-  <p>Predefined filters are presented as pill tabs. Predefined filters are either provided by the system or are defined by the user.</p>
+  <p>Predefined filters are either provided by the system or are defined by the user.</p>
 
 <div class="pl-preview">
 <ul class="nav nav-pills" role="tablist">
@@ -1354,94 +1031,7 @@ If you allow single-selection for each filter, the currently applied filter can 
 
 <div class="pl-pattern">
 
-  <h3 id="horizontal-filters">Horizontal filters</h3>
-
-  <p>Filters can be listed horizontally if:</p>
-
-  <ul>
-    <li>You have less than 5 filters</li>
-    <li>You have plenty of horizontal space above your collection</li>
-  </ul>
-
-  <p>When showing the currently applied filters, consider collapsing values to preserve space. E.g., instead of listing 4 different colors, collapse it into ‘4 colors’.</p>
-
-  <p>If you allow multi-selection in filters, the currently applied filters can be listed below each dropdown:</p>
-
-<div class="pl-preview">
-<div class="container-fluid" style="margin-top: 8px;">
-    <form class="filters filters-horizontal">
-        <div style="display: inline-block; vertical-align: top;">
-            <button class="btn btn-link">
-                Date range <span class="caret"></span>
-            </button>
-            <ul class="list-unstyled">
-                <li class="filter-value tag tag-default subtle">
-                4/01/2014 - 5/01/2014
-                <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
-                </li>
-            </ul>
-        </div>
-        <div style="display: inline-block; vertical-align: top;">
-            <button class="btn btn-link">
-                Conveyance type <span class="caret"></span>
-            </button>
-            <ul class="list-unstyled">
-                <li class="filter-value tag tag-default subtle">
-                  Truck
-                  <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
-                </li>
-                <li class="filter-value tag tag-default subtle">
-                  Sea
-                  <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
-                </li>
-            </ul>
-        </div>
-        <div style="display: inline-block; vertical-align: top;">
-            <button class="btn btn-link">
-                Color <span class="caret"></span>
-            </button>
-            <ul class="list-unstyled">
-                <li class="filter-value tag tag-default subtle">
-                  4 colors
-                  <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
-                </li>
-            </ul>
-        </div>
-        <button class="btn btn-link">
-            Clear
-        </button>
-   </form>
-</div>
-</div>
-
-  <p> </p>
-
-  <p>If you allow single-selection for each filter, the currently applied filter can replace the label for the dropdown:</p>
-
-<div class="pl-preview">
-<div class="container-fluid" style="margin-top: 8px;">
-    <form class="filters filters-horizontal">
-        <button class="btn btn-link">
-            4/01/2014 - 5/01/2014 <span class="caret"></span>
-        </button>
-        <button class="btn btn-link">
-            Conveyance type <span class="caret"></span>
-        </button>
-        <button class="btn btn-link">
-            Color <span class="caret"></span>
-        </button>
-        <button class="btn btn-link">
-            Clear
-        </button>
-   </form>
-</div>
-</div>
-
-</div>
-
-<div class="pl-pattern">
-
-  <h3 id="collapsed-filters">Collapsed filters</h3>
+  <h3 id="collapsed-filters">Collapsed Filters</h3>
 
   <p>Filters can be collapsed to a single dropdown if:</p>
 
@@ -1450,7 +1040,7 @@ If you allow single-selection for each filter, the currently applied filter can 
     <li>Filtering is not a primary interaction, where collapsing and tucking away the filtering functionality is acceptable</li>
   </ul>
 
-  <h4 id="with-side-navigation">With side navigation</h4>
+  <h4 id="filters-with-side-navigation">Filters With Side Navigation</h4>
 
   <p>For many or complex filters, you may want to organize them with a menu along the side.</p>
 
@@ -1510,110 +1100,6 @@ If you allow single-selection for each filter, the currently applied filter can 
                     </div>
                 </div>
             </form>
-        </div>
-    </div>
-</div>
-
-  <h4 id="flat">Flat</h4>
-
-  <p>For simple filters, they can be presented as a standard form.</p>
-
-<div class="pl-preview">
-    <div class="dropdown">
-        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">2</span>Filters <span class="caret"></span></button>
-        <div class="dropdown-menu" role="menu">
-            <!-- <form class="clearfix" role="form">
-                <div style="max-height: 300px; overflow: auto;">
-                    <div style="opacity: 1; display: inline-block; width: 100%;">
-                        <div class="modal-body">
-                            <a href="" class="pull-right" style="margin-bottom: 8px;">Clear all</a>
-                            <div class="form-horizontal" style="clear: both;">
-                                <div class="form-group">
-                                    <label for="im1" class="col-sm-4 control-label">Name contains</label>
-                                    <div class="col-sm-8">
-                                      <input type="text" class="form-control" id="im1">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="n12" class="col-sm-4 control-label">Year</label>
-                                    <div class="col-sm-8">
-                                        <select name="" id="n12" class="form-control select2">
-                                            <option value="2014">2014</option>
-                                            <option value="2013">2013</option>
-                                            <option value="2012">2012</option>
-                                            <option value="2011">2011</option>
-                                            <option value="2010">2010</option>
-                                            <option value="2009">2009</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="n13" class="col-sm-4 control-label">Assignee</label>
-                                    <div class="col-sm-8">
-                                        <select name="" id="n13" class="form-control select2">
-                                            <option value="A">JOHN SMITH ET AL</option>
-                                            <option value="B">JANE LLC</option>
-                                            <option value="C">JOHNSON CO</option>
-                                            <option value="D">INITECH</option>
-                                        </select>
-                                    </div>
-                                    <form role="form" class="col-sm-4">
-                                      <div class=" col-sm-8 mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-                                          <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-                                          <option value=""></option>
-                                          <option value="A">Option A</option>
-                                          <option value="B">Option B</option>
-                                          <option value="C">Option C</option>
-                                          </select>
-                                          <label for="se17" class="mdl-selectfield__label">With floating label</label>
-                                      </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form> -->
-            <!-- start modal -->
-            <div style="max-height: 300px; overflow: auto;">
-                <div style="opacity: 1; display: inline-block; width: 100%;">
-
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-body">
-                        <a href="#" class="pull-right">Clear all</a>
-                        <div class="form-group">
-
-                            <form role="form" class="form">
-                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
-                                <label for="tb12" class="mdl-textfield__label">Name Contains</label>
-                                <input type="text" class="mdl-textfield__input" id="tb12" value="John">
-
-                              </div>
-                              <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-                                  <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-                                  <option value=""></option>
-                                  <option value="2016">2016</option>
-                                  <option value="2015">2015</option>
-                                  <option value="2014">2014</option>
-                                  </select>
-                                  <label for="se17" class="mdl-selectfield__label">Year</label>
-                              </div>
-                              <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-                                  <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-                                  <option value=""></option>
-                                  <option value="A">Option A</option>
-                                  <option value="B">Option B</option>
-                                  <option value="C">Option C</option>
-                                  </select>
-                                  <label for="se17" class="mdl-selectfield__label">With floating label</label>
-                              </div>    
-                            </form>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end modal -->
         </div>
     </div>
 </div>

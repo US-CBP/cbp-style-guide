@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -641,9 +627,7 @@
 
   <h3>Buttons</h3>
 
-  <p>Buttons are used as action triggers. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.</p>
-
-  <p>All button labels are sentence case. Labels should be as short as possible while clearly explaining what will happen when the button is clicked.</p>
+  <p>Buttons are mildly skeuomorphic, interactive elements that utilize shape and color to guide users to take actions or make choices. They should have a clear and appropriate verb that describes the choice the user is being presented with. Icons may be used in conjunction with text, but they must be contextually appropriate and send the same message if the text were hidden.</p>
 
   <p> </p>
 
@@ -751,30 +735,6 @@
 
   <figure class="highlight">
     <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-block"</span><span class="nt">&gt;</span>Block level<span class="nt">&lt;/button&gt;</span></code></pre>
-  </figure>
-
-</div>
-
-<div class="pl-pattern">
-
-  <h3 id="button-groups">Button Groups</h3>
-
-  <p>Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the <code class="highlighter-rouge">btn-group-lg</code>, <code class="highlighter-rouge">btn-group-sm</code>, and <code class="highlighter-rouge">btn-group-xs</code> classes.</p>
-
-<div class="pl-preview">
-    <div class="btn-group">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Middle</button>
-        <button type="button" class="btn btn-default">Right</button>
-    </div>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
 </div>

@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -638,7 +624,10 @@
         <section role="region" aria-label="pattern library content" class="pl-content">
             
             <div class="pl-pattern">
-  <h3 id="overview">Overview</h3>
+
+  <h3>Forms</h3>
+
+  <p>Forms are a grouping of input controls that allow a user to submit information to your application.</p>
 
   <p><strong>Do</strong></p>
 
@@ -663,17 +652,14 @@
 
 <div class="pl-pattern">
 
-  <h3 id="field-label-combinations">Field Label Combinations</h3>
-
-  <p>Combinations of Field Labels.</p>
+  <h3 id="form-field-labels">Form Field Labels</h3>
 
   <p><strong>Do</strong></p>
 
   <ul>
     <li>Ensure that clicking on a label focuses the corresponding input</li>
     <li>Use sentence capitalization for labels</li>
-    <li>Use concise labels name</li>
-    <li>Use the user’s language for labels</li>
+    <li>Use concise label names</li>
     <li>Be consistent with label positioning (above/beside)</li>
     <li>Be consistent with questions or statements labels</li>
   </ul>
@@ -727,13 +713,10 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="required-fields">Required fields</h3>
-  <p>Required fields are generally marked with an asterisk. For external, public facing forms, put a <code class="highlighter-rouge">* indicates required</code> message. For internal applications containing many forms or targeting power users, the <code class="highlighter-rouge">* indicates required</code> may not be necessary. Ensure that required fields are <a href="#form-validation">validated</a> with appropriate feedback.</p>
+  <h3 id="required-fields">Required Fields</h3>
+  <p>Required fields should be marked as required.</p>
 
-  <p>If the majority of the fields are required, consider adding <code class="highlighter-rouge">(optional)</code> to the optional fields instead of asterisks on the required field.</p>
-
-  <h4 id="vertically-aligned-labels">Vertically aligned labels</h4>
-  <p>When labels are vertically aligned, the asterisk is placed on the right.</p>
+  <h4 id="examples">Examples</h4>
 
 <div class="pl-preview">
     <form role="form" class="form">
@@ -778,7 +761,7 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="form-validation">Form validation</h3>
+  <h3 id="form-validation">Form Validation</h3>
 
   <p>There are two main types of form validation, often used together.</p>
 
@@ -844,7 +827,7 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="help-text">Help text</h3>
+  <h3 id="help-text">Help Text</h3>
 
   <p>Help text can be placed at the top of the form, under the heading of a form group, under an individual form field, or as a popover when the field is focused.</p>
 
@@ -903,7 +886,7 @@
 
 <div class="pl-pattern">
 
-  <h3 id="input-character-limits">Input character limits</h3>
+  <h3 id="input-character-limits">Input Character Limits</h3>
 
   <p>Most input fields have technical character limits. The system should handle this gracefully in all scenarios.</p>
 
@@ -933,11 +916,6 @@
   </div>
   <h4>Textarea</h4>
   <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-    <label for="ta1" class="mdl-textfield__label">Description</label>
-    <textarea class="mdl-textfield__input" id="ta1" rows="3" data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 " class="form-control form-control-width-fill">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
-    <p class="mdl-textfield__counter"></p>
-  </div>
-  <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
     <label for="ta2" class="mdl-textfield__label">Description</label>
     <textarea class="mdl-textfield__input" id="ta2" rows="3" class="form-control form-control-width-fill"
     data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 "></textarea>
@@ -958,11 +936,6 @@
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;h4&gt;</span>Textarea<span class="nt">&lt;/h4&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"ta1"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"ta1"</span> <span class="na">rows=</span><span class="s">"3"</span> <span class="na">data-charlimit=</span><span class="s">" 'target' : '.mdl-textfield__counter', 'limit': 140 "</span> <span class="na">class=</span><span class="s">"form-control form-control-width-fill"</span><span class="nt">&gt;</span>This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.<span class="nt">&lt;/textarea&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mdl-textfield__counter"</span><span class="nt">&gt;&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"ta2"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"ta2"</span> <span class="na">rows=</span><span class="s">"3"</span> <span class="na">class=</span><span class="s">"form-control form-control-width-fill"</span>
     <span class="na">data-charlimit=</span><span class="s">" 'target' : '.mdl-textfield__counter', 'limit': 140 "</span><span class="nt">&gt;&lt;/textarea&gt;</span>
@@ -974,11 +947,11 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="examples">Examples</h3>
+  <h3 id="examples-1">Examples</h3>
 
   <p>These examples show various form configurations.</p>
 
-  <h4 id="various-form-elements">Various form elements</h4>
+  <h4 id="various-form-elements">Various Form Elements</h4>
 
 <div class="pl-preview">
     <div class="" style="max-width: 450px;">
@@ -995,10 +968,6 @@
         <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield is-required">
           <label class="mdl-textfield__label" for="fn12">First name <span class="required-field"></span></label>
           <input type="text" class="mdl-textfield__input" id="fn12" value="John" required aria-required="true">
-        </div>
-        <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield is-required">
-          <label class="mdl-textfield__label" for="mn12">Middle name <span class="required-field"></span></label>
-          <input type="text" class="mdl-textfield__input" id="mn12" required aria-required="true">
         </div>
         <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield is-required">
           <label class="mdl-textfield__label" for="ln12">Last name <span class="required-field"></span></label>

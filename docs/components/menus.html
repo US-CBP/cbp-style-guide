@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -640,13 +626,12 @@
             <div class="pl-pattern">
   <h3>Menus</h3>
 
-  <h4 id="purpose">Purpose</h4>
-  <p>User needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.</p>
+  <p>When the user needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.</p>
 
   <h4 id="description">Description</h4>
   <p>Menus provide a list of available actions and options. They’re used in dropdowns, selects, and context menus.</p>
 
-  <h4 id="basic-functionality">Basic functionality</h4>
+  <h4 id="basic-functionality">Basic Functionality</h4>
   <p>Menus appear relative to the control or interaction that triggered the menu. Clicking an item from the menu performs the action or selects the option. For most actions, the menu should close when a menu item is clicked. If the clicked menu item is part of a set of multi-selectable options, then the menu should stay open.</p>
 
   <ul>
@@ -819,90 +804,6 @@
   <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
       <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-trash-o dropdown-menu-icon"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> Remove
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre>
-  </figure>
-
-</div>
-
-<div class="pl-pattern">
-
-  <h3 id="form-controls">Form controls</h3>
-
-  <p>Sometimes menus can contain form elements like checkboxes. Use checkboxes for both single and multi-select options. When dealing with a multi-selectable collection of checkboxes, it’s likely beneficial to keep the menu open after items are checked. Otherwise, menus should close after items are clicked.</p>
-
-<div class="pl-preview">
-<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu">
-  <li class="dropdown-header">Single-select</li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; 1.0
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; 1.5
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; 2.0
-    </a>
-  </li>
-  <li class="divider" role="presentation"></li>
-  <li class="dropdown-header">Multi-select</li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; Grid lines
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw fa-check dropdown-menu-icon"></i> &nbsp; Rulers
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="">
-      <i class="fa fa-fw dropdown-menu-icon"></i> &nbsp; Margins
-    </a>
-  </li>
-</ul>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu has-icon"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown-header"</span><span class="nt">&gt;</span>Single-select<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw dropdown-menu-icon"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> 1.0
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-check dropdown-menu-icon"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> 1.5
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw dropdown-menu-icon"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> 2.0
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown-header"</span><span class="nt">&gt;</span>Multi-select<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-check dropdown-menu-icon"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> Grid lines
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-check dropdown-menu-icon"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> Rulers
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw dropdown-menu-icon"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> Margins
     <span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre>

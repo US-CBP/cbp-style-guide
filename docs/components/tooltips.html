@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -640,16 +626,13 @@
             <div class="pl-pattern">
   <h3>Tooltips</h3>
 
-  <h4 id="purpose">Purpose</h4>
-  <p>Users need additional, potentially optional information on demand.</p>
+  <p>These hints should be placed when there is additional helpful information that can be displayed to assist a user in making a decision.</p>
 
   <h4 id="description">Description</h4>
-  <p>Tooltips provide information when an element is hovered over.</p>
 
   <ul>
     <li>Tooltips are attached to an element and appear when the element is hovered over</li>
-    <li>The show and hide delays of a tooltip may vary depending on the need, but the default is 200ms to show and 0ms to hide</li>
-    <li>Tooltips cannot be interacted with</li>
+    <li>Tooltips have no actionable elements</li>
   </ul>
 
   <p>Use tooltips for:</p>
@@ -697,9 +680,11 @@
 <span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
-  <div class="pl-pattern">
-    <h3 id="content">Content</h3>
-    <p>The content of a tooltip can vary. It’s best to keep it to a few words.</p>
+</div>
+
+<div class="pl-pattern">
+  <h3 id="content">Content</h3>
+  <p>The content of a tooltip can vary. It’s best to keep it to a few words.</p>
 
 <div class="pl-preview">
     <div style="margin-top: 25px; width: 120px;">
@@ -714,8 +699,8 @@
     </div>
 </div>
 
-    <figure class="highlight">
-      <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-top: 25px; width: 120px;"</span><span class="nt">&gt;</span>
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-top: 25px; width: 120px;"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-block btn-default"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Print"</span><span class="nt">&gt;</span>Short<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-block btn-default"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">data-html=</span><span class="s">"true"</span> <span class="na">title=</span><span class="s">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum.'</span><span class="nt">&gt;</span>Wrapping<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-block btn-block btn-default"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">data-html=</span><span class="s">"true"</span> <span class="na">title=</span><span class="s">'&lt;i class="fa fa-inverse fa-calendar-o"&gt;&lt;/i&gt;
@@ -725,9 +710,8 @@
   Rich content
   <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre>
-    </figure>
+  </figure>
 
-  </div>
 </div>
 
         </section>

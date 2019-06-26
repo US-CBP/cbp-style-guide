@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -640,14 +626,13 @@
             <div class="pl-pattern">
   <h1>Tables</h1>
 
+  <p>Users need to see structured data in a manner that makes the data readable, scannable, and comparable.</p>
+
 <div style="max-width: 550px;">        
     <div class="alert alert-warning" role="alert">      
       <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <strong>CBP theme version 1.6.0 update</strong> Class <strong>cbp-table</strong> is replaced by class <strong>table</strong>.
     </div>       
 </div>
-
-  <h4 id="purpose">Purpose</h4>
-  <p>Users need to see structured data in a manner that makes the data readable, scannable, and comparable.</p>
 
   <h4 id="description">Description</h4>
   <p>Tables provide customizable views of tabular data with features including sorting and managing columns. Tables are useful when a collection of data requires vertical alignment through columns for quick scanning and discovery of information, as well as for data that with many attributes that requires sorting, grouping, and a user customizable display.</p>
@@ -673,18 +658,20 @@
     <li>Simple tables can have two levels of headers. Each header cell should have scope=”col” or scope=”row”.</li>
     <li>Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.</li>
     <li>When adding a title to a table, include it in a &lt;caption&gt; tag inside of the &lt;table&gt; element.
- </li>
+ 
+<br />
+<br /></li>
   </ul>
 
 </div>
 
 <div class="pl-pattern">
-  <h3 id="styles">Styles</h3>
+  <h3 id="examples">Examples</h3>
 
   <h4 id="standard">Standard</h4>
   <p>A standard table has subtle row borders.</p>
 
-  <h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: “table mdl-js-data-table”</small></h4>
+  <h4>Includes hover stylings with MDL additions <small>Just by using the classnames: “table mdl-js-data-table”</small></h4>
 
 <div class="pl-preview">
   <table class="table mdl-js-data-table">
@@ -791,7 +778,7 @@
   <h4 id="comfortable-table">Comfortable Table</h4>
   <p>A standard table with extra padding and has subtle row borders.</p>
 
-  <h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: “table table-comfortable mdl-js-data-table”</small></h4>
+  <h4>Includes hover stylings with MDL additions <small>Just by using the classnames: “table table-comfortable mdl-js-data-table”</small></h4>
 
 <div class="pl-preview">
   <table class="table table-comfortable mdl-js-data-table">
@@ -898,7 +885,7 @@
   <h4 id="condensed-table">Condensed Table</h4>
   <p>A standard table with less padding and has subtle row borders.</p>
 
-  <h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: “table table-condensed mdl-js-data-table”</small></h4>
+  <h4>Includes hover stylings with MDL additions <small>Just by using the classnames: “table table-condensed mdl-js-data-table”</small></h4>
 
 <div class="pl-preview">
   <table class="table table-condensed mdl-js-data-table">
@@ -1005,7 +992,7 @@
   <h4 id="borderless-table">Borderless Table</h4>
   <p>A standard table no border.</p>
 
-  <h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: “table table-borderless mdl-js-data-table”</small></h4>
+  <h4>Includes hover stylings with MDL additions <small>Just by using the classnames: “table table-borderless mdl-js-data-table”</small></h4>
 
 <div class="pl-preview">
   <table class="table table-borderless mdl-js-data-table">
@@ -1112,7 +1099,7 @@
   <h4 id="outline-table">Outline Table</h4>
   <p>A standard table with outside border.</p>
 
-  <h4>Includes Hover stylings with MDL additions <small>Just by using the classnames: “table table-outline mdl-js-data-table”</small></h4>
+  <h4>Includes hover stylings with MDL additions <small>Just by using the classnames: “table table-outline mdl-js-data-table”</small></h4>
 
 <div class="pl-preview">
   <table class="table table-outline mdl-js-data-table">
@@ -1324,7 +1311,7 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="headers">Headers</h3>
+  <h3 id="table-headers">Table Headers</h3>
 
   <h4 id="fixed">Fixed</h4>
 
@@ -1677,7 +1664,6 @@
 <div class="pl-pattern">
   <h3 id="sorting">Sorting</h3>
 
-  <h4 id="single-sorting">Single sorting</h4>
   <p>Clicking a header cell sets that column as the currently sorted column. The first click should sort <code class="highlighter-rouge">descending</code>, the second click should sort <code class="highlighter-rouge">ascending</code>.</p>
 
 <div class="pl-preview">
@@ -1784,123 +1770,6 @@
       <span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>
         <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/tbody&gt;</span>
-<span class="nt">&lt;/table&gt;</span></code></pre>
-  </figure>
-
-  <h4 id="multi-sorting">Multi sorting</h4>
-  <p>When a table is sorted by multiple columns, the sort order is indicated by the superscript numbers.</p>
-
-<div class="pl-preview">
-  <table role="grid" class="table table-sortable table-striped mdl-js-data-table">
-    <caption>Multi Sorting</caption>
-    <thead>
-      <tr role="row">
-        <th scope="col" role="columnheader" aria-sort="other" class="sortable active non-numeric">
-          Event
-          <i class="fa fa-caret-down text-muted"></i> <sup>1</sup>
-        </th>
-        <th scope="col" role="columnheader" aria-sort="none" class="sortable active">
-          Date
-          <i class="fa fa-caret-up text-muted non-numeric"></i> <sup>2</sup>
-        </th>
-        <th scope="col" class="non-numeric">Module</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row" class="non-numeric">user.create</th>
-        <td>
-          <span>10/21/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" class="non-numeric">user.create</th>
-        <td>
-          <span>10/19/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" class="non-numeric">user.register</th>
-        <td>
-          <span>10/21/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" class="non-numeric">user.register</th>
-        <td>
-          <span>10/18/14</span>
-        </td>
-        <td class="non-numeric">
-          <span>Users</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">role=</span><span class="s">"grid"</span> <span class="na">class=</span><span class="s">"table table-sortable table-striped mdl-js-data-table"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;caption&gt;</span>Multi Sorting<span class="nt">&lt;/caption&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr</span> <span class="na">role=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">role=</span><span class="s">"columnheader"</span> <span class="na">aria-sort=</span><span class="s">"other"</span> <span class="na">class=</span><span class="s">"sortable active non-numeric"</span><span class="nt">&gt;</span>
-        Event
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down text-muted"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;sup&gt;</span>1<span class="nt">&lt;/sup&gt;</span>
-      <span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">role=</span><span class="s">"columnheader"</span> <span class="na">aria-sort=</span><span class="s">"none"</span> <span class="na">class=</span><span class="s">"sortable active"</span><span class="nt">&gt;</span>
-        Date
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-up text-muted non-numeric"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;sup&gt;</span>2<span class="nt">&lt;/sup&gt;</span>
-      <span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Module<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-  <span class="nt">&lt;tbody&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.create<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>10/21/14<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Users<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.create<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>10/19/14<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Users<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.register<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>10/21/14<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Users<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>user.register<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td&gt;</span>
-        <span class="nt">&lt;span&gt;</span>10/18/14<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Users<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/tbody&gt;</span>
@@ -2022,7 +1891,7 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="row-action-buttons">Row action buttons</h3>
+  <h3 id="row-action-buttons">Row Action Buttons</h3>
   <p>Buttons with the <code class="highlighter-rouge">btn-hover</code> and <code class="highlighter-rouge">btn-icon-only</code> classes.</p>
 
 <div class="pl-preview">
@@ -2179,762 +2048,8 @@
 
 </div>
 
-<div class="pl-pattern">
-  <h3 id="column-customization">Column customization</h3>
-  <p>To provide column customization, add an icon to the top right corner of the table. Clicking on the icon will show the <code class="highlighter-rouge">Show and hide columns</code> dialog.</p>
+<p>&lt;/div&gt;</p>
 
-<div class="pl-preview">
-  <table class="table mdl-js-data-table">
-    <caption>Column Customization</caption>
-    <thead>
-      <tr>
-        <th scope="col" class="non-numeric">Project name</th>
-        <th scope="col" class="non-numeric">Description</th>
-        <th scope="col" >Price</th>
-        <th scope="col" class="table-config-column" title="Show and hide columns" data-toggle="tooltip">
-          <button type="button" data-container="body" data-target="#example_table_modal" data-toggle="modal" >
-          <i class="fa fa-ellipsis-h" ></i>
-          </button>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row" class="non-numeric">Invoice</th>
-        <td class="non-numeric">
-          <span>Add invoice confirmation</span>
-        </td>
-        <td colspan="2">
-          <span>$4,500</span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" class="non-numeric">Templates</th>
-        <td class="non-numeric">
-          <span>Refactor templates to use the new templating library</span>
-        </td>
-        <td colspan="2">
-          <span>$9,000</span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" class="non-numeric">Payments</th>
-        <td class="non-numeric">
-          <span>Process payments using third party api</span>
-        </td>
-        <td colspan="2">
-          <span>$5,400</span>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" class="non-numeric">Account Management</th>
-        <td class="non-numeric">
-          <span>Improve account management workflow</span>
-        </td>
-        <td colspan="2">
-          <span>$6,000</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <!-- Show and hide columns popup for table above -->
-  <div class="modal fade in" id="example_table_modal">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
-          </button>
-          <h4 class="modal-title">Show and hide columns</h4>
-        </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes0" class="mdl-checkbox__input" value="option0" />
-                  <span for="optionsCheckboxes0" class="mdl-checkbox__label">Select all</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes1" class="mdl-checkbox__input" value="option1" />
-                  <span for="optionsCheckboxes1" class="mdl-checkbox__label">Thumbnail</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes2" class="mdl-checkbox__input" value="option2" checked />
-                  <span for="optionsCheckboxes2" class="mdl-checkbox__label">Project name</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes3" class="mdl-checkbox__input" value="option3" />
-                  <span for="optionsCheckboxes3" class="mdl-checkbox__label">Project source</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes4" class="mdl-checkbox__input" value="option4" checked />
-                  <span for="optionsCheckboxes4" class="mdl-checkbox__label">Description</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes5" class="mdl-checkbox__input" value="option5"  />
-                  <span for="optionsCheckboxes5" class="mdl-checkbox__label">Project revision</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes6" class="mdl-checkbox__input" value="option6" checked />
-                  <span for="optionsCheckboxes6" class="mdl-checkbox__label">Price</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes7" class="mdl-checkbox__input" value="option7"  />
-                  <span for="optionsCheckboxes7" class="mdl-checkbox__label">Project Advisor</span>
-                </label>
-              </div>
-              <div class="checkbox">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                  <input type="checkbox" id="optionsCheckboxes8" class="mdl-checkbox__input" value="option8"  />
-                  <span for="optionsCheckboxes8" class="mdl-checkbox__label">Project Owner</span>
-                </label>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Done</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
-<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table mdl-js-data-table"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;caption&gt;</span>Column Customization<span class="nt">&lt;/caption&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Project name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"table-config-column"</span> <span class="na">title=</span><span class="s">"Show and hide columns"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-target=</span><span class="s">"#example_table_modal"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-ellipsis-h"</span> <span class="nt">&gt;&lt;/i&gt;</span>
-        <span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-  <span class="nt">&lt;tbody&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Invoice<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Templates<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Refactor templates to use the new templating library<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$9,000<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Payments<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>Account Management<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>Improve account management workflow<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span>$6,000<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/tbody&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="c">&lt;!-- Show and hide columns popup for table above --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade in"</span> <span class="na">id=</span><span class="s">"example_table_modal"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Show and hide columns<span class="nt">&lt;/h4&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes10"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option0"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes10"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Select all<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes11"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes11"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Thumbnail<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes12"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option2"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes12"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project name<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes13"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes13"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project source<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes14"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option4"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes14"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes5"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option5"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes15"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project revision<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes6"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option6"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes16"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes7"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option7"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes17"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project Advisor<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes8"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option8"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes18"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project Owner<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/form&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Done<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre>
-  </figure>
-
-  <h4 id="show-and-hide-columns-dialog">Show and hide columns dialog</h4>
-  <p>This dialog provides the ability to show/hide columns as desired.</p>
-
-<div class="pl-preview">
-<div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
-  <div class="modal-dialog modal-sm" style="width: 300px; max-width: 100%; padding: 20px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-        <span aria-hidden="true">&times;</span>
-        <span class="sr-only">Close</span>
-        </button>
-        <h4 class="modal-title">Show and hide columns</h4>
-      </div>
-      <div class="modal-body">
-        <form role="form">
-          <div class="form-group">
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes20" class="mdl-checkbox__input" value="option0" />
-                <span for="optionsCheckboxes20" class="mdl-checkbox__label">Select all</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes21" class="mdl-checkbox__input" value="option1" />
-                <span for="optionsCheckboxes21" class="mdl-checkbox__label">Thumbnail</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes22" class="mdl-checkbox__input" value="option2" checked />
-                <span for="optionsCheckboxes22" class="mdl-checkbox__label">Project name</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes23" class="mdl-checkbox__input" value="option3" />
-                <span for="optionsCheckboxes23" class="mdl-checkbox__label">Project source</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes24" class="mdl-checkbox__input" value="option4" checked />
-                <span for="optionsCheckboxes24" class="mdl-checkbox__label">Description</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes25" class="mdl-checkbox__input" value="option5"  />
-                <span for="optionsCheckboxes25" class="mdl-checkbox__label">Project revision</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes26" class="mdl-checkbox__input" value="option6" checked />
-                <span for="optionsCheckboxes26" class="mdl-checkbox__label">Price</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes27" class="mdl-checkbox__input" value="option7"  />
-                <span for="optionsCheckboxes27" class="mdl-checkbox__label">Project Advisor</span>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                <input type="checkbox" id="optionsCheckboxes28" class="mdl-checkbox__input" value="option8"  />
-                <span for="optionsCheckboxes28" class="mdl-checkbox__label">Project Owner</span>
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Done</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade in"</span> <span class="na">style=</span><span class="s">"display: block; position: relative; z-index: inherit;"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm"</span> <span class="na">style=</span><span class="s">"width: 300px; max-width: 100%; padding: 20px;"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Show and hide columns<span class="nt">&lt;/h4&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes30"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option0"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes30"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Select all<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes31"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes31"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Thumbnail<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes32"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option2"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes32"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project name<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes33"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes33"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project source<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes34"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option4"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes34"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes35"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option5"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes35"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project revision<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes36"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option6"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes36"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes37"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option7"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes37"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project Advisor<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"optionsCheckboxes38"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="na">value=</span><span class="s">"option8"</span>  <span class="nt">/&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">for=</span><span class="s">"optionsCheckboxes38"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__label"</span><span class="nt">&gt;</span>Project Owner<span class="nt">&lt;/span&gt;</span>
-              <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/form&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Done<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre>
-  </figure>
-
-</div>
-
-<!--
-<div class="pl-pattern">
-### Grouping
-
-Row grouping allows users to show and hide sets of rows that share a similar attribute.
-
-{::nomarkdown}
-<div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-      <table class="table mdl-js-data-table table-sortable">
-        <thead>
-          <tr>
-            <th style="width: 200px;" class="sortable active">
-              Module
-              <i class="fa fa-caret-down text-muted"></i>
-              <sup>1</sup>
-            </th>
-            <th class="sortable active">
-              Event
-              <i class="fa fa-caret-down text-muted"></i>
-              <sup>2</sup>
-            </th>
-            <th class="sortable active">
-              Date
-              <i class="fa fa-caret-up text-muted"></i>
-              <sup>3</sup>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-group">
-            <td class="non-numeric" colspan="3">
-              <i class="fa text-muted fa-angle-down" style="margin-right: 6px;"></i>
-              <strong>Module:</strong> User
-              <span style="color: #aaa;">(2)</span>
-            </td>
-          </tr>
-          <tr class="table-group">
-            <td class="non-numeric" style="padding-left: 20px;" colspan="3">
-              <i class="fa text-muted fa-angle-down" style="margin-right: 6px;"></i>
-              <strong>Event:</strong> Create
-              <span style="color: #aaa;">(2)</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span>Users</span>
-            </td>
-            <td>Create</td>
-            <td>
-              <span>10/21/14</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span>Users</span>
-            </td>
-            <td>Create</td>
-            <td>
-              <span>10/19/14</span>
-            </td>
-          </tr>
-          <tr class="table-group">
-            <td class="non-numeric" style="padding-left: 20px;" colspan="4">
-              <i class="fa text-muted fa-angle-right" style="margin-right: 6px;"></i>
-              <strong>Event:</strong> Register
-              <span style="color: #aaa;">(2)</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-</div>
-</div>
-{:/nomarkdown}
-
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table mdl-js-data-table table-sortable"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;thead&gt;</span>
-  <span class="nt">&lt;tr&gt;</span>
-    <span class="nt">&lt;th</span> <span class="na">style=</span><span class="s">"width: 200px;"</span> <span class="na">class=</span><span class="s">"sortable active"</span><span class="nt">&gt;</span>
-      Module
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down text-muted"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;sup&gt;</span>1<span class="nt">&lt;/sup&gt;</span>
-    <span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"sortable active"</span><span class="nt">&gt;</span>
-      Event
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down text-muted"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;sup&gt;</span>2<span class="nt">&lt;/sup&gt;</span>
-    <span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"sortable active"</span><span class="nt">&gt;</span>
-      Date
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-up text-muted"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;sup&gt;</span>3<span class="nt">&lt;/sup&gt;</span>
-    <span class="nt">&lt;/th&gt;</span>
-  <span class="nt">&lt;/tr&gt;</span>
-<span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;tbody&gt;</span>
-  <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa text-muted fa-angle-down"</span> <span class="na">style=</span><span class="s">"margin-right: 6px;"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;strong&gt;</span>Module:<span class="nt">&lt;/strong&gt;</span> User
-      <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color: #aaa;"</span><span class="nt">&gt;</span>(2)<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/td&gt;</span>
-  <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"padding-left: 20px;"</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa text-muted fa-angle-down"</span> <span class="na">style=</span><span class="s">"margin-right: 6px;"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;strong&gt;</span>Event:<span class="nt">&lt;/strong&gt;</span> Create
-      <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color: #aaa;"</span><span class="nt">&gt;</span>(2)<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/td&gt;</span>
-  <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;tr&gt;</span>
-    <span class="nt">&lt;td&gt;</span>
-      <span class="nt">&lt;span&gt;</span>Users<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;td&gt;</span>Create<span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;td&gt;</span>
-      <span class="nt">&lt;span&gt;</span>10/21/14<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/td&gt;</span>
-  <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;tr&gt;</span>
-    <span class="nt">&lt;td&gt;</span>
-      <span class="nt">&lt;span&gt;</span>Users<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;td&gt;</span>Create<span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;td&gt;</span>
-      <span class="nt">&lt;span&gt;</span>10/19/14<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/td&gt;</span>
-  <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span> <span class="na">style=</span><span class="s">"padding-left: 20px;"</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa text-muted fa-angle-right"</span> <span class="na">style=</span><span class="s">"margin-right: 6px;"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;strong&gt;</span>Event:<span class="nt">&lt;/strong&gt;</span> Register
-      <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color: #aaa;"</span><span class="nt">&gt;</span>(2)<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/td&gt;</span>
-  <span class="nt">&lt;/tr&gt;</span>
-<span class="nt">&lt;/tbody&gt;</span>
-<span class="nt">&lt;/table&gt;</span></code></pre></figure>
-
-</div>
-
-<div class="pl-pattern">
-### Expandable rows
-
-Expandable rows provide additional information about a row on demand.
-
-{::nomarkdown}
-<div class="pl-preview">
-<div style="padding: 40px; background: #fff;">
-                  <table data-pl-expandable-rows role="grid" class="table-selectable mdl-js-data-table">
-                    <thead>
-                      <tr role="row">
-                        <th scope="col" role="columnheader" class="col-md-4">
-                          <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="table-header-1">
-                            <input type="checkbox" id="table-header-1" class="mdl-checkbox__input" />
-                          </label>
-                        </th>
-                        <th scope="col"  class="mdl-data-table__cell--non-numeric" role="columnheader" aria-sort="none">Project name</th>
-                        <th scope="col"  class="mdl-data-table__cell--non-numeric" role="columnheader" aria-sort="none">Description</th>
-                        <th scope="col" role="columnheader" aria-sort="none">Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="col-md-4">
-                          <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[11]">
-                            <input type="checkbox" id="row[11]" class="mdl-checkbox__input" />
-                          </label>
-                        </td>
-                        <td class="non-numeric">
-                          <i class="fa fa-angle-right"></i> &nbsp;Invoice
-                        </td>
-                        <td class="non-numeric">
-                          <span>Add invoice confirmation</span>
-                        </td>
-                        <td>
-                          <span>$4,500</span>
-                        </td>
-                      </tr>
-                      <tr data-pl-detail-row style="display: none;">
-                        <td colspan="4">
-                          <dl class="dl-horizontal" style="margin-bottom: 0;">
-                            <dt>Examiner</dt>
-                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                            <dt>SPE (multiple)</dt>
-                            <dd>John Olaskey</dd>
-                            <dt>Applicants</dt>
-                            <dd>Roman Amirpur</dd>
-                            <dt>Inventors</dt>
-                            <dd>Disney Dale</dd>
-                            <dt>Law firm</dt>
-                            <dd>Clayton & Clayton Associates</dd>
-                          </dl>
-                        </td>
-                      </tr>
-                      <tr aria-expanded="true">
-                        <td class="col-md-4">
-                          <label class="cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="row[12]">
-                            <input type="checkbox" id="row[12]" class="mdl-checkbox__input" />
-                          </label>
-                        </td>
-                        <td class="non-numeric">
-                          <i class="fa fa-angle-right"></i> &nbsp;Payments
-                        </td>
-                        <td class="non-numeric">
-                          <span>Process payments using third party api</span>
-                        </td>
-                        <td>
-                          <span>$5,400</span>
-                        </td>
-                      </tr>
-                      <tr data-pl-detail-row style="display: table-row;">
-                        <td colspan="4">
-                          <dl class="dl-horizontal" style="margin-bottom: 0;">
-                            <dt>BOL Type</dt>
-                            <dd>B - Booking</dd>
-                            <dt>MOT</dt>
-                            <dd>11 - Vessel(Containerized)</dd>
-                            <dt>Carrier</dt>
-                            <dd>JONN</dd>
-                            <dt>Conveyance</dt>
-                            <dd>REG O BOL B2</dd>
-                            <dt>Voyage/Trip/Flight</dt>
-                            <dd>0512A000001</dd>
-                          </dl>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-</div>
-</div>
-{:/nomarkdown}
-
-
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;table</span> <span class="na">data-pl-expandable-rows</span> <span class="na">role=</span><span class="s">"grid"</span> <span class="na">class=</span><span class="s">"table-selectable mdl-js-data-table"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;thead&gt;</span>
-      <span class="nt">&lt;tr</span> <span class="na">role=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">role=</span><span class="s">"columnheader"</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span> <span class="na">for=</span><span class="s">"table-header-1"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"table-header-1"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="nt">/&gt;</span>
-          <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;/th&gt;</span>
-        <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span>  <span class="na">class=</span><span class="s">"mdl-data-table__cell--non-numeric"</span> <span class="na">role=</span><span class="s">"columnheader"</span> <span class="na">aria-sort=</span><span class="s">"none"</span><span class="nt">&gt;</span>Project name<span class="nt">&lt;/th&gt;</span>
-        <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span>  <span class="na">class=</span><span class="s">"mdl-data-table__cell--non-numeric"</span> <span class="na">role=</span><span class="s">"columnheader"</span> <span class="na">aria-sort=</span><span class="s">"none"</span><span class="nt">&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
-        <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">role=</span><span class="s">"columnheader"</span> <span class="na">aria-sort=</span><span class="s">"none"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;/thead&gt;</span>
-    <span class="nt">&lt;tbody&gt;</span>
-      <span class="nt">&lt;tr&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span> <span class="na">for=</span><span class="s">"row[11]"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"row[11]"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="nt">/&gt;</span>
-          <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-angle-right"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span>Invoice
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Add invoice confirmation<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$4,500<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr</span> <span class="na">data-pl-detail-row</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span> <span class="na">style=</span><span class="s">"margin-bottom: 0;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>Examiner<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>IP, Sikyin / 69776 / 1742<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>SPE (multiple)<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>John Olaskey<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>Applicants<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>Roman Amirpur<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>Inventors<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>Disney Dale<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>Law firm<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>Clayton <span class="err">&amp;</span> Clayton Associates<span class="nt">&lt;/dd&gt;</span>
-          <span class="nt">&lt;/dl&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"cbp-checkbox mdl-js-checkbox mdl-js-ripple-effect"</span> <span class="na">for=</span><span class="s">"row[12]"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"row[12]"</span> <span class="na">class=</span><span class="s">"mdl-checkbox__input"</span> <span class="nt">/&gt;</span>
-          <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-angle-right"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span>Payments
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"non-numeric"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Process payments using third party api<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-        <span class="nt">&lt;td&gt;</span>
-          <span class="nt">&lt;span&gt;</span>$5,400<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-      <span class="nt">&lt;tr</span> <span class="na">data-pl-detail-row</span> <span class="na">style=</span><span class="s">"display: table-row;"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span> <span class="na">style=</span><span class="s">"margin-bottom: 0;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>BOL Type<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>B - Booking<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>MOT<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>11 - Vessel(Containerized)<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>Carrier<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>JONN<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>Conveyance<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>REG O BOL B2<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;dt&gt;</span>Voyage/Trip/Flight<span class="nt">&lt;/dt&gt;</span>
-            <span class="nt">&lt;dd&gt;</span>0512A000001<span class="nt">&lt;/dd&gt;</span>
-          <span class="nt">&lt;/dl&gt;</span>
-        <span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;/tbody&gt;</span>
-  <span class="nt">&lt;/table&gt;</span></code></pre></figure>
-
-
-</div>
-
--->
 
         </section>
     </div>

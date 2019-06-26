@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Labels and badges - CBP Style Guide</title>
+        <title>Labels and Badges - CBP Style Guide</title>
 
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="theme-color" content="#004c97">
 
-        <meta property="og:title" content="Labels and badges">
+        <meta property="og:title" content="Labels and Badges">
         <meta property="og:description" content="">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  class="active"  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -638,6 +624,14 @@
         <section role="region" aria-label="pattern library content" class="pl-content">
             
             <div class="pl-pattern">
+
+  <h3>Labels and Badges</h3>
+
+  <p>Labels show concise metadata in a compact format.</p>
+
+</div>
+
+<div class="pl-pattern">
   <h3 id="labels">Labels</h3>
 
   <p>Labels are generally used to provide emphasis on a characteristic of an object, e.g., the category of a document. They are generally actionless.</p>
@@ -699,54 +693,20 @@
 <div class="pl-pattern">
   <h3 id="badges">Badges</h3>
 
-  <p>Badges are generally used for emphasizing a numerical characteristic of an object, e.g., the number of unread items in a folder.</p>
+  <p>Badges provide a method to highlight a count of an element either next to it or inside the element itself.</p>
 
 <div class="pl-preview">
     <div class="panel">
       <div class="panel-body">
-        <span class="badge default">5</span>
-        <span class="badge">200</span>
-        <span class="badge">0</span>
+        <span>People <span class="badge default">5</span>&nbsp;</span>
+        <span>Cats <span class="badge">200</span>&nbsp;</span>
       </div>
     </div>
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge default"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>200<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;</span></code></pre>
-  </figure>
-
-<div class="pl-preview">
-<div class="panel">
-  <div class="panel-body">
-    <ul class="list-group" style="max-width: 150px;">
-      <li class="list-group-item">
-        Inbox
-        <span class="badge pull-right">1,932</span>
-      </li>
-      <li class="list-group-item active">
-        Outbox
-        <span class="badge pull-right">2</span>
-      </li>
-      <li class="list-group-item">Spam</li>
-    </ul>
-  </div>
-</div>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span> <span class="na">style=</span><span class="s">"max-width: 150px;"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
-    Inbox
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>1,932<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span>
-    Outbox
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Spam<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;span&gt;</span>People <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge default"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span&gt;</span>Cats <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>200<span class="nt">&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/span&gt;</span></code></pre>
   </figure>
 
 </div>

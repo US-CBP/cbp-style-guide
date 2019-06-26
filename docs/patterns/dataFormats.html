@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Data formats - CBP Style Guide</title>
+        <title>Data Formats - CBP Style Guide</title>
 
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="theme-color" content="#004c97">
 
-        <meta property="og:title" content="Data formats">
+        <meta property="og:title" content="Data Formats">
         <meta property="og:description" content="">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -123,8 +123,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -132,8 +130,6 @@
                                     </li>
                                 
                             
-                        
-                    
                         
                     
                         
@@ -217,6 +213,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -240,16 +238,6 @@
                                 
                                     <li  >
                                           <a  href="../../docs/components/accordions.html"> Accordions </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/alerts.html"> Alerts and notifications </a>
                                     </li>
                                 
                             
@@ -296,16 +284,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/components/dialogs.html"> Dialogs </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                     
@@ -313,7 +291,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/formControls.html"> Form controls </a>
+                                          <a  href="../../docs/components/formControls.html"> Form Controls </a>
                                     </li>
                                 
                             
@@ -343,7 +321,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and badges </a>
+                                          <a  href="../../docs/components/labelsAndBadges.html"> Labels and Badges </a>
                                     </li>
                                 
                             
@@ -365,7 +343,17 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/metadata.html"> Metadata </a>
+                                          <a  href="../../docs/components/modals.html"> Modals </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                          <a  href="../../docs/components/notifications.html"> Notifications </a>
                                     </li>
                                 
                             
@@ -421,7 +409,7 @@
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/components/stepIndicators.html"> Step indicators </a>
+                                          <a  href="../../docs/components/stepIndicators.html"> Step Indicators </a>
                                     </li>
                                 
                             
@@ -481,8 +469,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
@@ -506,7 +492,7 @@
                             
                                 
                                     <li  class="active"  >
-                                          <a  href="../../docs/patterns/dataFormats.html"> Data formats </a>
+                                          <a  href="../../docs/patterns/dataFormats.html"> Data Formats </a>
                                     </li>
                                 
                             
@@ -523,12 +509,10 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  >
-                                          <a  href="../../docs/patterns/fileUpload.html"> File upload </a>
+                                          <a  href="../../docs/patterns/fileUpload.html"> File Upload </a>
                                     </li>
                                 
                             
@@ -558,6 +542,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -638,7 +624,16 @@
         <section role="region" aria-label="pattern library content" class="pl-content">
             
             <div class="pl-pattern">
-  <h3 id="date-and-time">Date and time</h3>
+  <h3>Date Formats</h3>
+
+  <p>To maintain consistency across applications, use the following formats and guidelines.</p>
+
+  <p><br /></p>
+
+</div>
+
+<div class="pl-pattern">
+  <h3 id="date-and-time">Date and Time</h3>
 
   <h4 id="formats">Formats</h4>
 <table class="table table-bordered" style="max-width: 700px;">
@@ -751,7 +746,274 @@
 </div>
 
 <div class="pl-pattern">
-  <h3 id="file-sizes">File sizes</h3>
+  <h3 id="lists">Lists</h3>
+
+  <h4 id="unordered">Unordered</h4>
+<div class="pl-preview">
+<ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3
+        <ul>
+            <li>Nested list item 1 </li>
+            <li>Nested list item 2 </li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>List item 1<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>List item 2<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>List item 3
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Nested list item 1 <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Nested list item 2 <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+  </figure>
+
+  <h4 id="ordered">Ordered</h4>
+<div class="pl-preview">
+<ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3
+        <ol>
+            <li>Nested list item 1 </li>
+            <li>Nested list item 2 </li>
+        </ol>
+    </li>
+</ol>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>List item 1<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>List item 2<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>List item 3
+        <span class="nt">&lt;ol&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Nested list item 1 <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Nested list item 2 <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre>
+  </figure>
+
+</div>
+
+<div class="pl-pattern">
+  <h3 id="metadata">Metadata</h3>
+
+  <p>The metadata pattern can be used for showing label/value pairs.</p>
+
+  <p><strong>Do</strong></p>
+
+  <ul>
+    <li>Consistently use <code class="highlighter-rouge">#</code> or <code class="highlighter-rouge">number</code> in labels</li>
+    <li>Indicate empty/blank values with an em-dash (—)</li>
+    <li>Reflow columns based on available screen real estate</li>
+    <li>Sentence case labels</li>
+  </ul>
+
+  <h4 id="horizontal">Horizontal</h4>
+  <p>Useful for shorter labels/values.</p>
+
+<div class="pl-preview">
+    <div class="row">
+      <div class="col-sm-4">
+        <dl>
+          <dt>BOL Type</dt>
+          <dd>B - Booking</dd>
+          <dt>MOT</dt>
+          <dd>11 - Vessel(Containerized)</dd>
+          <dt>Carrier</dt>
+          <dd>JONN</dd>
+          <dt>Conveyance</dt>
+          <dd>REG O BOL B2</dd>
+          <dt>Voyage/Trip/Flight</dt>
+          <dd>0512A000001</dd>
+        </dl>
+      </div>
+      <div class="col-sm-4">
+        <dt>Entry Number (Type)</dt>
+        <dd>BVA-01070040 (01)</dd>
+        <dt>Bill Number (Type)</dt>
+        <dd>JONN-150512MC0202 (B)</dd>
+        <dt>Entry Type/dt>
+        <dd>01 - Consumption: Free and Dutiable</dd>
+        <dt>Port of Entry</dt>
+        <dd>
+        <a href="">
+          5206 <i class="fa fa-external-link"></i>
+        </a>
+        </dd>
+        <dt>Importer</dt>
+        <dd>--</dd>
+      </div>
+      <div class="col-sm-4">
+        <dl>
+          <dt>Bond Type</dt>
+          <dd>9 - Single Transaction</dd>
+          <dt>Entry Filing Date</dt>
+          <dd>07/17/2015 13:40:22</dd>
+          <dt>Status</dt>
+          <dd>1</dd>
+          <dt>Shipment</dt>
+          <dd>
+          <a href="">
+            5004672569 <i class="fa fa-external-link"></i>
+          </a>
+          </dd>
+        </dl>
+      </div>
+    </div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;dl&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>BOL Type<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>B - Booking<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>MOT<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>11 - Vessel(Containerized)<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Carrier<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>JONN<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Conveyance<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>REG O BOL B2<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Voyage/Trip/Flight<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>0512A000001<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Entry Number (Type)<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>BVA-01070040 (01)<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Bill Number (Type)<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>JONN-150512MC0202 (B)<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Entry Type/dt&gt;
+    <span class="nt">&lt;dd&gt;</span>01 - Consumption: Free and Dutiable<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Port of Entry<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+      5206 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-external-link"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>Importer<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>--<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;dl&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Bond Type<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>9 - Single Transaction<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Entry Filing Date<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>07/17/2015 13:40:22<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Status<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>1<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Shipment<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+        5004672569 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-external-link"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </figure>
+
+  <h4 id="vertical">Vertical</h4>
+  <p>Useful for longer labels/values.</p>
+
+<div class="pl-preview">
+    <div class="row">
+      <div class="col-md-4">
+        <dl class="dl-horizontal">
+          <dt>BOL Type</dt>
+          <dd>B - Booking</dd>
+          <dt>MOT</dt>
+          <dd>11 - Vessel(Containerized)</dd>
+          <dt>Carrier</dt>
+          <dd>JONN</dd>
+        </dl>
+      </div>
+      <div class="col-md-4">
+        <dl class="dl-horizontal">
+          <dt>Entry Type (Type)</dt>
+          <dd>01 - Consumption: Free and Dutiable</dd>
+          <dt>Port of Entry</dt>
+          <dd>
+          <a href="">
+            5206
+            <i class="fa fa-external-link"></i>
+          </a>
+          </dd>
+          <dt>Importer</dt>
+          <dd>--</dd>
+        </dl>
+      </div>
+      <div class="col-md-4">
+        <dl class="dl-horizontal">
+          <dt>Bond Type</dt>
+          <dd>9 - Single Transaction</dd>
+          <dt>Entry Filing Date</dt>
+          <dd>07/17/2015 13:40:22</dd>
+          <dt>Conveyance</dt>
+          <dd>REG O BOL B2</dd>
+          <dt>Voyage/Trip/Flight</dt>
+          <dd>0512A000001</dd>
+        </dl>
+      </div>
+    </div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>BOL Type<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>B - Booking<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>MOT<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>11 - Vessel(Containerized)<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Carrier<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>JONN<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Entry Type (Type)<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>01 - Consumption: Free and Dutiable<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Port of Entry<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+        5206
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-external-link"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Importer<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>--<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Bond Type<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>9 - Single Transaction<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Entry Filing Date<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>07/17/2015 13:40:22<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Conveyance<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>REG O BOL B2<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Voyage/Trip/Flight<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>0512A000001<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </figure>
+
+</div>
+
+<div class="pl-pattern">
+  <h3 id="file-sizes">File Sizes</h3>
 
   <ul>
     <li>340 KB (round to nearest KB)</li>

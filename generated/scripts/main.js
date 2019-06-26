@@ -373,12 +373,12 @@ $(document).ready(function () {
               title: 'Hopscotch Tour Example',
               content: 'This is the header of my page.',
               target: 'tour',
-              placement: 'top'
+              placement: 'left'
           },
           {
               title: 'Purpose',
               content: 'Example of tour.',
-              target: 'purpose',
+              target: 'description',
               placement: 'bottom'
           }, {
               title: 'Navigation',
