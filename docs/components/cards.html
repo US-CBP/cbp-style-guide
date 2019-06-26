@@ -626,22 +626,23 @@
             <div class="pl-pattern">
   <h3>Cards</h3>
 
-  <p>Cards are a versatile, self-contained, interactive elements that group various pieces of information and actions around a single coherent topic. They are meant to be easily scannable and do not give more detail than is necessary for a user to quickly determine actionable information. This component distinguishes itself from other structural elements in that it is designed to have a more dramatic hierarchy and may include graphics and images that occupy a large proportion of the overall size of the element.</p>
-
-  <p>This component exists as a direct counterpart to its real-world equivalent. When designing cards, it can be helpful to imagine these elements in a real, tangible form. This will help maintain the intuitive advantage this component has. Cards are better suited to situations where browsing multiple options is more effective than searching in discovery. The real value to cards is their versatility. They can be sorted, stacked, turned over, made into dashboards, and many other interesting applications.</p>
-
+  <p>Cards are a versatile, self-contained, interactive elements that group various pieces of information and actions around a single coherent topic. They are meant to be easily scannable and do not give more detail than is necessary for a user to quickly determine actionable information. This component distinguishes itself from other structural elements in that it is designed to have a more dramatic hierarchy and may include graphics and images that occupy a large proportion of the overall size of the element. 
+</p>
+  <p>This component exists as a direct counterpart to its real-world equivalent. When designing cards, it can be helpful to imagine these elements in a real, tangible form. This will help maintain the intuitive advantage this component has. Cards are better suited to situations where browsing multiple options is more effective than searching in discovery. The real value to cards is their versatility. They can be sorted, stacked, turned over, made into dashboards, and many other interesting applications.
+</p>
   <h4 id="behaviors">Behaviors</h4>
 
-  <p>Nesting cards inside other structural elements should be avoided. If a grouping of cards is of a similar nature, they should all follow the same structure in their content. If the content of a grouping of cards requires direct comparison, use a different component such as a structured list or data table (for example if the user would need to compare two like elements of cards such as a time stamp that would be much more difficult to do with the separation provided in cards).</p>
+  <p>Nesting cards inside other structural elements should be avoided. If a grouping of cards is of a similar nature, they should all follow the same structure in their content. If the content of a grouping of cards requires direct comparison, use a different component such as a structured list or data table (for example if the user would need to compare two like elements of cards such as a time stamp that would be much more difficult to do with the separation provided in cards). 
+</p>
+  <p>If the card itself is the navigation (you click the card, it triggers an action) then the elements contained within should be severely reduced and there should be clear visual cues that this is the intended method of interactivity. Otherwise interactive elements on the card should follow logical reading order. 
+</p>
+  <p>Card collections should only scroll in one direction, vertical or horizontal, but not both at the same time. Card contained in collection of similar choices should be of the same height and width to create a cohesive collection. If information on a card exceeds its allotted space, it may truncate and be expanded. Once expanded, it may exceed the grouping’s height and width as long as it is in its expanded state. 
+</p>
+  <p>As a general rule no more than one card should be expanded at any point in time. Never implement a scroll inside of a card ever. This can create navigation traps especially in touch-enabled devices. Cards should be discouraged when trying to navigate a large number of items, lists usually perform better here. Cards should not be used to replace image galleries where scanning a grid of images is more effective.
+</p>
 
-  <p>If the card itself is the navigation (you click the card, it triggers an action) then the elements contained within should be severely reduced and there should be clear visual cues that this is the intended method of interactivity. Otherwise interactive elements on the card should follow logical reading order.</p>
-
-  <p>Card collections should only scroll in one direction, vertical or horizontal, but not both at the same time. Card contained in collection of similar choices should be of the same height and width to create a cohesive collection. If information on a card exceeds its allotted space, it may truncate and be expanded. Once expanded, it may exceed the grouping’s height and width as long as it is in its expanded state.</p>
-
-  <p>As a general rule no more than one card should be expanded at any point in time. Never implement a scroll inside of a card ever. This can create navigation traps especially in touch-enabled devices. Cards should be discouraged when trying to navigate a large number of items, lists usually perform better here. Cards should not be used to replace image galleries where scanning a grid of images is more effective.</p>
-
-  <p>When designing cards keep the number of elements to a minimum, remember visual distinction is key. Cluttered interfaces will not be effective. Content should have a healthy interior padding inside of the card to avoid visual tangents and keep the card content legible.</p>
-
+  <p>When designing cards keep the number of elements to a minimum, remember visual distinction is key. Cluttered interfaces will not be effective. Content should have a healthy interior padding inside of the card to avoid visual tangents and keep the card content legible. 
+</p>
   <p> </p>
 
 </div>
