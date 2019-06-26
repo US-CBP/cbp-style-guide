@@ -3,7 +3,10 @@ title: "Forms"
 ---
 
 <div class="pl-pattern">
-### Overview
+
+<h3>Forms</h3>
+
+Forms are a grouping of input controls that allow a user to submit information to your application.
 
 __Do__
 
@@ -24,16 +27,13 @@ __Don't__
 
 <div class="pl-pattern">
 
-### Field Label Combinations
-
-Combinations of Field Labels.
+### Form Field Labels
 
 __Do__
 
 - Ensure that clicking on a label focuses the corresponding input
 - Use sentence capitalization for labels
-- Use concise labels name
-- Use the user's language for labels
+- Use concise label names
 - Be consistent with label positioning (above/beside)
 - Be consistent with questions or statements labels
 
@@ -86,13 +86,10 @@ __Don't__
 </div>
 
 <div class="pl-pattern">
-### Required fields
-Required fields are generally marked with an asterisk. For external, public facing forms, put a `* indicates required` message. For internal applications containing many forms or targeting power users, the `* indicates required` may not be necessary. Ensure that required fields are [validated](#form-validation) with appropriate feedback.
+### Required Fields
+Required fields should be marked as required.
 
-If the majority of the fields are required, consider adding `(optional)` to the optional fields instead of asterisks on the required field. 
-
-#### Vertically aligned labels
-When labels are vertically aligned, the asterisk is placed on the right.
+#### Examples
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -139,7 +136,7 @@ When labels are vertically aligned, the asterisk is placed on the right.
 </div>
 
 <div class="pl-pattern">
-### Form validation
+### Form Validation
 
 There are two main types of form validation, often used together.
 
@@ -202,7 +199,7 @@ __Don't__
 </div>
 
 <div class="pl-pattern">
-### Help text
+### Help Text
 
 Help text can be placed at the top of the form, under the heading of a form group, under an individual form field, or as a popover when the field is focused.
 
@@ -263,7 +260,7 @@ Help text can be placed at the top of the form, under the heading of a form grou
 
 <div class="pl-pattern">
 
-### Input character limits
+### Input Character Limits
 
 Most input fields have technical character limits. The system should handle this gracefully in all scenarios. 
 
@@ -291,11 +288,6 @@ __Text area__
   </div>
   <h4>Textarea</h4>
   <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-    <label for="ta1" class="mdl-textfield__label">Description</label>
-    <textarea class="mdl-textfield__input" id="ta1" rows="3" data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 " class="form-control form-control-width-fill">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
-    <p class="mdl-textfield__counter"></p>
-  </div>
-  <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
     <label for="ta2" class="mdl-textfield__label">Description</label>
     <textarea class="mdl-textfield__input" id="ta2" rows="3" class="form-control form-control-width-fill"
     data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 "></textarea>
@@ -318,11 +310,6 @@ __Text area__
   </div>
   <h4>Textarea</h4>
   <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-    <label for="ta1" class="mdl-textfield__label">Description</label>
-    <textarea class="mdl-textfield__input" id="ta1" rows="3" data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 " class="form-control form-control-width-fill">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
-    <p class="mdl-textfield__counter"></p>
-  </div>
-  <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
     <label for="ta2" class="mdl-textfield__label">Description</label>
     <textarea class="mdl-textfield__input" id="ta2" rows="3" class="form-control form-control-width-fill"
     data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 "></textarea>
@@ -339,7 +326,7 @@ __Text area__
 These examples show various form configurations.
 
 
-#### Various form elements
+#### Various Form Elements
 
 
 {::nomarkdown}
@@ -358,10 +345,6 @@ These examples show various form configurations.
         <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield is-required">
           <label class="mdl-textfield__label" for="fn12">First name <span class="required-field"></span></label>
           <input type="text" class="mdl-textfield__input" id="fn12" value="John" required aria-required="true">
-        </div>
-        <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield is-required">
-          <label class="mdl-textfield__label" for="mn12">Middle name <span class="required-field"></span></label>
-          <input type="text" class="mdl-textfield__input" id="mn12" required aria-required="true">
         </div>
         <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield is-required">
           <label class="mdl-textfield__label" for="ln12">Last name <span class="required-field"></span></label>

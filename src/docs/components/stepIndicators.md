@@ -1,12 +1,11 @@
 ---
-title: "Step indicators"
-preview: false
+title: "Step Indicators"
 ---
 
 <div class="pl-pattern">
-<h3>Step indicators</h3>
+<h3>Step Indicators</h3>
 
-Step indicators are used to represent an ordered, sequential process. They can be used as navigation, or just as a visual indicator for where a user is within a process.
+The Step Indicator is a visual representation of a user’s progress through a set of steps in order to complete a specified process. This should be used when certain tasks are long and need to be broken up into manageable chunks.
 
 #### Horizontal
 

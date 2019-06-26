@@ -6,9 +6,7 @@ title: "Buttons"
 
 <h3>Buttons</h3>
 
-Buttons are used as action triggers. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.
-
-All button labels are sentence case. Labels should be as short as possible while clearly explaining what will happen when the button is clicked.
+<p>Buttons are mildly skeuomorphic, interactive elements that utilize shape and color to guide users to take actions or make choices. They should have a clear and appropriate verb that describes the choice the user is being presented with. Icons may be used in conjunction with text, but they must be contextually appropriate and send the same message if the text were hidden.</p>
 
 &nbsp;
 
@@ -120,32 +118,6 @@ Use the `btn-block` class for buttons that fill the width of their container. Th
 
 {% highlight html %}
 <button type="button" class="btn btn-default btn-block">Block level</button>
-{% endhighlight %}
-
-</div>
-
-<div class="pl-pattern">
-
-### Button Groups
-
-Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the `btn-group-lg`, `btn-group-sm`, and `btn-group-xs` classes.
-
-{::nomarkdown}
-<div class="pl-preview">
-    <div class="btn-group">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Middle</button>
-        <button type="button" class="btn btn-default">Right</button>
-    </div>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<div class="btn-group">
-    <button type="button" class="btn btn-default">Left</button>
-    <button type="button" class="btn btn-default">Middle</button>
-    <button type="button" class="btn btn-default">Right</button>
-</div>
 {% endhighlight %}
 
 </div>

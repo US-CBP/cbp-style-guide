@@ -3,13 +3,22 @@ title: "Colors"
 ---
 
 <div class="pl-pattern">
-### Color Palette
+<h3>Colors</h3>
 
-This palette is designed to create a consistent look and feel across products. The palette is influenced by the official Department of Homeland Security brand colors, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors &mdash; combined with clear hierarchy, good information design, and ample white space &mdash; should aid users in ease of use and quick navigation. This is a simple, minimalist color palette. Shades of blue dominate, providing a neutral backdrop on which brighter shades, clean type treatment, and bright white content areas "pop" on the page.
+<p>This palette is designed to create a consistent look and feel across products. The palette is influenced by the official Department of Homeland Security brand colors, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors &mdash; combined with clear hierarchy, good information design, and ample white space &mdash; should aid users in ease of use and quick navigation. This is a simple, minimalist color palette. Shades of blue dominate, providing a neutral backdrop on which brighter shades, clean type treatment, and bright white content areas "pop" on the page.</p>
 
-<b>Attention - </b>Adherence to 508 TAccessibility policies is the responsibility of the application team. We are continually working to ensure the CBP Theme meets established 508 guidelines; however, each application must perform an official assessment with a DHS 508 Trusted Tester before launching your application into production.
+<p><b>Attention - </b>Adherence to 508 Accessibility policies is the responsibility of the application team. We are continually working to ensure the CBP Theme meets established 508 guidelines; however, each application must perform an official assessment with a DHS 508 Trusted Tester before launching your application into production.</p>
 
-#### Primary Colors
+<br/>
+
+</div>
+
+<div class="pl-pattern">
+
+### Color Palettes
+
+#### Primary Color Palette 
+
 These are the primary colors used for Common Framework UI elements. The primary colors have semantic meanings associated with them.
 
 
@@ -43,7 +52,7 @@ These are the primary colors used for Common Framework UI elements. The primary 
 </div>
 {:/nomarkdown}
 
-#### Subtle Colors
+#### Subtle Color Palette
 These are the subtle colors used for Common Framework UI elements. The subtle colors have semantic meanings associated with them.
 
 
@@ -77,7 +86,7 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
 </div>
 {:/nomarkdown}
 
-#### Grays
+#### Gray Color Palette
 
 {::nomarkdown}
 <div class="pl-palette">
@@ -126,7 +135,7 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
 </div>
 <div class="pl-pattern">
 ### Section 508 Color Combinations
-This Color Combination palette provides examples of 508-approved and illegal text-to-color patterns.
+This color combination palette provides examples of 508-approved and illegal text-to-color patterns.
 
 
 {::nomarkdown}
@@ -283,7 +292,7 @@ This Color Combination palette provides examples of 508-approved and illegal tex
 
 ### Data Visualization Palette
 
-This is the full CBP Theme color palette. However, many of these are rarely used for UI elements.
+This palette is made up of primary and supplementary colors to be used in data visualizations such as charts and graphs.
 
 {::nomarkdown}
 <div class="pl-palette">

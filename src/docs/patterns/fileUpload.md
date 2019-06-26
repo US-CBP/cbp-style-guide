@@ -1,9 +1,17 @@
 ---
-title: "File upload"
-preview: true
+title: "File Upload"
 ---
+
 <div class="pl-pattern">
-### Single file upload
+<h3>File Upload</h3>
+
+<p>This component allows a user to browse their local device to upload a file with an acceptable file extension and size limit.</p>
+&nbsp;
+
+</div>
+
+<div class="pl-pattern">
+### Single File Upload
 Single file upload, where the file is uploaded when the form is submitted. 
 
 
@@ -44,7 +52,7 @@ Single file upload, where the file is uploaded when the form is submitted.
 </div>
 
 <div class="pl-pattern">
-### Multi file upload
+### Multi File Upload
 This shows how to facilitate uploading multiple files to the same field (e.g., an attachments field), where the files are uploaded as soon as they're selected rather than when the form is submitted. 
 
 

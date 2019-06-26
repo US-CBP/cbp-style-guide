@@ -5,15 +5,12 @@ title: "Tooltips"
 <div class="pl-pattern">
 <h3>Tooltips</h3>
 
-#### Purpose
-Users need additional, potentially optional information on demand. 
+These hints should be placed when there is additional helpful information that can be displayed to assist a user in making a decision. 
 
 #### Description
-Tooltips provide information when an element is hovered over.
 
 - Tooltips are attached to an element and appear when the element is hovered over
-- The show and hide delays of a tooltip may vary depending on the need, but the default is 200ms to show and 0ms to hide
-- Tooltips cannot be interacted with
+- Tooltips have no actionable elements 
 
 Use tooltips for:
 
@@ -61,6 +58,8 @@ Tooltips can be positioned either above, below, to the left, or to the right of 
   <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip below">Position below</button>
 </div>
 {% endhighlight %}
+</div>
+
 <div class="pl-pattern">
 ### Content
 The content of a tooltip can vary. It's best to keep it to a few words.

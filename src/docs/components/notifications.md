@@ -1,16 +1,27 @@
 ---
-title: "Alerts and notifications"
+title: "Notifications"
 ---
 
 <div class="pl-pattern">
-### Contextual Alerts
 
-#### Purpose
-Users need to be aware of important information related to their current activity.
+<h3>Notifications</h3>
+
+<p>Notification provide the user with feedback about various system processes that are occurring.</p>
+
+<br/>
+
+</div>
+
+<div class="pl-pattern">
+
+### Inline Notifications
+
+Inline notifications appear near an interactive element and describe the status of the action taken usually to indicate an error has occurred. They must be dismissed or eliminated by taking action. 
+
 
 #### Description
 
-- Contextual alerts are positioned above the area or form they relate to
+- Inline notifications are positioned above the area or form they relate to
 - They are often triggered by a user interaction
 - They can be closable and can have other action buttons or links
 - Alerts with low importance (info or success) can close automatically after 5 seconds (if desired).
@@ -115,8 +126,7 @@ __Types:__
 <div class="pl-pattern">
 ### System Notifications
 
-#### Purpose
-Users need to be aware of important information related to the system.
+System notifications (Toast Notifications) appear in the top-right of the screen to display short messages about a process happening in the background of a system and not necessarily tied to a preceding action. They are time based and disappear on their own. 
 
 #### Description
 

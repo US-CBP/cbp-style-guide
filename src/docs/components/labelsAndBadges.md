@@ -1,6 +1,16 @@
 ---
-title: "Labels and badges"
+title: "Labels and Badges"
 ---
+
+<div class="pl-pattern">
+
+<h3>Labels and Badges</h3>
+
+<p>Labels show concise metadata in a compact format.</p>
+
+&nbsp;
+
+</div>
 
 <div class="pl-pattern">
 ### Labels
@@ -68,59 +78,22 @@ Use subtle labels when labels are going to be repeated in a grid or list
 <div class="pl-pattern">
 ### Badges
 
-Badges are generally used for emphasizing a numerical characteristic of an object, e.g., the number of unread items in a folder. 
-
+Badges provide a method to highlight a count of an element either next to it or inside the element itself.
 
 {::nomarkdown}
 <div class="pl-preview">
     <div class="panel">
       <div class="panel-body">
-        <span class="badge default">5</span>
-        <span class="badge">200</span>
-        <span class="badge">0</span>
+        <span>People <span class="badge default">5</span>&nbsp;</span>
+        <span>Cats <span class="badge">200</span>&nbsp;</span>
       </div>
     </div>
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
-<span class="badge default">5</span>
-<span class="badge">200</span>
-<span class="badge">0</span>
+<span>People <span class="badge default">5</span>&nbsp;</span>
+<span>Cats <span class="badge">200</span>&nbsp;</span>
 {% endhighlight %}
 
-
-{::nomarkdown}
-<div class="pl-preview">
-<div class="panel">
-  <div class="panel-body">
-    <ul class="list-group" style="max-width: 150px;">
-      <li class="list-group-item">
-        Inbox
-        <span class="badge pull-right">1,932</span>
-      </li>
-      <li class="list-group-item active">
-        Outbox
-        <span class="badge pull-right">2</span>
-      </li>
-      <li class="list-group-item">Spam</li>
-    </ul>
-  </div>
-</div>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<ul class="list-group" style="max-width: 150px;">
-  <li class="list-group-item">
-    Inbox
-    <span class="badge pull-right">1,932</span>
-  </li>
-  <li class="list-group-item active">
-    Outbox
-    <span class="badge pull-right">2</span>
-  </li>
-  <li class="list-group-item">Spam</li>
-</ul>
-{% endhighlight %}
 </div>

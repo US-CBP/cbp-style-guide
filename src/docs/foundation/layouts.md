@@ -11,7 +11,7 @@ Consistent and anticipated layouts allow users to navigate and understand applic
 
 <div class="pl-preview">
 
-![Fixed width layout](layouts/images/layout-fluid_wApp.png)
+[![Fixed width layout](layouts/images/layout-fluid_wApp.png)](layouts/fluid_wApp.html){:target="_blank"}
 
 ##### Fluid 1
 
@@ -96,7 +96,7 @@ The Fluid 1 page layout provides maximum space for content. It leaves control ov
 
 <div class="pl-preview">
 
-![Fixed width layout](layouts/images/layout-fluid.png)
+[![Fixed width layout](layouts/images/layout-fluid.png)](layouts/fluid.html){:target="_blank"}
 
 ##### Fluid 2
 
@@ -222,7 +222,7 @@ The Fluid 2 page layout is similar to Fluid 1, but has no Application Header use
 
 <div class="pl-preview">
 
-![Hybrid layout](layouts/images/layout-hybrid_wApp.png)
+[![Hybrid layout](layouts/images/layout-hybrid_wApp.png)](layouts/hybrid_wApp.html){:target="_blank"}
 
 ##### Hybrid 1
 
@@ -303,7 +303,7 @@ The Hybrid 1 page layout combines the fluid design of the CBP Universal and Appl
 
 <div class="pl-preview">
 
-![Hybrid layout](layouts/images/layout-hybrid.png)
+[![Hybrid layout](layouts/images/layout-hybrid.png)](layouts/hybrid.html){:target="_blank"}
 
 ##### Hybrid 2
 
@@ -425,7 +425,7 @@ The Hybrid 2 page layout illustrates the fluid design of the blue CBP Universal 
 
 <div class="pl-preview">
 
-![Navigation and content](layouts/images/type-content-navigation_wApp.png)
+[![Navigation and content](layouts/images/type-content-navigation_wApp.png)](layouts/type-content-navigation_wFixedSide.html){:target="_blank"}
 
 ##### Navigation 1
 
@@ -551,7 +551,7 @@ The Navigation 1 page layout has a column for vertical navigation to the left of
 
 <div class="pl-preview">
 
-![Navigation and content](layouts/images/type-content-navigation_wApp.png)
+[![Navigation and content](layouts/images/type-content-navigation_wApp.png)](layouts/type-content-navigation_wApp.html){:target="_blank"}
 
 ##### Navigation 2
 
@@ -677,8 +677,7 @@ The Navigation 2 page layout is exactly the same as Navigation 1, except that th
 
 <div class="pl-preview">
 
-
-![Navigation and content](layouts/images/layout-dashboard.brand-card.png)
+[![Navigation and content](layouts/images/layout-dashboard.brand-card.png)](layouts/brand-card-layout.html){:target="_blank"}
 
 ##### Branded Card Dashboard
 
@@ -824,9 +823,7 @@ The Branded Card Dashboard page layout is designed to aid users in easily naviga
 {% endhighlight %}
 <div class="pl-preview">
 
-
-![Navigation and content](layouts/images/layout-dashboard.card.png)
-
+[![Navigation and content](layouts/images/layout-dashboard.card.png)](layouts/card-layout.html){:target="_blank"}
 
 ##### Card Dashboard
 
@@ -969,7 +966,6 @@ The Card Dashboard page layout is designed to cleanly display access to multiple
 </div>
 {% endhighlight %} 
 
-*** See Vertical navigation and Horizontal navigation for more detail.
 {: .clearfix}
 
 </div>

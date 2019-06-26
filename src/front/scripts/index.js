@@ -224,19 +224,6 @@ $(document).ready(function () {
     }
   });
 
-  // make modal draggable!
-  // $('.modal-dialog').each(function () {
-  //   $(this).draggable({
-  //     handle: '.modal-header'
-  //   });
-  // });
-
-  // init select components
-  $('.select2').select2({ allowEmptyOption: true });
-  $('.select2-multiple').select2({ allowEmptyOption: true });
-  $('.selectize').selectize({ allowClear: true });
-  $('.selectize-multiple').selectize({ allowClear: true });
-
   /* quick and dirty working toast examples */
   $('.show-toasts').each(function() {
       var showToastButton = $(this);
@@ -371,14 +358,14 @@ $(document).ready(function () {
       id: 'hopscotch-example',
       steps: [{
               title: 'Hopscotch Tour Example',
-              content: 'This is the header of my page.',
+              content: 'This is an example of a tour.',
               target: 'tour',
-              placement: 'top'
+              placement: 'bottom'
           },
           {
               title: 'Purpose',
               content: 'Example of tour.',
-              target: 'purpose',
+              target: 'description',
               placement: 'bottom'
           }, {
               title: 'Navigation',

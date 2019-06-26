@@ -6,20 +6,7 @@ title: "Headers"
 <div class="pl-pattern">
 <h3>Headers</h3>
 
-The Universal Header consists of the following:
-
-- Official CBP Brand Presence
-- Approved DHS Blue Background Color
-- Application Directory Menu
-- User Feedback (optional)
-- User Profile and Logout
-- User Preferences (optional)
-
-The Universal Header provides a consistent brand across applications.  It also provides
-users with common navigation and features.
-
-
-The Application Header allows for an application to place menus, search bars, and other components that are specific to the application.  
+Headers are the main navigation element on the page.
 
 &nbsp;
 
@@ -28,6 +15,8 @@ The Application Header allows for an application to place menus, search bars, an
 <div class="pl-pattern">
 
 ### Universal Header
+
+This navigational component is mandatory for all CBP applications. This bar sits above the Application Header and contains all of the enterprise level navigation. This area must conform to Common Framework standards.
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -96,6 +85,8 @@ The Application Header allows for an application to place menus, search bars, an
 <div class="pl-pattern">
 
 ### Application Header
+
+This navigation element is a required component in CBP applications. This header serves as the main location for high-level application navigation that generally would appear on most if not every page in the application (if an element is unique to a page it likely does not belong here). This bar also serves as the location where the name of the application is identified. 
 
 {::nomarkdown}
 <div class="pl-preview">

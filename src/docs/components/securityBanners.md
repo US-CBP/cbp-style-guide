@@ -5,11 +5,7 @@ title: "Security Banner"
 <div class="pl-pattern">
 <h3>Security Banner</h3>
 
-#### Purpose
-TODO
-
-#### Description
-TODO
+This component offers a omnipresent banner that appears when a user is on a page in an application that contains classified content. This banner should contain the full security warning as dictated by Department of Homeland Security (DHS) directives. The top banner may dismissible but should be omnipresent in the footer area.
 
 {::nomarkdown}
 <div class="pl-preview">

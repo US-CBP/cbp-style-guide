@@ -6,11 +6,10 @@ preview: true
 <div class="pl-pattern">
 <h3>Tags</h3>
 
-#### Purpose
-Users need to see the categories or labels of an object, which can often be used to find related objects.
+Tags can be used as a way to organize items into categories using keywords that describe them. Tags can be used in conjunction with multi select to show what selections have been made, or with other components such as a filtering mechanism.
 
 #### Description
-Tags usually represent a category or label of an object. Sometimes they are clickable, sometimes they are removable. 
+Tags usually represent a category or label of an object. Sometimes they are removable. 
 
 {::nomarkdown}
 <div class="pl-preview">

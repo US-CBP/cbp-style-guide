@@ -5,13 +5,9 @@ title: "Tabs"
 <div class="pl-pattern">
 <h3>Tabs</h3>
 
-#### Purpose
-User's need to flip between multiple focused panes/views of content.
+Tabs are a navigational element that organizes content by grouping similar information at the same hierarchy together into distinct views.  This allows users to switch between these views without leaving the page.
 
-#### Description
-Tabs manage stacked panes of content, giving the users the ability to view only the content pane they are interested in. Each tab button has a corresponding content pane. Tabs build on a real world metaphor. The selected state is reinforced with the tab metaphor of a folder physically in front of the others in the set.
-
-#### Basic functionality
+#### Basic Functionality
 - You have multiple categories/views/panes of content, but there is the need to only show one pane at a time.
 - Tabs are listed in a horizontal row.
 - Avoid overflowing tabs to new lines.
@@ -23,7 +19,7 @@ Tabs manage stacked panes of content, giving the users the ability to view only 
 </div>
 
 <div class="pl-pattern">
-### Normal tabs
+### Normal Tabs
 The selected tab color should be the same color as the tab content.
 
 {::nomarkdown}
@@ -85,7 +81,7 @@ The selected tab color should be the same color as the tab content.
 </div>
 
 <div class="pl-pattern">
-### Light tabs
+### Light Tabs
 Use when the tabs need less emphasis in relation to other navigational elements. 
 
 {::nomarkdown}
@@ -119,7 +115,7 @@ Use when the tabs need less emphasis in relation to other navigational elements.
 </div>
 
 <div class="pl-pattern">
-### Nested tabs
+### Nested Tabs
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -192,7 +188,6 @@ Use when the tabs need less emphasis in relation to other navigational elements.
     </li>
   </ul>
   <div class="tab-content">
-
     <div role="tabpanel" class="tab-pane fade in active" id="template">
       <ul class="nav nav-tabs nav-tabs-light" role="tablist">
         <li role="presentation">
@@ -204,14 +199,11 @@ Use when the tabs need less emphasis in relation to other navigational elements.
       </ul>
       <div class="panel-body">
         <div class="tab-content" id="html">
-
         </div>
         <div class="tab-content" id="preview">
-
         </div>
       </div>
     </div>
-
     <div role="tabpanel" class="tab-pane fade" id="history">
       <ul class="nav nav-tabs nav-tabs-light" role="tablist">
         <li>
@@ -225,7 +217,6 @@ Use when the tabs need less emphasis in relation to other navigational elements.
         <p></p>
       </div>
     </div>
-
     <div role="tabpanel" class="tab-pane fade" id="analytics">
       <div class="panel-body">
         <p>Did you know that...</p>
