@@ -335,7 +335,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
 </button>
 
 <div class="modal fade" tabindex="-1" id="myModalLive" role="dialog" aria-labelledby="myModalTitle">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" style="margin: 80px auto;" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">
