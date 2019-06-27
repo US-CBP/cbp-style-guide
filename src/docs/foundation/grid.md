@@ -6,7 +6,7 @@ title: "Grid"
 
 <h3>Grid</h3>
 
-The 12 column grid can be used for aligning components and assisting in responsive behavior. It is not intended to be the only solution for aligning components. [See the Layouts]({{site.baseurl}}/cf/style-guide/docs/foundation/layouts.html) section for the most common example of layouts using the grid.
+The 12 column grid can be used for aligning components and assisting in responsive behavior. It is not intended to be the only solution for aligning components. [See the Layouts](layouts.html) section for the most common example of layouts using the grid.
 
 {::nomarkdown}
 <div class="pl-preview">
