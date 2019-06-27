@@ -6,7 +6,7 @@ title: "Labels and Badges"
 
 <h3>Labels and Badges</h3>
 
-<p>Labels and badges show concise metadata in a compact format.</p>
+<p>Labels show concise metadata in a compact format.</p>
 
 &nbsp;
 
