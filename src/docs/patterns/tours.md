@@ -7,8 +7,18 @@ title: "Tours"
 
 Users need to a guided overview of functionality that they may not be familiar with yet.
 
+{::nomarkdown}
+<div class="pl-preview">
+
+<button id="startTourBtn" type="button" class="btn btn-default">Callout Example</button>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+
 <button id="callout-button" type="button" class="btn btn-default">Callout Example</button>
 
+{% endhighlight %}
 
 #### Description
 - Tours can appear in the center of the screen or next to a related element
