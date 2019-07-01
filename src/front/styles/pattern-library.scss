@@ -301,13 +301,8 @@ hr.hr-strong {
                 margin: 0 -40px;
                 position: relative;
                 z-index: 2;
-                // background: #fefefe;
-                background: #fefff9;
+                background: $gray-lightest;
                 border-bottom: 1px solid $gray-lighter;
-
-                -moz-box-shadow:    inset 0 2px 4px #000000;
-                -webkit-box-shadow: inset 0 2px 4px #000000;
-                box-shadow:         inset 0 2px 4px #002841;
             }
 
             pre {
