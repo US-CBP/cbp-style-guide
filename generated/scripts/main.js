@@ -352,45 +352,67 @@ $(document).ready(function () {
       $(this).next('tr[data-pl-detail-row]').toggle();
   });
 
-  // Define the tour!
-  /* jshint ignore:start */
+
+  // Hopscotch 
+    // Define the tour!
+   /* jshint ignore:start */
   var tour = {
-      id: 'hopscotch-example',
-      steps: [{
-              title: 'Hopscotch Tour Example',
-              content: 'This is an example of a tour.',
-              target: 'tour',
-              placement: 'bottom'
-          },
-          {
-              title: 'Purpose',
-              content: 'Example of tour.',
-              target: 'description',
-              placement: 'bottom'
-          }, {
-              title: 'Navigation',
-              content: 'Foundation, Components, Patterns describe how best to use the CBP Theme.',
-              target: 'sidebar',
-              placement: 'right'
-          }
+    id: 'hopscotch-example',
+    steps: [{
+            title: 'Hopscotch Tour Example',
+            content: 'This is an example of a tour.',
+            target: 'tour',
+            placement: 'bottom'
+        },
+        {
+            title: 'Purpose',
+            content: 'Example of tour.',
+            target: 'description',
+            placement: 'bottom'
+        }, {
+            title: 'Navigation',
+            content: 'Foundation, Components, Patterns describe how best to use the CBP Theme.',
+            target: 'sidebar',
+            placement: 'right'
+        }
 
-      ],
-      showPrevButton: true
-  };
-  var calloutMgr = hopscotch.getCalloutManager();
-  
-  if (document.URL.indexOf('tours.html') > -1) {
-      // Start the tour!
-      hopscotch.startTour(tour);
+    ],
+    showPrevButton: true
+};
 
-      calloutMgr.createCallout({
-        id: 'attach-icon',
-        target: 'callout-button',
-        placement: 'right',
-        title: 'Callout Example',
-        content: 'For simple explanations.'
-    });
-  }  
+  // Limits the scope of where Hopscotch script is used
+ if (document.URL.indexOf('tours.html') > -1) {
+    // Start the tour!
+    var start = hopscotch.startTour(tour);
+var calloutMgr = hopscotch.getCalloutManager();
+var callout = calloutMgr.createCallout({
+    id: 'attach-icon',
+    target: 'startTourBtn',
+    placement: 'right',
+    title: 'Callout Example',
+    content: 'For simple explanations.'
+});
+    start;
+    calloutMgr;
+    callout;
+
+    // provides unlimited activation via click events assigned to a button
+$('#startTourBtn').click(function() {
+        var start = hopscotch.startTour(tour);
+        var calloutMgr = hopscotch.getCalloutManager();
+        var callout = calloutMgr.createCallout({
+            id: 'attach-icon',
+            target: 'startTourBtn',
+            placement: 'right',
+            title: 'Callout Example',
+            content: 'For simple explanations.'
+        });
+        start;
+        calloutMgr;
+        callout;
+});
+ }
+// End of Hopscotch
 
   /* jshint ignore:end */
   /* google analytics download tracking */
@@ -449,4 +471,11 @@ $(document).ready(function () {
   $('#topSecret').on('click', function () {
     hulkIt('top-secret');
   });
+
+  // Toggle bottom margin spacers for filter dropdown examples
+  $('.collapsed-filter').click(function() {
+    $('.pl-content').toggleClass('filter-spacer');
+});
+
+
 });

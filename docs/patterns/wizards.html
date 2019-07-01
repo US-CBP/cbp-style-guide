@@ -215,16 +215,6 @@
                         
                     
                         
-                            
-                                
-                                    <li  >
-                                          <a  href="../../docs/foundation/typography.html"> Typography </a>
-                                    </li>
-                                
-                            
-                        
-                    
-                        
                     
                         
                             
@@ -461,8 +451,6 @@
                     
                         
                     
-                        
-                    
                 
                   <li class="category">Patterns</li>
                 
@@ -605,8 +593,6 @@
                         
                     
                         
-                    
-                        
                             
                                 
                                     <li  class="active"  >
@@ -651,6 +637,7 @@
 </div>
 
 <div class="pl-pattern">
+
   <h3 id="steps">Steps</h3>
 
   <p>In many cases it’s beneficial to show the list of steps a wizard will have. Depending on the number of steps and space available, steps can be listed vertically or horizontally.</p>
@@ -695,36 +682,92 @@
             <div class="panel panel-default" style="margin-left: 200px; height: 500px; max-height: 500px; overflow: auto; position: relative;">
                 <div class="panel-body">
 
-                    <form class="form" style="max-width: 450px;" role="form">
-                      <div class="form-group">
-                        <div class="form-group-heading">
-                        <h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
-                        <p>When the alert criteria is met, each recipient will receive an email notification.</p>
-                        <hr>
-                        <div class="alert alert-danger"><i class="fa fa-times-circle"></i>&nbsp;Fix the 1 error below.</div>
-                        </div>
-                        <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-                          <label for="ht3" class="mdl-textfield__label">Full name</label>
-                          <input class="mdl-textfield__input" type="text" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" id="ht3">
-                          <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid full name</span>
-                        </div>
-                        <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-                          <label for="ht4" class="mdl-textfield__label">Email</label>
-                          <input class="mdl-textfield__input" type="text" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" id="ht4">
-                          <p class="mdl-textfield__help">Email address of alert recipient</p>
-                          <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid email address</span>
-                        </div>
-                      </div>
-                      <button type="button" class="btn btn-default">Cancel</button>
-                      <button type="submit" class="btn btn-primary pull-right">Continue</button>
-                    </form>
+<form class="form" style="max-width: 450px;" role="form">
+<div class="form-group">
+<div class="form-group-heading">
+<h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
+<p>When the alert criteria is met, each recipient will receive an email notification.</p>
+<hr>
+<div class="alert alert-danger"><i class="fa fa-times-circle"></i>&nbsp;Fix the 1 error below.</div>
+</div>
+<div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
+<label for="ht3" class="mdl-textfield__label">Full name</label>
+<input class="mdl-textfield__input" type="text" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" id="ht3">
+<span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid full name</span>
+</div>
+<div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
+<label for="ht4" class="mdl-textfield__label">Email</label>
+<input class="mdl-textfield__input" type="text" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" id="ht4">
+<p class="mdl-textfield__help">Email address of alert recipient</p>
+<span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid email address</span>
+</div>
+</div>
+<button type="button" class="btn btn-default">Cancel</button>
+<button type="submit" class="btn btn-primary pull-right">Continue</button>
+</form>
 
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"max-width: 700px;"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"display: inline-block; width: 100%;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 200px; min-height: 400px; float: left;"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h4&gt;</span>New alert<span class="nt">&lt;/h4&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Add and configure new alerts for an environment.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-stacked nav-tree"</span> <span class="na">role=</span><span class="s">"tab-list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">style=</span><span class="s">"margin-left: -10px;"</span> <span class="na">class=</span><span class="s">"fa fa-check"</span><span class="nt">&gt;&lt;/span&gt;</span> Criteria<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">style=</span><span class="s">"margin-left: -10px;"</span> <span class="na">class=</span><span class="s">"fa fa-times-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> Recipients<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">style=</span><span class="s">"style="</span><span class="na">margin-left:</span> <span class="na">20px</span><span class="err">;"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Configure<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-stacked nav-tree"</span> <span class="na">role=</span><span class="s">"tab-list"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;span</span> <span class="na">style=</span><span class="s">"margin-left: 10px; position: relative; top: 1px; width: 14px; display: inline-block;"</span><span class="nt">&gt;&lt;/span&gt;</span>Instances<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;span</span> <span class="na">style=</span><span class="s">"margin-left: 10px; position: relative; top: 1px; width: 14px; display: inline-block;"</span><span class="nt">&gt;&lt;/span&gt;</span>Monitoring<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;&lt;span</span> <span class="na">style=</span><span class="s">"margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"</span><span class="nt">&gt;&lt;/span&gt;</span> Review<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span> <span class="na">style=</span><span class="s">"margin-left: 200px; height: 500px; max-height: 500px; overflow: auto; position: relative;"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">style=</span><span class="s">"max-width: 450px;"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group-heading"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Recipients <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pull-right"</span> <span class="na">style=</span><span class="s">"font-size: 13px;"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"text-primary"</span><span class="nt">&gt;</span>Step 2 of 6<span class="nt">&lt;/span&gt;&lt;/span&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;p&gt;</span>When the alert criteria is met, each recipient will receive an email notification.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-times-circle"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span>Fix the 1 error below.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"ht3"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Full name<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">pattern=</span><span class="s">"([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}"</span> <span class="na">id=</span><span class="s">"ht3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mdl-textfield__error"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-triangle fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span>Not a valid full name<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"ht4"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">pattern=</span><span class="s">"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"</span> <span class="na">id=</span><span class="s">"ht4"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mdl-textfield__help"</span><span class="nt">&gt;</span>Email address of alert recipient<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mdl-textfield__error"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-triangle fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span>Not a valid email address<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary pull-right"</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </figure>
 
   <p> </p>
 
@@ -733,59 +776,59 @@
 
 <div class="pl-preview">
 <div class="">
-    <div class="" style="max-width: 700px; margin-auto;">
-        <div style="padding: 50px; overflow: auto; position: relative;">
-            <ol class="nav-steps">
-                <li  style="width:33.3%">
-                    <span>Shipment Information</span>
-                </li>
-                <li class="active" style="width:33.3%">
-                    <span>Exams</span>
-                </li>
-                <li class="" style="width:33.3%">
-                    <span>Holds</span>
-                </li>
-            </ol>
-            <h2 style="margin: 36px 0;" class="text-center">So far so good. Now, let's talk about your shipment exam.</h2>
-            <div style="margin: 18px 0;">
-                <form class="" role="form">
-                    <div class="form-group">
-                         <div class="radio">
-                              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-                                <input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                <span class="mdl-radio__label">Exam Action One
-                                    <div class="text-muted">Lorem Ipsum<a href="#">Learn more.</a></div>                                
-                                </span>
-                              </label>
-                        </div>
-                         <div class="radio">
-                              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-                                <input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                <span class="mdl-radio__label">Exam Action Two
-                                    <div class="text-muted">Lorem Ipsum<a href="#">Learn more.</a></div>                                
-                                </span>
-                              </label>
-                        </div>
-                         <div class="radio">
-                              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-                                <input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                <span class="mdl-radio__label">Exam Action Three
-                                    <div class="text-muted">Lorem Ipsum<a href="#">Learn more.</a></div>
-                                </span>
-                              </label>
-                        </div>
-                    </div>
-                </form>
-                <div class="text-right" style="margin-top: 24px;">
-                    <button class="btn btn-default pull-left">Back</button>
-                    <button class="btn btn-primary">Continue</button>
-                </div>
-                <hr/>
-                <p>The primary actions on a step indicator should be on the right, the secondary actions should be on the left.</p>
+<div class="" style="max-width: 700px; margin-auto;">
+<div style="padding: 50px; overflow: auto; position: relative;">
+<ol class="nav-steps">
+<li  style="width:33.3%">
+<span>Shipment Information</span>
+</li>
+<li class="active" style="width:33.3%">
+<span>Exams</span>
+</li>
+<li class="" style="width:33.3%">
+<span>Holds</span>
+</li>
+</ol>
+<h2 style="margin: 36px 0;" class="text-center">So far so good. Now, let's talk about your shipment exam.</h2>
+<div style="margin: 18px 0;">
+<form class="" role="form">
+<div class="form-group">
+<div class="radio">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+<input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+<span class="mdl-radio__label">Exam Action One
+<div class="text-muted">Lorem Ipsum<a href="#">Learn more.</a></div>                                
+</span>
+</label>
+</div>
+<div class="radio">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+<input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+<span class="mdl-radio__label">Exam Action Two
+<div class="text-muted">Lorem Ipsum<a href="#">Learn more.</a></div>                                
+</span>
+</label>
+</div>
+<div class="radio">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+<input type="radio" class="mdl-radio__button" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+<span class="mdl-radio__label">Exam Action Three
+<div class="text-muted">Lorem Ipsum<a href="#">Learn more.</a></div>
+</span>
+</label>
+</div>
+</div>
+</form>
+<div class="text-right" style="margin-top: 24px;">
+<button class="btn btn-default pull-left">Back</button>
+<button class="btn btn-primary">Continue</button>
+</div>
+<hr/>
+<p>The primary actions on a step indicator should be on the right, the secondary actions should be on the left.</p>
 
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -846,7 +889,6 @@
 
 </div>
 
-<p>&lt;/div&gt;</p>
 
         </section>
     </div>
