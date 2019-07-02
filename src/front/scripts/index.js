@@ -361,7 +361,7 @@ $(document).ready(function () {
     steps: [{
             title: 'Hopscotch Tour Example',
             content: 'This is an example of a tour.',
-            target: 'tour',
+            target: document.querySelector('#tour'),
             placement: 'bottom'
         },
         {

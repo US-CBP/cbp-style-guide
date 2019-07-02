@@ -5,7 +5,7 @@ title: "Tours"
 <div class="pl-pattern">
 <h3 id="tour">Tours</h3>
 
-Users need to a guided overview of functionality that they may not be familiar with yet.
+Users need a guided overview of functionality that they may not be familiar with yet.
 
 #### Description
 - Tours can appear in the center of the screen or next to a related element
