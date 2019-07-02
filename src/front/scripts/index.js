@@ -356,22 +356,34 @@ $(document).ready(function () {
     // Define the tour!
    /* jshint ignore:start */
    // defines and declares a tour
+   var prep = {
+    id: 'hopscotch-init',
+    steps: [{
+            title: 'Start a Hopscotch Tour',
+            content: 'Click here to see a tour.',
+            target: document.querySelector('#startTourBtn'),
+            placement: 'right'
+        }
+       
+    ],
+};
+ // defines and declares a tour
    var tour = {
     id: 'hopscotch-example',
     steps: [{
             title: 'Hopscotch Tour Example',
-            content: 'This is an example of a tour.',
+            content: 'This is an example Hopscotch tour in action!',
             target: document.querySelector('#tour'),
             placement: 'bottom'
         },
         {
-            title: 'Purpose',
-            content: 'Example of tour.',
+            title: 'Description',
+            content: 'At the very least, you will need to include both the hopscotch.css and hopscotch.js files.',
             target: 'description',
             placement: 'bottom'
         }, {
             title: 'Navigation',
-            content: 'Foundation, Components, Patterns describe how best to use the CBP Theme.',
+            content: 'Elements like this side navigation bar or others can be added to a tour for helping with the user demo as needed.',
             target: 'sidebar',
             placement: 'right'
         }
@@ -383,7 +395,7 @@ $(document).ready(function () {
   // Limits the scope of where Hopscotch script will auto activate on page load
  if (document.URL.indexOf('tours.html') > -1) {
     // Start the tour!
-    hopscotch.startTour(tour);
+    hopscotch.startTour(prep);
     hopscotch.getCalloutManager().createCallout({
     id: 'attach-icon',
     target: 'startCalloutBtn',
@@ -392,7 +404,6 @@ $(document).ready(function () {
     content: 'For simple explanations.'
 });
 }
-
      // provides event handler for activating a tour
      $('#startTourBtn').click(function() {
        // Start the tour!
