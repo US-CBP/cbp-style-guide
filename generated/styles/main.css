@@ -776,7 +776,7 @@ hr.hr-strong {
   margin-bottom: 25%;
 }
 
-#startTourBtn {
+#startTourBtn, #startCalloutBtn {
   display: block;
   margin: 0 auto 4% auto;
 }
