@@ -3,7 +3,7 @@ title: "Tours"
 ---
 
 <div class="pl-pattern">
-<h3>Tours</h3>
+<h3 id="tour">Tours</h3>
 
 Users need to a guided overview of functionality that they may not be familiar with yet.
 
@@ -20,18 +20,17 @@ Users need to a guided overview of functionality that they may not be familiar w
 
 <div class="pl-pattern">
 
-<button id="startTourBtn" type="button" class="btn btn-default btn-lg">Callout Example</button>
-
 {::nomarkdown}
 <div class="pl-preview">
-
-<h4 id="tour">Tour Example</h4>
-
+<button id="startTourBtn" type="button" class="btn btn-primary btn-lg">Start Tour</button>
+<button id="startCalloutBtn" type="button" class="btn btn-default btn-lg">Callout Example</button>
 </div>
 {:/nomarkdown}
+
 {% highlight html %}
 
-<button id="callout-button" type="button" class="btn btn-default">Callout Example</button>
+<button id="startTourBtn" type="button" class="btn btn-primary btn-lg">Start Tour</button>
+<button id="startCalloutBtn" type="button" class="btn btn-default btn-lg">Callout Example</button>
 
 {% endhighlight %}
 </div>

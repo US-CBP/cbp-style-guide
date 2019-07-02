@@ -352,11 +352,11 @@ $(document).ready(function () {
       $(this).next('tr[data-pl-detail-row]').toggle();
   });
 
-
-  // Hopscotch 
+     // Hopscotch 
     // Define the tour!
    /* jshint ignore:start */
-  var tour = {
+   // defines and declares a tour
+   var tour = {
     id: 'hopscotch-example',
     steps: [{
             title: 'Hopscotch Tour Example',
@@ -380,40 +380,37 @@ $(document).ready(function () {
     showPrevButton: true
 };
 
-  // Limits the scope of where Hopscotch script is used
+  // Limits the scope of where Hopscotch script will auto activate on page load
  if (document.URL.indexOf('tours.html') > -1) {
     // Start the tour!
-    var start = hopscotch.startTour(tour);
-var calloutMgr = hopscotch.getCalloutManager();
-var callout = calloutMgr.createCallout({
+    hopscotch.startTour(tour);
+    hopscotch.getCalloutManager().createCallout({
     id: 'attach-icon',
-    target: 'startTourBtn',
-    placement: 'right',
+    target: 'startCalloutBtn',
+    placement: 'left',
     title: 'Callout Example',
     content: 'For simple explanations.'
 });
-    start;
-    calloutMgr;
-    callout;
+}
 
-    // provides unlimited activation via click events assigned to a button
-$('#startTourBtn').click(function() {
-        var start = hopscotch.startTour(tour);
-        var calloutMgr = hopscotch.getCalloutManager();
-        var callout = calloutMgr.createCallout({
-            id: 'attach-icon',
-            target: 'startTourBtn',
-            placement: 'right',
-            title: 'Callout Example',
-            content: 'For simple explanations.'
-        });
-        start;
-        calloutMgr;
-        callout;
+     // provides event handler for activating a tour
+     $('#startTourBtn').click(function() {
+       // Start the tour!
+        hopscotch.startTour(tour);
 });
- }
-// End of Hopscotch
 
+     // provides event handler for activating a callout
+     $('#startCalloutBtn').click(function() {
+       // Start the Callout!
+        hopscotch.getCalloutManager().createCallout({
+        id: 'attach-icon',
+        target: 'startCalloutBtn',
+        placement: 'right',
+        title: 'Callout Example',
+        content: 'For simple explanations.'
+    });
+ });
+  // End of Hopscotch
   /* jshint ignore:end */
   /* google analytics download tracking */
 
