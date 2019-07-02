@@ -474,7 +474,7 @@ $('#startTourBtn').click(function() {
 
   // Toggle bottom margin spacers for filter dropdown examples
   $('.collapsed-filter').click(function() {
-    $('.pl-content').toggleClass('filter-spacer');
+    $('.pl-content').toggleClass('pl-filter-spacer');
 });
 
 
