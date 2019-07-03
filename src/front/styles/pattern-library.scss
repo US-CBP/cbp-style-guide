@@ -67,6 +67,11 @@ hr.hr-strong {
     }
 }
 
+.pl-palette-color.no-border {
+    border: none;
+    margin-right: 10px;
+}
+
 .pl-header {
     padding: 0;
     margin-top: 20px;
@@ -573,6 +578,10 @@ hr.hr-strong {
        max-width: 500px;
        height: 400px;
     }
+}
+
+.pl-pattern:first-of-type {
+    padding-bottom: 40px;
 }
 
 .pl-pattern {

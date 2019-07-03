@@ -45,7 +45,7 @@ A table's complexity and needs can vary greatly. This pattern provides many diff
 <div class="pl-pattern">
 ### Examples
 
-#### Standard
+#### Standard Table
 A standard table has subtle row borders.
 
 <h4>Includes hover stylings with MDL additions <small>Just by using the classnames: "table mdl-js-data-table"</small></h4>

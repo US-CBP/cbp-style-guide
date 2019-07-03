@@ -10,6 +10,11 @@ Tags can be used as a way to organize items into categories using keywords that 
 
 #### Description
 Tags usually represent a category or label of an object. Sometimes they are removable. 
+</div>
+
+<div class="pl-pattern">
+
+### Examples
 
 {::nomarkdown}
 <div class="pl-preview">

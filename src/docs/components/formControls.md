@@ -7,11 +7,10 @@ title: "Form Controls"
 
 <p>Allow users to enter information into a page.
 </p>
-
-&nbsp;
 </div>
 
 <div class="pl-pattern">
+
 ### Text Box
 
 This interactive element allows a user to enter data. It may be a single line entry, or a text area box for larger text selections. 
@@ -56,16 +55,21 @@ This interactive element allows a user to enter data. It may be a single line en
   </div>
 </form>
 {% endhighlight %}
+</div>
 
-#### Input Masks
+<div class="pl-pattern">
+
+### Input Masks
 
 Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.
 
 <span class="text-muted">Example uses https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span>
 
+<h4>With Floating Label</h4>
+
 {::nomarkdown}
 <div class="pl-preview">
-<h4>With Floating Label</h4>
+
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
         <form class="form" role="form">
@@ -82,9 +86,33 @@ Input masks ensure that the user understands the input format required, in addit
             <input type="text" class="mdl-textfield__input" id="im3" data-inputmask=" 'mask': 'd/m/y', 'placeholder': 'dd/mm/yyyy', 'alias' : 'mdl-mask-datepicker' ">
           </div>
         </form>
+        </div>
     </div>
 </div>
+{:/nomarkdown}
+
+   {% highlight html %}
+
+<form class="form" role="form">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <label for="im1" class="mdl-textfield__label">SSN</label>
+    <input type="text" class="mdl-textfield__input" id="im1" data-inputmask=" 'mask': '999-99-9999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' ">
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <label for="im2" class="mdl-textfield__label">Routing #</label>
+    <input type="text" class="mdl-textfield__input" id="im2" data-inputmask=" 'mask': 'PCT/99,999,999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' ">
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <label for="im3" class="mdl-textfield__label">Start date</label>
+    <input type="text" class="mdl-textfield__input" id="im3" data-inputmask=" 'mask': 'd/m/y', 'placeholder': 'dd/mm/yyyy', 'alias' : 'mdl-mask-datepicker' ">
+  </div>
+</form>
+  {% endhighlight %}
+
 <h4>With Placeholder Label</h4>
+
+{::nomarkdown}
+<div class="pl-preview">
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
   <div class="row">
     <form class="form" role="form">
@@ -107,23 +135,6 @@ Input masks ensure that the user understands the input format required, in addit
 {:/nomarkdown}
 
 {% highlight html %}
-// With Floating Label
-<form class="form" role="form">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="im1" class="mdl-textfield__label">SSN</label>
-    <input type="text" class="mdl-textfield__input" id="im1" data-inputmask=" 'mask': '999-99-9999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' ">
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="im2" class="mdl-textfield__label">Routing #</label>
-    <input type="text" class="mdl-textfield__input" id="im2" data-inputmask=" 'mask': 'PCT/99,999,999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' ">
-  </div>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <label for="im3" class="mdl-textfield__label">Start date</label>
-    <input type="text" class="mdl-textfield__input" id="im3" data-inputmask=" 'mask': 'd/m/y', 'placeholder': 'dd/mm/yyyy', 'alias' : 'mdl-mask-datepicker' ">
-  </div>
-</form>
-
-// With Placeholder Label
 <form class="form" role="form">
   <div class="mdl-textfield mdl-js-textfield">
     <label for="im1" class="mdl-textfield__label">SSN</label>
@@ -139,11 +150,10 @@ Input masks ensure that the user understands the input format required, in addit
   </div>
 </form>
 {% endhighlight %}
-
-
 </div>
 
 <div class="pl-pattern">
+
 ### Text Area
 
 #### Purpose
@@ -197,155 +207,162 @@ Text areas can either
 </div>
 
 <div class="pl-pattern">
+
 ### Dropdown Selection
 
 <p>This component gives users the ability to choose a single item from a predetermined list of options.</p>
 &nbsp;
 
-{::nomarkdown}
-<div class="pl-preview">
-<h3>Examples</h3>
-<div class="container-fluid" style="max-width: 400px; margin: 0;">
-  <div class="row">
-    <form role="form" class="col-sm-12">
-      <h4>Select <small>Without third party select JS libraries</small></h4>
-      <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-        <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-          <option value=""></option>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-        </select>
-        <label for="se17" class="mdl-selectfield__label">With floating label</label>
-      </div>
-      <div class="mdl-selectfield mdl-js-selectfield">
-        <select id="se18" class="mdl-selectfield__select" aria-expanded="false">
-          <option value=""></option>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-        </select>
-        <label for="se18" class="mdl-selectfield__label">With placeholder label</label>
-      </div>
-      <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-        <select id="se19" class="mdl-selectfield__select" aria-expanded="false" disabled>
-          <option value=""></option>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-        </select>
-        <label for="se19" class="mdl-selectfield__label">Disabled with floating label</label>
-      </div>
-      <div class="mdl-selectfield mdl-js-selectfield">
-        <select id="se20" class="mdl-selectfield__select" aria-expanded="false" disabled>
-          <option value=""></option>
-          <option value="A">Option A</option>
-          <option value="B">Option B</option>
-          <option value="C">Option C</option>
-        </select>
-        <label for="se20" class="mdl-selectfield__label">Disabled with placeholder label</label>
-      </div>
-      <h4>Multiple Select</h4>
-      <div class="container-fluid" style="max-width: 400px; margin: 0;">
-        <div class="row">
-          <form role="form" class="col-sm-12 form">
-            <div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
-              <select id="se21" class="mdl-selectfield__select" aria-expanded="false" multiple>
-                <option value="A">Option A</option>
-                <option value="B">Option B</option>
-                <option value="C">Option C</option>
-                <option value="D">Option D</option>
-              </select>
-              <label for="se21" class="mdl-selectfield__label">With floating label</label>
-            </div>
-            <div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
-              <select id="se22" class="mdl-selectfield__select" aria-expanded="false" multiple disabled>
-                <option value="A">Option A</option>
-                <option value="B">Option B</option>
-                <option value="C">Option C</option>
-                <option value="D">Option D</option>
-              </select>
-              <label for="se22" class="mdl-selectfield__label">With floating label</label>
-            </div>
-          </form>
-        </div>
-      </div>      
-    </form>
-  </div>
-</div>
+<h4>Examples</h4>
 
+  {::nomarkdown}
+<div class="pl-preview">
+<div class="container-fluid" style="max-width: 400px; margin: 0;">
+<div class="row">
+
+<form role="form" class="col-sm-12">
+<h4>Select <small>(Without third party select JS libraries)</small></h4>
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+<select id="se17" class="mdl-selectfield__select" aria-expanded="false">
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se17" class="mdl-selectfield__label">With floating label</label>
+</div>
+<div class="mdl-selectfield mdl-js-selectfield">
+<select id="se18" class="mdl-selectfield__select" aria-expanded="false">
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se18" class="mdl-selectfield__label">With placeholder label</label>
+</div>
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+<select id="se19" class="mdl-selectfield__select" aria-expanded="false" disabled>
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se19" class="mdl-selectfield__label">Disabled with floating label</label>
+</div>
+<div class="mdl-selectfield mdl-js-selectfield">
+<select id="se20" class="mdl-selectfield__select" aria-expanded="false" disabled>
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se20" class="mdl-selectfield__label">Disabled with placeholder label</label>
+</div>
+</form>
+</div>
+</div>
+</div>
+{:/nomarkdown}
+{% highlight html %}
+<form role="form" class="col-sm-12">
+<h4>Select <small>(Without third party select JS libraries)</small></h4>
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+<select id="se17" class="mdl-selectfield__select" aria-expanded="false">
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se17" class="mdl-selectfield__label">With floating label</label>
+</div>
+<div class="mdl-selectfield mdl-js-selectfield">
+<select id="se18" class="mdl-selectfield__select" aria-expanded="false">
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se18" class="mdl-selectfield__label">With placeholder label</label>
+</div>
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+<select id="se19" class="mdl-selectfield__select" aria-expanded="false" disabled>
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se19" class="mdl-selectfield__label">Disabled with floating label</label>
+</div>
+<div class="mdl-selectfield mdl-js-selectfield">
+<select id="se20" class="mdl-selectfield__select" aria-expanded="false" disabled>
+<option value=""></option>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+</select>
+<label for="se20" class="mdl-selectfield__label">Disabled with placeholder label</label>
+</div>
+</form>
+ {% endhighlight %}
+
+<h4>Multiple Select</h4>
+ {::nomarkdown}
+<div class="pl-preview">
+
+<div class="container-fluid" style="max-width: 400px; margin: 0;">
+<div class="row">
+
+<form role="form" class="col-sm-12 form">
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
+<select id="se21" class="mdl-selectfield__select" aria-expanded="false" multiple>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+<option value="D">Option D</option>
+</select>
+<label for="se21" class="mdl-selectfield__label">With floating label</label>
+</div>
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
+<select id="se22" class="mdl-selectfield__select" aria-expanded="false" multiple disabled>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+<option value="D">Option D</option>
+</select>
+<label for="se22" class="mdl-selectfield__label">With floating label</label>
+</div>
+</form>
+</div>
+</div>
 </div>
 {:/nomarkdown}
 
-
 {% highlight html %}
-// Select
-<form role="form" class="col-sm-12">
-    <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-        <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-        <option value=""></option>
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        </select>
-        <label for="se17" class="mdl-selectfield__label">With floating label</label>
-    </div>
-    <div class="mdl-selectfield mdl-js-selectfield">
-        <select id="se18" class="mdl-selectfield__select" aria-expanded="false">
-        <option value=""></option>
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        </select>
-        <label for="se18" class="mdl-selectfield__label">With placeholder label</label>
-    </div>
-    <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-        <select id="se19" class="mdl-selectfield__select" aria-expanded="false" disabled>
-        <option value=""></option>
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        </select>
-        <label for="se19" class="mdl-selectfield__label">Disabled with floating label</label>
-    </div>
-    <div class="mdl-selectfield mdl-js-selectfield">
-        <select id="se20" class="mdl-selectfield__select" aria-expanded="false" disabled>
-        <option value=""></option>
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        </select>
-        <label for="se20" class="mdl-selectfield__label">Disabled with placeholder label</label>
-    </div>
-</form>
-
-// Multiple Select
 <form role="form" class="col-sm-12 form">
-    <div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
-      <select id="se21" class="mdl-selectfield__select" aria-expanded="false" multiple>
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        <option value="D">Option D</option>
-      </select>
-      <label for="se21" class="mdl-selectfield__label">With floating label</label>
-    </div>
-    <div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
-      <select id="se22" class="mdl-selectfield__select" aria-expanded="false" multiple disabled>
-        <option value="A">Option A</option>
-        <option value="B">Option B</option>
-        <option value="C">Option C</option>
-        <option value="D">Option D</option>
-      </select>
-      <label for="se22" class="mdl-selectfield__label">With floating label</label>
-    </div>
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
+<select id="se21" class="mdl-selectfield__select" aria-expanded="false" multiple>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+<option value="D">Option D</option>
+</select>
+<label for="se21" class="mdl-selectfield__label">With floating label</label>
+</div>
+<div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
+<select id="se22" class="mdl-selectfield__select" aria-expanded="false" multiple disabled>
+<option value="A">Option A</option>
+<option value="B">Option B</option>
+<option value="C">Option C</option>
+<option value="D">Option D</option>
+</select>
+<label for="se22" class="mdl-selectfield__label">With floating label</label>
+</div>
 </form>
-
 {% endhighlight %}
-
 </div>
 
 <div class="pl-pattern">
+
 ### Radio Buttons
 
 This component offers a way to handle situations where the user is presented with multiple, mutually-exclusive, options where only one option can be selected at a time. This should not be used in the place of a toggle which indicates a change in state.

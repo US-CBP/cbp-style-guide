@@ -2,12 +2,15 @@
 title: "Layouts"
 ---
 
+<div class="pl-pattern">
+
+<h3>Layouts</h3>
+Consistent and anticipated layouts allow users to navigate and understand applications with more ease. These layout and content types cover most use-cases for standard web applications.
+</div>
+
 <div class="pl-pattern pl-pattern-layouts">
 
-## Layouts
-Consistent and anticipated layouts allow users to navigate and understand applications with more ease. These layout and content types cover most use-cases for standard web applications.
-
-#### Layout Types
+### Layout Types
 
 <div class="pl-preview">
 

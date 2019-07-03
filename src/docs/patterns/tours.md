@@ -20,6 +20,8 @@ Users need a guided overview of functionality that they may not be familiar with
 
 <div class="pl-pattern">
 
+### Example
+
 {::nomarkdown}
 <div class="pl-preview">
 <button id="startTourBtn" type="button" class="btn btn-primary btn-lg">Start Tour</button>

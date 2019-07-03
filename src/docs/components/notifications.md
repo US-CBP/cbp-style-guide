@@ -7,9 +7,6 @@ title: "Notifications"
 <h3>Notifications</h3>
 
 <p>Notification provide the user with feedback about various system processes that are occurring.</p>
-
-<br/>
-
 </div>
 
 <div class="pl-pattern">

@@ -19,8 +19,10 @@ This pagination pattern provides a few variations of the following features:
 - Adjusting the number of items per page
 
 The features should be chosen based on the user's needs, the data, and the space available. Don't include pagination features that aren't necessary. If your users have no need to adjust the paging size or jump to a manually entered page for a particular type of data, don't include those features.
+</div>
 
-&nbsp;
+
+<div class="pl-pattern">
 
 ### Examples
 The examples below show various configurations of pagination features. Depending on the data, you may treat your pages as item ranges `Showing 150-160` or as pages `Page 15 of 25`.

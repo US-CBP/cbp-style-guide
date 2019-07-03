@@ -22,11 +22,16 @@ Use a popover instead of a tooltip or dialog when:
 - You need to provide relatively simple interactions
 - You have more text/content than can comfortably fit in a tooltip
 
+</div>
+
+<div class="pl-pattern">
+
+### Static Popover
+
 {::nomarkdown}
 <div class="pl-preview">
 <div class="panel">
   <div class="panel-body">
-    <h3>Static Popover</h3>
     <div class="bs-example bs-example-popover">
       <div class="popover left">
         <div class="arrow"></div>
@@ -74,7 +79,6 @@ Use a popover instead of a tooltip or dialog when:
 {% highlight html %}
 <div class="panel">
   <div class="panel-body">
-    <h3>Static Popover</h3>
     <div class="bs-example bs-example-popover">
       <div class="popover left">
         <div class="arrow"></div>
@@ -117,9 +121,11 @@ Use a popover instead of a tooltip or dialog when:
   </div>
 </div>
 {% endhighlight %}
+</div>
 
+<div class="pl-pattern">
 
-#### Live Examples
+### Live Examples
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -138,4 +144,21 @@ Use a popover instead of a tooltip or dialog when:
     </button>
 </div>
 {:/nomarkdown}
+{% highlight html %}
+
+ <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on left
+    </button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on top
+    </button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+    sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on bottom
+    </button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on right
+    </button>
+
+{% endhighlight %}
 </div>

@@ -19,11 +19,13 @@ Tabs are a navigational element that organizes content by grouping similar infor
 </div>
 
 <div class="pl-pattern">
+
 ### Normal Tabs
 The selected tab color should be the same color as the tab content.
 
 {::nomarkdown}
 <div class="pl-preview">
+
 <ul class="nav nav-tabs" role="tablist">
   <li class="active">
     <a href="#activeTab" role="tab" data-toggle="tab" aria-controls="activeTab">Active</a>
@@ -49,6 +51,7 @@ The selected tab color should be the same color as the tab content.
     </div>
   </div>
 </div>
+
 </div>
 {:/nomarkdown}
 {% highlight html %}
@@ -81,40 +84,72 @@ The selected tab color should be the same color as the tab content.
 </div>
 
 <div class="pl-pattern">
+
 ### Light Tabs
 Use when the tabs need less emphasis in relation to other navigational elements. 
 
 {::nomarkdown}
 <div class="pl-preview">
+
 <ul class="nav nav-tabs nav-tabs-light" role="tablist">
   <li class="active">
-    <a href="#" role="tab" data-toggle="tab">Active</a>
+    <a href="#activeTab-2" role="tab" data-toggle="tab" aria-controls="activeTab">Active</a>
   </li>
   <li>
-    <a href="#" role="tab" data-toggle="tab">Normal</a>
+    <a href="#normalTab-2" role="tab" data-toggle="tab" aria-controls="normalTab">Normal</a>
   </li>
   <li class="disabled">
     <a role="tab">Disabled</a>
   </li>
 </ul>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="activeTab-2">
+    <div class="panel-body">
+       <h4>Did you know that </h1>
+      <p>Banging your head against a wall burns 150 calories an hour.</p>
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="normalTab-2">
+    <div class="panel-body">
+      <h4>Did you know that </h1>
+      <p>Cherophobia is the fear of fun.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 {:/nomarkdown}
 {% highlight html %}
 <ul class="nav nav-tabs nav-tabs-light" role="tablist">
   <li class="active">
-    <a href="#" role="tab" data-toggle="tab">Active</a>
+    <a href="#activeTab-2" role="tab" data-toggle="tab" aria-controls="activeTab">Active</a>
   </li>
   <li>
-    <a href="#" role="tab" data-toggle="tab">Normal</a>
+    <a href="#normalTab-2" role="tab" data-toggle="tab" aria-controls="normalTab">Normal</a>
   </li>
   <li class="disabled">
     <a role="tab">Disabled</a>
   </li>
 </ul>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="activeTab-2">
+    <div class="panel-body">
+       <h4>Did you know that </h1>
+      <p>Banging your head against a wall burns 150 calories an hour.</p>
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="normalTab-2">
+    <div class="panel-body">
+      <h4>Did you know that </h1>
+      <p>Cherophobia is the fear of fun.</p>
+    </div>
+  </div>
+</div>
 {% endhighlight %}
 </div>
 
 <div class="pl-pattern">
+
 ### Nested Tabs
 
 {::nomarkdown}

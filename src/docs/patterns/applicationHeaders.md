@@ -7,9 +7,6 @@ title: "Headers"
 <h3>Headers</h3>
 
 Headers are the main navigation element on the page.
-
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">

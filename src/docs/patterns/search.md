@@ -7,10 +7,13 @@ title: "Search"
 <h3>Search</h3>
 
 Users can specify a single word, or a phrase, to find particular relevant pieces of content without the use of primary or secondary navigation. Search can be used to discover content, or as a way to filter content results. Search can be used an overarching element that searches an entire application or affixed to another component such as a data table.
+</div>
 
-&nbsp;
+<div class="pl-pattern">
 
-##### Basic
+### Examples
+
+#### Basic
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -39,7 +42,7 @@ Users can specify a single word, or a phrase, to find particular relevant pieces
   </div>
 {% endhighlight %}
 
-##### Advanced Search
+#### Advanced Search
 
 {::nomarkdown}
 <div class="pl-preview">

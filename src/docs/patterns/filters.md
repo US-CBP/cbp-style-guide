@@ -24,9 +24,6 @@ possible values to filter by
 - Date range
 - Sliders
 - Single-select dropdowns
-
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">
