@@ -95,8 +95,11 @@ The 12 column grid can be used for aligning components and assisting in responsi
         </div>
 
 {% endhighlight %}
+</div>
 
-#### Stacked-to-Horizontal
+<div class="pl-pattern">
+
+### Stacked-to-Horizontal
 {::nomarkdown}
 <div class="pl-preview">
 
@@ -165,8 +168,11 @@ The 12 column grid can be used for aligning components and assisting in responsi
 </div>
 
 {% endhighlight %}
+</div>
 
-#### Mobile and Desktop
+<div class="pl-pattern">
+
+### Mobile and Desktop
 {::nomarkdown}
 <div class="pl-preview">
 <div class="container-fluid pl-grid-example">
