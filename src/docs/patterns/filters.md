@@ -364,14 +364,14 @@ Filters can optionally be:
                 <span class="input-group-btn">
                   <button type="submit" class="btn btn-default tag-example-button" >Add</button>
                 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </form>
+   </div>
+ </div>
 </div>
 {% endhighlight %}
 
@@ -420,8 +420,8 @@ For many or complex filters, you may want to organize them with a menu along the
 {::nomarkdown}
 <div class="pl-preview">
     <div class="dropdown">
-        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">3</span>Filters <span class="caret"></span></button>
-        <div class="dropdown-menu" role="menu" style="padding: 0; width: 500px;">
+        <button type="button" class="btn btn-link dropdown-toggle collapsed-filter" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">3</span>Filters <span class="caret"></span></button>
+        <div class="dropdown-menu collapsed-filter" role="menu" style="padding: 0; width: 500px;">
             <form class="clearfix" role="form">
                 <div class="keyline-right" style="width: 200px; min-height: 300px; float: left;">
                     <ul class="nav nav-stacked" role="tab-list" style="margin-top: 10px">
@@ -479,4 +479,63 @@ For many or complex filters, you may want to organize them with a menu along the
 </div>
 {:/nomarkdown}
 
+{% highlight html %}
+<div class="dropdown">
+ <button type="button" class="btn btn-link dropdown-toggle collapsed-filter" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">3</span>Filters <span class="caret"></span></button>
+   <div class="dropdown-menu collapsed-filter" role="menu" style="padding: 0; width: 500px;">
+      <form class="clearfix" role="form">
+        <div class="keyline-right" style="width: 200px; min-height: 300px; float: left;">
+            <ul class="nav nav-stacked" role="tab-list" style="margin-top: 10px">
+            <li role="presentation" class="active"><a role="tab" data-toggle="tab" href="#">Applied filters <span class="badge pull-right">3</span></a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="tab" data-toggle="tab" href="#">Year</a></li>
+            <li role="presentation"><a role="tab" data-toggle="tab" href="#">Conveyance type <span class="badge pull-right">2</span></a></li>
+            <li role="presentation"><a role="tab" data-toggle="tab" href="#">Date range</a></li>
+            <li role="presentation"><a role="tab" data-toggle="tab" href="#">Distance</a></li>
+            <li role="presentation"><a role="tab" data-toggle="tab" href="#">Name <span class="badge pull-right">1</span></a></li>
+            <li role="presentation"><a role="tab" data-toggle="tab" href="#">Colors</a></li>
+            <li role="presentation"><a role="tab" data-toggle="tab" href="#">Tags</a></li>
+            </ul>
+        </div>
+        <div style="margin-left: 200px; max-height: 300px; overflow: auto;">
+         <div style="opacity: 1; display: inline-block; width: 100%;">
+          <div class="modal-body">
+            <a href="" class="pull-right">Clear all</a>
+            <div class="form-group">
+            <label class="control-label">Conveyance type </label>
+          <div class="">
+            <ul class="list-unstyled">
+            <li class="tag tag-default subtle">
+            Truck
+            <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+            </li>
+            <li class="tag tag-default subtle">
+            Air
+            <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+            </li>
+            <li class="tag tag-default subtle">
+            Sea
+            <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+            </li>
+            </ul>
+         </div>
+       </div>
+         <div class="form-group">
+          <label class="control-label">Name</label>
+           <div class="">
+              <ul class="list-unstyled">
+              <li class="tag tag-default subtle">
+              John
+              <a href="#Tags" class="fa fa-close fa-muted" data-dismiss="tag"></a>
+              </li>
+              </ul>
+           </div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </form>
+ </div>
+</div>
+{% endhighlight %}
 </div>

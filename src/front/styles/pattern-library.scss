@@ -301,7 +301,7 @@ hr.hr-strong {
                 margin: 0 -40px;
                 position: relative;
                 z-index: 2;
-                background: #fefefe;
+                background: $gray-lightest;
                 border-bottom: 1px solid $gray-lighter;
             }
 
@@ -338,10 +338,10 @@ hr.hr-strong {
     }
 }
 
-.pl-grid-example .row > div > div {
+.pl-grid-example .row > div {
     background: #f0f0f0;
     color: $gray-dark;
-    border: 1px solid $gray-lighter;
+    border: 1px solid $pl-sidebar-bg;
     padding: 6px;
     text-align: center;
     margin-bottom: 16px;
@@ -563,4 +563,30 @@ hr.hr-strong {
     ul {
         list-style-position:inside;
     }
+}
+
+.pl-pattern {
+    .fonts img {
+       float: right;
+       padding-left: 20px;
+       width: 500px;
+       max-width: 500px;
+       height: 400px;
+    }
+}
+
+.pl-pattern {
+    #myModalLive .modal-dialog {
+        margin: 30% auto;
+        max-width: 90%; 
+    }
+}
+
+.pl-filter-spacer {
+    margin-bottom: 25%;
+}
+
+#startTourBtn, #startCalloutBtn {
+   display: block;
+   margin: 0 auto 4% auto;
 }

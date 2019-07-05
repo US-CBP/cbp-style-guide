@@ -352,46 +352,76 @@ $(document).ready(function () {
       $(this).next('tr[data-pl-detail-row]').toggle();
   });
 
-  // Define the tour!
-  /* jshint ignore:start */
-  var tour = {
-      id: 'hopscotch-example',
-      steps: [{
-              title: 'Hopscotch Tour Example',
-              content: 'This is an example of a tour.',
-              target: 'tour',
-              placement: 'bottom'
-          },
-          {
-              title: 'Purpose',
-              content: 'Example of tour.',
-              target: 'description',
-              placement: 'bottom'
-          }, {
-              title: 'Navigation',
-              content: 'Foundation, Components, Patterns describe how best to use the CBP Theme.',
-              target: 'sidebar',
-              placement: 'right'
-          }
+     // Hopscotch 
+    // Define the tour!
+   /* jshint ignore:start */
+   // defines and declares a tour
+   var prep = {
+    id: 'hopscotch-init',
+    steps: [{
+            title: 'Start a Hopscotch Tour',
+            content: 'Click here to see a tour.',
+            target: document.querySelector('#startTourBtn'),
+            placement: 'left'
+        }
+       
+    ],
+};
+ // defines and declares a tour
+   var tour = {
+    id: 'hopscotch-example',
+    steps: [{
+            title: 'Hopscotch Tour Example',
+            content: 'This is an example Hopscotch tour in action!',
+            target: document.querySelector('#tour'),
+            placement: 'bottom'
+        },
+        {
+            title: 'Description',
+            content: 'At the very least, you will need to include both the hopscotch.css and hopscotch.js files.',
+            target: 'description',
+            placement: 'bottom'
+        }, {
+            title: 'Navigation',
+            content: 'Elements like this side navigation bar or others can be added to a tour for helping with the user demo as needed.',
+            target: 'sidebar',
+            placement: 'right'
+        }
 
-      ],
-      showPrevButton: true
-  };
-  var calloutMgr = hopscotch.getCalloutManager();
-  
-  if (document.URL.indexOf('tours.html') > -1) {
-      // Start the tour!
-      hopscotch.startTour(tour);
+    ],
+    showPrevButton: true
+};
 
-      calloutMgr.createCallout({
+  // Limits the scope of where Hopscotch script will auto activate on page load
+ if (document.URL.indexOf('tours.html') > -1) {
+    // Start the tour!
+    hopscotch.startTour(prep);
+    hopscotch.getCalloutManager().createCallout({
+    id: 'attach-icon',
+    target: document.querySelector('#startCalloutBtn'),
+    placement: 'right',
+    title: 'Callout Example',
+    content: 'For simple explanations.'
+});
+}
+     // provides event handler for activating a tour
+     $('#startTourBtn').click(function() {
+       // Start the tour!
+        hopscotch.startTour(tour);
+});
+
+     // provides event handler for activating a callout
+     $('#startCalloutBtn').click(function() {
+       // Start the Callout!
+        hopscotch.getCalloutManager().createCallout({
         id: 'attach-icon',
-        target: 'callout-button',
+        target: 'startCalloutBtn',
         placement: 'right',
         title: 'Callout Example',
         content: 'For simple explanations.'
     });
-  }  
-
+ });
+  // End of Hopscotch
   /* jshint ignore:end */
   /* google analytics download tracking */
 
@@ -449,4 +479,11 @@ $(document).ready(function () {
   $('#topSecret').on('click', function () {
     hulkIt('top-secret');
   });
+
+  // Toggle bottom margin spacers for filter dropdown examples
+  $('.collapsed-filter').click(function() {
+    $('.pl-content').toggleClass('pl-filter-spacer');
+});
+
+
 });

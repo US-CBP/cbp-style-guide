@@ -18,9 +18,9 @@ title: "Typography"
 &nbsp;
 
 {::nomarkdown}
-<div>
+<div class="fonts">
     <span>
-        <img align="right" src="../../generated/images/FALLBACK_FONT.png" style="padding-left: 20px;" width="500" height="400" alt="" >
+        <img src="../../generated/images/FALLBACK_FONT.png" alt="Font stack examples showing Roboto as the primary font family with reference to fallback order and usable font weights." >
     </span>
     <h4>Roboto</h4>
     <span>

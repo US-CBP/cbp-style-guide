@@ -3,12 +3,9 @@ title: "Tours"
 ---
 
 <div class="pl-pattern">
-<h3>Tours</h3>
+<h3 id="tour">Tours</h3>
 
-Users need to a guided overview of functionality that they may not be familiar with yet.
-
-<button id="callout-button" type="button" class="btn btn-default">Callout Example</button>
-
+Users need a guided overview of functionality that they may not be familiar with yet.
 
 #### Description
 - Tours can appear in the center of the screen or next to a related element
@@ -18,8 +15,22 @@ Users need to a guided overview of functionality that they may not be familiar w
 - The background can optionally be grayed out while highlighting a related element
 - The Style Guide uses [Hopscotch](https://linkedin.github.io/hopscotch)
 
+ <br>
+</div>
 
-<h4 id="tour">Tour Example</h4>
+<div class="pl-pattern">
 
-<br/>
+{::nomarkdown}
+<div class="pl-preview">
+<button id="startTourBtn" type="button" class="btn btn-primary btn-lg">Start Tour</button>
+<button id="startCalloutBtn" type="button" class="btn btn-default btn-lg">Callout Example</button>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+
+<button id="startTourBtn" type="button" class="btn btn-primary btn-lg">Start Tour</button>
+<button id="startCalloutBtn" type="button" class="btn btn-default btn-lg">Callout Example</button>
+
+{% endhighlight %}
 </div>

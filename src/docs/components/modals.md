@@ -50,7 +50,7 @@ __Footer__
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4 class="modal-title">Rename file</h4>
+          <h4 id="dialog-1" class="modal-title">Rename file</h4>
         </div>
         <div class="modal-body">
           <form role="form" class="form">
@@ -70,7 +70,7 @@ __Footer__
 {:/nomarkdown}
 
 {% highlight html %}
-<div class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="myModalTitle">
+<div class="modal fade" tabindex="-1" id="myModal-1" role="dialog" aria-labelledby="dialog-1">
 <div class="modal-dialog" role="document">
   <div class="modal-content">
     <div class="modal-header">
@@ -78,7 +78,7 @@ __Footer__
       <span aria-hidden="true">&times;</span>
       <span class="sr-only">Close</span>
       </button>
-      <h4 class="modal-title">Rename file</h4>
+      <h4 id="dialog-1" class="modal-title">Rename file</h4>
     </div>
     <div class="modal-body">
       <form role="form" class="form">
@@ -106,7 +106,7 @@ __Footer__
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4 class="modal-title">Find and replace</h4>
+          <h4 id="dialog-2" class="modal-title">Find and replace</h4>
         </div>
         <div class="modal-body">
           <form role="form" class="form">
@@ -144,7 +144,7 @@ __Footer__
 {:/nomarkdown}
 
 {% highlight html %}
-<div class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="myModalTitle">
+<div class="modal fade" tabindex="-1" id="myModal-2" role="dialog" aria-labelledby="dialog-2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -152,7 +152,7 @@ __Footer__
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4 class="modal-title">Find and replace</h4>
+          <h4 id="dialog-2" class="modal-title">Find and replace</h4>
         </div>
         <div class="modal-body">
           <form role="form" class="form">
@@ -198,7 +198,7 @@ __Footer__
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4 class="text-success">Thank you!</h4>
+          <h4 id="dialog-3" class="text-success">Thank you!</h4>
           <p>Your request has been submitted.</p>
         </div>
         <div class="modal-footer">
@@ -211,7 +211,7 @@ __Footer__
 {:/nomarkdown}
 
 {% highlight html %}
-<div class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="myModalTitle">
+<div class="modal fade" tabindex="-1" id="myModal-3" role="dialog" aria-labelledby="dialog-3">
 <div class="modal-dialog" role="document">
   <div class="modal-content">
     <div class="modal-body">
@@ -219,7 +219,7 @@ __Footer__
       <span aria-hidden="true">&times;</span>
       <span class="sr-only">Close</span>
       </button>
-      <h4 class="text-success">Thank you!</h4>
+      <h4 id="dialog-3" class="text-success">Thank you!</h4>
       <p>Your request has been submitted.</p>
     </div>
     <div class="modal-footer">
@@ -233,6 +233,7 @@ __Footer__
 </div>
 
 <div class="pl-pattern">
+
 ### Confirmation
 
 A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous or irreversible operations.
@@ -246,7 +247,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4 class="text-danger">Delete this user?</h4>
+          <h4 id="dialog-4" class="text-danger">Delete this user?</h4>
           <p>All user information will be deleted.</p>
         </div>
         <div class="modal-footer">
@@ -259,7 +260,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
 {:/nomarkdown}
 
 {% highlight html %}
-<div class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="myModalTitle">
+<div class="modal fade" tabindex="-1" id="myModal-4" role="dialog" aria-labelledby="dialog-4">
 <div class="modal-dialog" role="document">
   <div class="modal-content">
     <div class="modal-body">
@@ -267,7 +268,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
       <span aria-hidden="true">&times;</span>
       <span class="sr-only">Close</span>
       </button>
-      <h4 class="text-danger">Delete this user?</h4>
+      <h4 id="dialog-4" class="text-danger">Delete this user?</h4>
       <p>All user information will be deleted.</p>
     </div>
     <div class="modal-footer">
@@ -288,7 +289,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4>Abandon changes?</h4>
+          <h4 id="dialog-5">Abandon changes?</h4>
           <p>You have unsaved changes. Your changes will be lost.</p>
         </div>
         <div class="modal-footer">
@@ -301,7 +302,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
 {:/nomarkdown}
 
 {% highlight html %}
-<div class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="myModalTitle">
+<div class="modal fade" tabindex="-1" id="myModal-5" role="dialog" aria-labelledby="dialog-5">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
@@ -309,7 +310,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4>Abandon changes?</h4>
+          <h4 id="dialog-5">Abandon changes?</h4>
           <p>You have unsaved changes. Your changes will be lost.</p>
         </div>
         <div class="modal-footer">
@@ -342,7 +343,7 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
           <span aria-hidden="true">×</span>
           <span class="sr-only">Close</span>
           </button>
-          <h4 class="modal-title" id="myModalTitle">Rename file</h4>
+          <h4 id="dialog-7" class="modal-title" id="myModalTitle">Rename file</h4>
         </div>
         <div class="modal-body">
           <form role="form" class="form">
@@ -360,6 +361,42 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
     </div>
 </div>
 
+</div>
+
 {:/nomarkdown}
+
+{% highlight html %}
+
+<button class="btn btn-default" data-toggle="modal" data-target="#myModalLive">
+    Show modal
+</button>
+
+<div class="modal fade" tabindex="-1" id="myModalLive" role="dialog" aria-labelledby="dialog-7">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">×</span>
+          <span class="sr-only">Close</span>
+          </button>
+          <h4 id="dialog-7" class="modal-title" id="myModalTitle">Rename file</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form" class="form">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-textfield--full-width">
+              <label for="tb122" class="mdl-textfield__label">Enter a new file name</label>
+              <input type="text" class="mdl-textfield__input" id="tb122" value="dialogs.md">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="pull-left btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endhighlight %}
 
 </div>
