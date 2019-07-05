@@ -115,45 +115,43 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
                     <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px;" class="fa fa-times-circle"></i> Recipients</a>
                     </li>
                     <li class="disabled"><a style="style="margin-left: 20px;" role="tab">Configure</a>
-                        <ul class="nav nav-stacked nav-tree" role="tab-list">
-                            <li class="disabled" role="presentation"><a href=""><span style="margin-left: 10px; position: relative; top: 1px; width: 14px; display: inline-block;"></span>Instances</a></li>
-                            <li class="disabled" role="presentation"><a href=""><span style="margin-left: 10px; position: relative; top: 1px; width: 14px; display: inline-block;"></span>Monitoring</a></li>
-                        </ul>
+                <ul class="nav nav-stacked nav-tree" role="tab-list">
+                     <li class="disabled" role="presentation"><a href=""><span style="margin-left: 10px; position: relative; top: 1px; width: 14px; display: inline-block;"></span>Instances</a></li>
+                     <li class="disabled" role="presentation"><a href=""><span style="margin-left: 10px; position: relative; top: 1px; width: 14px; display: inline-block;"></span>Monitoring</a></li>
+                 </ul>
                     </li>
                     <li class="disabled" role="presentation"><a role="tab"><span style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></span> Review</a></li>
-                </ul>
-            </div>
+                 </ul>
+              </div>
             <div class="panel panel-default" style="margin-left: 200px; height: 500px; max-height: 500px; overflow: auto; position: relative;">
-                <div class="panel-body">
-
-<form class="form" style="max-width: 450px;" role="form">
-<div class="form-group">
-<div class="form-group-heading">
-<h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
-<p>When the alert criteria is met, each recipient will receive an email notification.</p>
-<hr>
-<div class="alert alert-danger"><i class="fa fa-times-circle"></i>&nbsp;Fix the 1 error below.</div>
-</div>
-<div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-<label for="ht3" class="mdl-textfield__label">Full name</label>
-<input class="mdl-textfield__input" type="text" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" id="ht3">
-<span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid full name</span>
-</div>
-<div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-<label for="ht4" class="mdl-textfield__label">Email</label>
-<input class="mdl-textfield__input" type="text" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" id="ht4">
-<p class="mdl-textfield__help">Email address of alert recipient</p>
-<span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid email address</span>
-</div>
-</div>
-<button type="button" class="btn btn-default">Cancel</button>
-<button type="submit" class="btn btn-primary pull-right">Continue</button>
-</form>
-
-</div>
-</div>
-</div>
-</div>
+              <div class="panel-body">
+             <form class="form" style="max-width: 450px;" role="form">
+               <div class="form-group">
+                <div class="form-group-heading">
+                  <h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
+                  <p>When the alert criteria is met, each recipient will receive an email notification.</p>
+                 <hr>
+                  <div class="alert alert-danger"><i class="fa fa-times-circle"></i>&nbsp;Fix the 1 error below.</div>
+                  </div>
+                 <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
+                  <label for="ht3" class="mdl-textfield__label">Full name</label>
+                  <input class="mdl-textfield__input" type="text" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" id="ht3">
+                  <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid full name</span>
+                 </div>
+                <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
+                 <label for="ht4" class="mdl-textfield__label">Email</label>
+                 <input class="mdl-textfield__input" type="text" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" id="ht4">
+                  <p class="mdl-textfield__help">Email address of alert recipient</p>
+                 <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid email address</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default">Cancel</button>
+              <button type="submit" class="btn btn-primary pull-right">Continue</button>
+            </form>
+         </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endhighlight %}
