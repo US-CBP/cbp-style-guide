@@ -362,7 +362,7 @@ $(document).ready(function () {
             title: 'Start a Hopscotch Tour',
             content: 'Click here to see a tour.',
             target: document.querySelector('#startTourBtn'),
-            placement: 'right'
+            placement: 'left'
         }
        
     ],
@@ -398,8 +398,8 @@ $(document).ready(function () {
     hopscotch.startTour(prep);
     hopscotch.getCalloutManager().createCallout({
     id: 'attach-icon',
-    target: 'startCalloutBtn',
-    placement: 'left',
+    target: document.querySelector('#startCalloutBtn'),
+    placement: 'right',
     title: 'Callout Example',
     content: 'For simple explanations.'
 });
