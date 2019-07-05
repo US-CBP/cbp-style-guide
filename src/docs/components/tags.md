@@ -13,10 +13,9 @@ Tags usually represent a category or label of an object. Sometimes they are remo
 </div>
 
 <div class="pl-pattern">
-
-### Examples
-
+### Tag Types
 {::nomarkdown}
+<h4>Default Tags</h4>
 <div class="pl-preview">
     <ul class="list-unstyled">
       <li class="tag tag-default">
@@ -85,9 +84,8 @@ Tags usually represent a category or label of an object. Sometimes they are remo
 </ul>
 {% endhighlight %}
 
-#### Subtle
-
 {::nomarkdown}
+<h4>Subtle Tags</h4>
 <div class="pl-preview">
 
 <ul class="list-unstyled">

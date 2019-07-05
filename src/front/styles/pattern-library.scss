@@ -298,6 +298,10 @@ hr.hr-strong {
                     border-bottom-left-radius: 2px;
                     background: #fafafa;
                 }
+
+                img {
+                    max-width: 100%;
+                }
             }
 
             .pl-preview+.highlight {
@@ -592,7 +596,7 @@ hr.hr-strong {
 }
 
 .pl-filter-spacer {
-    margin-bottom: 25%;
+    margin-bottom: 28%;
 }
 
 #startTourBtn, #startCalloutBtn {

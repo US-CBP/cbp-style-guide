@@ -19,6 +19,7 @@ Use tooltips for:
 
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
 <div class="tooltip fade in right" style="display: inline-block; position: relative; width: auto;">
   <div class="tooltip-inner">I'm a tooltip!</div>

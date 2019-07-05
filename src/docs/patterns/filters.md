@@ -43,6 +43,7 @@ Filters can optionally be:
 - Clearable or resettable
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
 <div class="container-fluid" style="margin-top: 8px;">
     <div class="row">
@@ -475,35 +476,6 @@ For many or complex filters, you may want to organize them with a menu along the
     </div>
 </div>
 {:/nomarkdown}
-
-<!-- </div>
-<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-<select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-<option value=""></option>
-<option value="2016">2016</option>
-<option value="2015">2015</option>
-<option value="2014">2014</option>
-</select>
-<label for="se17" class="mdl-selectfield__label">Year</label>
-</div>
-<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-<select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-<option value=""></option>
-<option value="A">Option A</option>
-<option value="B">Option B</option>
-<option value="C">Option C</option>
-</select>
-<label for="se17" class="mdl-selectfield__label">With floating label</label>
-</div>    
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- end modal -->
-<!-- </div>
-</div> -->
 
 {% highlight html %}
 

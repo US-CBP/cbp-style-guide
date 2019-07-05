@@ -308,7 +308,6 @@ Text areas can either
 <h4>Multiple Select</h4>
  {::nomarkdown}
 <div class="pl-preview">
-
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
 <div class="row">
 
@@ -378,9 +377,8 @@ This component offers a way to handle situations where the user is presented wit
 - Align in shorter columns if there are many options
 - Ensure there is adequate spacing between adjacent fields and radio/checkbox groups
 
-#### Vertical
-
 {::nomarkdown}
+<h4>Vertical</h4>
 <div class="pl-preview">
     <div class="radio">
       <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
@@ -463,7 +461,6 @@ This component offers a way to handle situations where the user is presented wit
 </div>
 {:/nomarkdown}
 
-
 {% highlight html %}
 <div class="radio-inline">
   <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
@@ -484,6 +481,7 @@ This component offers a way to handle situations where the user is presented wit
 </div>
 
 <div class="pl-pattern">
+
 ### Checkboxes
 
 This interactive element allows a user to make a selection from a number of options by “checking” one or more of the labelled options presented. If a “select all” function exists, it must be visually different than the other single selection options.
@@ -500,9 +498,8 @@ This interactive element allows a user to make a selection from a number of opti
 - The selected state of a checkbox should ideally indicate something 'positive' and may require the rephrasing of the label (e.g., `Send me weekly reminders`, vs. `Do not send me weekly reminders`)
 - Ensure there is adequate spacing between adjacent fields and radio/checkbox groups
 
-#### Vertical
-
 {::nomarkdown}
+<h4>Vertical</h4>
 <div class="pl-preview">
 <div class="checkbox">
   <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
@@ -531,7 +528,6 @@ This interactive element allows a user to make a selection from a number of opti
     </div>
   </label>
 </div>
-
 </div>
 {:/nomarkdown}
 
@@ -565,9 +561,8 @@ This interactive element allows a user to make a selection from a number of opti
 </div>
 {% endhighlight %}
 
-#### Inline
-
 {::nomarkdown}
+<h4>Inline</h4>
 <div class="pl-preview">
     <div class="checkbox-inline">
       <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
@@ -586,7 +581,6 @@ This interactive element allows a user to make a selection from a number of opti
 </div>
 {:/nomarkdown}
 
-
 {% highlight html %}
 <div class="checkbox-inline">
   <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
@@ -603,7 +597,6 @@ This interactive element allows a user to make a selection from a number of opti
   </label>
 </div>
 {% endhighlight %}
-
 </div>
 
 <div class="pl-pattern">
@@ -613,11 +606,9 @@ Toggles are an interactive element that is used to quickly switch between possib
 
 #### Examples
 
-##### On/Off Switches
-Use a toggle switch for a binary option where the change occurs _immediately_. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).
-
-
 {::nomarkdown}
+<h4>On/Off Switches</h4>
+Use a toggle switch for a binary option where the change occurs _immediately_. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).
 <div class="pl-preview">
     <div class="form-group">
       <div class="switch">
@@ -775,6 +766,7 @@ Users need to toggle an option between multiple states.
 
 
 <div class="pl-pattern">
+
 ### Date Picker
 
 This component allows the user to choose a single date, a range of dates.
@@ -791,8 +783,8 @@ Date pickers can provide:
 <span class="text-muted">Example uses jQuery UI for demo purposes.</span>
 
 {::nomarkdown}
+<h4>With Floating Label</h4>
 <div class="pl-preview">
-    <h4>With Floating Label</h4>
     <div class="container-fluid" style="max-width: 400px; margin: 0;">
       <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
@@ -817,7 +809,40 @@ Date pickers can provide:
         </form>
       </div>
     </div>
-    <h4>With Placeholder Label</h4>
+   </div>
+{:/nomarkdown}
+
+{% highlight html %}
+ <div class="container-fluid" style="max-width: 400px; margin: 0;">
+      <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <label for="dp1" class="mdl-textfield__label"><span class="fa fa-calendar-o fa-fw"></span>&nbsp;Date</label>
+            <input id="dp1" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " type="text" class="datepicker mdl-textfield__input">
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <label for="dp2" class="mdl-textfield__label"><span class="fa fa-calendar-o fa-fw"></span>&nbsp;To</label>
+                <input id="dp2" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " type="text" class="datepicker mdl-textfield__input">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <label for="dp3" class="mdl-textfield__label"><span class="fa fa-calendar-o fa-fw"></span>&nbsp;From</label>
+                <input id="dp3" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " type="text" class="datepicker mdl-textfield__input">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+{% endhighlight %}
+
+{::nomarkdown}
+<h4>With Placeholder Label</h4>
+<div class="pl-preview">
     <div class="container-fluid" style="max-width: 400px; margin: 0;">
       <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
@@ -845,34 +870,7 @@ Date pickers can provide:
 </div>
 {:/nomarkdown}
 
-
 {% highlight html %}
-<h4>With Floating Label</h4>
-<div class="container-fluid" style="max-width: 400px; margin: 0;">
-  <div class="row">
-    <form role="form" class="col-sm-12 form-horizontal">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <label for="dp1" class="mdl-textfield__label"><span class="fa fa-calendar-o fa-fw"></span>&nbsp;Date</label>
-        <input id="dp1" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " type="text" class="datepicker mdl-textfield__input">
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <label for="dp2" class="mdl-textfield__label"><span class="fa fa-calendar-o fa-fw"></span>&nbsp;To</label>
-            <input id="dp2" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " type="text" class="datepicker mdl-textfield__input">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <label for="dp3" class="mdl-textfield__label"><span class="fa fa-calendar-o fa-fw"></span>&nbsp;From</label>
-            <input id="dp3" data-inputmask=" 'alias' : 'mdl-mask-datepicker' " type="text" class="datepicker mdl-textfield__input">
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-<h4>With Placeholder Label</h4>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
   <div class="row">
     <form role="form" class="col-sm-12 form-horizontal">

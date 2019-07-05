@@ -28,6 +28,7 @@ Menus appear relative to the control or interaction that triggered the menu. Cli
 - Use sentence case for menu items
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
     <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu">
       <li role="presentation">

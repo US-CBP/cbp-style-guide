@@ -69,6 +69,9 @@ When scaling icons, ensure the sizes used appear sharp on standard and high DPI 
 </div>
 </div>
 {:/nomarkdown}
+</div>
+
+<div class="pl-pattern">
 
 ### Usage
 - Your application and audience may benefit from other methods of serving icons

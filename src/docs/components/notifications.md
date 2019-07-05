@@ -33,6 +33,7 @@ __Types:__
 - __Danger__ alerts should be used when the system has failed to perform an action, or when the user has made an error.
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
     <div style="max-width: 450px;">
         <div class="alert alert-info" role="alert">
@@ -141,6 +142,7 @@ __Types:__
 - __Danger__ notifications can be used for critical messages that require immediate attention.
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
 
     <div class="toast-list" style="max-width: 400px;">

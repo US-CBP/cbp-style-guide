@@ -21,8 +21,6 @@ __Don't__
 - Use placeholders as the only label
 - Place unrelated inputs on the same line
 
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">
@@ -42,6 +40,7 @@ __Don't__
 - Use colons after labels
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
     <form role="form" class="form" style="padding: 0 15px;">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
@@ -89,9 +88,8 @@ __Don't__
 ### Required Fields
 Required fields should be marked as required.
 
-#### Examples
-
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
     <form role="form" class="form">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width is-required">
@@ -136,6 +134,7 @@ Required fields should be marked as required.
 </div>
 
 <div class="pl-pattern">
+
 ### Form Validation
 
 There are two main types of form validation, often used together.
@@ -161,44 +160,56 @@ __Don't__
 
 
 {::nomarkdown}
+ <h4>Alphabet Validation (no space)</h4>
 <div class="pl-preview">
     <form class="form" style="max-width: 450px;" role="form">
-      <h4>Alphabet Validation (no space)</h4>
       <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
         <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z]*" id="sample11" />
         <label class="mdl-textfield__label" for="sample11">Type any number(s) here...</label>
         <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Only alphabet and no spaces</span>
       </div>
-      <h4>Numeric Validation</h4>
+    </form>
+    </div>
+ {:/nomarkdown}
+
+ {% highlight html %}
+
+   <form class="form" style="max-width: 450px;" role="form">
       <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
+        <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z]*" id="sample11" />
+        <label class="mdl-textfield__label" for="sample11">Type any number(s) here...</label>
+        <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Only alphabet and no spaces</span>
+      </div>
+   </form>
+
+ {% endhighlight %}
+
+  <h4>Numeric Validation</h4>
+ <div class="pl-preview">
+ {::nomarkdown}
+   <form>
+     <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield  mdl-textfield--full-width">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample12" />
         <label class="mdl-textfield__label" for="sample12">Type any alphabet(s) here...</label>
         <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Only numbers</span>
       </div>
     </form>
-</div>
+    </div>
 {:/nomarkdown}
 
-
 {% highlight html %}
-<form class="form" style="max-width: 450px;" role="form">
-  <h4>Alphabet Validation (no space)</h4>
-  <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z]*" id="sample11" />
-    <label class="mdl-textfield__label" for="sample11">Type any number(s) here...</label>
-    <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Only alphabet and no spaces</span>
-  </div>
-  <h4>Numeric Validation</h4>
-  <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample12" />
-    <label class="mdl-textfield__label" for="sample12">Type any alphabet(s) here...</label>
-    <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Only numbers</span>
-  </div>
-</form>
+ <form>
+     <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield  mdl-textfield--full-width">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample12" />
+        <label class="mdl-textfield__label" for="sample12">Type any alphabet(s) here...</label>
+        <span class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Only numbers</span>
+      </div>
+  </form>
 {% endhighlight %}
 </div>
 
 <div class="pl-pattern">
+
 ### Help Text
 
 Help text can be placed at the top of the form, under the heading of a form group, under an individual form field, or as a popover when the field is focused.
@@ -210,6 +221,7 @@ Help text can be placed at the top of the form, under the heading of a form grou
 
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
 <form class="form" style="max-width: 450px;" role="form">
   <div class="form-group">
@@ -274,33 +286,24 @@ __Text area__
 - Update the limit indicator on each key press
 - Allow the user to keep typing past the indicator, but provide obvious indications that the limit has been exceeded.
 
-
+ <h4>Textfield</h4>
 {::nomarkdown}
 <div class="pl-preview">
 <form class="form" style="max-width: 450px;" role="form">
-  <h4>Textfield</h4>
   <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
     <label for="ht4" class="mdl-textfield__label">Email</label>
     <input class="mdl-textfield__input" type="text" maxlength="25" data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit' : 25 " pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" id="ht4">
     <p class="mdl-textfield__error"><i class="fa fa-exclamation-triangle fa-fw"></i>&nbsp;Not a valid email address</p>
     <p class="mdl-textfield__help">This is how people will contact you.</p>
-    <p class="mdl-textfield__counter"></p>
-  </div>
-  <h4>Textarea</h4>
-  <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-    <label for="ta2" class="mdl-textfield__label">Description</label>
-    <textarea class="mdl-textfield__input" id="ta2" rows="3" class="form-control form-control-width-fill"
-    data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 "></textarea>
     <p class="mdl-textfield__counter"></p>
   </div>
 </form>
 </div>
 {:/nomarkdown}
 
-
 {% highlight html %}
+
 <form class="form" style="max-width: 450px;" role="form">
-  <h4>Textfield</h4>
   <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
     <label for="ht4" class="mdl-textfield__label">Email</label>
     <input class="mdl-textfield__input" type="text" maxlength="25" data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit' : 25 " pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" id="ht4">
@@ -308,16 +311,36 @@ __Text area__
     <p class="mdl-textfield__help">This is how people will contact you.</p>
     <p class="mdl-textfield__counter"></p>
   </div>
-  <h4>Textarea</h4>
-  <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
-    <label for="ta2" class="mdl-textfield__label">Description</label>
-    <textarea class="mdl-textfield__input" id="ta2" rows="3" class="form-control form-control-width-fill"
-    data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 "></textarea>
-    <p class="mdl-textfield__counter"></p>
-  </div>
 </form>
+
 {% endhighlight %}
 
+<h4>Textarea</h4>
+
+{::nomarkdown}
+<div class="pl-preview">
+  <form>
+    <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
+      <label for="ta2" class="mdl-textfield__label">Description</label>
+      <textarea class="mdl-textfield__input" id="ta2" rows="3" class="form-control form-control-width-fill"
+      data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 "></textarea>
+      <p class="mdl-textfield__counter"></p>
+    </div>
+  </form>
+</div>
+{:/nomarkdown}
+
+
+{% highlight html %}
+<form>
+    <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield mdl-textfield--full-width">
+      <label for="ta2" class="mdl-textfield__label">Description</label>
+      <textarea class="mdl-textfield__input" id="ta2" rows="3" class="form-control form-control-width-fill"
+      data-charlimit=" 'target' : '.mdl-textfield__counter', 'limit': 140 "></textarea>
+      <p class="mdl-textfield__counter"></p>
+    </div>
+</form>
+{% endhighlight %}
 </div>
 
 <div class="pl-pattern">
