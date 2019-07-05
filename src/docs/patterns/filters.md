@@ -362,14 +362,14 @@ Filters can optionally be:
                 <span class="input-group-btn">
                   <button type="submit" class="btn btn-default tag-example-button" >Add</button>
                 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </form>
+   </div>
+ </div>
 </div>
 {% endhighlight %}
 
@@ -536,5 +536,6 @@ John
 </form>
 </div>
 </div>
+
 {% endhighlight %}
 </div>
