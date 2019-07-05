@@ -41,7 +41,6 @@ __Footer__
 
 ### Examples
 
-#### Rename File
 {::nomarkdown}
 
 <div class="pl-preview">
