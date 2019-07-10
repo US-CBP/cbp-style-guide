@@ -322,11 +322,6 @@ hr.hr-strong {
   color: #aaa;
 }
 
-.pl-palette-color.no-border {
-  border: none;
-  margin-right: 10px;
-}
-
 .pl-header, .pl-header-hero {
   padding: 0;
   margin-top: 20px;
@@ -527,9 +522,6 @@ hr.hr-strong {
   border-bottom: 1px solid #eee;
   border-bottom-left-radius: 2px;
   background: #fafafa;
-}
-.pl-content .pl-pattern .pl-preview img {
-  max-width: 100%;
 }
 .pl-content .pl-pattern .pl-preview + .highlight {
   display: none;
@@ -775,17 +767,13 @@ hr.hr-strong {
   height: 400px;
 }
 
-.pl-pattern:first-of-type {
-  padding-bottom: 40px;
-}
-
 .pl-pattern #myModalLive .modal-dialog {
   margin: 30% auto;
   max-width: 90%;
 }
 
 .pl-filter-spacer {
-  margin-bottom: 28%;
+  margin-bottom: 25%;
 }
 
 #startTourBtn, #startCalloutBtn {

@@ -648,6 +648,9 @@ possible values to filter by</li>
     <li>Sliders</li>
     <li>Single-select dropdowns</li>
   </ul>
+
+  <p> </p>
+
 </div>
 
 <div class="pl-pattern">
@@ -670,7 +673,6 @@ possible values to filter by</li>
     <li>Clearable or resettable</li>
   </ul>
 
-<h4>Example</h4>
 <div class="pl-preview">
 <div class="container-fluid" style="margin-top: 8px;">
     <div class="row">
@@ -1104,29 +1106,29 @@ possible values to filter by</li>
 
   <figure class="highlight">
     <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link dropdown-toggle collapsed-filter"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span> <span class="na">style=</span><span class="s">"margin-right: 5px;"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>Filters <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu collapsed-filter"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">style=</span><span class="s">"padding: 0; width: 500px;"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link dropdown-toggle collapsed-filter"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span> <span class="na">style=</span><span class="s">"margin-right: 5px;"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>Filters <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu collapsed-filter"</span> <span class="na">role=</span><span class="s">"menu"</span> <span class="na">style=</span><span class="s">"padding: 0; width: 500px;"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"clearfix"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"keyline-right"</span> <span class="na">style=</span><span class="s">"width: 200px; min-height: 300px; float: left;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-stacked"</span> <span class="na">role=</span><span class="s">"tab-list"</span> <span class="na">style=</span><span class="s">"margin-top: 10px"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Applied filters <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Year<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Conveyance type <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Date range<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Distance<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Name <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Colors<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tags<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-stacked"</span> <span class="na">role=</span><span class="s">"tab-list"</span> <span class="na">style=</span><span class="s">"margin-top: 10px"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Applied filters <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Year<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Conveyance type <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Date range<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Distance<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Name <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge pull-right"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Colors<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tags<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-left: 200px; max-height: 300px; overflow: auto;"</span><span class="nt">&gt;</span>
-       <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"opacity: 1; display: inline-block; width: 100%;"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>Clear all<span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-left: 200px; max-height: 300px; overflow: auto;"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"opacity: 1; display: inline-block; width: 100%;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>Clear all<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Conveyance type <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tag tag-default subtle"</span><span class="nt">&gt;</span>
             Truck
@@ -1141,23 +1143,23 @@ possible values to filter by</li>
             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#Tags"</span> <span class="na">class=</span><span class="s">"fa fa-close fa-muted"</span> <span class="na">data-dismiss=</span><span class="s">"tag"</span><span class="nt">&gt;&lt;/a&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
+       <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
               <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tag tag-default subtle"</span><span class="nt">&gt;</span>
-            John
+              John
               <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#Tags"</span> <span class="na">class=</span><span class="s">"fa fa-close fa-muted"</span> <span class="na">data-dismiss=</span><span class="s">"tag"</span><span class="nt">&gt;&lt;/a&gt;</span>
               <span class="nt">&lt;/li&gt;</span>
-             <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
          <span class="nt">&lt;/div&gt;</span>
-       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-   <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>

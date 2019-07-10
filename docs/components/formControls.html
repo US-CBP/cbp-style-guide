@@ -628,10 +628,11 @@
 
   <p>Allow users to enter information into a page.
 </p>
+
+  <p> </p>
 </div>
 
 <div class="pl-pattern">
-
   <h3 id="text-box">Text Box</h3>
 
   <p>This interactive element allows a user to enter data. It may be a single line entry, or a text area box for larger text selections.</p>
@@ -674,20 +675,14 @@
 <span class="nt">&lt;/form&gt;</span></code></pre>
   </figure>
 
-</div>
-
-<div class="pl-pattern">
-
-  <h3 id="input-masks">Input Masks</h3>
+  <h4 id="input-masks">Input Masks</h4>
 
   <p>Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.</p>
 
   <p><span class="text-muted">Example uses https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span></p>
 
-  <h4>With Floating Label</h4>
-
 <div class="pl-preview">
-
+<h4>With Floating Label</h4>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
         <form class="form" role="form">
@@ -704,31 +699,9 @@
             <input type="text" class="mdl-textfield__input" id="im3" data-inputmask=" 'mask': 'd/m/y', 'placeholder': 'dd/mm/yyyy', 'alias' : 'mdl-mask-datepicker' ">
           </div>
         </form>
-        </div>
     </div>
 </div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"im1"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>SSN<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"im1"</span> <span class="na">data-inputmask=</span><span class="s">" 'mask': '999-99-9999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' "</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"im2"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Routing #<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"im2"</span> <span class="na">data-inputmask=</span><span class="s">" 'mask': 'PCT/99,999,999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' "</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"im3"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Start date<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"im3"</span> <span class="na">data-inputmask=</span><span class="s">" 'mask': 'd/m/y', 'placeholder': 'dd/mm/yyyy', 'alias' : 'mdl-mask-datepicker' "</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-  </code></pre>
-  </figure>
-
-  <h4>With Placeholder Label</h4>
-
-<div class="pl-preview">
+<h4>With Placeholder Label</h4>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
   <div class="row">
     <form class="form" role="form">
@@ -750,7 +723,24 @@
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+    <pre><code class="language-html" data-lang="html">// With Floating Label
+<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"im1"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>SSN<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"im1"</span> <span class="na">data-inputmask=</span><span class="s">" 'mask': '999-99-9999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' "</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"im2"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Routing #<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"im2"</span> <span class="na">data-inputmask=</span><span class="s">" 'mask': 'PCT/99,999,999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default' "</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"im3"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>Start date<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"im3"</span> <span class="na">data-inputmask=</span><span class="s">" 'mask': 'd/m/y', 'placeholder': 'dd/mm/yyyy', 'alias' : 'mdl-mask-datepicker' "</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+
+// With Placeholder Label
+<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"im1"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;</span>SSN<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"mdl-textfield__input"</span> <span class="na">id=</span><span class="s">"im1"</span> <span class="na">data-inputmask=</span><span class="s">" 'mask': '999-99-9999', 'placeholder': 'ˍ', 'alias' : 'mdl-textfield-default-placeholder' "</span><span class="nt">&gt;</span>
@@ -769,7 +759,6 @@
 </div>
 
 <div class="pl-pattern">
-
   <h3 id="text-area">Text Area</h3>
 
   <h4 id="purpose">Purpose</h4>
@@ -821,160 +810,151 @@
 </div>
 
 <div class="pl-pattern">
-
   <h3 id="dropdown-selection">Dropdown Selection</h3>
 
   <p>This component gives users the ability to choose a single item from a predetermined list of options.</p>
   <p> </p>
 
-  <h4>Examples</h4>
-
 <div class="pl-preview">
+<h3>Examples</h3>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
-<div class="row">
+  <div class="row">
+    <form role="form" class="col-sm-12">
+      <h4>Select <small>Without third party select JS libraries</small></h4>
+      <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+        <select id="se17" class="mdl-selectfield__select" aria-expanded="false">
+          <option value=""></option>
+          <option value="A">Option A</option>
+          <option value="B">Option B</option>
+          <option value="C">Option C</option>
+        </select>
+        <label for="se17" class="mdl-selectfield__label">With floating label</label>
+      </div>
+      <div class="mdl-selectfield mdl-js-selectfield">
+        <select id="se18" class="mdl-selectfield__select" aria-expanded="false">
+          <option value=""></option>
+          <option value="A">Option A</option>
+          <option value="B">Option B</option>
+          <option value="C">Option C</option>
+        </select>
+        <label for="se18" class="mdl-selectfield__label">With placeholder label</label>
+      </div>
+      <div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
+        <select id="se19" class="mdl-selectfield__select" aria-expanded="false" disabled>
+          <option value=""></option>
+          <option value="A">Option A</option>
+          <option value="B">Option B</option>
+          <option value="C">Option C</option>
+        </select>
+        <label for="se19" class="mdl-selectfield__label">Disabled with floating label</label>
+      </div>
+      <div class="mdl-selectfield mdl-js-selectfield">
+        <select id="se20" class="mdl-selectfield__select" aria-expanded="false" disabled>
+          <option value=""></option>
+          <option value="A">Option A</option>
+          <option value="B">Option B</option>
+          <option value="C">Option C</option>
+        </select>
+        <label for="se20" class="mdl-selectfield__label">Disabled with placeholder label</label>
+      </div>
+      <h4>Multiple Select</h4>
+      <div class="container-fluid" style="max-width: 400px; margin: 0;">
+        <div class="row">
+          <form role="form" class="col-sm-12 form">
+            <div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
+              <select id="se21" class="mdl-selectfield__select" aria-expanded="false" multiple>
+                <option value="A">Option A</option>
+                <option value="B">Option B</option>
+                <option value="C">Option C</option>
+                <option value="D">Option D</option>
+              </select>
+              <label for="se21" class="mdl-selectfield__label">With floating label</label>
+            </div>
+            <div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
+              <select id="se22" class="mdl-selectfield__select" aria-expanded="false" multiple disabled>
+                <option value="A">Option A</option>
+                <option value="B">Option B</option>
+                <option value="C">Option C</option>
+                <option value="D">Option D</option>
+              </select>
+              <label for="se22" class="mdl-selectfield__label">With floating label</label>
+            </div>
+          </form>
+        </div>
+      </div>      
+    </form>
+  </div>
+</div>
 
-<form role="form" class="col-sm-12">
-<h4>Select <small>(Without third party select JS libraries)</small></h4>
-<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-<select id="se17" class="mdl-selectfield__select" aria-expanded="false">
-<option value=""></option>
-<option value="A">Option A</option>
-<option value="B">Option B</option>
-<option value="C">Option C</option>
-</select>
-<label for="se17" class="mdl-selectfield__label">With floating label</label>
-</div>
-<div class="mdl-selectfield mdl-js-selectfield">
-<select id="se18" class="mdl-selectfield__select" aria-expanded="false">
-<option value=""></option>
-<option value="A">Option A</option>
-<option value="B">Option B</option>
-<option value="C">Option C</option>
-</select>
-<label for="se18" class="mdl-selectfield__label">With placeholder label</label>
-</div>
-<div class="mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield">
-<select id="se19" class="mdl-selectfield__select" aria-expanded="false" disabled>
-<option value=""></option>
-<option value="A">Option A</option>
-<option value="B">Option B</option>
-<option value="C">Option C</option>
-</select>
-<label for="se19" class="mdl-selectfield__label">Disabled with floating label</label>
-</div>
-<div class="mdl-selectfield mdl-js-selectfield">
-<select id="se20" class="mdl-selectfield__select" aria-expanded="false" disabled>
-<option value=""></option>
-<option value="A">Option A</option>
-<option value="B">Option B</option>
-<option value="C">Option C</option>
-</select>
-<label for="se20" class="mdl-selectfield__label">Disabled with placeholder label</label>
-</div>
-</form>
-</div>
-</div>
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"col-sm-12"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;h4&gt;</span>Select <span class="nt">&lt;small&gt;</span>(Without third party select JS libraries)<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se17"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se17"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With floating label<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-js-selectfield"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se18"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se18"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With placeholder label<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se19"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se19"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>Disabled with floating label<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-js-selectfield"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se20"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se20"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>Disabled with placeholder label<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+    <pre><code class="language-html" data-lang="html">// Select
+<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"col-sm-12"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se17"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se17"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With floating label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-js-selectfield"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se18"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se18"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With placeholder label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-js-selectfield"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se19"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se19"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>Disabled with floating label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-js-selectfield"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se20"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se20"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>Disabled with placeholder label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
- </code></pre>
-  </figure>
 
-  <h4>Multiple Select</h4>
-<div class="pl-preview">
-<div class="container-fluid" style="max-width: 400px; margin: 0;">
-<div class="row">
-
-<form role="form" class="col-sm-12 form">
-<div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
-<select id="se21" class="mdl-selectfield__select" aria-expanded="false" multiple>
-<option value="A">Option A</option>
-<option value="B">Option B</option>
-<option value="C">Option C</option>
-<option value="D">Option D</option>
-</select>
-<label for="se21" class="mdl-selectfield__label">With floating label</label>
-</div>
-<div class="mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield ">
-<select id="se22" class="mdl-selectfield__select" aria-expanded="false" multiple disabled>
-<option value="A">Option A</option>
-<option value="B">Option B</option>
-<option value="C">Option C</option>
-<option value="D">Option D</option>
-</select>
-<label for="se22" class="mdl-selectfield__label">With floating label</label>
-</div>
-</form>
-</div>
-</div>
-</div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"col-sm-12 form"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield "</span><span class="nt">&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se21"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">multiple</span><span class="nt">&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se21"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With floating label<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield "</span><span class="nt">&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se22"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">multiple</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se22"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With floating label<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+// Multiple Select
+<span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"col-sm-12 form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield "</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se21"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">multiple</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se21"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With floating label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-selectfield mdl-selectfield--floating-label mdl-selectfield--multiple mdl-js-selectfield "</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"se22"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__select"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">multiple</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"A"</span><span class="nt">&gt;</span>Option A<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"B"</span><span class="nt">&gt;</span>Option B<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"C"</span><span class="nt">&gt;</span>Option C<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"D"</span><span class="nt">&gt;</span>Option D<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"se22"</span> <span class="na">class=</span><span class="s">"mdl-selectfield__label"</span><span class="nt">&gt;</span>With floating label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre>
   </figure>
 
 </div>
 
 <div class="pl-pattern">
-
   <h3 id="radio-buttons">Radio Buttons</h3>
 
   <p>This component offers a way to handle situations where the user is presented with multiple, mutually-exclusive, options where only one option can be selected at a time. This should not be used in the place of a toggle which indicates a change in state.</p>
@@ -992,7 +972,8 @@
     <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
   </ul>
 
-<h4>Vertical</h4>
+  <h4 id="vertical">Vertical</h4>
+
 <div class="pl-preview">
     <div class="radio">
       <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
@@ -1092,7 +1073,6 @@
 </div>
 
 <div class="pl-pattern">
-
   <h3 id="checkboxes">Checkboxes</h3>
 
   <p>This interactive element allows a user to make a selection from a number of options by “checking” one or more of the labelled options presented. If a “select all” function exists, it must be visually different than the other single selection options.</p>
@@ -1111,7 +1091,8 @@
     <li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
   </ul>
 
-<h4>Vertical</h4>
+  <h4 id="vertical-1">Vertical</h4>
+
 <div class="pl-preview">
 <div class="checkbox">
   <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
@@ -1140,6 +1121,7 @@
     </div>
   </label>
 </div>
+
 </div>
 
   <figure class="highlight">
@@ -1172,7 +1154,8 @@
 <span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
-<h4>Inline</h4>
+  <h4 id="inline-1">Inline</h4>
+
 <div class="pl-preview">
     <div class="checkbox-inline">
       <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
@@ -1216,8 +1199,9 @@
 
   <h4 id="examples">Examples</h4>
 
-<h4>On/Off Switches</h4>
-Use a toggle switch for a binary option where the change occurs _immediately_. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).
+  <h5 id="onoff-switches">On/Off Switches</h5>
+  <p>Use a toggle switch for a binary option where the change occurs <em>immediately</em>. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).</p>
+
 <div class="pl-preview">
     <div class="form-group">
       <div class="switch">
@@ -1369,7 +1353,6 @@ Use a toggle switch for a binary option where the change occurs _immediately_. U
 </div>
 
 <div class="pl-pattern">
-
   <h3 id="date-picker">Date Picker</h3>
 
   <p>This component allows the user to choose a single date, a range of dates.</p>
@@ -1387,8 +1370,8 @@ Use a toggle switch for a binary option where the change occurs _immediately_. U
 
   <p><span class="text-muted">Example uses jQuery UI for demo purposes.</span></p>
 
-<h4>With Floating Label</h4>
 <div class="pl-preview">
+    <h4>With Floating Label</h4>
     <div class="container-fluid" style="max-width: 400px; margin: 0;">
       <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
@@ -1413,37 +1396,7 @@ Use a toggle switch for a binary option where the change occurs _immediately_. U
         </form>
       </div>
     </div>
-   </div>
-
-  <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span> <span class="na">style=</span><span class="s">"max-width: 400px; margin: 0;"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"col-sm-12 form-horizontal"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"dp1"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span>Date<span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dp1"</span> <span class="na">data-inputmask=</span><span class="s">" 'alias' : 'mdl-mask-datepicker' "</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"datepicker mdl-textfield__input"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"dp2"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span>To<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dp2"</span> <span class="na">data-inputmask=</span><span class="s">" 'alias' : 'mdl-mask-datepicker' "</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"datepicker mdl-textfield__input"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"dp3"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span>From<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dp3"</span> <span class="na">data-inputmask=</span><span class="s">" 'alias' : 'mdl-mask-datepicker' "</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"datepicker mdl-textfield__input"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/form&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span></code></pre>
-  </figure>
-
-<h4>With Placeholder Label</h4>
-<div class="pl-preview">
+    <h4>With Placeholder Label</h4>
     <div class="container-fluid" style="max-width: 400px; margin: 0;">
       <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
@@ -1471,7 +1424,33 @@ Use a toggle switch for a binary option where the change occurs _immediately_. U
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span> <span class="na">style=</span><span class="s">"max-width: 400px; margin: 0;"</span><span class="nt">&gt;</span>
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h4&gt;</span>With Floating Label<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span> <span class="na">style=</span><span class="s">"max-width: 400px; margin: 0;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"col-sm-12 form-horizontal"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"dp1"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span>Date<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dp1"</span> <span class="na">data-inputmask=</span><span class="s">" 'alias' : 'mdl-mask-datepicker' "</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"datepicker mdl-textfield__input"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"dp2"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span>To<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dp2"</span> <span class="na">data-inputmask=</span><span class="s">" 'alias' : 'mdl-mask-datepicker' "</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"datepicker mdl-textfield__input"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield mdl-textfield--floating-label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"dp3"</span> <span class="na">class=</span><span class="s">"mdl-textfield__label"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/span&gt;</span><span class="ni">&amp;nbsp;</span>From<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dp3"</span> <span class="na">data-inputmask=</span><span class="s">" 'alias' : 'mdl-mask-datepicker' "</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"datepicker mdl-textfield__input"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;h4&gt;</span>With Placeholder Label<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span> <span class="na">style=</span><span class="s">"max-width: 400px; margin: 0;"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span> <span class="na">class=</span><span class="s">"col-sm-12 form-horizontal"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mdl-textfield mdl-js-textfield"</span><span class="nt">&gt;</span>
