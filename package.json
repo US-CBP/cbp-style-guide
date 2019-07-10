@@ -54,7 +54,7 @@
     "jquery.inputmask": "3.3.4",
     "jshint-stylish": "2.2.1",
     "load-grunt-tasks": "3.5.2",
-    "lodash": "4.17.5",
+    "lodash": "4.17.13",
     "meta-remarkable": "0.1.0",
     "nouislider": "11.0.3",
     "time-grunt": "1.4.0"
