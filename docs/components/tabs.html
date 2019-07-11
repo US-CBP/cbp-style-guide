@@ -636,16 +636,15 @@
     <li>Tab titles should be short and predictable.</li>
     <li>Tab buttons can contain icons, text, both, and even dropdowns.</li>
   </ul>
-
-  <p> </p>
-
 </div>
 
 <div class="pl-pattern">
+
   <h3 id="normal-tabs">Normal Tabs</h3>
   <p>The selected tab color should be the same color as the tab content.</p>
 
 <div class="pl-preview">
+
 <ul class="nav nav-tabs" role="tablist">
   <li class="active">
     <a href="#activeTab" role="tab" data-toggle="tab" aria-controls="activeTab">Active</a>
@@ -671,6 +670,7 @@
     </div>
   </div>
 </div>
+
 </div>
 
   <figure class="highlight">
@@ -704,40 +704,72 @@
 </div>
 
 <div class="pl-pattern">
+
   <h3 id="light-tabs">Light Tabs</h3>
   <p>Use when the tabs need less emphasis in relation to other navigational elements.</p>
 
 <div class="pl-preview">
+
 <ul class="nav nav-tabs nav-tabs-light" role="tablist">
   <li class="active">
-    <a href="#" role="tab" data-toggle="tab">Active</a>
+    <a href="#activeTab-2" role="tab" data-toggle="tab" aria-controls="activeTab">Active</a>
   </li>
   <li>
-    <a href="#" role="tab" data-toggle="tab">Normal</a>
+    <a href="#normalTab-2" role="tab" data-toggle="tab" aria-controls="normalTab">Normal</a>
   </li>
   <li class="disabled">
     <a role="tab">Disabled</a>
   </li>
 </ul>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="activeTab-2">
+    <div class="panel-body">
+       <h4>Did you know that </h1>
+      <p>Banging your head against a wall burns 150 calories an hour.</p>
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="normalTab-2">
+    <div class="panel-body">
+      <h4>Did you know that </h1>
+      <p>Cherophobia is the fear of fun.</p>
+    </div>
+  </div>
+</div>
+
 </div>
 
   <figure class="highlight">
     <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-tabs-light"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#activeTab-2"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"activeTab"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#normalTab-2"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">aria-controls=</span><span class="s">"normalTab"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane fade in active"</span> <span class="na">id=</span><span class="s">"activeTab-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;h4&gt;</span>Did you know that <span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Banging your head against a wall burns 150 calories an hour.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane fade"</span> <span class="na">id=</span><span class="s">"normalTab-2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4&gt;</span>Did you know that <span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Cherophobia is the fear of fun.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
 </div>
 
 <div class="pl-pattern">
+
   <h3 id="nested-tabs">Nested Tabs</h3>
 
 <div class="pl-preview">
