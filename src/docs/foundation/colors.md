@@ -23,6 +23,7 @@ These are the primary colors used for Common Framework UI elements. The primary 
 
 
 {::nomarkdown}
+
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#00416a;"></div>
@@ -127,7 +128,6 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
     </div>
 </div>
 &nbsp;
-
 {:/nomarkdown}
 
 
@@ -255,17 +255,17 @@ This color combination palette provides examples of 508-approved and illegal tex
 
 
 <div class="pl-palette">
-    <div class="pl-palette-color">
+    <div class="pl-palette-color no-border">
         <div class="pl-palette-preview"></div>
         <div class="pl-palette-variable"></div>
         <div class="pl-palette-value"></div>
     </div>
-    <div class="pl-palette-color">
+    <div class="pl-palette-color no-border">
         <div class="pl-palette-preview"></div>
         <div class="pl-palette-variable"></div>
         <div class="pl-palette-value"></div>
     </div>
-    <div class="pl-palette-color">
+    <div class="pl-palette-color no-border">
         <div class="pl-palette-preview"></div>
         <div class="pl-palette-variable"></div>
         <div class="pl-palette-value"></div>
@@ -275,15 +275,13 @@ This color combination palette provides examples of 508-approved and illegal tex
         <div class="pl-palette-variable">approved</div>
         <div class="pl-palette-value">#F09511</div>
     </div>
-    <div class="pl-palette-color">
+    <div class="pl-palette-color no-border">
         <div class="pl-palette-preview"></div>
         <div class="pl-palette-variable"></div>
         <div class="pl-palette-value"></div>
     </div>
 
 </div>
-
-
 {:/nomarkdown}
 &nbsp;
 </div>

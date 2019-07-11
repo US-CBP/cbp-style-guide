@@ -6,8 +6,6 @@ title: "File Upload"
 <h3>File Upload</h3>
 
 <p>This component allows a user to browse their local device to upload a file with an acceptable file extension and size limit.</p>
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">
@@ -52,11 +50,11 @@ Single file upload, where the file is uploaded when the form is submitted.
 </div>
 
 <div class="pl-pattern">
-### Multi File Upload
+### Multi-File Upload
 This shows how to facilitate uploading multiple files to the same field (e.g., an attachments field), where the files are uploaded as soon as they're selected rather than when the form is submitted. 
 
-
 {::nomarkdown}
+<h4>Example #1</h4>
 <div class="pl-preview">
 <form action="" class="form-horizontal" style="max-width: 400px;">
     <div class="form-group">
@@ -82,6 +80,7 @@ This shows how to facilitate uploading multiple files to the same field (e.g., a
 
 
 {::nomarkdown}
+<h4>Example #2</h4>
 <div class="pl-preview">
 <form action="" class="form-horizontal" style="max-width: 400px;">
     <div class="form-group">
@@ -178,6 +177,7 @@ This shows how to facilitate uploading multiple files to the same field (e.g., a
 {% endhighlight %}
 
 {::nomarkdown}
+<h4>Example #3</h4>
 <div class="pl-preview">
 <form action="" class="form-horizontal" style="max-width: 400px;">
     <div class="form-group">

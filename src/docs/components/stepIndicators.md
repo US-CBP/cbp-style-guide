@@ -6,6 +6,12 @@ title: "Step Indicators"
 <h3>Step Indicators</h3>
 
 The Step Indicator is a visual representation of a user’s progress through a set of steps in order to complete a specified process. This should be used when certain tasks are long and need to be broken up into manageable chunks.
+</div>
+
+
+<div class="pl-pattern">
+
+### Examples
 
 #### Horizontal
 

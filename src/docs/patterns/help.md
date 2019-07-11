@@ -18,10 +18,13 @@ Some of the ways help can be provided are:
 - Popovers when form input fields are focused ([See Forms page for examples](../components/forms.html#help-text))
 - Popovers with definitions/descriptions when hovering over a label/term/word
 - "Learn more" links and "Information" icons
+</div>
 
-&nbsp;
+<div class="pl-pattern">
 
-##### Dotted Underlines
+### Examples
+
+#### Dotted Underlines
 Use this for term definitions when a term may not be obvious to your target audience.
 
 {::nomarkdown}
@@ -36,7 +39,7 @@ Use this for term definitions when a term may not be obvious to your target audi
 
 &nbsp;
 
-##### Input Field Focus Popover
+#### Input Field Focus Popover
 Use this when the information is only relevant once the user has focused the field.
 
 {::nomarkdown}
@@ -69,7 +72,7 @@ Use this when the information is only relevant once the user has focused the fie
 
 &nbsp;
 
-##### "Learn more" Links
+#### "Learn more" Links
 Use "Learn more" links to provide additional help text only when the user needs it. The links can reveal additional text in the form of a popover, a dedicated help page, or by expanding the text.
 
 {::nomarkdown}
@@ -105,7 +108,7 @@ Use "Learn more" links to provide additional help text only when the user needs 
 {% endhighlight %}
 
 
-##### "Information" Icons
+#### "Information" Icons
 Use "Information" icons to provide explanations and elaborations for titles and panels.
 
 {::nomarkdown}

@@ -16,6 +16,12 @@ Breadcrumbs are a navigation element where a user is shown their current locatio
 
 Depending on the complexity of the navigational hierarchy and the type of page or application, it may make sense for the breadcrumb to represent only part of the hierarchy while sub tabs/trees/navigation represent the remaining hierarchy.
 
+</div>
+
+<div class="pl-pattern">
+
+### Example
+
 {::nomarkdown}
 <div class="pl-preview">
     <ol class="breadcrumb">

@@ -10,7 +10,11 @@ When the user needs to perform an action, and depending on space constraints or 
 #### Description
 Menus provide a list of available actions and options. They're used in dropdowns, selects, and context menus. 
 
-#### Basic Functionality
+</div>
+
+<div class="pl-pattern">
+
+### Basic Functionality
 Menus appear relative to the control or interaction that triggered the menu. Clicking an item from the menu performs the action or selects the option. For most actions, the menu should close when a menu item is clicked. If the clicked menu item is part of a set of multi-selectable options, then the menu should stay open. 
 
 - Menus may have submenus, icons, dividers, category labels, and checkboxes
@@ -24,6 +28,7 @@ Menus appear relative to the control or interaction that triggered the menu. Cli
 - Use sentence case for menu items
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
     <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu">
       <li role="presentation">

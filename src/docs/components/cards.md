@@ -23,7 +23,6 @@ title: "Cards"
 
 <p>When designing cards keep the number of elements to a minimum, remember visual distinction is key. Cluttered interfaces will not be effective. Content should have a healthy interior padding inside of the card to avoid visual tangents and keep the card content legible. 
 </p>
-&nbsp;
 
 </div>
 

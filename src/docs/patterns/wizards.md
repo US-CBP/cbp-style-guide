@@ -21,8 +21,6 @@ A wizard is usually composed of:
 - Buttons for navigation
 - Validation
 
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">
@@ -39,10 +37,10 @@ In many cases it's beneficial to show the list of steps a wizard will have. Depe
 - Allow navigation to previous steps and skipping ahead if applicable
 - Navigation may evolve depending on previous steps
 
-#### Vertical Steps
-Use vertical steps when there are 5 or more steps, when there are nested steps, or when steps are categorized.
-
 {::nomarkdown}
+<br>
+<h4>Vertical Steps</h4>
+Use vertical steps when there are 5 or more steps, when there are nested steps, or when steps are categorized.
 <div class="pl-preview">
 <div class="">
     <div class="" style="max-width: 700px;">
@@ -155,11 +153,9 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
 </div>
 
 {% endhighlight %}
-&nbsp;
 
-#### Horizontal Steps
+<h4>Horizontal Steps</h4>
 Use horizontal steps when there are 4 or less steps.
-
 
 {::nomarkdown}
 <div class="pl-preview">

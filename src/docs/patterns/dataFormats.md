@@ -6,9 +6,6 @@ title: "Data Formats"
 <h3>Date Formats</h3>
 
 To maintain consistency across applications, use the following formats and guidelines.
-
-<br/>
-
 </div>
 
 <div class="pl-pattern">

@@ -9,16 +9,14 @@ It is sometimes important to communicate detailed information to users visually.
 
 When bold shapes and contrasted colors are used with responsive actions, users have increased comprehension.
 
-<br/>
-
 #### Usage
 
 You can bring increased clarity to your information by considering your page layout early on. We advise against having more than 3 graphical elements on one page.
 
-<br/>
 </div>
 
 <div class="pl-pattern">
+
 ### Charts and Graphs
 
 Some of the most popular chart types can be seen in an example below. It is important to limit the amount of colors you use to draw attention to the metric you are illustration of the metric activated by the user. Avoid showing more than four distinct colors in any one chart. Use grey tones to represent inactive or supporting metrics.

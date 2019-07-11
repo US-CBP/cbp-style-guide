@@ -8,8 +8,6 @@ title: "Typography"
 
 <p>CBP Theme uses the Roboto font family.</p>
 
-<br/>
-
 </div>
 
 <div class="pl-pattern">

@@ -40,6 +40,7 @@ __Footer__
 <div class="pl-pattern">
 
 ### Examples
+
 {::nomarkdown}
 
 <div class="pl-preview">

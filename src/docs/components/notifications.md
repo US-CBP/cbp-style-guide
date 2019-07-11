@@ -7,9 +7,6 @@ title: "Notifications"
 <h3>Notifications</h3>
 
 <p>Notification provide the user with feedback about various system processes that are occurring.</p>
-
-<br/>
-
 </div>
 
 <div class="pl-pattern">
@@ -36,6 +33,7 @@ __Types:__
 - __Danger__ alerts should be used when the system has failed to perform an action, or when the user has made an error.
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
     <div style="max-width: 450px;">
         <div class="alert alert-info" role="alert">
@@ -144,6 +142,7 @@ __Types:__
 - __Danger__ notifications can be used for critical messages that require immediate attention.
 
 {::nomarkdown}
+<h4>Example</h4>
 <div class="pl-preview">
 
     <div class="toast-list" style="max-width: 400px;">

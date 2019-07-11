@@ -67,6 +67,11 @@ hr.hr-strong {
     }
 }
 
+.pl-palette-color.no-border {
+    border: none;
+    margin-right: 10px;
+}
+
 .pl-header {
     padding: 0;
     margin-top: 20px;
@@ -292,6 +297,10 @@ hr.hr-strong {
                     border-bottom: 1px solid $gray-lighter;
                     border-bottom-left-radius: 2px;
                     background: #fafafa;
+                }
+
+                img {
+                    max-width: 100%;
                 }
             }
 
@@ -575,6 +584,10 @@ hr.hr-strong {
     }
 }
 
+.pl-pattern:first-of-type {
+    padding-bottom: 40px;
+}
+
 .pl-pattern {
     #myModalLive .modal-dialog {
         margin: 30% auto;
@@ -583,7 +596,7 @@ hr.hr-strong {
 }
 
 .pl-filter-spacer {
-    margin-bottom: 25%;
+    margin-bottom: 28%;
 }
 
 #startTourBtn, #startCalloutBtn {

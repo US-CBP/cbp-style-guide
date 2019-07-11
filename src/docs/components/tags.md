@@ -1,6 +1,5 @@
 ---
 title: "Tags"
-preview: true
 ---
 
 <div class="pl-pattern">
@@ -10,8 +9,13 @@ Tags can be used as a way to organize items into categories using keywords that 
 
 #### Description
 Tags usually represent a category or label of an object. Sometimes they are removable. 
+</div>
 
+<div class="pl-pattern">
+
+### Tag Types
 {::nomarkdown}
+<h4>Default Tags</h4>
 <div class="pl-preview">
     <ul class="list-unstyled">
       <li class="tag tag-default">
@@ -80,9 +84,8 @@ Tags usually represent a category or label of an object. Sometimes they are remo
 </ul>
 {% endhighlight %}
 
-#### Subtle
-
 {::nomarkdown}
+<h4>Subtle Tags</h4>
 <div class="pl-preview">
 
 <ul class="list-unstyled">

@@ -7,9 +7,6 @@ title: "Buttons"
 <h3>Buttons</h3>
 
 <p>Buttons are mildly skeuomorphic, interactive elements that utilize shape and color to guide users to take actions or make choices. They should have a clear and appropriate verb that describes the choice the user is being presented with. Icons may be used in conjunction with text, but they must be contextually appropriate and send the same message if the text were hidden.</p>
-
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">

@@ -2,13 +2,17 @@
 title: "Icons"
 ---
 <div class="pl-pattern">
-### Icons
+
+<h3>Icons</h3>
 
 The files noted here are scalable vector icons. These designs are intended to achieve a consistent look and feel across CBP products. Where applicable, use the "CBP Recommended Icons" first before seeking alternatives.
 
 <b>Attention - </b>We are currently troubleshooting known technical issues relating to Internet Explorer's inability to show icons internally.
+</div>
 
-#### Icon Colors and Sizes
+<div class="pl-pattern">
+
+### Colors and Sizes
 
 Icons should always be one solid color&mdash;black, white, or a Primary Color&mdash; and can stand alone or be placed in contrasting color circles.
 
@@ -63,8 +67,12 @@ When scaling icons, ensure the sizes used appear sharp on standard and high DPI 
     </div>
 </div>
 {:/nomarkdown}
+&nbsp;
+</div>
 
-#### Usage
+<div class="pl-pattern">
+
+### Usage
 - Your application and audience may benefit from other methods of serving icons
 - The method used for dynamically scaling icons is dependent on the method used for serving icons
 - The method used for coloring icons is dependent on the method used for serving icons
