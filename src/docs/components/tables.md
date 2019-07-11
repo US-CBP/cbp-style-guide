@@ -36,10 +36,6 @@ A table's complexity and needs can vary greatly. This pattern provides many diff
 - Simple tables can have two levels of headers. Each header cell should have scope="col" or scope="row".
 - Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.
 - When adding a title to a table, include it in a <caption> tag inside of the <table> element.
-&nbsp;
-<br/>
-<br/>
-
 </div>
 
 <div class="pl-pattern">

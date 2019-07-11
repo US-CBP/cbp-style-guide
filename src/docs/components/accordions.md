@@ -14,8 +14,6 @@ Accordions can operate as either single-select or multi-select.
 - __Single-select__ allows only one panel to be expanded at any given time. Expanding a panel collapses the previously expanded panel.
 - __Multi-select__ allows more than one panel to be expanded at any given time. Expanding a panel has no impact on the other panels.
 
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">

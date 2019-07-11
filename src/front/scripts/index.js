@@ -42,27 +42,27 @@ $(document).ready(function () {
       activeSubNav.append(newList);
   }
 
-  var autoCollapsed = false;
+// assigns current window's width to variable
+    var currentWidth = $(window).width();
+// checks window's width on every page load
+      if (currentWidth <= 767 ) {
+          $('body').addClass('pl-collapsed-nav');
+           } else {
+          $('body').removeClass('pl-collapsed-nav');
+      }
+
+// provides ability to toggle class on each click
   $('.nav-collapse').on('click', function() {
-      autoCollapsed = false;
       $('body').toggleClass('pl-collapsed-nav');
   });
 
-  /* collapse sidebar when necessary */
-  var checkNav = function() {
-      var collapsed = $('body').hasClass('pl-collapsed-nav'),
-          width = $(this).width();
-
-      if (width <= 767 && !collapsed) {
-          autoCollapsed = true;
-          $('body').addClass('pl-collapsed-nav');
-      } else if (width > 767 && autoCollapsed) {
-          $('body').removeClass('pl-collapsed-nav');
-      }
-  };
-
-  $(window).on('resize', checkNav);
-  $(document).on('ready', checkNav);
+$(window).on('resize', function() {
+    if ($(this).width() !== currentWidth && $(this).width() <= 767 ) {
+      $('body').addClass('pl-collapsed-nav');
+     } else {
+       $('body').removeClass('pl-collapsed-nav');
+    }
+  });
 
   /*
    * Use bootstrap's scrollspy plugin to highlight subnav based on scroll position
@@ -362,11 +362,11 @@ $(document).ready(function () {
             title: 'Start a Hopscotch Tour',
             content: 'Click here to see a tour.',
             target: document.querySelector('#startTourBtn'),
-            placement: 'right'
-        }
-       
+            placement: 'left'
+        } 
     ],
 };
+
  // defines and declares a tour
    var tour = {
     id: 'hopscotch-example',
@@ -387,22 +387,25 @@ $(document).ready(function () {
             target: 'sidebar',
             placement: 'right'
         }
-
     ],
     showPrevButton: true
 };
 
+ function calloutDemo() {
+            hopscotch.getCalloutManager().createCallout({
+            id: 'attach-icon',
+            target: document.querySelector('#startCalloutBtn'),
+            placement: 'right',
+            title: 'Callout Example',
+            content: 'For simple explanations.'
+});
+}
+
   // Limits the scope of where Hopscotch script will auto activate on page load
  if (document.URL.indexOf('tours.html') > -1) {
-    // Start the tour!
-    hopscotch.startTour(prep);
-    hopscotch.getCalloutManager().createCallout({
-    id: 'attach-icon',
-    target: 'startCalloutBtn',
-    placement: 'left',
-    title: 'Callout Example',
-    content: 'For simple explanations.'
-});
+    // Demo the Tour and Callout options
+       hopscotch.startTour(prep);
+       calloutDemo();
 }
      // provides event handler for activating a tour
      $('#startTourBtn').click(function() {
@@ -413,13 +416,7 @@ $(document).ready(function () {
      // provides event handler for activating a callout
      $('#startCalloutBtn').click(function() {
        // Start the Callout!
-        hopscotch.getCalloutManager().createCallout({
-        id: 'attach-icon',
-        target: 'startCalloutBtn',
-        placement: 'right',
-        title: 'Callout Example',
-        content: 'For simple explanations.'
-    });
+            calloutDemo();
  });
   // End of Hopscotch
   /* jshint ignore:end */

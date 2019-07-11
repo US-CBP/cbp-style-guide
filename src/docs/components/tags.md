@@ -1,6 +1,5 @@
 ---
 title: "Tags"
-preview: true
 ---
 
 <div class="pl-pattern">
@@ -13,6 +12,7 @@ Tags usually represent a category or label of an object. Sometimes they are remo
 </div>
 
 <div class="pl-pattern">
+
 ### Tag Types
 {::nomarkdown}
 <h4>Default Tags</h4>

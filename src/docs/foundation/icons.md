@@ -12,7 +12,7 @@ The files noted here are scalable vector icons. These designs are intended to ac
 
 <div class="pl-pattern">
 
-### Icon Colors and Sizes
+### Colors and Sizes
 
 Icons should always be one solid color&mdash;black, white, or a Primary Color&mdash; and can stand alone or be placed in contrasting color circles.
 
@@ -20,7 +20,6 @@ When scaling icons, ensure the sizes used appear sharp on standard and high DPI 
 
 
 {::nomarkdown}
-<div class="pl-preview">
 <div class="row" style="max-width: 800px;">
     <div class="col-sm-6">
         <ul>
@@ -67,8 +66,8 @@ When scaling icons, ensure the sizes used appear sharp on standard and high DPI 
         </div>
     </div>
 </div>
-</div>
 {:/nomarkdown}
+&nbsp;
 </div>
 
 <div class="pl-pattern">
@@ -87,7 +86,6 @@ When scaling icons, ensure the sizes used appear sharp on standard and high DPI 
 </div>
 
 <div class="pl-pattern">
-
 ### CBP Universal Icons
 
 Where applicable, use these icons first before seeking alternatives.
@@ -684,7 +682,6 @@ To recommend a Universal Icon, [create an issue on Github]({{site.support.issues
        </div>
     </div>
 </div>
-
 {:/nomarkdown}
 
 

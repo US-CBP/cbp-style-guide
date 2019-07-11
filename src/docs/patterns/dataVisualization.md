@@ -9,8 +9,6 @@ It is sometimes important to communicate detailed information to users visually.
 
 When bold shapes and contrasted colors are used with responsive actions, users have increased comprehension.
 
-<br/>
-
 #### Usage
 
 You can bring increased clarity to your information by considering your page layout early on. We advise against having more than 3 graphical elements on one page.

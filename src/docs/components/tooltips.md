@@ -16,10 +16,13 @@ Use tooltips for:
 
 - Icon and button descriptions
 - Expanding shortened date/time stamps
+</div>
 
 
+<div class="pl-pattern">
+
+<h3>Example</h3>
 {::nomarkdown}
-<h4>Example</h4>
 <div class="pl-preview">
 <div class="tooltip fade in right" style="display: inline-block; position: relative; width: auto;">
   <div class="tooltip-inner">I'm a tooltip!</div>

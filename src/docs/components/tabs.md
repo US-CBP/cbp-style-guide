@@ -13,9 +13,6 @@ Tabs are a navigational element that organizes content by grouping similar infor
 - Avoid overflowing tabs to new lines.
 - Tab titles should be short and predictable.
 - Tab buttons can contain icons, text, both, and even dropdowns.
-
-&nbsp;
-
 </div>
 
 <div class="pl-pattern">

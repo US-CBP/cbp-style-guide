@@ -23,7 +23,7 @@ These are the primary colors used for Common Framework UI elements. The primary 
 
 
 {::nomarkdown}
-<div class="pl-preview">
+
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#00416a;"></div>
@@ -51,7 +51,6 @@ These are the primary colors used for Common Framework UI elements. The primary 
         <div class="pl-palette-value">#A00000</div>
     </div>
 </div>
-</div>
 {:/nomarkdown}
 
 #### Subtle Color Palette
@@ -59,7 +58,6 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
 
 
 {::nomarkdown}
-<div class="pl-preview">
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#ecf1f4; border: 1px solid #dce8eb;"></div>
@@ -87,13 +85,11 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
         <div class="pl-palette-value">#F8ECEC</div>
     </div>
 </div>
-</div>
 {:/nomarkdown}
 
 #### Gray Color Palette
 
 {::nomarkdown}
-<div class="pl-preview">
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#222222;"></div>
@@ -132,7 +128,6 @@ These are the subtle colors used for Common Framework UI elements. The subtle co
     </div>
 </div>
 &nbsp;
-</div>
 {:/nomarkdown}
 
 
@@ -144,7 +139,6 @@ This color combination palette provides examples of 508-approved and illegal tex
 
 
 {::nomarkdown}
-<div class="pl-preview">
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="border-style:solid; border-size:1px; border-color:#00416a; color:#00416a;">#00416a</div>
@@ -288,8 +282,6 @@ This color combination palette provides examples of 508-approved and illegal tex
     </div>
 
 </div>
-
-</div>
 {:/nomarkdown}
 &nbsp;
 </div>
@@ -301,7 +293,6 @@ This color combination palette provides examples of 508-approved and illegal tex
 This palette is made up of primary and supplementary colors to be used in data visualizations such as charts and graphs.
 
 {::nomarkdown}
-<div class="pl-preview">
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color: #600000;"></div>
@@ -409,7 +400,6 @@ This palette is made up of primary and supplementary colors to be used in data v
         <div class="pl-palette-preview" style="background-color: #D9D9D6;"></div>
         <div class="pl-palette-value">#D9D9D6</div>
     </div>
-</div>
 </div>
 {:/nomarkdown}
 
