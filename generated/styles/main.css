@@ -279,6 +279,7 @@ body {
   position: relative;
   overflow-y: auto;
   background-color: #eee;
+  min-width: 300px;
 }
 
 .list-no-style {
@@ -302,6 +303,11 @@ hr.hr-strong {
 .disclaimer a {
   color: #FFF;
   text-decoration: underline;
+}
+
+.highlight {
+  background: #eee !important;
+  border: 1px solid #282930 !important;
 }
 
 .pl-palette-color {
@@ -334,10 +340,11 @@ hr.hr-strong {
   z-index: 2000;
 }
 .pl-header .navbar-brand, .pl-header-hero .navbar-brand {
-  width: 220px;
+  width: 240px;
   height: 50px;
   padding: 14px 5px 0 13px;
   background: #001828;
+  font-size: 20px;
 }
 .pl-header .pl-uspto-logo, .pl-header-hero .pl-uspto-logo {
   margin-top: -2px;
@@ -399,7 +406,7 @@ hr.hr-strong {
   padding: 15px;
   z-index: 2;
   right: 0;
-  left: 260px;
+  left: 280px;
   top: 50px;
   min-height: -1;
   background: #FFF;
@@ -436,8 +443,24 @@ hr.hr-strong {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.025);
 }
 
+.navbar-toggle {
+  padding: 15.5px 10px;
+  margin-top: 0px;
+  margin-right: 12px;
+  margin-bottom: 0px;
+  width: 40px;
+  border: none;
+}
+
+.navbar-collapse.collapse, .navbar-collapse.collapse.in {
+  background-color: #282930;
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
 .pl-content {
-  margin-left: 260px;
+  margin-left: 280px;
   position: relative;
   padding-top: 50px;
 }
@@ -533,7 +556,7 @@ hr.hr-strong {
 }
 .pl-content .pl-pattern .pl-preview + .highlight {
   display: none;
-  padding: 30px 40px;
+  padding: 40px;
   margin: 0 -40px;
   position: relative;
   z-index: 2;
@@ -541,9 +564,8 @@ hr.hr-strong {
   border-bottom: 1px solid #eee;
 }
 .pl-content .pl-pattern pre {
-  border-radius: 0;
   border: 0;
-  padding: 0;
+  padding: 20px 0px;
   word-wrap: normal;
   background: transparent;
 }
@@ -596,7 +618,7 @@ hr.hr-strong {
   bottom: 0;
   margin: 0;
   position: fixed;
-  width: 260px;
+  width: 280px;
   z-index: 1029;
   padding: 25px 0 6px 0;
 }
@@ -606,29 +628,36 @@ hr.hr-strong {
   font-weight: 200;
   line-height: 16px;
 }
+.pl-sidebar .nav.nav-stacked > li {
+  font-size: 16px;
+}
 .pl-sidebar .nav.nav-stacked > li > a {
   color: #FFF;
   padding-left: 30px;
 }
 .pl-sidebar .nav.nav-stacked > li > a:hover, .pl-sidebar .nav.nav-stacked > li > a:focus {
-  background: #222329;
+  background: #757575;
   color: #FFF;
 }
 .pl-sidebar .nav.nav-stacked > li.active > a {
-  background: #222329;
-  color: #FFF;
+  background: #FFF;
+  color: #282930;
+  border-right: 1px solid #282930;
 }
 .pl-sidebar .nav.nav-stacked > li.active > ul {
-  background: #222329;
+  background: #1a1b1f;
+  padding: 8px 0px;
+}
+.pl-sidebar .nav.nav-stacked > li > ul > li {
+  width: 98%;
+  margin: 0 auto;
 }
 .pl-sidebar .nav.nav-stacked > li > ul > li > a {
-  padding-left: 40px;
-}
-.pl-sidebar .nav.nav-stacked > li > ul > li > a {
-  background: #222329;
+  background: #1a1b1f;
   color: #eee;
   border-left-color: transparent;
-  font-size: 12px;
+  font-size: 14px;
+  padding-left: 40px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -637,12 +666,14 @@ hr.hr-strong {
   padding-bottom: 8px;
 }
 .pl-sidebar .nav.nav-stacked > li > ul > li.active {
-  background: #222329;
+  background: #1a1b1f;
   color: #FFF;
+  border-left: 4px solid #eee;
 }
 .pl-sidebar .nav.nav-stacked > li > ul > li.active > a {
-  background: #222329;
+  background: #1a1b1f;
   color: #FFF;
+  margin-left: -2px;
 }
 .pl-sidebar .nav.nav-stacked li + li {
   margin-top: 0;
@@ -652,8 +683,11 @@ hr.hr-strong {
 }
 .pl-sidebar .nav.nav-stacked > .category {
   font-weight: 600;
+  font-size: 18px;
   color: #eee;
-  margin: 18px 0 5px 10px;
+  margin: 18px 0 5px 0;
+  padding: 0px 0px 5px 14px;
+  border-bottom: 0.5px solid #aaa;
 }
 .pl-sidebar .nav.nav-stacked > li > a > .fa {
   color: #FFF;
@@ -767,11 +801,27 @@ hr.hr-strong {
   list-style-position: inside;
 }
 
+.pl-pattern-layouts .pl-preview {
+  min-height: 275px;
+}
+.pl-pattern-layouts img {
+  float: left;
+  padding: 4px;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+  margin: 0 18px 18px 0;
+  vertical-align: middle;
+}
+.pl-pattern-layouts ul {
+  list-style-position: inside;
+}
+
 .pl-pattern .fonts img {
   float: right;
   padding-left: 20px;
   width: 500px;
   max-width: 500px;
+  min-width: 250px;
   height: 400px;
 }
 
@@ -791,4 +841,13 @@ hr.hr-strong {
 #startTourBtn, #startCalloutBtn {
   display: block;
   margin: 0 auto 4% auto;
+}
+
+@media screen and (max-width: 876px) {
+  .pl-pattern .fonts img {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0px;
+  }
 }
