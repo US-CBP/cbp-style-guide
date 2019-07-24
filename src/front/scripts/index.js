@@ -8,9 +8,10 @@ $(document).ready(function () {
   window.cbpTheme.applyTags();
   window.cbpTheme.applyThirdPartySelect();
 
-  /*
-   * Add toggle code functionality
-   */
+// Created IIFE to provide closure before hits global to avoid unnecessary pollution
+   $(function() {
+
+/*  Add toggle code functionality */
   $('.pl-preview').each(function() {
       var el = $(this);
       var next = el.next('.highlight');
@@ -25,58 +26,67 @@ $(document).ready(function () {
       }
   });
 
-  /*
-   * Add subnav
-   */
+ /*  Add subnav  */
   var activeSubNav = $('.pl-sidebar > .nav > .active');
   var newList = $('<ul class="nav nav-stacked"></ul>');
-  $('.pl-pattern > h3').each(function() {
-      var el = $(this);
-      if (el.attr('id')) {
+    $('.pl-pattern > h3').each(function() {
+       var el = $(this);
+        if (el.attr('id')) {
           var li = $('<li><a href="#' + el.attr('id') + '">' + el.text() + '</a></li>');
           newList.append(li);
+        }
+    });
 
+     if (newList.children().length) {
+       activeSubNav.append(newList);
       }
-  });
-  if (newList.children().length) {
-      activeSubNav.append(newList);
-  }
 
 // assigns current window's width to variable
     var currentWidth = $(window).width();
 // checks window's width on every page load
+// and handles class as needed
       if (currentWidth <= 767 ) {
           $('body').addClass('pl-collapsed-nav');
+          $('#pl-navbar-collapse').css('backgroundColor', '#282930' );
            } else {
           $('body').removeClass('pl-collapsed-nav');
+          $('#pl-navbar-collapse').css('backgroundColor', '#003e65' );
+       
       }
+// checks window's width on every window resize
+// and handles class as needed
+      $(window).on('resize', function() {
+    if ($(this).width() !== currentWidth && $(this).width() <= 767 ) {
+      $('body').addClass('pl-collapsed-nav');
+      $('#pl-navbar-collapse').css('backgroundColor', '#282930' );
+     } else {
+       $('body').removeClass('pl-collapsed-nav');
+       $('#pl-navbar-collapse').css('backgroundColor', '#003e65' );
+    }
+  });
 
-// provides ability to toggle class on each click
+  // provides ability to toggle class on each click
   $('.nav-collapse').on('click', function() {
       $('body').toggleClass('pl-collapsed-nav');
   });
 
-$(window).on('resize', function() {
-    if ($(this).width() !== currentWidth && $(this).width() <= 767 ) {
-      $('body').addClass('pl-collapsed-nav');
-     } else {
-       $('body').removeClass('pl-collapsed-nav');
-    }
-  });
-
-  /*
-   * Use bootstrap's scrollspy plugin to highlight subnav based on scroll position
-   */
-  $('body').scrollspy({ target: '.pl-sidebar > .nav > .active', offset: 120 });
+      $( '.pl-sidebar .nav li li' ).on( 'click', function() {
+            $( this ).parent().find( 'li.active' ).removeClass( 'active' );
+            $( this ).addClass( 'active' );    
+       });
 
   /* animate scrolling to the sidebar sublink targets to ensure proper offsets */
-  $('.pl-sidebar > .nav > .active > .nav > li > a').on('click', function() {
-      $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top - 110
-      }, 200);
-  });
+   $('.pl-sidebar > .nav > .active > .nav > li > a').on('click', function() {
 
-  
+        var el = $(this);
+
+      $('html, body').animate({
+
+          scrollTop: $($(el).attr('href')).offset().top - 110
+      }, 1000);
+
+  });
+ });
 
   $('.dropdown-toggle').dropdown();
 
