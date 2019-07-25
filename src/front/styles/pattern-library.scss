@@ -5,12 +5,13 @@
 $pl-background-color: $gray-lighter;
 $navbar-height: 50px;
 $pl-header-bg: darken($brand-primary, 8%);
-$pl-sidebar-width: 260px;
+$pl-sidebar-width: 280px;
 $pl-sidebar-bg: #282930;
 $pl-sidebar-link-fg: $white;
 $pl-sidebar-sublink-fg: $gray-lighter;
 $pl-sidebar-category-fg: $gray-lighter;
-$pl-sidebar-link-active-bg: mix($pl-sidebar-bg, #000, 85%);
+$pl-sidebar-active-bg: #757575;
+$pl-sidebar-link-active-bg: mix($pl-sidebar-bg, #000, 65%);
 $pl-sub-header-height: 0;
 $pl-sub-header-bg: #f5f5f5;
 
@@ -22,6 +23,7 @@ body {
     position: relative;
     overflow-y: auto;
     background-color: $pl-background-color;
+    min-width: 300px;
 }
 
 .list-no-style {
@@ -45,6 +47,11 @@ hr.hr-strong {
     color: $white;
     text-decoration: underline;
   }
+}
+
+.highlight {
+    background: $gray-lighter !important;
+    border: 1px solid $pl-sidebar-bg !important;
 }
 
 .pl-palette-color {
@@ -79,10 +86,11 @@ hr.hr-strong {
     z-index: 2000;
 
     .navbar-brand {
-        width: 220px;
+        width: 240px;
         height: 50px;
         padding: 14px 5px 0 13px;
         background: darken($pl-header-bg, 5%);
+        font-size: 20px;
     }
 
     .pl-uspto-logo {
@@ -192,6 +200,24 @@ hr.hr-strong {
     background: $white;
     border: 1px solid #ddd;
     box-shadow: 0px 1px 2px rgba(0,0,0,.025);
+}
+
+.navbar-toggle {
+    padding: 15.5px 10px;
+    margin-top: 0px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+    width: 40px;
+    border: none;
+
+}
+
+.navbar-collapse.collapse, .navbar-collapse.collapse.in {
+
+    background-color: $pl-sidebar-bg;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
 }
 
 .pl-content {
@@ -306,7 +332,7 @@ hr.hr-strong {
 
             .pl-preview+.highlight {
                 display: none;
-                padding: 30px 40px;
+                padding: 40px;
                 margin: 0 -40px;
                 position: relative;
                 z-index: 2;
@@ -315,9 +341,8 @@ hr.hr-strong {
             }
 
             pre {
-                border-radius: 0;
                 border: 0;
-                padding: 0;
+                padding: 20px 0px;
                 word-wrap: normal;
                 background: transparent;
 
@@ -370,7 +395,6 @@ hr.hr-strong {
 }
 
 .pl-sidebar {
-    // border-right: 1px solid #ddd;
     float: left;
     overflow: auto;
     top: $navbar-height + $pl-sub-header-height;
@@ -389,34 +413,42 @@ hr.hr-strong {
     font-weight: 200;
     line-height: 16px;
 
+    > li {
+        font-size: 16px;
+    }
+
     > li > a {
         color: $pl-sidebar-link-fg;
         &:hover,
         &:focus {
-            background: $pl-sidebar-link-active-bg;
-            color: $pl-sidebar-link-fg;
+            background: $pl-sidebar-active-bg;
+            color: $white;
         }
         padding-left: 30px;
     }
 
     > li.active > a {
-        background: $pl-sidebar-link-active-bg;
-        color: $pl-sidebar-link-fg;
+        background: $white;
+        color: $pl-sidebar-bg;
+        border-right: 1px solid $pl-sidebar-bg;
     }
 
     > li.active > ul {
         background: $pl-sidebar-link-active-bg;
+        padding: 8px 0px;
     }
 
-    > li > ul > li > a {
-        padding-left: 40px;
+    > li > ul > li {
+        width: 98%;
+        margin: 0 auto;
     }
 
     > li > ul > li > a {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-sublink-fg;
         border-left-color: transparent;
-        font-size: $font-size-base - 1;
+        font-size: 14px;
+        padding-left: 40px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -429,11 +461,13 @@ hr.hr-strong {
     > li > ul > li.active {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-link-fg;
+        border-left: 4px solid $gray-lighter;
     }
 
     > li > ul > li.active > a {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-link-fg;
+        margin-left: -2px;
     }
 
     li + li {
@@ -446,8 +480,11 @@ hr.hr-strong {
 
     > .category {
         font-weight: 600;
+        font-size: 18px;
         color: $pl-sidebar-category-fg;
-        margin: 18px 0 5px 10px;
+        margin: 18px 0 5px 0;
+        padding: 0px 0px 5px 14px;
+        border-bottom: .5px solid $gray-light;
     }
 
     > li > a > .fa {
@@ -468,11 +505,9 @@ hr.hr-strong {
     background-repeat: no-repeat;
     background-position: center -10em;
 
-
     .btn {
         margin: 0 10px;
         min-width: 120px;
-        // border-radius: 100px;
         border: 2px solid $white;
         box-shadow: none;
         background: $brand-primary;
@@ -482,7 +517,6 @@ hr.hr-strong {
             margin: 10px auto;
             max-width: 300px;
         }
-
     }
 
     .btn-default {
@@ -574,12 +608,30 @@ hr.hr-strong {
     }
 }
 
+.pl-pattern-layouts {
+    .pl-preview {
+        min-height: 275px;
+    }
+    img {
+        float: left;
+        padding: 4px;
+        border: 2px solid #ddd;
+        border-radius: 2px;
+        margin: 0 18px 18px 0;
+        vertical-align: middle;
+    }
+    ul {
+        list-style-position:inside;
+    }
+}
+
 .pl-pattern {
     .fonts img {
        float: right;
        padding-left: 20px;
        width: 500px;
        max-width: 500px;
+       min-width: 250px;
        height: 400px;
     }
 }
@@ -602,4 +654,14 @@ hr.hr-strong {
 #startTourBtn, #startCalloutBtn {
    display: block;
    margin: 0 auto 4% auto;
+}
+
+@media screen and (max-width: 876px) {
+
+.pl-pattern .fonts img {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0px;
+}
 }
