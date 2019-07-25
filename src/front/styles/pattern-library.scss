@@ -11,7 +11,6 @@ $pl-sidebar-link-fg: $white;
 $pl-sidebar-sublink-fg: $gray-lighter;
 $pl-sidebar-category-fg: $gray-lighter;
 $pl-sidebar-active-bg: #757575;
-// $pl-sidebar-link-active-bg: mix($pl-sidebar-bg, #000, 85%);
 $pl-sidebar-link-active-bg: mix($pl-sidebar-bg, #000, 65%);
 $pl-sub-header-height: 0;
 $pl-sub-header-bg: #f5f5f5;
@@ -396,7 +395,6 @@ hr.hr-strong {
 }
 
 .pl-sidebar {
-    // border-right: 1px solid #ddd;
     float: left;
     overflow: auto;
     top: $navbar-height + $pl-sub-header-height;
@@ -445,15 +443,10 @@ hr.hr-strong {
         margin: 0 auto;
     }
 
-    // > li > ul > li > a {
-    //     padding-left: 40px;
-    // }
-
     > li > ul > li > a {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-sublink-fg;
         border-left-color: transparent;
-        // font-size: $font-size-base - 1;
         font-size: 14px;
         padding-left: 40px;
         overflow: hidden;
@@ -489,7 +482,6 @@ hr.hr-strong {
         font-weight: 600;
         font-size: 18px;
         color: $pl-sidebar-category-fg;
-        // margin: 18px 0 5px 10px;
         margin: 18px 0 5px 0;
         padding: 0px 0px 5px 14px;
         border-bottom: .5px solid $gray-light;
@@ -513,11 +505,9 @@ hr.hr-strong {
     background-repeat: no-repeat;
     background-position: center -10em;
 
-
     .btn {
         margin: 0 10px;
         min-width: 120px;
-        // border-radius: 100px;
         border: 2px solid $white;
         box-shadow: none;
         background: $brand-primary;
@@ -527,7 +517,6 @@ hr.hr-strong {
             margin: 10px auto;
             max-width: 300px;
         }
-
     }
 
     .btn-default {
@@ -675,5 +664,4 @@ hr.hr-strong {
     max-width: 100%;
     padding-left: 0px;
 }
-
 }
