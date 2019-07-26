@@ -1,7 +1,7 @@
 {
   "name": "cbp-style-guide",
   "description": "CBP Style Guide",
-  "version": "1.0.0",
+  "version": "1.19.0",
   "author": "CBP",
   "contributors": [
     {
@@ -16,9 +16,7 @@
       "name": "Menka Kayan",
       "email": "menka.kayan@cbp.dhs.gov"
     },
-
-     {
-
+    {
       "name": "John D. Higgins",
       "email": "john.d.higgins@associates.cbp.dhs.gov"
     }

@@ -49,7 +49,7 @@ github:
   url: https://github.com/US-CBP/cbp-theme
 
 # The latest stable version
-version: 1.0.0
+version: 1.19.0
 
 # The list of all versions, which are referenced on the home page
 versions:
