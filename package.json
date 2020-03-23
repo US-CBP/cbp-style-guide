@@ -2,32 +2,14 @@
   "name": "cbp-style-guide",
   "description": "CBP Style Guide",
   "version": "1.19.0",
-  "author": "CBP",
-  "contributors": [
-    {
-      "name": "Amit Daya",
-      "email": "amit.daya@cbp.dhs.gov"
-    },
-    {
-      "name": "David Y. Hodge",
-      "email": "david.y.hodge@cbp.dhs.gov"
-    },
-    {
-      "name": "Menka Kayan",
-      "email": "menka.kayan@cbp.dhs.gov"
-    },
-    {
-      "name": "John D. Higgins",
-      "email": "john.d.higgins@associates.cbp.dhs.gov"
-    }
-  ],
+  "author": "CBP Common Framework <Common-Framework-Support@cbp.dhs.gov>",
   "repository": {
     "type:": "git",
     "url": "https://github.com/US-CBP/cbp-style-guide"
   },
   "private": true,
   "devDependencies": {
-    "cbp-theme": "^1.10.5",
+    "cbp-theme": "1.11.0",
     "ejs": "2.5.7",
     "grunt": "1.0.2",
     "grunt-autoprefixer": "3.0.4",
