@@ -46,7 +46,7 @@
     "time-grunt": "2.0.0"
   },
   "engines": {
-    "node": ">=6.2.1"
+    "node": ">=8.0.0 <11.0.0"
   },
   "scripts": {
     "build": "grunt build && jekyll build",
