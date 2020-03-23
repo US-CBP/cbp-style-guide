@@ -3,9 +3,8 @@ node_js:
   - '8'
 sudo: required
 before_install:
-# if "install" is overridden
-  - npm i -g npm@latest
-  - gem install jekyll
+  - gem install jekyll sass
+  - ruby -v
 cache:
   directories:
     - node_modules
