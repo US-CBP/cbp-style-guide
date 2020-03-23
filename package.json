@@ -2,69 +2,51 @@
   "name": "cbp-style-guide",
   "description": "CBP Style Guide",
   "version": "1.19.0",
-  "author": "CBP",
-  "contributors": [
-    {
-      "name": "Amit Daya",
-      "email": "amit.daya@cbp.dhs.gov"
-    },
-    {
-      "name": "David Y. Hodge",
-      "email": "david.y.hodge@cbp.dhs.gov"
-    },
-    {
-      "name": "Menka Kayan",
-      "email": "menka.kayan@cbp.dhs.gov"
-    },
-    {
-      "name": "John D. Higgins",
-      "email": "john.d.higgins@associates.cbp.dhs.gov"
-    }
-  ],
+  "author": "CBP Common Framework <Common-Framework-Support@cbp.dhs.gov>",
   "repository": {
     "type:": "git",
     "url": "https://github.com/US-CBP/cbp-style-guide"
   },
   "private": true,
   "devDependencies": {
-    "cbp-theme": "^1.10.5",
-    "ejs": "2.5.7",
-    "grunt": "1.0.2",
+    "cbp-theme": "1.11.0",
+    "ejs": "3.0.1",
+    "grunt": "1.1.0",
     "grunt-autoprefixer": "3.0.4",
     "grunt-banner": "0.6.0",
-    "grunt-cli": "1.2.0",
-    "grunt-concurrent": "2.3.1",
-    "grunt-contrib-clean": "1.1.0",
+    "grunt-cli": "1.3.2",
+    "grunt-concurrent": "3.0.0",
+    "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-concat": "1.0.1",
-    "grunt-contrib-connect": "1.0.2",
+    "grunt-contrib-connect": "2.1.0",
     "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-cssmin": "2.2.1",
-    "grunt-contrib-htmlmin": "2.4.0",
-    "grunt-contrib-imagemin": "2.0.1",
-    "grunt-contrib-jshint": "1.1.0",
+    "grunt-contrib-cssmin": "3.0.0",
+    "grunt-contrib-htmlmin": "3.1.0",
+    "grunt-contrib-imagemin": "3.1.0",
+    "grunt-contrib-jshint": "2.1.0",
     "grunt-contrib-sass": "1.0.0",
-    "grunt-contrib-uglify": "3.3.0",
-    "grunt-contrib-watch": "1.0.0",
+    "grunt-contrib-uglify": "4.0.1",
+    "grunt-contrib-watch": "1.1.0",
     "grunt-filerev": "2.3.1",
     "grunt-newer": "1.3.0",
-    "grunt-svgmin": "5.0.0",
+    "grunt-svgmin": "6.0.0",
     "grunt-templater": "0.0.7",
     "grunt-usemin": "3.1.1",
-    "grunt-zip": "0.17.1",
-    "highlight.js": "9.12.0",
+    "grunt-zip": "0.18.2",
+    "highlight.js": "9.18.1",
     "hopscotch": "0.3.1",
-    "jquery": "3.3.1",
+    "jquery": "3.4.1",
     "jquery-ui": "1.12.1",
     "jquery.inputmask": "3.3.4",
     "jshint-stylish": "2.2.1",
-    "load-grunt-tasks": "3.5.2",
-    "lodash": "4.17.13",
+    "load-grunt-tasks": "5.1.0",
+    "lodash": "4.17.15",
     "meta-remarkable": "0.1.0",
-    "nouislider": "11.0.3",
-    "time-grunt": "1.4.0"
+    "nouislider": "14.1.1",
+    "time-grunt": "2.0.0"
   },
   "engines": {
-    "node": ">=6.2.1"
+    "node": ">=8.0.0 <11.0.0"
   },
   "scripts": {
     "build": "grunt build && jekyll build",
