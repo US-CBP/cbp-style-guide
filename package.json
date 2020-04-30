@@ -35,7 +35,7 @@
     "grunt-zip": "0.18.2",
     "highlight.js": "9.18.1",
     "hopscotch": "0.3.1",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "jquery-ui": "1.12.1",
     "jquery.inputmask": "3.3.4",
     "jshint-stylish": "2.2.1",
