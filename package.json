@@ -40,7 +40,7 @@
     "jquery.inputmask": "3.3.4",
     "jshint-stylish": "2.2.1",
     "load-grunt-tasks": "5.1.0",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "meta-remarkable": "0.1.0",
     "nouislider": "14.1.1",
     "time-grunt": "2.0.0"
